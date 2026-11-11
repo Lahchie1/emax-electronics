@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface":"#f8f9ff","on-primary-fixed":"#001d32","on-secondary":"#ffffff","brand-lime":"#d4f34a","primary-container":"#123047","outline":"#73777d","on-secondary-fixed-variant":"#004f57","on-tertiary-container":"#cd8622","surface-variant":"#d3e4fc","on-secondary-fixed":"#001f24","tertiary-fixed":"#ffddb9","on-primary-container":"#7c98b4","outline-variant":"#c3c7cd","brand-amber":"#f2a541","glass-border":"rgba(255, 255, 255, 0.65)","background":"#f8f9ff","surface-container-lowest":"#ffffff","on-surface-variant":"#43474d","error":"#ba1a1a","primary":"#001b2e","brand-teal-hover":"#066570","tertiary-fixed-dim":"#ffb963","inverse-on-surface":"#e9f1ff","tertiary-container":"#442700","on-error-container":"#93000a","primary-fixed":"#cde5ff","secondary-fixed":"#96f0ff","on-surface":"#0b1d2e","surface-container-high":"#daeaff","inverse-surface":"#213244","surface-bright":"#f8f9ff","primary-fixed-dim":"#adcae7","brand-navy":"#0b1d2e","on-primary":"#ffffff","secondary":"#006874","surface-dim":"#cadcf3","surface-container":"#e4efff","inverse-primary":"#adcae7","surface-container-low":"#eef4ff","surface-tint":"#46617a","secondary-container":"#93eefc","on-tertiary-fixed-variant":"#663e00","on-error":"#ffffff","error-container":"#ffdad6","on-primary-fixed-variant":"#2e4961","brand-canvas":"#f7faff","brand-deep-blue":"#0d2844","on-background":"#0b1d2e","on-tertiary":"#ffffff","surface-container-highest":"#d3e4fc","tertiary":"#271500","secondary-fixed-dim":"#79d4e2","on-tertiary-fixed":"#2b1700","brand-sky":"#3a88e9","brand-teal":"#087e8b","on-secondary-container":"#006d79"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter":"1.5rem","space-xl":"2rem","space-sm":"0.5rem","margin":"1.5rem","gutter-sm":"1rem","space-md":"1rem","margin-lg":"4rem","space-2xl":"3rem","space-xs":"0.25rem"},"fontFamily":{"body-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"]},"fontSize":{"body-sm":["0.75rem",{"lineHeight":"1.4","fontWeight":"400"}],"body-lg":["1.125rem",{"lineHeight":"1.6","fontWeight":"500"}],"headline-sm":["1.125rem",{"lineHeight":"1.35","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["1.5rem",{"lineHeight":"1.3","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.5","fontWeight":"400"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"800"}],"headline-xl":["3.75rem",{"lineHeight":"1.12","letterSpacing":"-0.03em","fontWeight":"800"}],"label-md":["0.75rem",{"lineHeight":"1.0","letterSpacing":"0.06em","fontWeight":"700"}],"label-sm":["0.625rem",{"lineHeight":"1.0","letterSpacing":"0.08em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300"><div class="max-w-[72rem] mx-auto px-gutter py-space-sm"><div class="h-20 px-space-md lg:px-space-lg rounded-full bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_20px_40px_-15px_rgba(0,32,70,0.08)] flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-brand-lime text-[22px]">bolt</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">EMAX TECH</span><span class="font-label-sm text-label-sm text-on-surface-variant -mt-1">ELECTRONICS ENT.</span></div></div><nav class="hidden xl:flex items-center gap-space-xs p-1.5 rounded-full bg-surface-container-low" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><a class="px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="#">Products</a><a class="px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="lithium-builder" href="#">Lithium Builder</a><a aria-current="page" class="px-4 py-2 rounded-full transition-colors bg-primary text-on-primary font-bold shadow-sm" data-path="solar-builder" href="#">Solar Builder</a><a class="px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="e-bikes" href="#">E-Bikes</a><a class="px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-and-contact" href="#">About &amp; Contact</a></nav><div class="flex items-center gap-space-sm"><a class="flex items-center gap-2 px-space-md py-2.5 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-on-secondary font-headline-sm text-body-md transition-all shadow-[0_10px_25px_-5px_rgba(8,126,139,0.3)] hover:scale-[1.02]" href="https://wa.me/2340000000000" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span><span class="hidden sm:inline font-bold">WhatsApp Tech Desk</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Top Atmospheric Mesh Gradient (Contained) -->
+<div class="relative w-full overflow-hidden pb-12 pt-6">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[76rem] h-96 bg-gradient-to-b from-surface-variant/40 via-surface-container/30 to-transparent blur-3xl pointer-events-none rounded-full"></div>
+<div class="max-w-[72rem] mx-auto px-gutter relative z-10">
+<!-- Screen Header & Engineering Telemetry -->
+<div class="flex flex-col gap-space-lg mb-space-xl">
+<div class="flex flex-wrap items-center justify-between gap-4">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-lowest shadow-sm">
+<span class="flex h-2 w-2 rounded-full bg-brand-teal animate-pulse"></span>
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase">Engineering Architecture 04 // Solar Autonomy Protocol</span>
+</div>
+<!-- Micro Quick Telemetry Bar -->
+<div class="hidden sm:flex items-center gap-space-sm px-4 py-1 rounded-full bg-surface-container-low shadow-sm text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[15px] text-brand-teal">wb_sunny</span> Lagos Insolation: <strong class="text-primary font-bold">4.50 PSH</strong></span>
+<span class="text-outline-variant">|</span>
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[15px] text-brand-teal">electric_bolt</span> Bus Spec: <strong class="text-primary font-bold">48V DC</strong></span>
+<span class="text-outline-variant">|</span>
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[15px] text-brand-teal">shield</span> Buffer: <strong class="text-primary font-bold">1.5 Days</strong></span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Solar Generator Load &amp; Sizing Builder</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+              Calculate total daily energy demand in watt-hours, estimate required solar PV array wattage, and determine battery storage capacity needed for reliable Nigerian power autonomy against persistent grid dropouts.
+            </p>
+</div>
+<!-- Quick Telemetry Badges for Mobile -->
+<div class="lg:col-span-4 grid grid-cols-3 gap-2">
+<div class="bg-surface-container-lowest p-3 rounded-DEFAULT shadow-sm flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Solar PSH</span>
+<span class="font-headline-sm text-headline-sm text-primary">4.50 h</span>
+<span class="font-body-sm text-body-sm text-secondary">SW Nigeria</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-DEFAULT shadow-sm flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">DC Bus</span>
+<span class="font-headline-sm text-headline-sm text-primary">48.0 V</span>
+<span class="font-body-sm text-body-sm text-secondary">LiFePO4 Std</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-DEFAULT shadow-sm flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Autonomy</span>
+<span class="font-headline-sm text-headline-sm text-primary">1.5 Days</span>
+<span class="font-body-sm text-body-sm text-brand-amber">Wet Season</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Sizing Architecture Workspace (2-Column Desktop Grid) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Appliance Load Profiler & Environmental Constants (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Preset Fast-Add Pills -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-brand-teal">add_circle</span> Fast Add Lagos Standard Presets
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tap to append</span>
+</div>
+<div class="flex flex-wrap gap-2" id="presetPillsContainer">
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-secondary-container text-on-surface text-body-sm font-body-sm transition-all flex items-center gap-1 shadow-sm" onclick="addPreset('Smart TV (55 inch)', 110, 1, 6)">
+<span class="font-bold text-secondary">+</span> Smart TV <span class="text-on-surface-variant font-mono text-[11px]">(110W / 6h)</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-secondary-container text-on-surface text-body-sm font-body-sm transition-all flex items-center gap-1 shadow-sm" onclick="addPreset('Dolby Soundbar', 60, 1, 4)">
+<span class="font-bold text-secondary">+</span> Soundbar <span class="text-on-surface-variant font-mono text-[11px]">(60W / 4h)</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-secondary-container text-on-surface text-body-sm font-body-sm transition-all flex items-center gap-1 shadow-sm" onclick="addPreset('Digital Microwave', 1200, 1, 0.4)">
+<span class="font-bold text-secondary">+</span> Microwave <span class="text-on-surface-variant font-mono text-[11px]">(1.2kW / 24m)</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-secondary-container text-on-surface text-body-sm font-body-sm transition-all flex items-center gap-1 shadow-sm" onclick="addPreset('8-Cam CCTV &amp; NVR', 45, 1, 24)">
+<span class="font-bold text-secondary">+</span> CCTV System <span class="text-on-surface-variant font-mono text-[11px]">(45W / 24h)</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-secondary-container text-on-surface text-body-sm font-body-sm transition-all flex items-center gap-1 shadow-sm" onclick="addPreset('Standing Fan (Dual)', 65, 2, 8)">
+<span class="font-bold text-secondary">+</span> Standing Fan <span class="text-on-surface-variant font-mono text-[11px]">(65W / 8h)</span>
+</button>
+</div>
+</div>
+<!-- Dynamic Appliance Table Card -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-teal text-[24px]">tune</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Connected Appliance Load Ledger</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Profile continuous wattage draw and operating hours per cycle.</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-primary font-label-md text-label-md" id="activeApplianceCount">5 Active Loads</span>
+</div>
+<!-- Table Header -->
+<div class="hidden sm:grid grid-cols-12 gap-2 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider px-3 py-2 bg-surface-container-low rounded-DEFAULT">
+<div class="col-span-5">Appliance Category</div>
+<div class="col-span-2 text-right">Rating (W)</div>
+<div class="col-span-1 text-center">Qty</div>
+<div class="col-span-2 text-right">Duty (h/day)</div>
+<div class="col-span-2 text-right">Daily Wh</div>
+</div>
+<!-- Dynamic Appliance Rows Container -->
+<div class="flex flex-col gap-2" id="appliancesList">
+<!-- Rendered dynamically by script, initial HTML matching PRD baseline -->
+<div class="grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-2 items-center p-3 rounded-DEFAULT bg-surface-container-low/50 hover:bg-surface-container-low transition-colors appliance-item" data-id="1">
+<div class="col-span-5 flex items-center justify-between sm:justify-start gap-2">
+<div class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">kitchen</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-primary truncate">Deep Freezer / Refrigerator</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Continuous cycling compressor</span>
+</div>
+</div>
+<div class="col-span-2 flex sm:justify-end items-center gap-1">
+<input class="w-20 px-2 py-1 bg-surface-container-lowest rounded text-right font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" min="10" onchange="updateLoad(this, 'watts')" step="10" type="number" value="150"/>
+<span class="text-body-sm text-on-surface-variant sm:hidden">W</span>
+</div>
+<div class="col-span-1 flex sm:justify-center items-center">
+<input class="w-12 px-2 py-1 bg-surface-container-lowest rounded text-center font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" max="20" min="1" onchange="updateLoad(this, 'qty')" type="number" value="1"/>
+</div>
+<div class="col-span-2 flex sm:justify-end items-center gap-1">
+<input class="w-16 px-2 py-1 bg-surface-container-lowest rounded text-right font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" max="24" min="0.5" onchange="updateLoad(this, 'hours')" step="0.5" type="number" value="12"/>
+<span class="text-body-sm text-on-surface-variant">h</span>
+</div>
+<div class="col-span-2 flex items-center justify-between sm:justify-end gap-2 text-right">
+<span class="font-headline-sm text-body-md text-secondary row-subtotal">1,800 Wh</span>
+<button class="text-outline hover:text-error transition-colors p-1" onclick="removeRow(this)" title="Remove load">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Row 2: Inverter AC -->
+<div class="grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-2 items-center p-3 rounded-DEFAULT bg-surface-container-low/50 hover:bg-surface-container-low transition-colors appliance-item" data-id="2">
+<div class="col-span-5 flex items-center justify-between sm:justify-start gap-2">
+<div class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">ac_unit</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-primary truncate">Inverter Air Conditioner (1.5 HP)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Eco Mode / Soft start inverter</span>
+</div>
+</div>
+<div class="col-span-2 flex sm:justify-end items-center gap-1">
+<input class="w-20 px-2 py-1 bg-surface-container-lowest rounded text-right font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" min="50" onchange="updateLoad(this, 'watts')" step="50" type="number" value="900"/>
+<span class="text-body-sm text-on-surface-variant sm:hidden">W</span>
+</div>
+<div class="col-span-1 flex sm:justify-center items-center">
+<input class="w-12 px-2 py-1 bg-surface-container-lowest rounded text-center font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" max="20" min="1" onchange="updateLoad(this, 'qty')" type="number" value="1"/>
+</div>
+<div class="col-span-2 flex sm:justify-end items-center gap-1">
+<input class="w-16 px-2 py-1 bg-surface-container-lowest rounded text-right font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" max="24" min="0.5" onchange="updateLoad(this, 'hours')" step="0.5" type="number" value="6"/>
+<span class="text-body-sm text-on-surface-variant">h</span>
+</div>
+<div class="col-span-2 flex items-center justify-between sm:justify-end gap-2 text-right">
+<span class="font-headline-sm text-body-md text-secondary row-subtotal">5,400 Wh</span>
+<button class="text-outline hover:text-error transition-colors p-1" onclick="removeRow(this)" title="Remove load">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Row 3: LED Lighting & Fans -->
+<div class="grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-2 items-center p-3 rounded-DEFAULT bg-surface-container-low/50 hover:bg-surface-container-low transition-colors appliance-item" data-id="3">
+<div class="col-span-5 flex items-center justify-between sm:justify-start gap-2">
+<div class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-primary truncate">LED Lighting &amp; Ceiling Fans</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">House ambient circuit (10 points)</span>
+</div>
+</div>
+<div class="col-span-2 flex sm:justify-end items-center gap-1">
+<input class="w-20 px-2 py-1 bg-surface-container-lowest rounded text-right font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" min="10" onchange="updateLoad(this, 'watts')" step="10" type="number" value="120"/>
+<span class="text-body-sm text-on-surface-variant sm:hidden">W</span>
+</div>
+<div class="col-span-1 flex sm:justify-center items-center">
+<input class="w-12 px-2 py-1 bg-surface-container-lowest rounded text-center font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" max="20" min="1" onchange="updateLoad(this, 'qty')" type="number" value="1"/>
+</div>
+<div class="col-span-2 flex sm:justify-end items-center gap-1">
+<input class="w-16 px-2 py-1 bg-surface-container-lowest rounded text-right font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" max="24" min="0.5" onchange="updateLoad(this, 'hours')" step="0.5" type="number" value="10"/>
+<span class="text-body-sm text-on-surface-variant">h</span>
+</div>
+<div class="col-span-2 flex items-center justify-between sm:justify-end gap-2 text-right">
+<span class="font-headline-sm text-body-md text-secondary row-subtotal">1,200 Wh</span>
+<button class="text-outline hover:text-error transition-colors p-1" onclick="removeRow(this)" title="Remove load">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Row 4: Workstation & Starlink -->
+<div class="grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-2 items-center p-3 rounded-DEFAULT bg-surface-container-low/50 hover:bg-surface-container-low transition-colors appliance-item" data-id="4">
+<div class="col-span-5 flex items-center justify-between sm:justify-start gap-2">
+<div class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">devices</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-primary truncate">Workstation &amp; Starlink Terminal</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Laptops, 27" screens, Gen 3 dish</span>
+</div>
+</div>
+<div class="col-span-2 flex sm:justify-end items-center gap-1">
+<input class="w-20 px-2 py-1 bg-surface-container-lowest rounded text-right font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" min="10" onchange="updateLoad(this, 'watts')" step="10" type="number" value="150"/>
+<span class="text-body-sm text-on-surface-variant sm:hidden">W</span>
+</div>
+<div class="col-span-1 flex sm:justify-center items-center">
+<input class="w-12 px-2 py-1 bg-surface-container-lowest rounded text-center font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" max="20" min="1" onchange="updateLoad(this, 'qty')" type="number" value="1"/>
+</div>
+<div class="col-span-2 flex sm:justify-end items-center gap-1">
+<input class="w-16 px-2 py-1 bg-surface-container-lowest rounded text-right font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" max="24" min="0.5" onchange="updateLoad(this, 'hours')" step="0.5" type="number" value="12"/>
+<span class="text-body-sm text-on-surface-variant">h</span>
+</div>
+<div class="col-span-2 flex items-center justify-between sm:justify-end gap-2 text-right">
+<span class="font-headline-sm text-body-md text-secondary row-subtotal">1,800 Wh</span>
+<button class="text-outline hover:text-error transition-colors p-1" onclick="removeRow(this)" title="Remove load">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Row 5: Water Pump -->
+<div class="grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-2 items-center p-3 rounded-DEFAULT bg-surface-container-low/50 hover:bg-surface-container-low transition-colors appliance-item" data-id="5">
+<div class="col-span-5 flex items-center justify-between sm:justify-start gap-2">
+<div class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">water_pump</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-primary truncate">Water Pump (Intermittent)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">0.75HP borehole submersible</span>
+</div>
+</div>
+<div class="col-span-2 flex sm:justify-end items-center gap-1">
+<input class="w-20 px-2 py-1 bg-surface-container-lowest rounded text-right font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" min="50" onchange="updateLoad(this, 'watts')" step="50" type="number" value="750"/>
+<span class="text-body-sm text-on-surface-variant sm:hidden">W</span>
+</div>
+<div class="col-span-1 flex sm:justify-center items-center">
+<input class="w-12 px-2 py-1 bg-surface-container-lowest rounded text-center font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" max="20" min="1" onchange="updateLoad(this, 'qty')" type="number" value="1"/>
+</div>
+<div class="col-span-2 flex sm:justify-end items-center gap-1">
+<input class="w-16 px-2 py-1 bg-surface-container-lowest rounded text-right font-headline-sm text-body-md text-primary shadow-sm focus:outline-none" max="10" min="0.25" onchange="updateLoad(this, 'hours')" step="0.25" type="number" value="1"/>
+<span class="text-body-sm text-on-surface-variant">h</span>
+</div>
+<div class="col-span-2 flex items-center justify-between sm:justify-end gap-2 text-right">
+<span class="font-headline-sm text-body-md text-secondary row-subtotal">750 Wh</span>
+<button class="text-outline hover:text-error transition-colors p-1" onclick="removeRow(this)" title="Remove load">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Add Custom Appliance Form Trigger -->
+<div class="pt-2 flex flex-col sm:flex-row items-center gap-2">
+<button class="w-full py-3 px-4 rounded-full bg-surface-container-low hover:bg-surface-container text-primary font-headline-sm text-body-md flex items-center justify-center gap-2 transition-all" onclick="addNewCustomRow()">
+<span class="material-symbols-outlined text-[20px] text-brand-teal">add</span> Add Custom Appliance
+              </button>
+</div>
+</div>
+<!-- Regional Autonomy & Constants Configuration Card -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-2 pb-1">
+<span class="material-symbols-outlined text-brand-teal text-[24px]">thermostat</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Regional Environmental Constants</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calibrate calculation parameters for Nigerian seasonal sunlight and battery chemistry.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-2">
+<!-- Autonomy Slider -->
+<div class="flex flex-col gap-2 p-3 rounded-DEFAULT bg-surface-container-low/60">
+<div class="flex justify-between items-center">
+<label class="font-headline-sm text-body-md text-primary flex items-center gap-1.5">
+                    Days of Autonomy
+                    <span class="material-symbols-outlined text-[15px] text-on-surface-variant" title="Buffer for monsoon / overcast days">help</span>
+</label>
+<span class="font-headline-sm text-body-md text-secondary" id="autonomyVal">1.5 Days</span>
+</div>
+<input class="w-full accent-brand-teal cursor-pointer" id="autonomyRange" max="3.0" min="1.0" oninput="handleParamChange()" step="0.25" type="range" value="1.5"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lagos rainy season / harmattan haze recommendation</span>
+</div>
+<!-- Peak Sun Hours Slider -->
+<div class="flex flex-col gap-2 p-3 rounded-DEFAULT bg-surface-container-low/60">
+<div class="flex justify-between items-center">
+<label class="font-headline-sm text-body-md text-primary flex items-center gap-1.5">
+                    Peak Sun Hours (PSH)
+                    <span class="material-symbols-outlined text-[15px] text-on-surface-variant" title="Effective daily full irradiance hours">wb_sunny</span>
+</label>
+<span class="font-headline-sm text-body-md text-secondary" id="pshVal">4.50 PSH</span>
+</div>
+<input class="w-full accent-brand-teal cursor-pointer" id="pshRange" max="6.5" min="3.5" oninput="handleParamChange()" step="0.25" type="range" value="4.50"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SW Nigeria average (4.2 - 4.8 PSH annual mean)</span>
+</div>
+<!-- Static Engineering Constants -->
+<div class="p-3 rounded-DEFAULT bg-surface-container-low/40 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Inverter Efficiency</span>
+<span class="font-headline-sm text-body-md text-primary">90.0% Pure Sine</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[22px]">swap_horiz</span>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-container-low/40 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">LiFePO4 DoD Standard</span>
+<span class="font-headline-sm text-body-md text-primary">85.0% Usable</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[22px]">battery_charging_full</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Engineered Hardware Architecture Results (5 Cols sticky) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg lg:sticky lg:top-28">
+<!-- Master Daily Demand Card -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Daily Energy Load</span>
+<span class="px-2.5 py-0.5 rounded-full bg-brand-lime/30 text-on-primary-fixed font-label-sm text-label-sm">AUTONOMY VERIFIED</span>
+</div>
+<!-- Big Metric Value -->
+<div class="flex items-baseline justify-between">
+<div>
+<div class="font-headline-xl text-headline-xl text-primary leading-none" id="totalKwhDisplay">10.95</div>
+<span class="font-headline-sm text-headline-sm text-secondary">kWh / day</span>
+</div>
+<div class="text-right">
+<div class="font-headline-md text-headline-md text-primary" id="peakWattsDisplay">2,070 W</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Continuous Peak Load</span>
+</div>
+</div>
+<!-- Demand Breakdown Progress Bar -->
+<div class="flex flex-col gap-1.5 pt-2">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>HVAC Dominance (Air Conditioning 49%)</span>
+<span>Base Profile 51%</span>
+</div>
+<div class="w-full h-3 bg-surface-container-low rounded-full overflow-hidden flex">
+<div class="h-full bg-brand-teal" style="width: 49%"></div>
+<div class="h-full bg-brand-sky" style="width: 33%"></div>
+<div class="h-full bg-brand-lime" style="width: 18%"></div>
+</div>
+<div class="flex items-center gap-3 text-body-sm text-body-sm text-on-surface-variant mt-1">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-brand-teal"></span> Cooling</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-brand-sky"></span> Cold Chain</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-brand-lime"></span> Light &amp; Computing</span>
+</div>
+</div>
+</div>
+<!-- Hardware Configuration Architecture Specs -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-teal text-[22px]">developer_board</span>
+              Sized System Hardware Bill
+            </h3>
+<!-- 1. Solar PV Array -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-low/70 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase text-secondary tracking-wider">01 // Solar Generation Array</span>
+<span class="font-headline-sm text-headline-sm text-primary" id="pvWattageDisplay">3,250 W</span>
+</div>
+<p class="font-headline-sm text-body-md text-primary" id="pvRecommendationText">Recommended: 6× 550W Tier-1 Mono PERC Panels</p>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Accounts for 1.25x regional derating &amp; harmattan dust loss</span>
+</div>
+</div>
+<!-- 2. LiFePO4 Storage Bank -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-low/70 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase text-secondary tracking-wider">02 // LiFePO4 Storage Bank</span>
+<span class="font-headline-sm text-headline-sm text-primary" id="batteryKwhDisplay">21.5 kWh</span>
+</div>
+<p class="font-headline-sm text-body-md text-primary" id="batteryAhDisplay">48V 447Ah Equivalent Storage</p>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">memory</span>
+<span>Configured as 16S 3.2V 280Ah/304Ah Cells with 200A Smart BMS</span>
+</div>
+</div>
+<!-- 3. Hybrid Inverter System -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-low/70 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase text-secondary tracking-wider">03 // Power Conversion Core</span>
+<span class="font-headline-sm text-headline-sm text-primary" id="inverterKvaDisplay">3.2 kVA / 3.2 kW</span>
+</div>
+<p class="font-headline-sm text-body-md text-primary">Pure Sine Wave with Dual 80A MPPT Tracker</p>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">speed</span>
+<span>Surge rating: 6,400W peak for AC compressor lock-rotor starts</span>
+</div>
+</div>
+</div>
+<!-- Fuel Generator Displacement & Cost Savings Highlight Card -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-brand-amber uppercase tracking-widest font-bold">Nigeria OpEx Elimination</span>
+<span class="px-2 py-0.5 rounded-full bg-brand-amber/20 text-on-tertiary-container font-label-sm text-label-sm">High Return</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary" id="monthlySavingsDisplay">₦158,400</span>
+<span class="font-headline-sm text-body-md text-secondary">/ Month Saved</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Replaces ~6h daily run time on a 5kVA petrol generator @ ₦800/liter. Off-grid capital expenditure fully amortizes in <strong>11–14 months</strong> under current fuel tariffs.
+            </p>
+<div class="w-full bg-surface-container-low h-2 rounded-full mt-1 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 78%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">78% OpEx reduction compared to continuous fuel combustion</span>
+</div>
+<!-- Action CTA Group -->
+<div class="flex flex-col gap-space-sm pt-2">
+<!-- Primary WhatsApp Dispatch CTA -->
+<a class="w-full py-4 px-6 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-on-secondary font-headline-sm text-body-lg flex items-center justify-between transition-all shadow-[0_12px_28px_-6px_rgba(8,126,139,0.35)] hover:scale-[1.01]" href="https://wa.me/2348000000000?text=Hello%20Emax%20Tech%2C%20I%20have%20configured%20a%2010.95%20kWh%20Solar%20System%20(3250W%20PV%2C%2021.5kWh%20LiFePO4%2C%203.2kVA%20Inverter).%20Please%20provide%20a%20turnkey%20depot%20quote." id="dispatchWhatsAppBtn" target="_blank">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">send</span>
+<span>Dispatch Sizing to WhatsApp Desk</span>
+</span>
+<span class="w-8 h-8 rounded-full bg-brand-amber text-primary-container flex items-center justify-center font-bold">
+                →
+              </span>
+</a>
+<!-- Secondary Depot Stock Action -->
+<button class="w-full py-3.5 px-6 rounded-full bg-surface-container-low hover:bg-surface-container text-primary font-headline-sm text-body-md flex items-center justify-center gap-2 transition-all" onclick="alert('Checking Ikeja Hub depot inventory for 550W Mono PERC and 48V LiFePO4 packs... All in stock.')">
+<span class="material-symbols-outlined text-[20px] text-secondary">inventory_2</span>
+              Check Depot Component Stock
+            </button>
+</div>
+</div>
+</div>
+<!-- Field Engineering Considerations for Lagos & Remote Sites (3 Clean White Cards) -->
+<div class="mt-space-2xl flex flex-col gap-space-lg">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Field Engineering Protocols</span>
+<h2 class="font-headline-md text-headline-md text-primary">Technical Deployment Standards for Nigerian Conditions</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-brand-teal">
+<span class="material-symbols-outlined text-[26px]">electric_meter</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Surge &amp; Lightning Isolation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Lagos coastal thunderstorm corridors require Type-II DC Surge Protection Devices (SPDs) and 63A double-pole AC breakers to protect sensitive inverter switching stages from utility surges.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center gap-2 font-label-md text-label-md text-secondary uppercase">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Pre-installed DC combiner
+            </div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-brand-teal">
+<span class="material-symbols-outlined text-[26px]">sunny</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Thermal Throttling &amp; Harmattan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                High ambient tropical heat drops solar panel voltage by -0.38%/°C. Our sizing formula enforces a 1.25x panel wattage overhead to ensure sufficient battery charging during hazy Sahelian dust months.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center gap-2 font-label-md text-label-md text-secondary uppercase">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> 1.25x derating embedded
+            </div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-brand-teal">
+<span class="material-symbols-outlined text-[26px]">mobile_arrow_right</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">LiFePO4 vs Lead-Acid OPzS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Lithium Iron Phosphate delivers &gt;6,000 deep cycles at 85% DoD compared to 1,200 cycles at 50% for tubular batteries. Zero toxic gassing, zero water topping, and 10+ year operational life.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center gap-2 font-label-md text-label-md text-secondary uppercase">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Grade-A EV-grade cells
+            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Sizing Logic Script -->
+<script>
+    // State storage for calculating live specs
+    let appliances = [
+      { id: 1, name: 'Deep Freezer / Refrigerator', watts: 150, qty: 1, hours: 12 },
+      { id: 2, name: 'Inverter Air Conditioner (1.5 HP)', watts: 900, qty: 1, hours: 6 },
+      { id: 3, name: 'LED Lighting & Ceiling Fans', watts: 120, qty: 1, hours: 10 },
+      { id: 4, name: 'Workstation & Starlink Terminal', watts: 150, qty: 1, hours: 12 },
+      { id: 5, name: 'Water Pump (Intermittent)', watts: 750, qty: 1, hours: 1 }
+    ];
+
+    let autonomyDays = 1.5;
+    let psh = 4.50;
+    const INVERTER_EFFICIENCY = 0.90;
+    const BATTERY_DOD = 0.85;
+    const SYSTEM_VOLTAGE = 48; // 48V DC Standard Bus
+
+    function recalculateSizing() {
+      // 1. Calculate Daily Wh and Continuous Peak Watts
+      let totalDailyWh = 0;
+      let peakWatts = 0;
+
+      appliances.forEach(item => {
+        const itemWh = item.watts * item.qty * item.hours;
+        totalDailyWh += itemWh;
+        peakWatts += (item.watts * item.qty);
+      });
+
+      const totalDailyKwh = (totalDailyWh / 1000);
+
+      // 2. Solar PV Sizing (Daily Wh / (PSH * Inverter Efficiency * Derating 0.80))
+      // Adding 1.25x derating overhead for Nigerian dust and temperature
+      const requiredPvWatts = Math.ceil((totalDailyWh / (psh * INVERTER_EFFICIENCY * 0.80)) / 50) * 50;
+      const panelWattRating = 550;
+      const panelCount = Math.max(2, Math.ceil(requiredPvWatts / panelWattRating));
+      const actualInstalledPvWatts = panelCount * panelWattRating;
+
+      // 3. LiFePO4 Storage Bank Sizing
+      // (Daily Wh * Autonomy Days) / (System Bus Voltage * Battery DoD * Inverter Efficiency)
+      const batteryWhRequired = (totalDailyWh * autonomyDays) / (BATTERY_DOD * INVERTER_EFFICIENCY);
+      const batteryKwhRequired = (batteryWhRequired / 1000);
+      const batteryAhRequired = Math.round(batteryWhRequired / SYSTEM_VOLTAGE);
+
+      // 4. Inverter Capacity (Peak Watts * Surge Factor 1.5 rounded to standard kVA)
+      const inverterContinuousWatts = peakWatts * 1.3;
+      let inverterKva = (inverterContinuousWatts / 1000);
+      if (inverterKva <= 3.2) inverterKva = 3.2;
+      else if (inverterKva <= 5.0) inverterKva = 5.0;
+      else if (inverterKva <= 8.0) inverterKva = 8.0;
+      else inverterKva = 10.0;
+
+      // 5. Fuel Generator Displacement Savings
+      // Assuming petrol generator replaces 60% of this load at ~1.5L/hr @ 800 NGN/L
+      const monthlyLitres = Math.round((totalDailyKwh * 0.55) * 30 * 1.1);
+      const monthlyNairaSaved = monthlyLitres * 800;
+
+      // Update DOM
+      document.getElementById('totalKwhDisplay').textContent = totalDailyKwh.toFixed(2);
+      document.getElementById('peakWattsDisplay').textContent = peakWatts.toLocaleString() + ' W';
+      document.getElementById('pvWattageDisplay').textContent = actualInstalledPvWatts.toLocaleString() + ' W';
+      document.getElementById('pvRecommendationText').textContent = `Recommended: ${panelCount}× 550W Tier-1 Mono PERC Panels`;
+      document.getElementById('batteryKwhDisplay').textContent = batteryKwhRequired.toFixed(1) + ' kWh';
+      document.getElementById('batteryAhDisplay').textContent = `48V ${batteryAhRequired}Ah Equivalent Storage`;
+      document.getElementById('inverterKvaDisplay').textContent = `${inverterKva.toFixed(1)} kVA / ${inverterKva.toFixed(1)} kW`;
+      document.getElementById('monthlySavingsDisplay').innerHTML = `&#8358;${monthlyNairaSaved.toLocaleString()}`;
+      document.getElementById('activeApplianceCount').textContent = `${appliances.length} Active Loads`;
+
+      // Update WhatsApp link parameters
+      const whatsappMsg = `Hello Emax Tech, I have configured an engineered Solar System on your sizing builder:%0A- Total Daily Load: ${totalDailyKwh.toFixed(2)} kWh%0A- Continuous Peak Load: ${peakWatts} W%0A- Solar Array: ${actualInstalledPvWatts} W (${panelCount}x 550W panels)%0A- LiFePO4 Storage: ${batteryKwhRequired.toFixed(1)} kWh (48V ${batteryAhRequired}Ah)%0A- Inverter Spec: ${inverterKva.toFixed(1)} kVA Pure Sine Wave.%0APlease provide stock availability and engineering installation quote for Lagos.`;
+      document.getElementById('dispatchWhatsAppBtn').href = `https://wa.me/2348000000000?text=${whatsappMsg}`;
+    }
+
+    function updateLoad(input, field) {
+      const row = input.closest('.appliance-item');
+      const id = parseInt(row.getAttribute('data-id'));
+      const val = parseFloat(input.value) || 0;
+
+      const item = appliances.find(a => a.id === id);
+      if (item) {
+        item[field] = val;
+        const subtotalWh = item.watts * item.qty * item.hours;
+        row.querySelector('.row-subtotal').textContent = Math.round(subtotalWh).toLocaleString() + ' Wh';
+        recalculateSizing();
+      }
+    }
+
+    function removeRow(btn) {
+      const row = btn.closest('.appliance-item');
+      const id = parseInt(row.getAttribute('data-id'));
+      appliances = appliances.filter(a => a.id !== id);
+      row.remove();
+      recalculateSizing();
+    }
+
+    function addPreset(name, watts, qty, hours) {
+      const newId = Date.now();
+      appliances.push({ id: newId, name, watts, qty, hours });
+
+      const container = document.getElementById('appliancesList');
+      const subtotalWh = watts * qty * hours;
+
+      const newRowHtml = document.createElement('div');
+      newRowHtml.className = "grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-2 items-center p-3 rounded-DEFAULT bg-surface-container-low/50 hover:bg-surface-container-low transition-colors appliance-item";
+      newRowHtml.setAttribute('data-id', newId);
+      newRowHtml.innerHTML = `
+        <div class="col-span-5 flex items-center justify-between sm:justify-start gap-2">
+          <div class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-secondary shadow-sm">
+            <span class="material-symbols-outlined text-[18px]">power</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <span class="font-headline-sm text-body-md text-primary truncate">${name}</span>
+            <span class="font-body-sm text-body-sm text-on-surface-variant">Preset added profile</span>
+          </div>
+        </div>
+        <div class="col-span-2 flex sm:justify-end items-center gap-1">
+          <input type="number" value="${watts}" min="10" step="10" onchange="updateLoad(this, 'watts')" class="w-20 px-2 py-1 bg-surface-container-lowest rounded text-right font-headline-sm text-body-md text-primary shadow-sm focus:outline-none">
+          <span class="text-body-sm text-on-surface-variant sm:hidden">W</span>
+        </div>
+        <div class="col-span-1 flex sm:justify-center items-center">
+          <input type="number" value="${qty}" min="1" max="20" onchange="updateLoad(this, 'qty')" class="w-12 px-2 py-1 bg-surface-container-lowest rounded text-center font-headline-sm text-body-md text-primary shadow-sm focus:outline-none">
+        </div>
+        <div class="col-span-2 flex sm:justify-end items-center gap-1">
+          <input type="number" value="${hours}" min="0.2" max="24" step="0.5" onchange="updateLoad(this, 'hours')" class="w-16 px-2 py-1 bg-surface-container-lowest rounded text-right font-headline-sm text-body-md text-primary shadow-sm focus:outline-none">
+          <span class="text-body-sm text-on-surface-variant">h</span>
+        </div>
+        <div class="col-span-2 flex items-center justify-between sm:justify-end gap-2 text-right">
+          <span class="font-headline-sm text-body-md text-secondary row-subtotal">${Math.round(subtotalWh).toLocaleString()} Wh</span>
+          <button onclick="removeRow(this)" class="text-outline hover:text-error transition-colors p-1" title="Remove load">
+            <span class="material-symbols-outlined text-[18px]">delete</span>
+          </button>
+        </div>
+      `;
+      container.appendChild(newRowHtml);
+      recalculateSizing();
+    }
+
+    function addNewCustomRow() {
+      const customName = prompt("Enter Appliance Name (e.g. Electric Kettle, Washing Machine):", "Custom Appliance");
+      if (!customName) return;
+      addPreset(customName, 300, 1, 2);
+    }
+
+    function handleParamChange() {
+      autonomyDays = parseFloat(document.getElementById('autonomyRange').value);
+      psh = parseFloat(document.getElementById('pshRange').value);
+
+      document.getElementById('autonomyVal').textContent = autonomyDays.toFixed(2) + ' Days';
+      document.getElementById('pshVal').textContent = psh.toFixed(2) + ' PSH';
+
+      recalculateSizing();
+    }
+
+    // Initialize initial calculations on render
+    recalculateSizing();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-2xl"><div class="max-w-[72rem] mx-auto px-gutter py-margin-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-2xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-brand-lime text-[22px]">bolt</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary">EMAX TECH</span><span class="font-label-sm text-label-sm text-on-surface-variant -mt-1">ELECTRONICS ENTERPRISES</span></div></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Precision clean energy engineering and certified industrial micro-mobility. Assembled with laboratory-grade battery architecture, solar generation cells, and urban e-transport platforms in West Africa.</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="flex h-2.5 w-2.5 rounded-full bg-brand-lime"></span><span class="font-label-md text-label-md text-on-surface">IKEJA INDUSTRIAL CORRIDOR HUB OPEN</span></div></div><div><h4 class="font-headline-sm text-headline-sm text-primary mb-space-md">CleanTech Portals</h4><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="home" href="#">Home Portal</a></li><li><a class="hover:text-primary transition-colors" data-path="products" href="#">Verified Catalog</a></li><li><a class="hover:text-primary transition-colors" data-path="lithium-builder" href="#">Lithium Pack Builder</a></li><li><a class="hover:text-primary transition-colors" data-path="solar-builder" href="#">Solar Array Calculator</a></li><li><a class="hover:text-primary transition-colors" data-path="e-bikes" href="#">Electric Mobility Units</a></li></ul></div><div><h4 class="font-headline-sm text-headline-sm text-primary mb-space-md">Technical Hub</h4><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-sm">Plot 14 Engineering Way, Ikeja Industrial Zone, Lagos, Nigeria.</p><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Lab Dispatch &amp; Diagnostic: Mon - Sat (08:00 - 18:00 WAT)</p><a class="font-headline-sm text-body-sm text-secondary hover:underline" data-path="about-and-contact" href="#">Engineering Contact &amp; Testing Desk →</a></div><div><h4 class="font-headline-sm text-headline-sm text-primary mb-space-md">Assurance &amp; Safety</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li>UN38.3 Cell Verified</li><li>BMS Active Balancing Spec</li><li>ISO 9001 Facility Audited</li><li>Direct Warranty Replacement</li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><p class="font-body-sm text-body-sm">© 2025 Emax Electronics Enterprises. All rights reserved. Clean industrial power engineering.</p><div class="flex items-center gap-space-md font-body-sm text-body-sm"><a class="hover:text-primary transition-colors" href="#">Battery Disposal Safety</a><a class="hover:text-primary transition-colors" href="#">Warranty Protocols</a><a class="hover:text-primary transition-colors" href="#">Technical Terms</a></div></div></div></footer></body></html>

@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#213244","on-primary-fixed-variant":"#2e4961","on-error-container":"#93000a","tertiary-fixed":"#ffddb9","secondary-container":"#93eefc","surface-bright":"#f8f9ff","glass-border":"rgba(255, 255, 255, 0.65)","surface-tint":"#46617a","surface-container-highest":"#d3e4fc","on-error":"#ffffff","on-primary":"#ffffff","surface-container-high":"#daeaff","on-surface":"#0b1d2e","primary-fixed":"#cde5ff","brand-deep-blue":"#0d2844","on-primary-container":"#7c98b4","inverse-on-surface":"#e9f1ff","brand-lime":"#d4f34a","on-secondary":"#ffffff","tertiary-fixed-dim":"#ffb963","brand-teal":"#087e8b","brand-navy":"#0b1d2e","on-background":"#0b1d2e","on-tertiary-container":"#cd8622","surface-container-low":"#eef4ff","primary-fixed-dim":"#adcae7","primary":"#001b2e","primary-container":"#123047","error-container":"#ffdad6","on-secondary-fixed-variant":"#004f57","secondary-fixed-dim":"#79d4e2","on-primary-fixed":"#001d32","brand-amber":"#f2a541","secondary":"#006874","surface-variant":"#d3e4fc","error":"#ba1a1a","on-tertiary-fixed-variant":"#663e00","surface-container":"#e4efff","brand-teal-hover":"#066570","secondary-fixed":"#96f0ff","brand-sky":"#3a88e9","on-tertiary-fixed":"#2b1700","tertiary-container":"#442700","tertiary":"#271500","outline-variant":"#c3c7cd","surface-dim":"#cadcf3","on-secondary-container":"#006d79","on-surface-variant":"#43474d","outline":"#73777d","inverse-primary":"#adcae7","on-secondary-fixed":"#001f24","background":"#f8f9ff","surface-container-lowest":"#ffffff","surface":"#f8f9ff","on-tertiary":"#ffffff","brand-canvas":"#f7faff"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"margin":"1.5rem","space-xl":"2rem","gutter-sm":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-2xl":"3rem","gutter":"1.5rem","margin-lg":"4rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"label-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},fontSize:{"label-sm":["0.625rem",{"lineHeight":"1.0","letterSpacing":"0.08em","fontWeight":"700"}],"headline-xl":["3.75rem",{"lineHeight":"1.12","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["1.125rem",{"lineHeight":"1.6","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"1.3","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1.4","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1.0","letterSpacing":"0.06em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.5","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"800"}],"headline-sm":["1.125rem",{"lineHeight":"1.35","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"800"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg"><div class="flex items-center gap-space-sm pb-space-lg"><div class="w-10 h-10 rounded-full bg-brand-deep-blue flex items-center justify-center text-brand-lime font-headline-sm font-bold shadow-md">E</div><div><div class="font-headline-sm text-headline-sm text-primary uppercase tracking-tight">EMAX CMS</div><div class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Electronics Enterprises</div></div></div><nav class="flex flex-col gap-space-sm" data-active-classes="bg-surface-container text-primary font-bold shadow-sm"><div class="pt-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">MAIN</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="products-inventory" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md">Products & Inventory</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="categories" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-body-md text-body-md">Categories</span></a></div></div><div class="pt-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">OPERATIONS</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="media-library" href="#"><span class="material-symbols-outlined text-[20px]">perm_media</span><span class="font-body-md text-body-md">Media Library</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="content-pages" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span class="font-body-md text-body-md">Content & Pages</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="enquiries-leads" href="#"><span class="material-symbols-outlined text-[20px]">contact_mail</span><span class="font-body-md text-body-md">Enquiries & Leads</span></a></div></div><div class="pt-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">SYSTEM & GOVERNANCE</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="staff-roles" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-body-md text-body-md">Staff & Roles</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">security</span><span class="font-body-md text-body-md">Audit Log</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></a></div></div></nav></div><div class="p-space-md m-space-md rounded-DEFAULT bg-surface-container-low flex flex-col gap-2"><div class="flex items-center justify-between"><span class="flex items-center gap-1.5 font-label-md text-label-md text-brand-navy"><span class="inline-block w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>Supabase Connected</span><span class="font-label-sm text-label-sm uppercase bg-surface-container-highest px-1.5 py-0.5 rounded-full text-brand-teal font-bold">RLS ACTIVE</span></div><div class="font-body-sm text-body-sm text-on-surface-variant truncate">PostgreSQL Pool: Healthy (Latency 14ms)</div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px]">home</span><span>/</span><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">CMS Console</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-9 pr-4 py-1.5 rounded-full outline-none focus:bg-surface-container focus:ring-0 placeholder:text-outline" placeholder="Search SKU, order ID, product name, or staff logs..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-2 bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md px-4 py-2 rounded-full transition-colors"><span class="material-symbols-outlined text-[18px]">add</span>Add Product</button><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-brand-amber"></span></button><div class="flex items-center gap-space-sm pl-space-sm bg-surface-container-low py-1 pr-3 rounded-full"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="text-left"><div class="font-label-md text-label-md text-primary leading-tight">Engr. T. Balogun</div><div class="font-label-sm text-label-sm text-on-surface-variant">Lead Admin · Ikeja Hub</div></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background p-space-lg"><div class="flex flex-col w-full gap-space-lg pb-space-2xl">
+<!-- Top Command & Action Bar -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-sm mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-brand-teal/10 text-brand-teal font-label-sm text-label-sm uppercase font-bold tracking-wider">Direct Response Ops</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-brand-lime animate-pulse"></span>
+          WhatsApp API Gateway v2.4 Live
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Enquiries & WhatsApp Lead Pipeline</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl mt-1">
+        Track, verify, and triage inbound clean-tech purchase inquiries routed from modular battery estimators, e-mobility test rides, and B2B solar tenders.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto shrink-0">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface-container transition-all shadow-sm" onclick="triggerToast('Exporting leads payload (CSV)...')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+        Export CSV
+      </button>
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md shadow-md transition-all" onclick="syncWhatsappPipeline()">
+<span class="material-symbols-outlined text-[18px]" id="sync-icon">sync</span>
+        Sync WhatsApp Status
+      </button>
+</div>
+</div>
+<!-- KPI / Metric Highlights Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total Leads MTD</span>
+<span class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">contact_page</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-primary font-bold">142</div>
+<div class="flex items-center gap-1 mt-1 font-body-sm text-body-sm text-brand-teal">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+18.4% vs prev. month</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-surface-container">
+<div class="h-full bg-brand-teal w-[72%]"></div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Today's Inbound</span>
+<span class="w-7 h-7 rounded-full bg-brand-lime/30 flex items-center justify-center text-brand-navy">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-primary font-bold">34 <span class="text-label-md text-on-surface-variant font-normal">leads</span></div>
+<div class="flex items-center gap-1 mt-1 font-body-sm text-body-sm text-brand-teal font-medium">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-brand-amber animate-ping"></span>
+<span>7 unclaimed in queue</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-surface-container">
+<div class="h-full bg-brand-lime w-[85%]"></div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Test Ride Bookings</span>
+<span class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-brand-sky">
+<span class="material-symbols-outlined text-[16px]">electric_bike</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-primary font-bold">18</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant mt-1">
+<span>Target: 10 sales/mo</span>
+<span class="font-bold text-primary">8 closed</span>
+</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1 mt-2">
+<div class="bg-brand-sky h-1 rounded-full w-[80%]"></div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Battery Builds Quoted</span>
+<span class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-brand-amber">
+<span class="material-symbols-outlined text-[16px]">battery_charging_full</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-primary font-bold">56 <span class="text-label-md text-on-surface-variant font-normal">BOMs</span></div>
+<div class="flex items-center gap-1 mt-1 font-body-sm text-body-sm text-on-surface-variant truncate">
+<span>Avg Spec: 16S 48V 280Ah</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-surface-container">
+<div class="h-full bg-brand-amber w-[65%]"></div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-brand-deep-blue text-on-primary rounded-DEFAULT p-space-md shadow-md relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-lime">WA Handoff Win Rate</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-highest/20 flex items-center justify-center text-brand-lime">
+<span class="material-symbols-outlined text-[16px]">mark_chat_read</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg font-bold text-white">24.6%</div>
+<div class="flex items-center gap-1 mt-1 font-body-sm text-body-sm text-surface-container-highest">
+<span class="text-brand-lime font-bold">₦48.2M</span> closed revenue MTD
+        </div>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-brand-sky/10 pointer-events-none"></div>
+</div>
+</div>
+<!-- Operational Control & Filter Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm items-center">
+<!-- Search -->
+<div class="md:col-span-5 relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-10 pr-4 py-2 rounded-full outline-none focus:bg-surface-container transition-all placeholder:text-outline" id="lead-search" onkeyup="filterLeads()" placeholder="Filter by customer name, +234 WhatsApp, city, or Lead ID..." type="text"/>
+</div>
+<!-- Filter: Source -->
+<div class="md:col-span-3">
+<select class="w-full bg-surface-container-low text-on-surface font-label-md text-label-md px-3 py-2.5 rounded-full outline-none focus:bg-surface-container transition-all cursor-pointer" id="filter-source" onchange="filterLeads()">
+<option value="ALL">Channel Source: All Inbound</option>
+<option value="BATTERY">Battery Pack Builder BOM</option>
+<option value="EBIKE">E-Bike Test Ride Booking</option>
+<option value="SOLAR">Solar Sizer Load Specs</option>
+<option value="SKU">Direct Product SKU Inquiry</option>
+<option value="WHOLESALE">Wholesale / EPC Commercial</option>
+</select>
+</div>
+<!-- Filter: Status -->
+<div class="md:col-span-2">
+<select class="w-full bg-surface-container-low text-on-surface font-label-md text-label-md px-3 py-2.5 rounded-full outline-none focus:bg-surface-container transition-all cursor-pointer" id="filter-status" onchange="filterLeads()">
+<option value="ALL">Status: All Statuses</option>
+<option value="NEW">New - WhatsApp Sent</option>
+<option value="REVIEW">Technical Review</option>
+<option value="PAID">Order Paid / Dispatch</option>
+<option value="FOLLOWUP">Follow-up Scheduled</option>
+</select>
+</div>
+<!-- Filter: Assigned Staff -->
+<div class="md:col-span-2">
+<select class="w-full bg-surface-container-low text-on-surface font-label-md text-label-md px-3 py-2.5 rounded-full outline-none focus:bg-surface-container transition-all cursor-pointer" id="filter-staff" onchange="filterLeads()">
+<option value="ALL">Assignee: All Team</option>
+<option value="BALOGUN">Engr. T. Balogun</option>
+<option value="ADELEKE">A. Adeleke</option>
+<option value="UNASSIGNED">Unassigned Queue</option>
+</select>
+</div>
+</div>
+<!-- Active Filter Tags / Fast Pill Filters -->
+<div class="flex items-center gap-2 overflow-x-auto text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-outline uppercase tracking-wider">Fast Triage:</span>
+<button class="px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-primary flex items-center gap-1 transition-all" onclick="setFastFilter('UNCLAIMED')">
+<span class="w-2 h-2 rounded-full bg-brand-amber"></span>
+        Unclaimed Inbound (7)
+      </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-primary flex items-center gap-1 transition-all" onclick="setFastFilter('HIGH_VALUE')">
+<span class="material-symbols-outlined text-[14px] text-brand-teal">payments</span>
+        High Value (>₦2,000,000)
+      </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-primary flex items-center gap-1 transition-all" onclick="setFastFilter('TEST_RIDE_TODAY')">
+<span class="material-symbols-outlined text-[14px] text-brand-sky">calendar_today</span>
+        Test Rides Today (3)
+      </button>
+<button class="text-error hover:underline ml-auto font-label-sm uppercase cursor-pointer" onclick="resetFilters()">
+        Reset Filters
+      </button>
+</div>
+</div>
+<!-- Pipeline Lead Matrix Table -->
+<div class="bg-surface-container-lowest rounded-DEFAULT shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="leads-table">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-space-md">Lead / Customer</th>
+<th class="py-3.5 px-space-md">Source Intent & Technical Scope</th>
+<th class="py-3.5 px-space-md">Est. Deal Value</th>
+<th class="py-3.5 px-space-md">Assigned Engineer</th>
+<th class="py-3.5 px-space-md">Status</th>
+<th class="py-3.5 px-space-md">Time Logged</th>
+<th class="py-3.5 px-space-md text-right">Instant Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-md font-body-md text-on-surface" id="lead-rows-container">
+<!-- Row 1: Battery BOM (High ticket) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors lead-row" data-search="babatunde adeleke ikeja lead-1082 2348034567890 lithium battery 48v 280ah" data-source="BATTERY" data-staff="BALOGUN" data-status="REVIEW" data-val="1683500">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-brand-deep-blue text-brand-lime flex items-center justify-center font-bold text-label-md shrink-0">
+                  BA
+                </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary">Engr. Babatunde A.</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-mono">#LEAD-1082</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="flex items-center gap-0.5 text-brand-teal font-medium">
+<span class="material-symbols-outlined text-[14px]">call</span>
+                      +234 803 456 7890
+                    </span>
+<span>•</span>
+<span class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Ikeja GRA, Lagos
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md max-w-xs">
+<div class="flex items-center gap-1.5 text-primary font-bold text-body-md">
+<span class="material-symbols-outlined text-brand-amber text-[18px]">battery_charging_full</span>
+                Lithium Battery Pack Builder
+              </div>
+<div class="text-body-sm text-on-surface-variant truncate mt-0.5">
+                48V 280Ah (14.3 kWh) · 16S EVE Grade-A LF280K cells + JBD Smart 200A BMS
+              </div>
+<button class="text-brand-teal hover:underline font-label-sm text-label-sm mt-1 flex items-center gap-0.5" onclick="openBomModal('1082')">
+<span class="material-symbols-outlined text-[13px]">view_in_ar</span> View Technical BOM
+              </button>
+</td>
+<td class="py-4 px-space-md">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">₦1,683,500</div>
+<span class="font-label-sm text-label-sm text-brand-teal font-bold bg-brand-teal/10 px-1.5 py-0.2 rounded">14.3 kWh CAPEX</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary text-[10px] flex items-center justify-center font-bold">TB</div>
+<div>
+<div class="font-label-md text-label-md text-primary">Engr. T. Balogun</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Lead Battery Engineer</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-brand-sky/15 text-primary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-sky animate-ping"></span>
+                Technical Review
+              </span>
+</td>
+<td class="py-4 px-space-md">
+<div class="font-body-sm text-body-sm text-primary font-medium">Today, 10:24 AM</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">22 mins ago</div>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<a class="p-2 rounded-full bg-surface-container-low hover:bg-brand-lime/40 text-brand-navy transition-all" href="https://wa.me/2348034567890?text=Hello%20Engr.%20Babatunde,%20this%20is%20Engr.%20Balogun%20from%20Emax%20Electronics.%20Reviewing%20your%20custom%2048V%20280Ah%20BOM%20quote..." target="_blank" title="Chat on WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-2 rounded-full bg-surface-container-low hover:bg-brand-teal hover:text-on-primary text-on-surface-variant transition-all" onclick="updateLeadStatus('1082', 'PAID')" title="Mark as Converted">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</button>
+<button class="p-2 rounded-full bg-surface-container-low hover:bg-error-container hover:text-error text-on-surface-variant transition-all" onclick="archiveLead('1082')" title="Archive / Close">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: E-Bike Test Ride Request -->
+<tr class="hover:bg-surface-container-low/60 transition-colors lead-row" data-search="chinedu okonkwo lekki lead-1081 2348123456789 e-bike test ride veloflow 750w commuter" data-source="EBIKE" data-staff="ADELEKE" data-status="NEW" data-val="680000">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-label-md shrink-0">
+                  CO
+                </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary">Chinedu Okonkwo</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-mono">#LEAD-1081</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="flex items-center gap-0.5 text-brand-teal font-medium">
+<span class="material-symbols-outlined text-[14px]">call</span>
+                      +234 812 345 6789
+                    </span>
+<span>•</span>
+<span class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Lekki Phase 1, Lagos
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md max-w-xs">
+<div class="flex items-center gap-1.5 text-primary font-bold text-body-md">
+<span class="material-symbols-outlined text-brand-sky text-[18px]">electric_bike</span>
+                E-Bike Test Ride Request
+              </div>
+<div class="text-body-sm text-on-surface-variant truncate mt-0.5">
+                VeloFlow Urban 750W (48V 17.5Ah LG Cells, Hydraulic Brakes)
+              </div>
+<div class="font-label-sm text-label-sm text-brand-sky font-bold mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">event</span> Slot: Today, 3:30 PM (Lekki Track)
+              </div>
+</td>
+<td class="py-4 px-space-md">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">₦680,000</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-1.5 py-0.2 rounded">MSRP Retail</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-brand-teal text-white text-[10px] flex items-center justify-center font-bold">AA</div>
+<div>
+<div class="font-label-md text-label-md text-primary">A. Adeleke</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Mobility Lead</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-brand-lime/30 text-brand-navy font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>
+                New - WhatsApp Sent
+              </span>
+</td>
+<td class="py-4 px-space-md">
+<div class="font-body-sm text-body-sm text-primary font-medium">Today, 08:45 AM</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">2h 10m ago</div>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<a class="p-2 rounded-full bg-surface-container-low hover:bg-brand-lime/40 text-brand-navy transition-all" href="https://wa.me/2348123456789?text=Hi%20Chinedu,%20confirming%20your%20VeloFlow%20750W%20test%20ride%20at%20Emax%20Lekki%20Hub%20for%203:30%20PM%20today..." target="_blank" title="Chat on WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-2 rounded-full bg-surface-container-low hover:bg-brand-teal hover:text-on-primary text-on-surface-variant transition-all" onclick="updateLeadStatus('1081', 'PAID')" title="Mark as Converted">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</button>
+<button class="p-2 rounded-full bg-surface-container-low hover:bg-error-container hover:text-error text-on-surface-variant transition-all" onclick="archiveLead('1081')" title="Archive / Close">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Commercial Solar Sizer System -->
+<tr class="hover:bg-surface-container-low/60 transition-colors lead-row" data-search="dr amina yusuf victoria island lead-1080 2348021112233 solar sizer 10.95 kwh commercial hospital inverter" data-source="SOLAR" data-staff="BALOGUN" data-status="REVIEW" data-val="3850000">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container text-primary flex items-center justify-center font-bold text-label-md shrink-0">
+                  AY
+                </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary">Dr. Amina Yusuf</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-mono">#LEAD-1080</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="flex items-center gap-0.5 text-brand-teal font-medium">
+<span class="material-symbols-outlined text-[14px]">call</span>
+                      +234 802 111 2233
+                    </span>
+<span>•</span>
+<span class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Victoria Island, Lagos
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md max-w-xs">
+<div class="flex items-center gap-1.5 text-primary font-bold text-body-md">
+<span class="material-symbols-outlined text-brand-teal text-[18px]">solar_power</span>
+                Solar Sizer: Diagnostic Clinic
+              </div>
+<div class="text-body-sm text-on-surface-variant truncate mt-0.5">
+                Daily Demand: 10.95 kWh/day · 10kVA Deye Hybrid + 20.4kWh Wallmount LiFePO4
+              </div>
+<button class="text-brand-teal hover:underline font-label-sm text-label-sm mt-1 flex items-center gap-0.5" onclick="openSolarModal('1080')">
+<span class="material-symbols-outlined text-[13px]">query_stats</span> View Load Calculation Sheet
+              </button>
+</td>
+<td class="py-4 px-space-md">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">₦3,850,000</div>
+<span class="font-label-sm text-label-sm text-brand-lime font-bold bg-brand-navy px-1.5 py-0.2 rounded">Full EPC Kit</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary text-[10px] flex items-center justify-center font-bold">TB</div>
+<div>
+<div class="font-label-md text-label-md text-primary">Engr. T. Balogun</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Lead Battery Engineer</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-navy"></span>
+                Follow-up Scheduled
+              </span>
+</td>
+<td class="py-4 px-space-md">
+<div class="font-body-sm text-body-sm text-primary font-medium">Yesterday, 4:12 PM</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Site Audit Pending</div>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<a class="p-2 rounded-full bg-surface-container-low hover:bg-brand-lime/40 text-brand-navy transition-all" href="https://wa.me/2348021112233?text=Good%20day%20Dr.%20Amina,%20sharing%20the%2010.95%20kWh%20solar%20load%20audit%20and%20inverter%20sizing%20summary..." target="_blank" title="Chat on WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-2 rounded-full bg-surface-container-low hover:bg-brand-teal hover:text-on-primary text-on-surface-variant transition-all" onclick="updateLeadStatus('1080', 'PAID')" title="Mark as Converted">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</button>
+<button class="p-2 rounded-full bg-surface-container-low hover:bg-error-container hover:text-error text-on-surface-variant transition-all" onclick="archiveLead('1080')" title="Archive / Close">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Direct SKU Inquiry (Wholesale Cell Order) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors lead-row" data-search="femtech solar solutions ibadan lead-1079 2348059998877 eve lf280k 16x cells sku inquiry" data-source="SKU" data-staff="ADELEKE" data-status="PAID" data-val="1576000">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-bold text-label-md shrink-0">
+                  FS
+                </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary">Femtech Solar Installers</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-mono">#LEAD-1079</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="flex items-center gap-0.5 text-brand-teal font-medium">
+<span class="material-symbols-outlined text-[14px]">call</span>
+                      +234 805 999 8877
+                    </span>
+<span>•</span>
+<span class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Bodija, Ibadan
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md max-w-xs">
+<div class="flex items-center gap-1.5 text-primary font-bold text-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px]">inventory_2</span>
+                SKU: EVE LF280K Grade-A x16 Box
+              </div>
+<div class="text-body-sm text-on-surface-variant truncate mt-0.5">
+                Matched 3.2V 6000 cycles cells + flexible pure copper busbars
+              </div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">
+                Warehouse Pickup: Ikeja Central Hub
+              </div>
+</td>
+<td class="py-4 px-space-md">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">₦1,576,000</div>
+<span class="font-label-sm text-label-sm text-brand-teal font-bold bg-brand-teal/10 px-1.5 py-0.2 rounded">Wholesale Tier 2</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-brand-teal text-white text-[10px] flex items-center justify-center font-bold">AA</div>
+<div>
+<div class="font-label-md text-label-md text-primary">A. Adeleke</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Mobility & Parts</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-800 font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                Order Paid / Awaiting Dispatch
+              </span>
+</td>
+<td class="py-4 px-space-md">
+<div class="font-body-sm text-body-sm text-primary font-medium">Yesterday, 11:05 AM</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Waybill Generated</div>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<a class="p-2 rounded-full bg-surface-container-low hover:bg-brand-lime/40 text-brand-navy transition-all" href="https://wa.me/2348059998877?text=Femtech%20Solar,%20your%2016-cell%20EVE%20batch%20is%20sorted%20for%20pickup%20in%20Ikeja..." target="_blank" title="Chat on WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all" onclick="triggerToast('Invoice #INV-9902 already confirmed')" title="Invoice Logged">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+<button class="p-2 rounded-full bg-surface-container-low hover:bg-error-container hover:text-error text-on-surface-variant transition-all" onclick="archiveLead('1079')" title="Archive / Close">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Unassigned New Lead -->
+<tr class="hover:bg-surface-container-low/60 transition-colors lead-row" data-search="chief emeka nwosu abuja lead-1078 2348098877665 48v 300ah lithium battery pack custom solar" data-source="BATTERY" data-staff="UNASSIGNED" data-status="NEW" data-val="2450000">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-brand-amber/20 text-brand-amber flex items-center justify-center font-bold text-label-md shrink-0">
+                  EN
+                </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary">Chief Emeka Nwosu</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-mono">#LEAD-1078</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="flex items-center gap-0.5 text-brand-teal font-medium">
+<span class="material-symbols-outlined text-[14px]">call</span>
+                      +234 809 887 7665
+                    </span>
+<span>•</span>
+<span class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                      Asokoro, Abuja
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md max-w-xs">
+<div class="flex items-center gap-1.5 text-primary font-bold text-body-md">
+<span class="material-symbols-outlined text-brand-amber text-[18px]">battery_charging_full</span>
+                Lithium Battery Pack Builder
+              </div>
+<div class="text-body-sm text-on-surface-variant truncate mt-0.5">
+                48V 314Ah (16 kWh) High-capacity CATL prismatic + Seplos Mason v3 Enclosure
+              </div>
+<button class="text-brand-teal hover:underline font-label-sm text-label-sm mt-1 flex items-center gap-0.5" onclick="openBomModal('1078')">
+<span class="material-symbols-outlined text-[13px]">view_in_ar</span> View Technical BOM
+              </button>
+</td>
+<td class="py-4 px-space-md">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">₦2,450,000</div>
+<span class="font-label-sm text-label-sm text-brand-amber font-bold bg-brand-amber/15 px-1.5 py-0.2 rounded">Custom Server Rack</span>
+</td>
+<td class="py-4 px-space-md">
+<button class="px-3 py-1.5 rounded-full bg-brand-lime hover:bg-brand-lime/80 text-brand-navy font-label-sm text-label-sm font-bold shadow-sm transition-all flex items-center gap-1" onclick="claimLead('1078')">
+<span class="material-symbols-outlined text-[14px]">person_add</span> Claim Lead
+              </button>
+</td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-brand-amber/20 text-on-surface font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-amber"></span>
+                New - WhatsApp Sent
+              </span>
+</td>
+<td class="py-4 px-space-md">
+<div class="font-body-sm text-body-sm text-primary font-medium">Yesterday, 9:20 AM</div>
+<div class="font-label-sm text-label-sm text-error font-medium">Awaiting Triage</div>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<a class="p-2 rounded-full bg-surface-container-low hover:bg-brand-lime/40 text-brand-navy transition-all" href="https://wa.me/2348098877665?text=Hello%20Chief%20Nwosu,%20reaching%20out%20from%20Emax%20Technical%20Team%20regarding%20your%2016kWh%20CATL%20build..." target="_blank" title="Chat on WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-2 rounded-full bg-surface-container-low hover:bg-brand-teal hover:text-on-primary text-on-surface-variant transition-all" onclick="updateLeadStatus('1078', 'PAID')" title="Mark as Converted">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</button>
+<button class="p-2 rounded-full bg-surface-container-low hover:bg-error-container hover:text-error text-on-surface-variant transition-all" onclick="archiveLead('1078')" title="Archive / Close">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Empty State (hidden by default) -->
+<div class="hidden py-16 px-4 text-center flex flex-col items-center justify-center" id="no-leads-state">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant mb-2">
+<span class="material-symbols-outlined text-[24px]">filter_list_off</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-primary">No Matching Inquiries Found</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-1">
+        Try clearing your query or switching source channels to view other entries in the pipeline.
+      </p>
+<button class="mt-4 px-4 py-2 rounded-full bg-brand-teal text-white font-label-md text-label-md" onclick="resetFilters()">
+        Reset All Filters
+      </button>
+</div>
+<!-- Table Pagination & Matrix Footer -->
+<div class="p-space-md bg-surface-container-low/50 flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+        Showing <span class="font-bold text-on-surface" id="visible-count">5</span> of 142 total MTD enquiries
+      </div>
+<div class="flex items-center gap-1 font-label-md text-label-md">
+<button class="px-3 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all disabled:opacity-50" disabled="">
+          Prev
+        </button>
+<button class="px-3 py-1 rounded bg-primary text-white">1</button>
+<button class="px-3 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all">2</button>
+<button class="px-3 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all">3</button>
+<button class="px-3 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all">
+          Next
+        </button>
+</div>
+</div>
+</div>
+<!-- Bottom Workspace: Technical Context & Sizing Visualizer -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- WhatsApp Direct Link Automator -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-brand-lime flex items-center justify-center text-brand-navy">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">WhatsApp Prefilled Payload Generator</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Compose live technical responses with preloaded specs</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant font-mono">WA-DIRECT</span>
+</div>
+<div class="space-y-space-sm mt-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Target Phone (+234 E.164 standard)</label>
+<input class="w-full bg-surface-container-low text-primary font-body-md text-body-md px-3 py-2 rounded-xl outline-none" id="wa-phone" type="text" value="+234 803 456 7890"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Template Preset</label>
+<select class="w-full bg-surface-container-low text-primary font-body-md text-body-md px-3 py-2 rounded-xl outline-none" id="wa-template-select" onchange="applyWaTemplate()">
+<option value="BOM_READY">Battery BOM Verified & Ready for Assembly</option>
+<option value="TEST_RIDE">E-Bike Test Ride Confirmation (Lekki Hub)</option>
+<option value="SOLAR_AUDIT">Solar Sizer Estimate & Inverter Compatibility</option>
+<option value="DISPATCH">Waybill & Logistics Tracking Information</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Live Message Buffer</label>
+<textarea class="w-full bg-surface-container-low text-primary font-body-md text-body-md p-3 rounded-xl outline-none resize-none" id="wa-message-buffer" rows="3">Hello Engr. Babatunde Adeleke, our battery lab has verified your 48V 280Ah 16S configuration. All Grade-A EVE LF280K cells are tested with <0.18mΩ internal resistance. Ready for immediate assembly and delivery.</textarea>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-brand-teal flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          Verified WhatsApp Business Profile Link
+        </span>
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md transition-all shadow-sm" onclick="dispatchLiveWa()">
+<span>Open Chat Deep Link</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Battery Builder / Solar Sizer Inbound Telemetry Visualizer -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Inbound Intent Breakdown</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time demand metrics across clean tech categories</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-brand-lime/20 text-brand-navy font-bold px-2 py-0.5 rounded">30 DAYS</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-md">
+<div class="p-space-sm bg-surface-container-low rounded-xl">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Battery Pack Builder</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold mt-1">56 Quotes</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-2">
+<div class="bg-brand-amber h-1.5 rounded-full w-[65%]"></div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">62% 48V 280Ah configuration</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Solar Load Sizer</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold mt-1">42 Inquiries</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-2">
+<div class="bg-brand-teal h-1.5 rounded-full w-[48%]"></div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Avg 8.4 kWh/day residential</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">E-Mobility Commuters</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold mt-1">28 Bookings</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-2">
+<div class="bg-brand-sky h-1.5 rounded-full w-[35%]"></div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">VeloFlow 750W (84% choice)</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Direct Wholesale SKU</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold mt-1">16 Requests</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-2">
+<div class="bg-primary h-1.5 rounded-full w-[22%]"></div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">EVE 280K & Seplos Cases</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-brand-teal">security</span>
+          All phone numbers verified through WhatsApp API
+        </span>
+<span class="font-label-sm text-label-sm font-mono text-outline">LATENCY: 18ms</span>
+</div>
+</div>
+</div>
+<!-- Modal / Drawer: Technical BOM Inspector (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm hidden flex items-center justify-center p-4" id="bom-modal">
+<div class="bg-surface-container-lowest rounded-lg max-w-2xl w-full shadow-2xl overflow-hidden flex flex-col max-h-[921px]">
+<!-- Modal Header -->
+<div class="p-space-md bg-brand-deep-blue text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-lime text-[22px]">view_in_ar</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-white">Custom Battery Sizing BOM: #LEAD-1082</h4>
+<div class="font-body-sm text-body-sm text-surface-container-highest">Client: Engr. Babatunde Adeleke · Ikeja GRA</div>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center" onclick="closeBomModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Modal Content: Technical Specs -->
+<div class="p-space-lg overflow-y-auto space-y-space-md">
+<div class="grid grid-cols-3 gap-space-sm bg-surface-container-low p-space-md rounded-DEFAULT">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nominal Spec</span>
+<div class="font-headline-sm text-headline-sm text-primary font-bold mt-0.5">51.2V · 280Ah</div>
+<div class="font-body-sm text-body-sm text-brand-teal">14.33 kWh Total Storage</div>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Cell Topography</span>
+<div class="font-headline-sm text-headline-sm text-primary font-bold mt-0.5">16S1P (16 Cells)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Prismatic LiFePO4</div>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Max Continuous Disch.</span>
+<div class="font-headline-sm text-headline-sm text-primary font-bold mt-0.5">200A (10.2 kW)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Peak 350A (10s)</div>
+</div>
+</div>
+<div>
+<div class="font-label-md text-label-md text-primary uppercase tracking-wider mb-2">Itemized Assembly Bill of Materials</div>
+<table class="w-full text-left font-body-sm text-body-sm border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<th class="p-2">Item / Component</th>
+<th class="p-2">Grade / Brand</th>
+<th class="p-2 text-center">Qty</th>
+<th class="p-2 text-right">Unit Subtotal</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr>
+<td class="p-2 font-medium text-primary">EVE LF280K 3.2V 280Ah Prismatic Cells</td>
+<td class="p-2 text-on-surface-variant">Grade-A QR Verified, matched IR</td>
+<td class="p-2 text-center">16</td>
+<td class="p-2 text-right font-bold text-primary">₦1,248,000</td>
+</tr>
+<tr>
+<td class="p-2 font-medium text-primary">JBD Smart Active Balance BMS (200A Bluetooth)</td>
+<td class="p-2 text-on-surface-variant">UART/RS485 Dual Port, 2A Active Balancer</td>
+<td class="p-2 text-center">1</td>
+<td class="p-2 text-right font-bold text-primary">₦145,000</td>
+</tr>
+<tr>
+<td class="p-2 font-medium text-primary">Laser-Welded Flexible Copper Busbars</td>
+<td class="p-2 text-on-surface-variant">300A Nickel-plated pure copper</td>
+<td class="p-2 text-center">15</td>
+<td class="p-2 text-right font-bold text-primary">₦67,500</td>
+</tr>
+<tr>
+<td class="p-2 font-medium text-primary">16S Epoxy Insulation Dividers + FR4 Sheets</td>
+<td class="p-2 text-on-surface-variant">Class-H Flame Retardant</td>
+<td class="p-2 text-center">1 set</td>
+<td class="p-2 text-right font-bold text-primary">₦28,000</td>
+</tr>
+<tr>
+<td class="p-2 font-medium text-primary">Heavy-Gauge Steel Enclosure with Handles</td>
+<td class="p-2 text-on-surface-variant">Powder-coated Matte Navy, Emax Laser Stamped</td>
+<td class="p-2 text-center">1</td>
+<td class="p-2 text-right font-bold text-primary">₦110,000</td>
+</tr>
+<tr>
+<td class="p-2 font-medium text-primary">Lab Assembly, Stress Balancing & QC Signoff</td>
+<td class="p-2 text-on-surface-variant">48-Hour Full Cycle Capacity Test Report</td>
+<td class="p-2 text-center">1</td>
+<td class="p-2 text-right font-bold text-primary">₦85,000</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="bg-surface-container-low font-bold text-body-md text-primary">
+<td class="p-2 text-right" colspan="3">Total Quoted Configuration Value:</td>
+<td class="p-2 text-right text-brand-teal text-headline-sm">₦1,683,500</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-teal text-[20px]">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface">Includes 3-Year Emax Replacement Warranty & Inverter Comms Protocol Matching.</span>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-bold flex items-center gap-1" onclick="triggerToast('Specs exported to PDF successfully')">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span> PDF Spec
+          </button>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all" onclick="closeBomModal()">
+          Close Preview
+        </button>
+<div class="flex items-center gap-2">
+<a class="px-4 py-2 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-white font-label-md text-label-md transition-all flex items-center gap-1" href="https://wa.me/2348034567890?text=Engr.%20Babatunde,%20attaching%20your%20verified%2048V%20280Ah%20BOM%20specs%20for%20signoff..." target="_blank">
+<span class="material-symbols-outlined text-[16px]">send</span>
+            Forward BOM via WhatsApp
+          </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal / Drawer: Solar Sizer Calculation Inspector (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm hidden flex items-center justify-center p-4" id="solar-modal">
+<div class="bg-surface-container-lowest rounded-lg max-w-2xl w-full shadow-2xl overflow-hidden flex flex-col max-h-[921px]">
+<div class="p-space-md bg-primary text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-lime text-[22px]">solar_power</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-white">Solar Sizer Load Sheet: #LEAD-1080</h4>
+<div class="font-body-sm text-body-sm text-surface-container-highest">Client: Dr. Amina Yusuf · Diagnostic Clinic (VI, Lagos)</div>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center" onclick="closeSolarModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="p-space-lg overflow-y-auto space-y-space-md">
+<div class="grid grid-cols-3 gap-space-sm bg-surface-container-low p-space-md rounded-DEFAULT">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Daily Energy Consumption</span>
+<div class="font-headline-sm text-headline-sm text-primary font-bold mt-0.5">10.95 kWh/day</div>
+<div class="font-body-sm text-body-sm text-brand-teal">Day Peak: 1.45 kW</div>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Proposed Inverter</span>
+<div class="font-headline-sm text-headline-sm text-primary font-bold mt-0.5">Deye 10kVA Hybrid</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Dual MPPT / Generator Port</div>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Battery Storage</span>
+<div class="font-headline-sm text-headline-sm text-primary font-bold mt-0.5">20.4 kWh LiFePO4</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">1.5 Days Autonomy</div>
+</div>
+</div>
+<div>
+<div class="font-label-md text-label-md text-primary uppercase tracking-wider mb-2">Simulated Appliance Loads</div>
+<div class="space-y-2 font-body-sm text-body-sm">
+<div class="p-2 bg-surface-container-low rounded-lg flex items-center justify-between">
+<span>Medical Centrifuge + Blood Analyzer (450W · 6 hrs)</span>
+<span class="font-bold text-primary">2.70 kWh/day</span>
+</div>
+<div class="p-2 bg-surface-container-low rounded-lg flex items-center justify-between">
+<span>Vaccine Refrigerator (Inverter Compressor · 24 hrs)</span>
+<span class="font-bold text-primary">1.80 kWh/day</span>
+</div>
+<div class="p-2 bg-surface-container-low rounded-lg flex items-center justify-between">
+<span>Diagnostic Ultrasound System (350W · 4 hrs)</span>
+<span class="font-bold text-primary">1.40 kWh/day</span>
+</div>
+<div class="p-2 bg-surface-container-low rounded-lg flex items-center justify-between">
+<span>Lighting & Administrative Computers (500W · 8 hrs)</span>
+<span class="font-bold text-primary">4.00 kWh/day</span>
+</div>
+<div class="p-2 bg-surface-container-low rounded-lg flex items-center justify-between">
+<span>Safety Inverter Overhead & Loss Factor (10%)</span>
+<span class="font-bold text-primary">1.05 kWh/day</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all" onclick="closeSolarModal()">
+          Close Sheet
+        </button>
+<button class="px-4 py-2 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-white font-label-md text-label-md transition-all flex items-center gap-1" onclick="triggerToast('Solar quote dispatched to +234 802 111 2233')">
+<span class="material-symbols-outlined text-[16px]">send</span>
+          Send Formal Quote
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Element -->
+<div class="fixed bottom-6 right-6 z-50 bg-brand-deep-blue text-on-primary px-4 py-3 rounded-xl shadow-xl flex items-center gap-2 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast">
+<span class="material-symbols-outlined text-brand-lime text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-body-md text-body-md" id="toast-message">Action processed</span>
+</div>
+</div>
+<script>
+  // Filter and search handling
+  function filterLeads() {
+    const searchVal = document.getElementById('lead-search').value.toLowerCase().trim();
+    const sourceVal = document.getElementById('filter-source').value;
+    const statusVal = document.getElementById('filter-status').value;
+    const staffVal = document.getElementById('filter-staff').value;
+
+    const rows = document.querySelectorAll('.lead-row');
+    let visibleCount = 0;
+
+    rows.forEach(row => {
+      const rowSearch = row.getAttribute('data-search') || '';
+      const rowSource = row.getAttribute('data-source') || '';
+      const rowStatus = row.getAttribute('data-status') || '';
+      const rowStaff = row.getAttribute('data-staff') || '';
+
+      const matchSearch = !searchVal || rowSearch.includes(searchVal);
+      const matchSource = (sourceVal === 'ALL') || (rowSource === sourceVal);
+      const matchStatus = (statusVal === 'ALL') || (rowStatus === statusVal);
+      const matchStaff = (staffVal === 'ALL') || (rowStaff === staffVal);
+
+      if (matchSearch && matchSource && matchStatus && matchStaff) {
+        row.style.display = '';
+        visibleCount++;
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    document.getElementById('visible-count').innerText = visibleCount;
+    const noLeadsState = document.getElementById('no-leads-state');
+    if (visibleCount === 0) {
+      noLeadsState.classList.remove('hidden');
+    } else {
+      noLeadsState.classList.add('hidden');
+    }
+  }
+
+  function setFastFilter(type) {
+    resetFilters();
+    if (type === 'UNCLAIMED') {
+      document.getElementById('filter-staff').value = 'UNASSIGNED';
+    } else if (type === 'HIGH_VALUE') {
+      document.getElementById('lead-search').value = '48V';
+    } else if (type === 'TEST_RIDE_TODAY') {
+      document.getElementById('filter-source').value = 'EBIKE';
+    }
+    filterLeads();
+  }
+
+  function resetFilters() {
+    document.getElementById('lead-search').value = '';
+    document.getElementById('filter-source').value = 'ALL';
+    document.getElementById('filter-status').value = 'ALL';
+    document.getElementById('filter-staff').value = 'ALL';
+    filterLeads();
+  }
+
+  // Modals
+  function openBomModal(leadId) {
+    document.getElementById('bom-modal').classList.remove('hidden');
+  }
+
+  function closeBomModal() {
+    document.getElementById('bom-modal').classList.add('hidden');
+  }
+
+  function openSolarModal(leadId) {
+    document.getElementById('solar-modal').classList.remove('hidden');
+  }
+
+  function closeSolarModal() {
+    document.getElementById('solar-modal').classList.add('hidden');
+  }
+
+  // Lead actions
+  function updateLeadStatus(id, newStatus) {
+    triggerToast(`Lead #${id} marked as Converted (Order Created)`);
+  }
+
+  function archiveLead(id) {
+    triggerToast(`Lead #${id} archived from active triage queue.`);
+    const rows = document.querySelectorAll('.lead-row');
+    rows.forEach(r => {
+      if (r.getAttribute('data-search').includes(id.toLowerCase())) {
+        r.style.opacity = '0.3';
+      }
+    });
+  }
+
+  function claimLead(id) {
+    triggerToast(`Lead #${id} claimed by Engr. T. Balogun`);
+  }
+
+  // Sync WhatsApp
+  function syncWhatsappPipeline() {
+    const icon = document.getElementById('sync-icon');
+    icon.classList.add('animate-spin');
+    setTimeout(() => {
+      icon.classList.remove('animate-spin');
+      triggerToast('WhatsApp status refreshed: 4 new customer replies received.');
+    }, 900);
+  }
+
+  // WhatsApp Message Buffer
+  function applyWaTemplate() {
+    const val = document.getElementById('wa-template-select').value;
+    const buffer = document.getElementById('wa-message-buffer');
+    if (val === 'BOM_READY') {
+      buffer.value = "Hello! Our engineering team has evaluated your custom battery specifications. All cells are matched Grade-A with guaranteed test curves. Ready to finalize dispatch.";
+    } else if (val === 'TEST_RIDE') {
+      buffer.value = "Greetings from Emax Mobility. Your VeloFlow 750W e-bike is charged and ready for your test ride at the Lekki track today. See you at the hub!";
+    } else if (val === 'SOLAR_AUDIT') {
+      buffer.value = "Good day! Your commercial solar load sheet has been calculated by our lead engineer. Your 10kVA hybrid configuration is ready for review.";
+    } else if (val === 'DISPATCH') {
+      buffer.value = "Your order has been tested and packaged. Tracking Waybill: EMAX-LG-8890. Delivery dispatch in progress.";
+    }
+  }
+
+  function dispatchLiveWa() {
+    const phone = document.getElementById('wa-phone').value.replace(/[^0-9]/g, '');
+    const msg = encodeURIComponent(document.getElementById('wa-message-buffer').value);
+    window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
+  }
+
+  // Toast notification
+  function triggerToast(message) {
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-message');
+    toastMsg.innerText = message;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 3200);
+  }
+</script></main></div></body></html>

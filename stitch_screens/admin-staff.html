@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#213244","on-primary-fixed-variant":"#2e4961","on-error-container":"#93000a","tertiary-fixed":"#ffddb9","secondary-container":"#93eefc","surface-bright":"#f8f9ff","glass-border":"rgba(255, 255, 255, 0.65)","surface-tint":"#46617a","surface-container-highest":"#d3e4fc","on-error":"#ffffff","on-primary":"#ffffff","surface-container-high":"#daeaff","on-surface":"#0b1d2e","primary-fixed":"#cde5ff","brand-deep-blue":"#0d2844","on-primary-container":"#7c98b4","inverse-on-surface":"#e9f1ff","brand-lime":"#d4f34a","on-secondary":"#ffffff","tertiary-fixed-dim":"#ffb963","brand-teal":"#087e8b","brand-navy":"#0b1d2e","on-background":"#0b1d2e","on-tertiary-container":"#cd8622","surface-container-low":"#eef4ff","primary-fixed-dim":"#adcae7","primary":"#001b2e","primary-container":"#123047","error-container":"#ffdad6","on-secondary-fixed-variant":"#004f57","secondary-fixed-dim":"#79d4e2","on-primary-fixed":"#001d32","brand-amber":"#f2a541","secondary":"#006874","surface-variant":"#d3e4fc","error":"#ba1a1a","on-tertiary-fixed-variant":"#663e00","surface-container":"#e4efff","brand-teal-hover":"#066570","secondary-fixed":"#96f0ff","brand-sky":"#3a88e9","on-tertiary-fixed":"#2b1700","tertiary-container":"#442700","tertiary":"#271500","outline-variant":"#c3c7cd","surface-dim":"#cadcf3","on-secondary-container":"#006d79","on-surface-variant":"#43474d","outline":"#73777d","inverse-primary":"#adcae7","on-secondary-fixed":"#001f24","background":"#f8f9ff","surface-container-lowest":"#ffffff","surface":"#f8f9ff","on-tertiary":"#ffffff","brand-canvas":"#f7faff"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"margin":"1.5rem","space-xl":"2rem","gutter-sm":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-2xl":"3rem","gutter":"1.5rem","margin-lg":"4rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"label-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},fontSize:{"label-sm":["0.625rem",{"lineHeight":"1.0","letterSpacing":"0.08em","fontWeight":"700"}],"headline-xl":["3.75rem",{"lineHeight":"1.12","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["1.125rem",{"lineHeight":"1.6","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"1.3","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1.4","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1.0","letterSpacing":"0.06em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.5","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"800"}],"headline-sm":["1.125rem",{"lineHeight":"1.35","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"800"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg"><div class="flex items-center gap-space-sm pb-space-lg"><div class="w-10 h-10 rounded-full bg-brand-deep-blue flex items-center justify-center text-brand-lime font-headline-sm font-bold shadow-md">E</div><div><div class="font-headline-sm text-headline-sm text-primary uppercase tracking-tight">EMAX CMS</div><div class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Electronics Enterprises</div></div></div><nav class="flex flex-col gap-space-sm" data-active-classes="bg-surface-container text-primary font-bold shadow-sm"><div class="pt-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">MAIN</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="products-inventory" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md">Products & Inventory</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="categories" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-body-md text-body-md">Categories</span></a></div></div><div class="pt-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">OPERATIONS</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="media-library" href="#"><span class="material-symbols-outlined text-[20px]">perm_media</span><span class="font-body-md text-body-md">Media Library</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="content-pages" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span class="font-body-md text-body-md">Content & Pages</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="enquiries-leads" href="#"><span class="material-symbols-outlined text-[20px]">contact_mail</span><span class="font-body-md text-body-md">Enquiries & Leads</span></a></div></div><div class="pt-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">SYSTEM & GOVERNANCE</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="staff-roles" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-body-md text-body-md">Staff & Roles</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">security</span><span class="font-body-md text-body-md">Audit Log</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></a></div></div></nav></div><div class="p-space-md m-space-md rounded-DEFAULT bg-surface-container-low flex flex-col gap-2"><div class="flex items-center justify-between"><span class="flex items-center gap-1.5 font-label-md text-label-md text-brand-navy"><span class="inline-block w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>Supabase Connected</span><span class="font-label-sm text-label-sm uppercase bg-surface-container-highest px-1.5 py-0.5 rounded-full text-brand-teal font-bold">RLS ACTIVE</span></div><div class="font-body-sm text-body-sm text-on-surface-variant truncate">PostgreSQL Pool: Healthy (Latency 14ms)</div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px]">home</span><span>/</span><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">CMS Console</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-9 pr-4 py-1.5 rounded-full outline-none focus:bg-surface-container focus:ring-0 placeholder:text-outline" placeholder="Search SKU, order ID, product name, or staff logs..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-2 bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md px-4 py-2 rounded-full transition-colors"><span class="material-symbols-outlined text-[18px]">add</span>Add Product</button><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-brand-amber"></span></button><div class="flex items-center gap-space-sm pl-space-sm bg-surface-container-low py-1 pr-3 rounded-full"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="text-left"><div class="font-label-md text-label-md text-primary leading-tight">Engr. T. Balogun</div><div class="font-label-sm text-label-sm text-on-surface-variant">Lead Admin · Ikeja Hub</div></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background p-space-lg"><div class="flex flex-col w-full">
+<!-- Operational Breadcrumb & Top Command Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-teal bg-surface-container-high px-2 py-0.5 rounded-full font-bold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-teal animate-ping"></span>
+          PostgreSQL Auth + RLS Enforced
+        </span>
+<span class="text-outline-variant text-body-sm">•</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Node: Ikeja-Auth-Cluster-01</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Staff Directory & Access Control</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl mt-1">
+        Manage authorized Emax engineering personnel, access tiers, and granular catalog/pricing publishing permissions. Authenticated via Supabase Auth with strict schema isolation.
+      </p>
+</div>
+<!-- Action Group -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface-container shadow-sm transition-all" onclick="document.getElementById('audit-drawer').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>RLS Schema Matrix</span>
+</button>
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md shadow-md transition-all" onclick="document.getElementById('invite-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Invite Staff Member</span>
+<span class="w-5 h-5 rounded-full bg-brand-amber text-primary-container flex items-center justify-center font-bold text-[10px]">
+<span class="material-symbols-outlined text-[12px]">north_east</span>
+</span>
+</button>
+</div>
+</div>
+<!-- Security & RLS Policy Summary Cards (Bento Metric Layout) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-xl">
+<!-- Active Staff Metric -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-surface-container rounded-full opacity-60 pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-outline tracking-wider font-bold">Total Directory Strength</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-xl text-headline-xl text-primary font-extrabold tracking-tight">5</span>
+<span class="font-label-md text-label-md text-brand-teal font-bold">All Verified</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+</div>
+<div class="mt-space-md pt-3 bg-surface-container-low/50 rounded-xl p-2.5 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1.5 font-medium">
+<span class="w-2 h-2 rounded-full bg-brand-teal"></span> Ikeja Central: <strong class="text-primary">3</strong>
+</span>
+<span class="text-outline-variant">|</span>
+<span class="flex items-center gap-1.5 font-medium">
+<span class="w-2 h-2 rounded-full bg-brand-sky"></span> Alaba Liaison: <strong class="text-primary">2</strong>
+</span>
+</div>
+</div>
+<!-- Security Enforcements Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-outline tracking-wider font-bold">Security Posture (MFA & RLS)</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-xl text-headline-xl text-primary font-extrabold tracking-tight">100%</span>
+<span class="font-label-md text-label-md text-on-tertiary-container bg-surface-container-highest px-2 py-0.5 rounded-full font-bold">ZERO TRUST</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-brand-teal">
+<span class="material-symbols-outlined text-[22px]">shield_locked</span>
+</div>
+</div>
+<div class="mt-space-md space-y-1.5">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Session TTL Guard:</span>
+<span class="font-label-md text-label-md text-primary font-bold">8h Rolling Auto-Expire</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-brand-teal h-full rounded-full" style="width: 100%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-0.5">
+<span>Row-Level Policies: Enforced</span>
+<span class="text-brand-teal font-bold">Hardware-Backed TOTP</span>
+</div>
+</div>
+</div>
+<!-- Access Tiers Breakdown -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-outline tracking-wider font-bold">Provisioned Role Allocations</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Granular segregation of engineering duties</p>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">admin_panel_settings</span>
+</div>
+</div>
+<div class="mt-space-md grid grid-cols-3 gap-2">
+<div class="bg-surface-container-low p-2 rounded-xl text-center">
+<div class="font-headline-sm text-headline-sm text-brand-deep-blue font-extrabold">2</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate uppercase">Lead Admin</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded-xl text-center">
+<div class="font-headline-sm text-headline-sm text-brand-teal font-extrabold">2</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate uppercase">Catalog Edit</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded-xl text-center">
+<div class="font-headline-sm text-headline-sm text-brand-sky font-extrabold">1</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate uppercase">Support Triage</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Filter / Quick Search Ribbon -->
+<div class="bg-surface-container-lowest rounded-2xl p-3 shadow-sm mb-space-md flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 flex-1 min-w-[280px]">
+<div class="relative w-full max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">filter_list</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-9 pr-4 py-2 rounded-xl outline-none focus:bg-surface-container text-body-sm transition-all" id="staff-search-input" onkeyup="filterStaff()" placeholder="Filter by engineer name, role, email, or hub..." type="text"/>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-xl">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-xs">All Hubs (5)</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors">Ikeja Central</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors">Alaba Bay</button>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Auth Provider:</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-primary font-semibold">
+<span class="w-2 h-2 rounded-full bg-brand-lime"></span>
+        supabase.auth.users
+      </span>
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors" onclick="refreshSessionList()" title="Refresh Session Tokens">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</button>
+</div>
+</div>
+<!-- Main Staff Directory Table Card -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden mb-space-xl">
+<div class="overflow-x-auto">
+<table class="w-full text-left text-on-surface border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-label-sm text-label-sm uppercase tracking-wider text-outline select-none">
+<th class="py-3.5 px-space-md">Staff Member & Designation</th>
+<th class="py-3.5 px-3">Role Tier</th>
+<th class="py-3.5 px-3">Granular RLS Permissions</th>
+<th class="py-3.5 px-3">Physical Hub</th>
+<th class="py-3.5 px-3">Auth / MFA</th>
+<th class="py-3.5 px-3">Last Active Session</th>
+<th class="py-3.5 px-3 text-center">Status</th>
+<th class="py-3.5 px-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y-0" id="staff-table-body">
+<!-- Staff Member 1: Lead Admin (T. Balogun) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-3">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-brand-deep-blue text-brand-lime font-headline-sm font-extrabold flex items-center justify-center shadow-xs">
+                    TB
+                  </div>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-brand-lime rounded-full shadow-xs"></span>
+</div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-primary font-bold flex items-center gap-1.5">
+<span>Engr. T. Balogun</span>
+<span class="bg-surface-container-high text-brand-deep-blue text-[10px] font-extrabold px-1.5 py-0.2 rounded uppercase">Self</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">t.balogun@emax-electronics.ng</div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-tight">Lead Battery Systems Engineer</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-brand-deep-blue text-on-primary font-label-md text-label-md font-bold shadow-xs">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+                Lead Administrator
+              </span>
+</td>
+<td class="py-4 px-3">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-bold">Unrestricted Write</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-bold">RLS Admin</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-bold">Stock & Pricing</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-bold">Audit Logs</span>
+</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1.5 text-primary font-medium">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span>Ikeja Central Bay</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Plot 12 Commercial Ave</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="inline-flex items-center gap-1 text-brand-teal font-label-md text-label-md font-bold bg-surface-container-low px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+                TOTP Authenticator
+              </div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>
+                Active Now
+              </div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">102.89.44.12 · Ikeja HQ LAN</div>
+</td>
+<td class="py-4 px-3 text-center whitespace-nowrap">
+<span class="inline-block px-2.5 py-1 rounded-full bg-brand-lime/30 text-brand-deep-blue font-label-md text-label-md font-extrabold uppercase">
+                Active
+              </span>
+</td>
+<td class="py-4 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-surface-container transition-colors" onclick="openPermissionModal('Engr. T. Balogun', 'Lead Administrator')" title="Edit Permissions">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="promptRevokeSessions('Engr. T. Balogun')" title="Revoke Active Sessions">
+<span class="material-symbols-outlined text-[18px]">key_off</span>
+</button>
+<div class="relative inline-block text-left">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleRowMenu('menu-1')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 mt-1 w-48 bg-surface-container-lowest rounded-xl shadow-xl z-30 p-1 text-left" id="menu-1">
+<button class="w-full px-3 py-1.5 rounded-lg text-left font-body-sm text-body-sm hover:bg-surface-container-low text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">lock_reset</span> Reset MFA Secret
+                    </button>
+<button class="w-full px-3 py-1.5 rounded-lg text-left font-body-sm text-body-sm hover:bg-surface-container-low text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">history</span> Inspect Audit Trail
+                    </button>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<!-- Staff Member 2: Catalog & Content Editor (Chioma Okonkwo) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-brand-teal font-headline-sm font-bold flex items-center justify-center">
+                  CO
+                </div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-primary font-bold">Chioma Okonkwo</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">c.okonkwo@emax-electronics.ng</div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-tight">Solar Inverter Product Specialist</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[14px]">edit_note</span>
+                Catalog & Content Editor
+              </span>
+</td>
+<td class="py-4 px-3">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-low text-on-surface font-label-sm text-label-sm">Draft Products</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-low text-on-surface font-label-sm text-label-sm">Manage Media</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-low text-on-surface font-label-sm text-label-sm">Update Datasheets</span>
+<span class="px-2 py-0.5 rounded-md bg-error-container text-on-error-container font-label-sm text-label-sm">No Price Write</span>
+</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1.5 text-primary font-medium">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span>Ikeja Central Bay</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Hub Lab Suite 4</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="inline-flex items-center gap-1 text-brand-teal font-label-md text-label-md font-bold bg-surface-container-low px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                TOTP Authenticator
+              </div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="font-label-md text-label-md text-on-surface font-medium">2 hours ago</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">197.210.8.45 · Chrome macOS</div>
+</td>
+<td class="py-4 px-3 text-center whitespace-nowrap">
+<span class="inline-block px-2.5 py-1 rounded-full bg-brand-lime/30 text-brand-deep-blue font-label-md text-label-md font-extrabold uppercase">
+                Active
+              </span>
+</td>
+<td class="py-4 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-surface-container transition-colors" onclick="openPermissionModal('Chioma Okonkwo', 'Catalog & Content Editor')" title="Edit Permissions">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="promptRevokeSessions('Chioma Okonkwo')" title="Revoke Active Sessions">
+<span class="material-symbols-outlined text-[18px]">key_off</span>
+</button>
+<div class="relative inline-block text-left">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleRowMenu('menu-2')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 mt-1 w-48 bg-surface-container-lowest rounded-xl shadow-xl z-30 p-1 text-left" id="menu-2">
+<button class="w-full px-3 py-1.5 rounded-lg text-left font-body-sm text-body-sm hover:bg-surface-container-low text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">lock_reset</span> Reset MFA Secret
+                    </button>
+<button class="w-full px-3 py-1.5 rounded-lg text-left font-body-sm text-body-sm hover:bg-error-container text-error flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">person_off</span> Suspend Access
+                    </button>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<!-- Staff Member 3: Lead Admin 2 (Femi Adeleke) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary font-headline-sm font-bold flex items-center justify-center">
+                  FA
+                </div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-primary font-bold">Femi Adeleke</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">f.adeleke@emax-electronics.ng</div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-tight">Principal High-Voltage Technician</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-brand-deep-blue text-on-primary font-label-md text-label-md font-bold shadow-xs">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+                Lead Administrator
+              </span>
+</td>
+<td class="py-4 px-3">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-bold">Publish Products</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-bold">Modify Base Cost</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-bold">Manage Roles</span>
+</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1.5 text-primary font-medium">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span>Alaba Liaison Bay</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Boutique St Warehouse B</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="inline-flex items-center gap-1 text-brand-teal font-label-md text-label-md font-bold bg-surface-container-low px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+                Hardware FIDO2 Key
+              </div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="font-label-md text-label-md text-on-surface font-medium">Yesterday at 18:42</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">105.112.98.2 · Alaba Edge GW</div>
+</td>
+<td class="py-4 px-3 text-center whitespace-nowrap">
+<span class="inline-block px-2.5 py-1 rounded-full bg-brand-lime/30 text-brand-deep-blue font-label-md text-label-md font-extrabold uppercase">
+                Active
+              </span>
+</td>
+<td class="py-4 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-surface-container transition-colors" onclick="openPermissionModal('Femi Adeleke', 'Lead Administrator')" title="Edit Permissions">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="promptRevokeSessions('Femi Adeleke')" title="Revoke Active Sessions">
+<span class="material-symbols-outlined text-[18px]">key_off</span>
+</button>
+<div class="relative inline-block text-left">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleRowMenu('menu-3')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 mt-1 w-48 bg-surface-container-lowest rounded-xl shadow-xl z-30 p-1 text-left" id="menu-3">
+<button class="w-full px-3 py-1.5 rounded-lg text-left font-body-sm text-body-sm hover:bg-surface-container-low text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">lock_reset</span> Reset MFA Secret
+                    </button>
+<button class="w-full px-3 py-1.5 rounded-lg text-left font-body-sm text-body-sm hover:bg-error-container text-error flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">person_off</span> Suspend Access
+                    </button>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<!-- Staff Member 4: Catalog & Content Editor 2 (Ngozi Eze) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-brand-sky font-headline-sm font-bold flex items-center justify-center">
+                  NE
+                </div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-primary font-bold">Ngozi Eze</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">n.eze@emax-electronics.ng</div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-tight">E-Mobility Spec Author</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[14px]">edit_note</span>
+                Catalog & Content Editor
+              </span>
+</td>
+<td class="py-4 px-3">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-low text-on-surface font-label-sm text-label-sm">Edit Descriptions</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-low text-on-surface font-label-sm text-label-sm">Upload Benchmarks</span>
+<span class="px-2 py-0.5 rounded-md bg-error-container text-on-error-container font-label-sm text-label-sm">No Delete Access</span>
+</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1.5 text-primary font-medium">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span>Alaba Liaison Bay</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Annex 3 Testing Rig</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="inline-flex items-center gap-1 text-brand-teal font-label-md text-label-md font-bold bg-surface-container-low px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                TOTP Authenticator
+              </div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="font-label-md text-label-md text-on-surface font-medium">3 days ago</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">102.88.35.19 · Firefox Linux</div>
+</td>
+<td class="py-4 px-3 text-center whitespace-nowrap">
+<span class="inline-block px-2.5 py-1 rounded-full bg-brand-lime/30 text-brand-deep-blue font-label-md text-label-md font-extrabold uppercase">
+                Active
+              </span>
+</td>
+<td class="py-4 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-surface-container transition-colors" onclick="openPermissionModal('Ngozi Eze', 'Catalog & Content Editor')" title="Edit Permissions">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="promptRevokeSessions('Ngozi Eze')" title="Revoke Active Sessions">
+<span class="material-symbols-outlined text-[18px]">key_off</span>
+</button>
+<div class="relative inline-block text-left">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleRowMenu('menu-4')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 mt-1 w-48 bg-surface-container-lowest rounded-xl shadow-xl z-30 p-1 text-left" id="menu-4">
+<button class="w-full px-3 py-1.5 rounded-lg text-left font-body-sm text-body-sm hover:bg-surface-container-low text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">lock_reset</span> Reset MFA Secret
+                    </button>
+<button class="w-full px-3 py-1.5 rounded-lg text-left font-body-sm text-body-sm hover:bg-error-container text-error flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">person_off</span> Suspend Access
+                    </button>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<!-- Staff Member 5: Support & Inquiry Triage (Musa Danjuma) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-low text-on-surface-variant font-headline-sm font-bold flex items-center justify-center">
+                  MD
+                </div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-primary font-bold">Musa Danjuma</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">m.danjuma@emax-electronics.ng</div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-tight">Customer Dispatch Analyst</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[14px]">support_agent</span>
+                Support Analyst
+              </span>
+</td>
+<td class="py-4 px-3">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-low text-on-surface font-label-sm text-label-sm">View Leads</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-low text-on-surface font-label-sm text-label-sm">Triage Enquiries</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-low text-on-surface font-label-sm text-label-sm">Read Inventory Stock</span>
+<span class="px-2 py-0.5 rounded-md bg-error-container text-on-error-container font-label-sm text-label-sm">Read-Only Catalog</span>
+</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1.5 text-primary font-medium">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span>Ikeja Central Bay</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Front Operations desk</div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="inline-flex items-center gap-1 text-brand-teal font-label-md text-label-md font-bold bg-surface-container-low px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                TOTP Authenticator
+              </div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="font-label-md text-label-md text-on-surface font-medium">4 hours ago</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">102.89.44.89 · Edge Windows</div>
+</td>
+<td class="py-4 px-3 text-center whitespace-nowrap">
+<span class="inline-block px-2.5 py-1 rounded-full bg-brand-lime/30 text-brand-deep-blue font-label-md text-label-md font-extrabold uppercase">
+                Active
+              </span>
+</td>
+<td class="py-4 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-surface-container transition-colors" onclick="openPermissionModal('Musa Danjuma', 'Support Analyst')" title="Edit Permissions">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="promptRevokeSessions('Musa Danjuma')" title="Revoke Active Sessions">
+<span class="material-symbols-outlined text-[18px]">key_off</span>
+</button>
+<div class="relative inline-block text-left">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleRowMenu('menu-5')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 mt-1 w-48 bg-surface-container-lowest rounded-xl shadow-xl z-30 p-1 text-left" id="menu-5">
+<button class="w-full px-3 py-1.5 rounded-lg text-left font-body-sm text-body-sm hover:bg-surface-container-low text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">lock_reset</span> Reset MFA Secret
+                    </button>
+<button class="w-full px-3 py-1.5 rounded-lg text-left font-body-sm text-body-sm hover:bg-error-container text-error flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">person_off</span> Suspend Access
+                    </button>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Session Token Info -->
+<div class="p-space-md bg-surface-container-low/50 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-teal text-[18px]">lock_clock</span>
+<span>All sessions strictly signed with JWT HS256 & Supabase RLS context injection (<code class="text-primary font-mono font-bold text-[11px]">auth.jwt() -> app_metadata.role</code>).</span>
+</div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">
+        Showing 5 of 5 Enterprise Engineers
+      </div>
+</div>
+</div>
+<!-- Role Definitions & Permissions Blueprint (Side-Panel / Technical Architecture Grid) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg mb-space-xl">
+<!-- Blueprint Card 1: Lead Admin -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between pb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-brand-deep-blue text-brand-lime flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary">Lead Administrator</div>
+<div class="font-label-sm text-label-sm text-brand-teal uppercase tracking-wider">Role: lead_admin</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container text-primary font-bold px-2 py-0.5 rounded">Tier 1</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 mb-4">
+        Unrestricted write access across entire Postgres schema. Empowered to modify battery chemistry specifications, wholesale discount tables, and deploy database triggers.
+      </p>
+<div class="space-y-2 bg-surface-container-low p-3 rounded-xl">
+<div class="font-label-sm text-label-sm uppercase text-outline font-bold">RLS Execution Directives:</div>
+<div class="flex items-center justify-between text-body-sm font-medium">
+<span class="text-primary">products & specs table</span>
+<span class="text-brand-teal font-mono text-[11px] font-bold">ALL (INSERT, UPDATE, DELETE)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-medium">
+<span class="text-primary">staff_credentials & audit</span>
+<span class="text-brand-teal font-mono text-[11px] font-bold">FULL ACCESS</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-medium">
+<span class="text-primary">catalog_pricing_matrix</span>
+<span class="text-brand-teal font-mono text-[11px] font-bold">UNRESTRICTED</span>
+</div>
+</div>
+</div>
+<!-- Blueprint Card 2: Catalog & Content Editor -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between pb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-brand-teal flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">edit_document</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary">Catalog & Content Editor</div>
+<div class="font-label-sm text-label-sm text-brand-teal uppercase tracking-wider">Role: catalog_editor</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container text-primary font-bold px-2 py-0.5 rounded">Tier 2</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 mb-4">
+        Can draft items, upload bench testing documents, and revise solar inverter marketing copy. Strictly guarded against altering commercial cost tables or dropping categories.
+      </p>
+<div class="space-y-2 bg-surface-container-low p-3 rounded-xl">
+<div class="font-label-sm text-label-sm uppercase text-outline font-bold">RLS Execution Directives:</div>
+<div class="flex items-center justify-between text-body-sm font-medium">
+<span class="text-primary">products (non-price cols)</span>
+<span class="text-brand-teal font-mono text-[11px] font-bold">INSERT, UPDATE</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-medium">
+<span class="text-primary">product_media & docs</span>
+<span class="text-brand-teal font-mono text-[11px] font-bold">WRITE ALLOWED</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-medium">
+<span class="text-primary">pricing & staff_roles</span>
+<span class="text-error font-mono text-[11px] font-bold">BLOCKED (403 RLS)</span>
+</div>
+</div>
+</div>
+<!-- Blueprint Card 3: Support & Inquiry Triage -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between pb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-brand-sky flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">smart_outlet</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary">Support & Inquiry Triage</div>
+<div class="font-label-sm text-label-sm text-brand-teal uppercase tracking-wider">Role: support_analyst</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container text-primary font-bold px-2 py-0.5 rounded">Tier 3</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 mb-4">
+        Customer-facing triage. Queries technical product stock and answers engineering enquiries. Read-only permissions on master tables; status updates allowed on dispatch logs.
+      </p>
+<div class="space-y-2 bg-surface-container-low p-3 rounded-xl">
+<div class="font-label-sm text-label-sm uppercase text-outline font-bold">RLS Execution Directives:</div>
+<div class="flex items-center justify-between text-body-sm font-medium">
+<span class="text-primary">inquiries & lead_pipeline</span>
+<span class="text-brand-teal font-mono text-[11px] font-bold">READ, UPDATE STATUS</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-medium">
+<span class="text-primary">inventory_stock_read</span>
+<span class="text-brand-teal font-mono text-[11px] font-bold">SELECT ONLY</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-medium">
+<span class="text-primary">product_definitions</span>
+<span class="text-on-surface-variant font-mono text-[11px]">SELECT (NO WRITE)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Real-Time Supabase Security Incident & Verification Trace -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-brand-teal"></span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Live RLS Policy Evaluation Stream</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-mono">Channel: realtime:public:staff_audit</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3 font-mono text-body-sm text-on-surface space-y-2">
+<div class="flex items-start justify-between text-[12px] text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="text-brand-teal font-bold">[14:32:08 WAT]</span>
+<span class="text-primary font-bold">t.balogun@emax-electronics.ng</span>
+<span>authenticated via TOTP (Ikeja Central IP 102.89.44.12).</span>
+</div>
+<span class="text-brand-teal font-bold uppercase tracking-wider">SUCCESS · 200 OK</span>
+</div>
+<div class="flex items-start justify-between text-[12px] text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="text-brand-teal font-bold">[13:10:45 WAT]</span>
+<span class="text-primary font-bold">c.okonkwo@emax-electronics.ng</span>
+<span>drafted specification revision on SKU: <code class="text-primary">BAT-LF48-200AH</code>.</span>
+</div>
+<span class="text-brand-teal font-bold uppercase tracking-wider">RLS: ALLOW_CATALOG_EDIT</span>
+</div>
+<div class="flex items-start justify-between text-[12px] text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="text-brand-amber font-bold">[11:05:12 WAT]</span>
+<span class="text-primary font-bold">m.danjuma@emax-electronics.ng</span>
+<span>attempted base cost write on SKU: <code class="text-primary">INV-HY-10KW</code>. Action denied.</span>
+</div>
+<span class="text-error font-bold uppercase tracking-wider">REJECTED · RLS_PRICE_GUARD</span>
+</div>
+</div>
+</div>
+<!-- Slide-Over Drawer: RLS Security Matrix (Hidden by Default) -->
+<div class="hidden fixed inset-0 z-50 overflow-hidden bg-brand-deep-blue/40 backdrop-blur-xs flex justify-end" id="audit-drawer">
+<div class="w-full max-w-xl bg-surface-container-lowest h-full shadow-2xl p-space-lg flex flex-col justify-between overflow-y-auto">
+<div>
+<div class="flex items-center justify-between pb-space-md border-b-0">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-brand-teal font-bold">Database Guard Architecture</div>
+<h2 class="font-headline-md text-headline-md text-primary">Supabase RLS Matrix</h2>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant" onclick="document.getElementById('audit-drawer').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="mt-space-md space-y-4">
+<div class="p-3.5 bg-surface-container-low rounded-xl">
+<div class="font-label-md text-label-md text-primary font-bold">Policy: "Lead Administrators Full Mutation"</div>
+<code class="block font-mono text-[11px] text-brand-teal bg-surface-container p-2 rounded mt-1.5 overflow-x-auto">
+              create policy "lead_admin_all" on public.products for all using (auth.jwt() ->> 'role' = 'lead_admin');
+            </code>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Permits full DDL/DML execution across Ikeja and Alaba database mirrors.</p>
+</div>
+<div class="p-3.5 bg-surface-container-low rounded-xl">
+<div class="font-label-md text-label-md text-primary font-bold">Policy: "Editors Can Modify Content Except Unit Cost"</div>
+<code class="block font-mono text-[11px] text-brand-teal bg-surface-container p-2 rounded mt-1.5 overflow-x-auto">
+              create policy "catalog_editor_write" on public.products for update using (auth.jwt() ->> 'role' in ('lead_admin', 'catalog_editor')) with check (base_cost is not distinct from products.base_cost);
+            </code>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Protects commercial margins from inadvertent alterations by drafting staff.</p>
+</div>
+<div class="p-3.5 bg-surface-container-low rounded-xl">
+<div class="font-label-md text-label-md text-primary font-bold">Policy: "Support Desk Read-Only Verification"</div>
+<code class="block font-mono text-[11px] text-brand-teal bg-surface-container p-2 rounded mt-1.5 overflow-x-auto">
+              create policy "support_desk_view" on public.inquiries for select using (auth.jwt() ->> 'hub_id' = public.inquiries.hub_id);
+            </code>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Applies tenant-hub location isolation, routing Alaba leads to Alaba personnel.</p>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-3 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold" onclick="document.getElementById('audit-drawer').classList.add('hidden')">
+          Close Technical Architecture View
+        </button>
+</div>
+</div>
+</div>
+<!-- Modal: Invite Staff Member (Hidden by default) -->
+<div class="hidden fixed inset-0 z-50 overflow-hidden bg-brand-deep-blue/40 backdrop-blur-xs flex items-center justify-center p-space-md" id="invite-modal">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-2xl shadow-2xl p-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-teal font-bold">Access Onboarding</span>
+<h2 class="font-headline-md text-headline-md text-primary">Invite Staff Member</h2>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant" onclick="document.getElementById('invite-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        An invitation with a time-limited (1-hour) cryptographic registration token will be dispatched through Supabase Auth.
+      </p>
+<form class="space-y-4" onsubmit="handleInviteSubmit(event)">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Full Legal Name</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-3.5 py-2.5 rounded-xl outline-none focus:bg-surface-container" placeholder="e.g. Engr. Babatunde Johnson" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Emax Corporate Email</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-3.5 py-2.5 rounded-xl outline-none focus:bg-surface-container" placeholder="b.johnson@emax-electronics.ng" required="" type="email"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Assigned Role Tier</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-3 py-2.5 rounded-xl outline-none focus:bg-surface-container">
+<option value="catalog_editor">Catalog & Content Editor</option>
+<option value="support_analyst">Technical Support & Triage</option>
+<option value="lead_admin">Lead Administrator</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Deployment Hub</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-3 py-2.5 rounded-xl outline-none focus:bg-surface-container">
+<option value="ikeja">Ikeja Central Engineering Bay</option>
+<option value="alaba">Alaba Liaison Bay</option>
+</select>
+</div>
+</div>
+<div class="p-3 bg-surface-container-low rounded-xl flex items-start gap-2.5">
+<span class="material-symbols-outlined text-brand-teal text-[20px] mt-0.5">verified_user</span>
+<div class="text-body-sm text-on-surface-variant">
+<strong class="text-primary font-label-md text-label-md block">Mandatory 2FA Enrollment:</strong>
+            The invited engineer will be forced to scan an RFC 6238 TOTP QR code before their first session token is signed.
+          </div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-5 py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container transition-colors" onclick="document.getElementById('invite-modal').classList.add('hidden')" type="button">
+            Cancel
+          </button>
+<button class="px-6 py-2.5 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md font-bold shadow-md transition-all flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Send Supabase Invitation</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Modal: Granular Permissions Editor (Interactive Stub) -->
+<div class="hidden fixed inset-0 z-50 overflow-hidden bg-brand-deep-blue/40 backdrop-blur-xs flex items-center justify-center p-space-md" id="permission-modal">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-2xl shadow-2xl p-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-teal font-bold">Policy Governance</span>
+<h2 class="font-headline-md text-headline-md text-primary" id="modal-staff-name">Edit Granular Permissions</h2>
+<span class="font-label-sm text-label-sm bg-surface-container text-primary font-bold px-2 py-0.5 rounded" id="modal-staff-role">Lead Administrator</span>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant" onclick="document.getElementById('permission-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="mt-space-md space-y-3">
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Publish to Public E-Shop</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Authorize active deployment to Lagos e-commerce catalog</div>
+</div>
+<input checked="" class="w-5 h-5 accent-brand-teal rounded" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Alter Wholesale & Dealer Pricing</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Write permission on discount bands and base battery costs</div>
+</div>
+<input checked="" class="w-5 h-5 accent-brand-teal rounded" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Execute Inventory Write-Offs</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Mark cells damaged or decommissioned in depot logs</div>
+</div>
+<input checked="" class="w-5 h-5 accent-brand-teal rounded" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Supabase Auth Role Assignment</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Grant or revoke Postgres RLS tiers to other personnel</div>
+</div>
+<input class="w-5 h-5 accent-brand-teal rounded" type="checkbox"/>
+</label>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-md mt-space-sm">
+<button class="px-5 py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container transition-colors" onclick="document.getElementById('permission-modal').classList.add('hidden')">
+          Cancel
+        </button>
+<button class="px-6 py-2.5 rounded-full bg-brand-deep-blue text-brand-lime font-label-md text-label-md font-bold shadow-md hover:bg-primary transition-all" onclick="savePermissions()">
+          Apply Security Directives
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="hidden fixed bottom-6 right-6 z-50 bg-primary text-on-primary px-4 py-3 rounded-xl shadow-2xl flex items-center gap-2 font-label-md text-label-md transition-all" id="toast">
+<span class="material-symbols-outlined text-brand-lime text-[18px]">check_circle</span>
+<span id="toast-message">Permissions synced to Supabase Auth metadata.</span>
+</div>
+</div>
+<script>
+  function filterStaff() {
+    const query = document.getElementById('staff-search-input').value.toLowerCase();
+    const rows = document.querySelectorAll('#staff-table-body tr');
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      row.style.display = text.includes(query) ? '' : 'none';
+    });
+  }
+
+  function toggleRowMenu(menuId) {
+    document.querySelectorAll('[id^="menu-"]').forEach(menu => {
+      if (menu.id !== menuId) menu.classList.add('hidden');
+    });
+    const target = document.getElementById(menuId);
+    if (target) {
+      target.classList.toggle('hidden');
+    }
+  }
+
+  function openPermissionModal(name, role) {
+    document.getElementById('modal-staff-name').innerText = name;
+    document.getElementById('modal-staff-role').innerText = role;
+    document.getElementById('permission-modal').classList.remove('hidden');
+  }
+
+  function savePermissions() {
+    document.getElementById('permission-modal').classList.add('hidden');
+    showToast('RLS Claim Updated: New app_metadata injected successfully.');
+  }
+
+  function promptRevokeSessions(name) {
+    if (confirm(`Revoke all active Supabase JWT refresh tokens for ${name}? User will be prompted to re-authenticate with 2FA.`)) {
+      showToast(`Sessions revoked for ${name}.`);
+    }
+  }
+
+  function refreshSessionList() {
+    showToast('Polling Supabase session pool... All 5 credentials healthy.');
+  }
+
+  function handleInviteSubmit(e) {
+    e.preventDefault();
+    document.getElementById('invite-modal').classList.add('hidden');
+    showToast('Invitation token generated and sent via Supabase Auth.');
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-message');
+    toastMsg.innerText = msg;
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 3800);
+  }
+
+  // Close menus when clicked outside
+  window.addEventListener('click', function(e) {
+    if (!e.target.closest('.relative')) {
+      document.querySelectorAll('[id^="menu-"]').forEach(m => m.classList.add('hidden'));
+    }
+  });
+</script></main></div></body></html>

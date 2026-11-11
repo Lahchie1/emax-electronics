@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#213244","on-primary-fixed-variant":"#2e4961","on-error-container":"#93000a","tertiary-fixed":"#ffddb9","secondary-container":"#93eefc","surface-bright":"#f8f9ff","glass-border":"rgba(255, 255, 255, 0.65)","surface-tint":"#46617a","surface-container-highest":"#d3e4fc","on-error":"#ffffff","on-primary":"#ffffff","surface-container-high":"#daeaff","on-surface":"#0b1d2e","primary-fixed":"#cde5ff","brand-deep-blue":"#0d2844","on-primary-container":"#7c98b4","inverse-on-surface":"#e9f1ff","brand-lime":"#d4f34a","on-secondary":"#ffffff","tertiary-fixed-dim":"#ffb963","brand-teal":"#087e8b","brand-navy":"#0b1d2e","on-background":"#0b1d2e","on-tertiary-container":"#cd8622","surface-container-low":"#eef4ff","primary-fixed-dim":"#adcae7","primary":"#001b2e","primary-container":"#123047","error-container":"#ffdad6","on-secondary-fixed-variant":"#004f57","secondary-fixed-dim":"#79d4e2","on-primary-fixed":"#001d32","brand-amber":"#f2a541","secondary":"#006874","surface-variant":"#d3e4fc","error":"#ba1a1a","on-tertiary-fixed-variant":"#663e00","surface-container":"#e4efff","brand-teal-hover":"#066570","secondary-fixed":"#96f0ff","brand-sky":"#3a88e9","on-tertiary-fixed":"#2b1700","tertiary-container":"#442700","tertiary":"#271500","outline-variant":"#c3c7cd","surface-dim":"#cadcf3","on-secondary-container":"#006d79","on-surface-variant":"#43474d","outline":"#73777d","inverse-primary":"#adcae7","on-secondary-fixed":"#001f24","background":"#f8f9ff","surface-container-lowest":"#ffffff","surface":"#f8f9ff","on-tertiary":"#ffffff","brand-canvas":"#f7faff"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"margin":"1.5rem","space-xl":"2rem","gutter-sm":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-2xl":"3rem","gutter":"1.5rem","margin-lg":"4rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"label-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},fontSize:{"label-sm":["0.625rem",{"lineHeight":"1.0","letterSpacing":"0.08em","fontWeight":"700"}],"headline-xl":["3.75rem",{"lineHeight":"1.12","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["1.125rem",{"lineHeight":"1.6","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"1.3","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1.4","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1.0","letterSpacing":"0.06em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.5","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"800"}],"headline-sm":["1.125rem",{"lineHeight":"1.35","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"800"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg"><div class="flex items-center gap-space-sm pb-space-lg"><div class="w-10 h-10 rounded-full bg-brand-deep-blue flex items-center justify-center text-brand-lime font-headline-sm font-bold shadow-md">E</div><div><div class="font-headline-sm text-headline-sm text-primary uppercase tracking-tight">EMAX CMS</div><div class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Electronics Enterprises</div></div></div><nav class="flex flex-col gap-space-sm" data-active-classes="bg-surface-container text-primary font-bold shadow-sm"><div class="pt-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">MAIN</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="products-inventory" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md">Products & Inventory</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="categories" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-body-md text-body-md">Categories</span></a></div></div><div class="pt-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">OPERATIONS</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="media-library" href="#"><span class="material-symbols-outlined text-[20px]">perm_media</span><span class="font-body-md text-body-md">Media Library</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="content-pages" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span class="font-body-md text-body-md">Content & Pages</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="enquiries-leads" href="#"><span class="material-symbols-outlined text-[20px]">contact_mail</span><span class="font-body-md text-body-md">Enquiries & Leads</span></a></div></div><div class="pt-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">SYSTEM & GOVERNANCE</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="staff-roles" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-body-md text-body-md">Staff & Roles</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT transition-all bg-surface-container text-primary font-bold shadow-sm" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">security</span><span class="font-body-md text-body-md">Audit Log</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></a></div></div></nav></div><div class="p-space-md m-space-md rounded-DEFAULT bg-surface-container-low flex flex-col gap-2"><div class="flex items-center justify-between"><span class="flex items-center gap-1.5 font-label-md text-label-md text-brand-navy"><span class="inline-block w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>Supabase Connected</span><span class="font-label-sm text-label-sm uppercase bg-surface-container-highest px-1.5 py-0.5 rounded-full text-brand-teal font-bold">RLS ACTIVE</span></div><div class="font-body-sm text-body-sm text-on-surface-variant truncate">PostgreSQL Pool: Healthy (Latency 14ms)</div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px]">home</span><span>/</span><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">CMS Console</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-9 pr-4 py-1.5 rounded-full outline-none focus:bg-surface-container focus:ring-0 placeholder:text-outline" placeholder="Search SKU, order ID, product name, or staff logs..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-2 bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md px-4 py-2 rounded-full transition-colors"><span class="material-symbols-outlined text-[18px]">add</span>Add Product</button><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-brand-amber"></span></button><div class="flex items-center gap-space-sm pl-space-sm bg-surface-container-low py-1 pr-3 rounded-full"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="text-left"><div class="font-label-md text-label-md text-primary leading-tight">Engr. T. Balogun</div><div class="font-label-sm text-label-sm text-on-surface-variant">Lead Admin · Ikeja Hub</div></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background p-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Overview Header & Action Bar -->
+<section class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm">
+<div class="flex flex-col gap-1 max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-brand-teal/10 text-brand-teal font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-teal animate-ping"></span>
+          Ledger Height #842,911
+        </span>
+<span class="text-outline-variant text-body-sm">•</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-brand-teal" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Ed25519 Chain Validated
+        </span>
+</div>
+<h1 class="font-headline-md text-headline-md text-brand-navy tracking-tight">Audit Trail & Mutation Log</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Cryptographically verified, immutable record of all administrative actions, stock adjustments, pricing alterations, and content publications.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="flex items-center gap-2 bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md px-4 py-2.5 rounded-full transition-all" id="verifyHashBtn" onclick="runIntegrityVerification()">
+<span class="material-symbols-outlined text-[18px] text-brand-teal">lock_reset</span>
+<span>Verify Log Hashes</span>
+</button>
+<button class="flex items-center gap-2 bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all" onclick="triggerCsvExport()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Audit Report (CSV)</span>
+</button>
+</div>
+</section>
+<!-- KPI Metric Cards Grid -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Total Logged Events -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total Logged Events</span>
+<span class="w-8 h-8 rounded-full bg-surface-container-low text-brand-navy flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-primary leading-none">1,248</div>
+<div class="flex items-center gap-1.5 mt-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-brand-teal font-label-sm text-label-sm flex items-center">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +8.4%
+          </span>
+<span>Rolling 30-day window</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-low h-1 rounded-full mt-3 overflow-hidden">
+<div class="bg-brand-navy h-full w-[82%]"></div>
+</div>
+</div>
+<!-- Stock Adjustments -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Stock Adjustments</span>
+<span class="w-8 h-8 rounded-full bg-surface-container-low text-brand-teal flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">swap_vert</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-primary leading-none">84</div>
+<div class="flex items-center gap-1.5 mt-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-brand-amber font-label-sm text-label-sm flex items-center">
+<span class="material-symbols-outlined text-[14px]">priority_high</span> 6 low stock
+          </span>
+<span>Warehouse & Counter</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-low h-1 rounded-full mt-3 overflow-hidden">
+<div class="bg-brand-teal h-full w-[64%]"></div>
+</div>
+</div>
+<!-- Pricing Updates -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pricing Alterations</span>
+<span class="w-8 h-8 rounded-full bg-surface-container-low text-brand-sky flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">price_change</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-primary leading-none">12</div>
+<div class="flex items-center gap-1.5 mt-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-brand-teal font-label-sm text-label-sm flex items-center">
+<span class="material-symbols-outlined text-[14px]">done_all</span> 100% verified
+          </span>
+<span>Lead admin dual-signed</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-low h-1 rounded-full mt-3 overflow-hidden">
+<div class="bg-brand-sky h-full w-[28%]"></div>
+</div>
+</div>
+<!-- Security & Auth -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Auth & Policy Guard</span>
+<span class="w-8 h-8 rounded-full bg-surface-container-low text-brand-amber flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">shield_person</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-primary leading-none">42</div>
+<div class="flex items-center gap-1.5 mt-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-brand-teal font-label-sm text-label-sm flex items-center">
+<span class="material-symbols-outlined text-[14px]">check</span> 0 zero-day rejections
+          </span>
+<span>MFA enforcement on</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-low h-1 rounded-full mt-3 overflow-hidden">
+<div class="bg-brand-amber h-full w-[45%]"></div>
+</div>
+</div>
+</section>
+<!-- Verification Status Banner (Live feedback indicator) -->
+<div class="hidden bg-surface-container p-space-md rounded-DEFAULT flex items-center justify-between animate-fade-in" id="hashBanner">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-brand-teal flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-brand-navy">Cryptographic Block Verification: 100% Intact</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Genesis Root: 0x38e1a... SHA-256 HMAC chained to PostgreSQL write-ahead log sequence #91823. No tampering detected.</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-brand-teal bg-surface-container-lowest px-3 py-1 rounded-full font-bold">MERKLE TREE PASS</span>
+</div>
+<!-- Search, Filter & Date Range Segment -->
+<section class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-sm items-center">
+<!-- Search Input -->
+<div class="lg:col-span-4 relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-9 pr-4 py-2 rounded-full outline-none focus:bg-surface-container transition-colors placeholder:text-outline" id="auditSearchInput" oninput="applyAuditFilters()" placeholder="Filter SKU (e.g. JK-BMS), Actor, or Entity ID..." type="text"/>
+</div>
+<!-- Entity Type Filter -->
+<div class="lg:col-span-2">
+<select class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-3 py-2 rounded-full outline-none focus:bg-surface-container transition-colors" id="entityFilter" onchange="applyAuditFilters()">
+<option value="ALL">All Entity Types</option>
+<option value="Products & Inventory">Products & Inventory</option>
+<option value="Pricing">Public Pricing</option>
+<option value="Content & Pages">Content & Pages</option>
+<option value="Media Storage">Media Storage</option>
+<option value="Staff & Permissions">Staff & Permissions</option>
+<option value="Supabase Auth">Supabase Auth</option>
+</select>
+</div>
+<!-- Action Type Filter -->
+<div class="lg:col-span-2">
+<select class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-3 py-2 rounded-full outline-none focus:bg-surface-container transition-colors" id="actionFilter" onchange="applyAuditFilters()">
+<option value="ALL">All Actions</option>
+<option value="STOCK_ADJUST">STOCK_ADJUST</option>
+<option value="UPDATE">UPDATE</option>
+<option value="CREATE">CREATE</option>
+<option value="DELETE">DELETE</option>
+<option value="PUBLISH">PUBLISH</option>
+<option value="RLS_EVAL">RLS_EVAL</option>
+</select>
+</div>
+<!-- Actor Filter -->
+<div class="lg:col-span-2">
+<select class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-3 py-2 rounded-full outline-none focus:bg-surface-container transition-colors" id="actorFilter" onchange="applyAuditFilters()">
+<option value="ALL">All Staff & Daemons</option>
+<option value="Engr. T. Balogun">Engr. T. Balogun</option>
+<option value="A. Adeleke">A. Adeleke</option>
+<option value="System Daemon">System Daemon</option>
+</select>
+</div>
+<!-- Date Range Selector -->
+<div class="lg:col-span-2 flex items-center justify-end">
+<div class="inline-flex p-1 bg-surface-container-low rounded-full w-full justify-between">
+<button class="date-pill px-3 py-1 text-label-sm font-label-sm rounded-full text-on-surface-variant hover:text-on-surface transition-all" onclick="setDateRange('today', this)" type="button">Today</button>
+<button class="date-pill px-3 py-1 text-label-sm font-label-sm rounded-full bg-brand-deep-blue text-on-primary shadow-sm" onclick="setDateRange('7d', this)" type="button">7 Days</button>
+<button class="date-pill px-3 py-1 text-label-sm font-label-sm rounded-full text-on-surface-variant hover:text-on-surface transition-all" onclick="setDateRange('mtd', this)" type="button">MTD</button>
+</div>
+</div>
+</div>
+<!-- Active Filters & Summary Bar -->
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-2">
+<div class="flex items-center gap-2">
+<span>Showing <strong class="text-primary font-bold" id="rowCount">5</strong> matching ledger mutations</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-brand-teal font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">database</span>
+          Streaming from schema <code class="font-mono text-xs bg-surface-container px-1 py-0.5 rounded">public.audit_events</code>
+</span>
+</div>
+<button class="text-brand-teal hover:underline font-label-sm text-label-sm uppercase tracking-wider" onclick="resetFilters()">Reset Filters</button>
+</div>
+</section>
+<!-- Comprehensive Immutable Audit Log Table -->
+<section class="bg-surface-container-lowest rounded-DEFAULT shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left" id="auditTable">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4">Timestamp & Hash</th>
+<th class="py-3 px-4">Actor & Terminal</th>
+<th class="py-3 px-4">Action & Target Entity</th>
+<th class="py-3 px-4">Mutation Diff / Attribute Delta</th>
+<th class="py-3 px-4">Origin / Runtime</th>
+<th class="py-3 px-4 text-center">Integrity</th>
+<th class="py-3 px-4 text-right">Details</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-sm text-on-surface" id="auditTableBody">
+<!-- Row 1: Stock Adjustment -->
+<tr class="audit-row hover:bg-surface-container-low/60 transition-colors group cursor-pointer" onclick="toggleDetails('evt-842911')">
+<td class="py-4 px-4 align-top">
+<div class="font-headline-sm text-[0.8125rem] text-primary leading-tight">Nov 10, 2026, 14:22:10</div>
+<div class="text-on-surface-variant text-[11px] font-mono mt-0.5">WAT (+01:00)</div>
+<div class="inline-flex items-center gap-1 text-[11px] font-mono text-brand-teal bg-surface-container px-1.5 py-0.5 rounded mt-1.5" title="SHA-256 Tx Signature">
+<span class="material-symbols-outlined text-[12px]">fingerprint</span>
+<span>0x8f2c...4a1e</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-brand-deep-blue text-brand-lime flex items-center justify-center font-bold text-xs">TB</div>
+<div>
+<div class="font-headline-sm text-[0.8125rem] text-primary">Engr. T. Balogun</div>
+<div class="text-on-surface-variant text-[11px]">Lead Admin</div>
+</div>
+</div>
+<div class="text-[11px] text-outline mt-1.5 flex items-center gap-1 font-mono">
+<span class="material-symbols-outlined text-[12px]">location_on</span>
+<span>Ikeja Console · 102.89.44.12</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col gap-1 items-start">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label-sm uppercase bg-brand-amber/15 text-brand-amber font-bold">
+                  STOCK_ADJUST
+                </span>
+<span class="font-headline-sm text-[0.8125rem] text-brand-navy">SKU: JK-BMS-16S200</span>
+<span class="text-on-surface-variant text-[11px]">JK Smart BMS 16S 200A Lifepo4</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="bg-surface-container p-2 rounded-DEFAULT space-y-1 font-mono text-[11px] max-w-xs">
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">stock_quantity:</span>
+<span class="text-error line-through">8</span>
+<span class="text-on-surface-variant">→</span>
+<span class="text-brand-teal font-bold">4 units</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">stock_status:</span>
+<span class="text-outline line-through">In Stock</span>
+<span class="text-on-surface-variant">→</span>
+<span class="text-brand-amber font-bold">Low Stock Alert</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="text-[12px] font-medium text-primary">REST API / Admin Web</div>
+<div class="text-[11px] text-on-surface-variant font-mono mt-0.5">Supabase RLS Client v2.4</div>
+<div class="text-[10px] text-outline mt-1">session_id: s_9a87f0b21a</div>
+</td>
+<td class="py-4 px-4 align-top text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-brand-teal/10 text-brand-teal text-[11px] font-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Valid
+              </span>
+</td>
+<td class="py-4 px-4 align-top text-right">
+<button class="w-7 h-7 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors inline-flex">
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200" id="icon-evt-842911">expand_more</span>
+</button>
+</td>
+</tr>
+<!-- Expander Row 1 -->
+<tr class="hidden bg-surface-container-low/40" id="evt-842911">
+<td class="p-space-md" colspan="7">
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-navy">PostgreSQL Transaction Ledger Details</span>
+<span class="text-[11px] font-mono text-outline">tx_xid: 19844281</span>
+</div>
+<span class="font-mono text-[11px] text-on-surface-variant">Wal_LSN: 0/1A9876C · Isolation: READ COMMITTED</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm font-mono text-xs">
+<div class="bg-surface-container p-3 rounded-DEFAULT overflow-x-auto">
+<div class="text-on-surface-variant font-bold mb-1">// PREVIOUS STATE (Snapshot v842910)</div>
+<pre class="text-on-surface leading-relaxed">{
+  "id": "prod_bms_jk16s",
+  "sku": "JK-BMS-16S200",
+  "stock_quantity": 8,
+  "reserved_orders": 0,
+  "stock_status": "IN_STOCK",
+  "warehouse_location": "IKEJA-BAY-4",
+  "version": 42
+}</pre>
+</div>
+<div class="bg-surface-container p-3 rounded-DEFAULT overflow-x-auto">
+<div class="text-brand-teal font-bold mb-1">// COMMITTED MUTATION (Snapshot v842911)</div>
+<pre class="text-on-surface leading-relaxed">{
+  "id": "prod_bms_jk16s",
+  "sku": "JK-BMS-16S200",
+  "stock_quantity": 4,
+  "reserved_orders": 0,
+  "stock_status": "LOW_STOCK_ALERT",
+  "warehouse_location": "IKEJA-BAY-4",
+  "adjustment_reason": "COUNTER_DISPATCH_WALK_IN_INSTALL",
+  "version": 43
+}</pre>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<!-- Row 2: Price Update -->
+<tr class="audit-row hover:bg-surface-container-low/60 transition-colors group cursor-pointer" onclick="toggleDetails('evt-842910')">
+<td class="py-4 px-4 align-top">
+<div class="font-headline-sm text-[0.8125rem] text-primary leading-tight">Nov 10, 2026, 11:05:48</div>
+<div class="text-on-surface-variant text-[11px] font-mono mt-0.5">WAT (+01:00)</div>
+<div class="inline-flex items-center gap-1 text-[11px] font-mono text-brand-teal bg-surface-container px-1.5 py-0.5 rounded mt-1.5" title="SHA-256 Tx Signature">
+<span class="material-symbols-outlined text-[12px]">fingerprint</span>
+<span>0x4d91...7e88</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container text-brand-teal flex items-center justify-center font-bold text-xs">AA</div>
+<div>
+<div class="font-headline-sm text-[0.8125rem] text-primary">A. Adeleke</div>
+<div class="text-on-surface-variant text-[11px]">Finance & Pricing Officer</div>
+</div>
+</div>
+<div class="text-[11px] text-outline mt-1.5 flex items-center gap-1 font-mono">
+<span class="material-symbols-outlined text-[12px]">location_on</span>
+<span>Victoria Island Ops · 197.210.8.45</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col gap-1 items-start">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label-sm uppercase bg-brand-sky/15 text-brand-sky font-bold">
+                  UPDATE
+                </span>
+<span class="font-headline-sm text-[0.8125rem] text-brand-navy">SKU: DEYE-SUN-8K-SG01</span>
+<span class="text-on-surface-variant text-[11px]">Pricing / Deye 8kW Hybrid Inverter</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="bg-surface-container p-2 rounded-DEFAULT space-y-1 font-mono text-[11px] max-w-xs">
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">base_price_ngn:</span>
+<span class="text-error line-through">₦2,850,000</span>
+<span class="text-on-surface-variant">→</span>
+<span class="text-brand-teal font-bold">₦2,980,000</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">dealer_markup:</span>
+<span class="text-outline">12%</span>
+<span class="text-on-surface-variant">→</span>
+<span class="text-primary font-bold">14.5%</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="text-[12px] font-medium text-primary">PostgREST RPC / Supabase</div>
+<div class="text-[11px] text-on-surface-variant font-mono mt-0.5">fn_mutate_catalogue_price()</div>
+<div class="text-[10px] text-outline mt-1">dual_sign_token: tk_33b8a1e</div>
+</td>
+<td class="py-4 px-4 align-top text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-brand-teal/10 text-brand-teal text-[11px] font-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Valid
+              </span>
+</td>
+<td class="py-4 px-4 align-top text-right">
+<button class="w-7 h-7 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors inline-flex">
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200" id="icon-evt-842910">expand_more</span>
+</button>
+</td>
+</tr>
+<!-- Expander Row 2 -->
+<tr class="hidden bg-surface-container-low/40" id="evt-842910">
+<td class="p-space-md" colspan="7">
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-navy">Dual-Authorization Proof (Forex FX Update)</span>
+<span class="text-[11px] font-mono text-outline">tx_xid: 19843912</span>
+</div>
+<span class="font-mono text-[11px] text-on-surface-variant">Wal_LSN: 0/1A97110 · Isolation: SERIALIZABLE</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm font-mono text-xs">
+<div class="bg-surface-container p-3 rounded-DEFAULT overflow-x-auto">
+<div class="text-on-surface-variant font-bold mb-1">// PREVIOUS PRICING SCHEME</div>
+<pre class="text-on-surface leading-relaxed">{
+  "sku": "DEYE-SUN-8K-SG01",
+  "base_price_ngn": 2850000,
+  "currency": "NGN",
+  "vat_inclusive": true,
+  "authorized_by": "Engr. T. Balogun",
+  "updated_at": "2026-10-15T09:12:00Z"
+}</pre>
+</div>
+<div class="bg-surface-container p-3 rounded-DEFAULT overflow-x-auto">
+<div class="text-brand-teal font-bold mb-1">// NEW PRICING RECORD (Exchange Rate Realignment)</div>
+<pre class="text-on-surface leading-relaxed">{
+  "sku": "DEYE-SUN-8K-SG01",
+  "base_price_ngn": 2980000,
+  "currency": "NGN",
+  "vat_inclusive": true,
+  "authorized_by": "A. Adeleke",
+  "co_signed_by": "Engr. T. Balogun",
+  "fx_benchmark": "CBN_OFFICIAL_1480",
+  "updated_at": "2026-11-10T10:05:48Z"
+}</pre>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<!-- Row 3: Automated Battery Sync / Daemon -->
+<tr class="audit-row hover:bg-surface-container-low/60 transition-colors group cursor-pointer" onclick="toggleDetails('evt-842909')">
+<td class="py-4 px-4 align-top">
+<div class="font-headline-sm text-[0.8125rem] text-primary leading-tight">Nov 10, 2026, 09:00:02</div>
+<div class="text-on-surface-variant text-[11px] font-mono mt-0.5">WAT (+01:00)</div>
+<div class="inline-flex items-center gap-1 text-[11px] font-mono text-brand-teal bg-surface-container px-1.5 py-0.5 rounded mt-1.5" title="SHA-256 Tx Signature">
+<span class="material-symbols-outlined text-[12px]">fingerprint</span>
+<span>0x12a9...90cf</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-brand-lime text-brand-navy flex items-center justify-center font-bold text-xs">
+<span class="material-symbols-outlined text-[16px]">smart_toy</span>
+</div>
+<div>
+<div class="font-headline-sm text-[0.8125rem] text-primary">System Daemon</div>
+<div class="text-on-surface-variant text-[11px]">Cron Worker #04</div>
+</div>
+</div>
+<div class="text-[11px] text-outline mt-1.5 flex items-center gap-1 font-mono">
+<span class="material-symbols-outlined text-[12px]">cloud</span>
+<span>pg_cron / Local Socket ::1</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col gap-1 items-start">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label-sm uppercase bg-surface-container-highest text-primary font-bold">
+                  STOCK_ADJUST
+                </span>
+<span class="font-headline-sm text-[0.8125rem] text-brand-navy">SKU: EVE-280-K</span>
+<span class="text-on-surface-variant text-[11px]">EVE 3.2V 280Ah LiFePO4 Prismatic Cell</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="bg-surface-container p-2 rounded-DEFAULT space-y-1 font-mono text-[11px] max-w-xs">
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">reserved_orders:</span>
+<span class="text-outline">16</span>
+<span class="text-on-surface-variant">→</span>
+<span class="text-brand-navy font-bold">32 units</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">available_stock:</span>
+<span class="text-outline">240</span>
+<span class="text-on-surface-variant">→</span>
+<span class="text-brand-teal font-bold">224 units</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="text-[12px] font-medium text-primary">Database Trigger</div>
+<div class="text-[11px] text-on-surface-variant font-mono mt-0.5">trg_reserve_order_stock()</div>
+<div class="text-[10px] text-outline mt-1">order_ref: EMX-ORD-7712</div>
+</td>
+<td class="py-4 px-4 align-top text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-brand-teal/10 text-brand-teal text-[11px] font-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Valid
+              </span>
+</td>
+<td class="py-4 px-4 align-top text-right">
+<button class="w-7 h-7 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors inline-flex">
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200" id="icon-evt-842909">expand_more</span>
+</button>
+</td>
+</tr>
+<!-- Expander Row 3 -->
+<tr class="hidden bg-surface-container-low/40" id="evt-842909">
+<td class="p-space-md" colspan="7">
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-navy">Trigger Payload & Allocation Trace</span>
+<span class="text-[11px] font-mono text-outline">tx_xid: 19841804</span>
+</div>
+<span class="font-mono text-[11px] text-on-surface-variant">Lock mode: RowExclusiveLock on inventory_items</span>
+</div>
+<div class="bg-surface-container p-3 rounded-DEFAULT overflow-x-auto font-mono text-xs">
+<pre class="text-on-surface leading-relaxed">{
+  "event_type": "TRIGGER_INVENTORY_ALLOCATION",
+  "invoked_by": "trg_reserve_order_stock",
+  "order_uuid": "c30fa591-23ea-42b7-a3a2-91f6305a41bf",
+  "sku": "EVE-280-K",
+  "delta": -16,
+  "batch_code": "BATCH-2026-Q3-EVE",
+  "warehouse_bin": "BIN-C-12",
+  "pg_cluster_timestamp": "2026-11-10T08:00:02.114819Z"
+}</pre>
+</div>
+</div>
+</td>
+</tr>
+<!-- Row 4: Supabase RLS Policy / Staff Role Update -->
+<tr class="audit-row hover:bg-surface-container-low/60 transition-colors group cursor-pointer" onclick="toggleDetails('evt-842908')">
+<td class="py-4 px-4 align-top">
+<div class="font-headline-sm text-[0.8125rem] text-primary leading-tight">Nov 09, 2026, 17:40:15</div>
+<div class="text-on-surface-variant text-[11px] font-mono mt-0.5">WAT (+01:00)</div>
+<div class="inline-flex items-center gap-1 text-[11px] font-mono text-brand-teal bg-surface-container px-1.5 py-0.5 rounded mt-1.5" title="SHA-256 Tx Signature">
+<span class="material-symbols-outlined text-[12px]">fingerprint</span>
+<span>0xee41...001b</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-brand-deep-blue text-brand-lime flex items-center justify-center font-bold text-xs">TB</div>
+<div>
+<div class="font-headline-sm text-[0.8125rem] text-primary">Engr. T. Balogun</div>
+<div class="text-on-surface-variant text-[11px]">Lead Admin</div>
+</div>
+</div>
+<div class="text-[11px] text-outline mt-1.5 flex items-center gap-1 font-mono">
+<span class="material-symbols-outlined text-[12px]">location_on</span>
+<span>Ikeja Console · 102.89.44.12</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col gap-1 items-start">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label-sm uppercase bg-brand-navy text-on-primary font-bold">
+                  RLS_EVAL
+                </span>
+<span class="font-headline-sm text-[0.8125rem] text-brand-navy">Staff & Permissions</span>
+<span class="text-on-surface-variant text-[11px]">Role: Warehouse Dispatch Assistant</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="bg-surface-container p-2 rounded-DEFAULT space-y-1 font-mono text-[11px] max-w-xs">
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">can_edit_pricing:</span>
+<span class="text-error font-bold">FALSE (Revoked)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">scope_override:</span>
+<span class="text-on-surface-variant">ikeja_hub_only</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="text-[12px] font-medium text-primary">PostgreSQL DDL / Security</div>
+<div class="text-[11px] text-on-surface-variant font-mono mt-0.5">ALTER POLICY staff_inventory_read</div>
+<div class="text-[10px] text-outline mt-1">mfa_authenticated: true</div>
+</td>
+<td class="py-4 px-4 align-top text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-brand-teal/10 text-brand-teal text-[11px] font-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Valid
+              </span>
+</td>
+<td class="py-4 px-4 align-top text-right">
+<button class="w-7 h-7 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors inline-flex">
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200" id="icon-evt-842908">expand_more</span>
+</button>
+</td>
+</tr>
+<!-- Expander Row 4 -->
+<tr class="hidden bg-surface-container-low/40" id="evt-842908">
+<td class="p-space-md" colspan="7">
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-navy">Supabase RLS Policy Definition</span>
+<span class="text-[11px] font-mono text-outline">tx_xid: 19839941</span>
+</div>
+<span class="font-mono text-[11px] text-on-surface-variant">Audit Tag: SECURITY_RBAC_ALTER</span>
+</div>
+<div class="bg-surface-container p-3 rounded-DEFAULT overflow-x-auto font-mono text-xs">
+<pre class="text-on-surface leading-relaxed">-- Policy evaluated and enforced by PgBouncer RLS engine:
+CREATE OR REPLACE POLICY "dispatch_staff_stock_update_only"
+ON "public"."inventory_items"
+FOR UPDATE
+TO authenticated
+USING (
+  (auth.jwt() ->> 'hub_id' = 'hub_ikeja_01') AND
+  (auth.jwt() ->> 'role' IN ('warehouse_dispatch', 'lead_admin'))
+)
+WITH CHECK (
+  price_ngn = (SELECT price_ngn FROM inventory_items WHERE id = inventory_items.id)
+);</pre>
+</div>
+</div>
+</td>
+</tr>
+<!-- Row 5: Content Publish -->
+<tr class="audit-row hover:bg-surface-container-low/60 transition-colors group cursor-pointer" onclick="toggleDetails('evt-842907')">
+<td class="py-4 px-4 align-top">
+<div class="font-headline-sm text-[0.8125rem] text-primary leading-tight">Nov 09, 2026, 15:10:04</div>
+<div class="text-on-surface-variant text-[11px] font-mono mt-0.5">WAT (+01:00)</div>
+<div class="inline-flex items-center gap-1 text-[11px] font-mono text-brand-teal bg-surface-container px-1.5 py-0.5 rounded mt-1.5" title="SHA-256 Tx Signature">
+<span class="material-symbols-outlined text-[12px]">fingerprint</span>
+<span>0x5b33...990d</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container text-brand-teal flex items-center justify-center font-bold text-xs">AA</div>
+<div>
+<div class="font-headline-sm text-[0.8125rem] text-primary">A. Adeleke</div>
+<div class="text-on-surface-variant text-[11px]">Marketing & Content</div>
+</div>
+</div>
+<div class="text-[11px] text-outline mt-1.5 flex items-center gap-1 font-mono">
+<span class="material-symbols-outlined text-[12px]">location_on</span>
+<span>Victoria Island Ops · 197.210.8.45</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col gap-1 items-start">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label-sm uppercase bg-brand-teal/15 text-brand-teal font-bold">
+                  PUBLISH
+                </span>
+<span class="font-headline-sm text-[0.8125rem] text-brand-navy">Page: /solar-solutions-nigeria</span>
+<span class="text-on-surface-variant text-[11px]">Landing & Commercial Guide</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="bg-surface-container p-2 rounded-DEFAULT space-y-1 font-mono text-[11px] max-w-xs">
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">publish_status:</span>
+<span class="text-outline">draft</span>
+<span class="text-on-surface-variant">→</span>
+<span class="text-brand-teal font-bold">live_published</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">cdn_cache_purge:</span>
+<span class="text-brand-sky font-bold">SUCCESS (Cloudflare)</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="text-[12px] font-medium text-primary">Edge Worker / CMS Engine</div>
+<div class="text-[11px] text-on-surface-variant font-mono mt-0.5">Vercel ISR Webhook</div>
+<div class="text-[10px] text-outline mt-1">cache_tag: cms-page-solar</div>
+</td>
+<td class="py-4 px-4 align-top text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-brand-teal/10 text-brand-teal text-[11px] font-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Valid
+              </span>
+</td>
+<td class="py-4 px-4 align-top text-right">
+<button class="w-7 h-7 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors inline-flex">
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200" id="icon-evt-842907">expand_more</span>
+</button>
+</td>
+</tr>
+<!-- Expander Row 5 -->
+<tr class="hidden bg-surface-container-low/40" id="evt-842907">
+<td class="p-space-md" colspan="7">
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-navy">Content Revision Diff #12</span>
+<span class="text-[11px] font-mono text-outline">tx_xid: 19837719</span>
+</div>
+<span class="font-mono text-[11px] text-on-surface-variant">Slug: /solar-solutions-nigeria</span>
+</div>
+<div class="bg-surface-container p-3 rounded-DEFAULT overflow-x-auto font-mono text-xs">
+<pre class="text-on-surface leading-relaxed">{
+  "page_id": "pg_solar_solutions_2026",
+  "author": "A. Adeleke",
+  "sections_modified": ["hero_pricing_matrix", "commercial_calculator"],
+  "seo_metadata": {
+    "title": "Clean Energy Storage & Commercial Solar Inverters | Emax Nigeria",
+    "meta_robots": "index, follow"
+  },
+  "published_hash": "sha256:d82f718817a26fba471607ecb"
+}</pre>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Empty State Container (Hidden by default) -->
+<div class="hidden p-space-2xl text-center flex flex-col items-center justify-center" id="noResultsNotice">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant mb-space-sm">
+<span class="material-symbols-outlined text-[24px]">filter_list_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">No Matching Ledger Entries Found</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-1">
+        Try broadening your search query, selecting 'All Actions', or adjusting the date filters.
+      </p>
+<button class="mt-space-md px-4 py-2 bg-surface-container text-primary font-label-md text-label-md rounded-full hover:bg-surface-container-high transition-colors" onclick="resetFilters()">
+        Clear Filter Constraints
+      </button>
+</div>
+<!-- Table Pagination & Ledger Integrity Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between p-space-md bg-surface-container-lowest gap-space-sm">
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>Page 1 of 250</span>
+<span class="text-outline-variant">•</span>
+<span class="font-mono text-xs">Rows 1 - 5 of 1,248</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm uppercase tracking-wider disabled:opacity-40" disabled="">
+          Previous
+        </button>
+<button class="px-3 py-1.5 rounded-full bg-brand-deep-blue text-on-primary font-label-sm text-label-sm uppercase tracking-wider">
+          1
+        </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+          2
+        </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+          3
+        </button>
+<span class="text-outline">...</span>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+          250
+        </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm uppercase tracking-wider">
+          Next
+        </button>
+</div>
+</div>
+</section>
+<!-- Institutional Verification & Technical Governance Panel -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Cryptographic Proof Standard Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2 text-brand-teal">
+<span class="material-symbols-outlined text-[20px]">enhanced_encryption</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Write-Once Ledger Standard</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-brand-navy">PostgreSQL Append-Only Rules</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Audit rows cannot be modified or deleted, even by the Postgres superuser. Triggers strictly enforce <code class="bg-surface-container px-1.5 py-0.5 rounded font-mono text-xs">BEFORE UPDATE OR DELETE RAISE EXCEPTION</code>.
+        </p>
+</div>
+<div class="pt-space-md flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Zero SQL Mutation Bypass</span>
+<span class="font-label-sm text-label-sm text-brand-teal font-bold">STRICT_APPEND_V3</span>
+</div>
+</div>
+<!-- Hub Location & IP Geofence -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2 text-brand-sky">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Geographic Security Bounds</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-brand-navy">Dual Hub Authorization</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Admin logins and inventory dispatches are cryptographically tagged to Ikeja Commercial Hub and Victoria Island Engineering Centers with hardware FIDO2 key confirmation.
+        </p>
+</div>
+<div class="pt-space-md flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">MFA Enforcement</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">WebAuthn / YubiKey</span>
+</div>
+</div>
+<!-- Compliance Export & Regulator Handshake -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2 text-brand-amber">
+<span class="material-symbols-outlined text-[20px]">gavel</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Statutory & Tax Compliance</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-brand-navy">SON & FIRS Standardized Formats</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Export full transaction chains for Standards Organisation of Nigeria clean-energy battery import audits and monthly Federal Inland Revenue Service reconciliations.
+        </p>
+</div>
+<div class="pt-space-md">
+<button class="w-full text-center py-2 rounded-full bg-surface-container-low hover:bg-surface-container font-label-md text-label-md text-primary transition-colors flex items-center justify-center gap-1.5" onclick="triggerCsvExport()">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+          Generate Sealed Audit Manifest (.json/.csv)
+        </button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Expander function for detail inspection rows
+  function toggleDetails(rowId) {
+    const targetRow = document.getElementById(rowId);
+    const targetIcon = document.getElementById('icon-' + rowId);
+    
+    if (targetRow) {
+      if (targetRow.classList.contains('hidden')) {
+        targetRow.classList.remove('hidden');
+        if (targetIcon) targetIcon.classList.add('rotate-180');
+      } else {
+        targetRow.classList.add('hidden');
+        if (targetIcon) targetIcon.classList.remove('rotate-180');
+      }
+    }
+  }
+
+  // Interactive Live Cryptographic Verification Simulation
+  function runIntegrityVerification() {
+    const btn = document.getElementById('verifyHashBtn');
+    const banner = document.getElementById('hashBanner');
+    const originalText = btn.innerHTML;
+
+    btn.disabled = true;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin text-brand-teal">sync</span><span>Verifying Hashes...</span>`;
+
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px] text-brand-teal">check_circle</span><span>Hashes Verified</span>`;
+      if (banner) {
+        banner.classList.remove('hidden');
+      }
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+      }, 5000);
+    }, 900);
+  }
+
+  // Filter and Search Engine Simulation
+  function applyAuditFilters() {
+    const searchVal = (document.getElementById('auditSearchInput').value || '').toLowerCase().trim();
+    const entityVal = document.getElementById('entityFilter').value;
+    const actionVal = document.getElementById('actionFilter').value;
+    const actorVal = document.getElementById('actorFilter').value;
+
+    const rows = document.querySelectorAll('#auditTableBody > tr.audit-row');
+    let visibleCount = 0;
+
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      const nextExpander = row.nextElementSibling;
+
+      let matchesSearch = true;
+      if (searchVal) {
+        matchesSearch = text.includes(searchVal);
+      }
+
+      let matchesEntity = true;
+      if (entityVal !== 'ALL') {
+        matchesEntity = text.includes(entityVal.toLowerCase());
+      }
+
+      let matchesAction = true;
+      if (actionVal !== 'ALL') {
+        matchesAction = text.includes(actionVal.toLowerCase());
+      }
+
+      let matchesActor = true;
+      if (actorVal !== 'ALL') {
+        matchesActor = text.includes(actorVal.toLowerCase());
+      }
+
+      if (matchesSearch && matchesEntity && matchesAction && matchesActor) {
+        row.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        row.classList.add('hidden');
+        if (nextExpander && !nextExpander.classList.contains('audit-row')) {
+          nextExpander.classList.add('hidden');
+        }
+      }
+    });
+
+    const countElem = document.getElementById('rowCount');
+    if (countElem) countElem.innerText = visibleCount;
+
+    const noResults = document.getElementById('noResultsNotice');
+    if (noResults) {
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+      }
+    }
+  }
+
+  // Quick Date Range Filter button switcher
+  function setDateRange(range, el) {
+    const pills = document.querySelectorAll('.date-pill');
+    pills.forEach(p => {
+      p.className = 'date-pill px-3 py-1 text-label-sm font-label-sm rounded-full text-on-surface-variant hover:text-on-surface transition-all';
+    });
+    el.className = 'date-pill px-3 py-1 text-label-sm font-label-sm rounded-full bg-brand-deep-blue text-on-primary shadow-sm';
+    applyAuditFilters();
+  }
+
+  // Reset all filters
+  function resetFilters() {
+    const searchInput = document.getElementById('auditSearchInput');
+    const entityFilter = document.getElementById('entityFilter');
+    const actionFilter = document.getElementById('actionFilter');
+    const actorFilter = document.getElementById('actorFilter');
+
+    if (searchInput) searchInput.value = '';
+    if (entityFilter) entityFilter.value = 'ALL';
+    if (actionFilter) actionFilter.value = 'ALL';
+    if (actorFilter) actorFilter.value = 'ALL';
+
+    applyAuditFilters();
+  }
+
+  // CSV Report Generator with realistic ledger headers
+  function triggerCsvExport() {
+    const headers = ["event_id", "timestamp_utc", "hash_sha256", "actor_name", "actor_ip", "action_type", "entity_id", "diff_payload", "integrity_state"];
+    const rows = [
+      ["evt_842911", "2026-11-10T13:22:10Z", "0x8f2c...4a1e", "Engr. T. Balogun", "102.89.44.12", "STOCK_ADJUST", "JK-BMS-16S200", "stock_quantity: 8 -> 4", "VERIFIED"],
+      ["evt_842910", "2026-11-10T10:05:48Z", "0x4d91...7e88", "A. Adeleke", "197.210.8.45", "UPDATE", "DEYE-SUN-8K-SG01", "base_price_ngn: 2850000 -> 2980000", "VERIFIED"],
+      ["evt_842909", "2026-11-10T08:00:02Z", "0x12a9...90cf", "System Daemon", "127.0.0.1", "STOCK_ADJUST", "EVE-280-K", "reserved_orders: 16 -> 32", "VERIFIED"],
+      ["evt_842908", "2026-11-09T16:40:15Z", "0xee41...001b", "Engr. T. Balogun", "102.89.44.12", "RLS_EVAL", "Staff & Permissions", "can_edit_pricing: FALSE", "VERIFIED"],
+      ["evt_842907", "2026-11-09T14:10:04Z", "0x5b33...990d", "A. Adeleke", "197.210.8.45", "PUBLISH", "/solar-solutions-nigeria", "publish_status: draft -> live", "VERIFIED"]
+    ];
+
+    let csvContent = "data:text/csv;charset=utf-8," 
+      + headers.join(",") + "\n"
+      + rows.map(e => e.map(item => `"${item}"`).join(",")).join("\n");
+
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", `emax_audit_trail_${new Date().toISOString().slice(0, 10)}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script></main></div></body></html>

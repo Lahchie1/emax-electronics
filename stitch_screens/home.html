@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Emax Electronics Enterprises | Clean Energy &amp; E-Mobility Intelligence</title>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            emax: {
+              lime: '#d4f34a',
+              limeHover: '#c1e237',
+              navy: '#0b1d2e',
+              deepBlue: '#0d2844',
+              sky: '#3a88e9',
+              teal: '#087e8b',
+              surface: '#f5f9fc',
+              border: 'rgba(255, 255, 255, 0.45)',
+            }
+          },
+          boxShadow: {
+            glass: '0 20px 40px -15px rgba(0, 32, 70, 0.12), 0 0 0 1px rgba(255, 255, 255, 0.55)',
+            glow: '0 10px 25px -5px rgba(212, 243, 74, 0.45)',
+            cardHover: '0 25px 50px -12px rgba(11, 29, 46, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Base Custom Glassmorphic Styles -->
+<style data-purpose="glassmorphic-effects">
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.68);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.65);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+    }
+    .glass-pill {
+      background: rgba(255, 255, 255, 0.22);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+    .hero-sky-gradient {
+      background: radial-gradient(130% 90% at 50% 10%, #2f84ec 0%, #3e98f7 35%, #76bbf8 65%, #cde5fc 90%, #dff2a8 100%);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-slate-800 bg-[#f7faff] overflow-x-hidden selection:bg-emax-lime selection:text-emax-navy">
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-4 left-0 right-0 z-50 px-4 sm:px-8 max-w-6xl mx-auto pointer-events-none">
+<nav class="pointer-events-auto glass-nav rounded-full px-5 py-2.5 flex items-center justify-between shadow-glass transition-all hover:bg-white/80">
+<!-- Brand Logo Container -->
+<a class="flex items-center gap-2.5 group" href="#">
+<div class="w-9 h-9 rounded-full bg-[#123047] flex items-center justify-center text-[#f2a541] shadow-inner transition group-hover:scale-105"><svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg></div>
+<div class="flex flex-col">
+<span class="font-extrabold text-sm tracking-tight text-emax-navy leading-none">EMAX TECH</span>
+<span class="text-[9px] font-semibold text-slate-500 uppercase tracking-widest leading-none mt-0.5">Electronics Ent.</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<div class="hidden lg:flex items-center gap-7 text-xs font-semibold text-slate-700 tracking-wide">
+<a class="text-emax-navy hover:text-blue-600 transition" href="#hero">Home</a>
+<a class="hover:text-blue-600 transition" href="#inventory">Products / Shop</a>
+<a class="hover:text-blue-600 transition" href="#builders">Battery Pack Builder</a>
+<a class="hover:text-blue-600 transition" href="#builders">Solar Sizer</a>
+<a class="hover:text-blue-600 transition" href="#ebike">E-Bikes</a>
+<a class="hover:text-blue-600 transition" href="#verification">Quality Protocol</a>
+</div>
+<!-- Action Button (Matching Quatro layout) -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-2 bg-[#087e8b] hover:bg-[#066570] text-white font-bold text-xs px-4 py-2 rounded-full shadow-md shadow-[#087e8b]/25 transition transform hover:-translate-y-0.5 active:translate-y-0" href="https://wa.me/2348000000000?text=Hello%20Emax%20Enterprises,%20I%20want%20to%20inquire%20about%20verified%20lithium%20and%20e-bikes" rel="noopener noreferrer" target="_blank"><span>WhatsApp Desk</span><div class="w-5 h-5 rounded-full bg-[#f2a541] text-[#123047] flex items-center justify-center text-[10px] font-bold">↗</div></a>
+</div>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="relative min-h-[960px] lg:min-h-[1020px] pt-32 pb-24 overflow-hidden hero-sky-gradient flex flex-col justify-between" id="hero">
+<!-- Top Decorative Atmosphere Light -->
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-20%,rgba(255,255,255,0.7),rgba(255,255,255,0))] pointer-events-none"></div>
+<!-- Centered Content Wrapper -->
+<div class="relative z-10 max-w-4xl mx-auto px-6 text-center mt-6">
+<!-- Small Pill Chip Tag -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-pill text-white text-xs font-semibold mb-6 shadow-sm"><span class="w-2 h-2 rounded-full bg-[#f2a541] animate-pulse"></span><span>⚡ Lagos Direct Lithium Cells &amp; Urban E-Mobility</span></div>
+<!-- Hero Punchy Headline -->
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.12] drop-shadow-sm">
+        Clean energy intelligence for people moving fast.
+      </h1>
+<!-- Hero Subheadline -->
+<p class="mt-5 text-sm sm:text-base md:text-lg text-white/90 font-medium max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
+        Verified-spec lithium cells, smart active BMS protection, and high-torque urban e-bikes delivered directly from our Lagos hub with zero unverified market claims.
+      </p>
+<!-- CTA Buttons Row -->
+<div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+<!-- Main Yellow-Lime Button -->
+<a class="inline-flex items-center gap-2.5 bg-[#087e8b] hover:bg-[#066570] text-white font-extrabold text-sm px-6 py-3 rounded-full shadow-lg shadow-[#087e8b]/30 transition transform hover:-translate-y-0.5" href="#inventory"><span>Explore Verified Inventory</span><span class="w-6 h-6 rounded-full bg-[#f2a541] text-[#123047] flex items-center justify-center text-xs font-bold">↗</span></a>
+<!-- Glass Secondary Button -->
+<a class="inline-flex items-center gap-2 bg-white/25 hover:bg-white/35 text-white font-semibold text-sm px-6 py-3 rounded-full border border-white/40 backdrop-blur-md transition" href="#ebike">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"></path></svg>
+<span>Book E-Bike Test Ride</span>
+</a>
+</div>
+</div>
+<!-- Centerpiece Hero Showcase (E-Bike Foreground with Floating Frosted Cards) -->
+<div class="relative z-20 max-w-6xl mx-auto px-4 mt-12 w-full" id="ebike">
+<div class="relative flex items-center justify-center">
+<!-- Floating Card 1: Top Left Range Spec -->
+<div class="hidden md:flex flex-col absolute -top-4 left-6 lg:left-12 glass-card rounded-2xl p-4 shadow-glass z-30 transition-transform duration-300 hover:scale-105 border border-white/80 w-48" data-purpose="metric-card">
+<span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Pack Capacity</span>
+<div class="text-xl font-extrabold text-emax-navy mt-1">48V 15Ah</div>
+<div class="mt-2 inline-flex items-center gap-1.5 bg-emerald-500/10 text-emerald-700 text-xs font-bold px-2 py-0.5 rounded-full w-fit">
+<span>+80 km Range</span>
+</div>
+</div>
+<!-- Floating Card 2: Bottom Left Pricing & Dispatch -->
+<div class="hidden md:flex flex-col absolute bottom-8 left-4 lg:left-8 glass-card rounded-2xl p-4 shadow-glass z-30 transition-transform duration-300 hover:scale-105 border border-white/80 w-52" data-purpose="metric-card">
+<span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Lagos In-Stock Unit</span>
+<div class="text-xl font-extrabold text-emax-navy mt-1">₦680,000</div>
+<div class="mt-2 inline-flex items-center gap-1.5 bg-blue-500/10 text-blue-700 text-xs font-semibold px-2 py-0.5 rounded-full w-fit">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+<span>Same-Day Dispatch</span>
+</div>
+</div>
+<!-- Central High-Impact E-Bike Featured Image -->
+<div class="relative group max-w-3xl w-full mx-auto px-2">
+<!-- Soft glow beneath bike -->
+<div class="absolute -inset-2 bg-gradient-to-t from-emerald-500/20 to-transparent rounded-3xl blur-2xl opacity-60"></div>
+<div class="relative overflow-hidden rounded-3xl border-4 border-white/70 shadow-2xl bg-slate-900/10 backdrop-blur-xs">
+<img alt="Emax VeloFlow High-Torque Urban Electric Bicycle" class="w-full h-auto object-cover transform duration-700 group-hover:scale-102" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-GYlqtvGy3-V3oLSiHxpq8HHg-TfADOVXC_2hxTVD4V8hU13qeR7mUpYE6Hs5YNjMRKxU0gIjx1ZdT-34wlqtd4WlH-n6eC5ZaDGJtUEcveZbNWKbr6VkaPnENgUrlUa2uSW0ia6WlqeW2AiXNCmnBsRpYbhJ9d7dUebfT7FDPBw5igr-TXNaYa9ezew_FmgQRi9g2Y6MpgKBvJDQnneJI13vnw9Z4lyrbOhMNX9bkihPWNlRg3AHqg"/>
+<!-- Overlay Badge Inside Image -->
+<div class="absolute bottom-4 left-4 right-4 sm:right-auto glass-card rounded-xl px-4 py-2.5 flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-emax-lime border-2 border-emax-navy animate-ping"></span>
+<div>
+<p class="text-xs font-bold text-emax-navy">Emax VeloFlow 750W Dual-Disc</p>
+<p class="text-[11px] text-slate-500">Grade-A LG 21700 Built-in Lockable Cell Array</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Card 3: Top Right Economic Comparison -->
+<div class="hidden md:flex flex-col absolute top-2 right-6 lg:right-12 glass-card rounded-2xl p-4 shadow-glass z-30 transition-transform duration-300 hover:scale-105 border border-white/80 w-48" data-purpose="metric-card">
+<span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Operational Cost</span>
+<div class="text-xl font-extrabold text-emax-navy mt-1">Zero Fuel</div>
+<div class="mt-2 inline-flex items-center gap-1.5 bg-amber-500/15 text-amber-800 text-xs font-bold px-2 py-0.5 rounded-full w-fit">
+<span>₦0 Petrol / Month</span>
+</div>
+</div>
+<!-- Floating Card 4: Bottom Right Speed & Power -->
+<div class="hidden md:flex flex-col absolute bottom-10 right-4 lg:right-8 glass-card rounded-2xl p-4 shadow-glass z-30 transition-transform duration-300 hover:scale-105 border border-white/80 w-52" data-purpose="metric-card">
+<span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Powertrain Peak</span>
+<div class="text-xl font-extrabold text-emax-navy mt-1">750W Motor</div>
+<div class="mt-2 inline-flex items-center gap-1.5 bg-emerald-500/10 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded-full w-fit">
+<span>⚡ 45 km/h Max Assist</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Gentle Grass Horizon Transition Decor -->
+<div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#f7faff] to-transparent pointer-events-none"></div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: VerifiedMetricsSection -->
+<section class="relative z-30 -mt-10 max-w-5xl mx-auto px-4">
+<div class="glass-card rounded-3xl p-6 sm:p-8 shadow-glass border border-white grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+<div class="border-r border-slate-100 last:border-0 pr-2">
+<div class="text-3xl font-extrabold text-emax-navy tracking-tight">450+</div>
+<p class="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wider">Packs Built &amp; Deployed</p>
+</div>
+<div class="border-r border-slate-100 last:border-0 pr-2">
+<div class="text-3xl font-extrabold text-emax-teal tracking-tight">&lt; 0.25 mΩ</div>
+<p class="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wider">Internal Resistance Test</p>
+</div>
+<div class="border-r border-slate-100 last:border-0 pr-2">
+<div class="text-3xl font-extrabold text-emax-navy tracking-tight">99.2%</div>
+<p class="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wider">Batch Capacity Yield</p>
+</div>
+<div>
+<div class="text-3xl font-extrabold text-emerald-600 tracking-tight">100%</div>
+<p class="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wider">Physical Lagos Stock</p>
+</div>
+</div>
+</section>
+<!-- END: VerifiedMetricsSection -->
+<!-- BEGIN: VerificationProtocolComparison -->
+<section class="py-20 px-4 sm:px-6 max-w-6xl mx-auto" id="verification">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-xs uppercase font-extrabold tracking-widest text-emax-teal bg-teal-50 px-3 py-1 rounded-full">Engineering Standard</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-emax-navy mt-3 tracking-tight">
+        The Nigerian Market Reality vs Emax Verified Protocol
+      </h2>
+<p class="text-sm sm:text-base text-slate-600 mt-3 font-medium">
+        Uninspected open-market lithium poses silent capacity degradation and thermal risk. Here is how Emax protects your long-term capital investment.
+      </p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Open Market Card -->
+<div class="bg-red-50/40 rounded-3xl p-7 border border-red-200/60 shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between pb-5 border-b border-red-200/50">
+<div>
+<h3 class="font-bold text-lg text-red-950">Generic Open Market Cells</h3>
+<p class="text-xs text-red-600">Alaba &amp; Online Unverified Sellers</p>
+</div>
+<span class="text-2xl text-red-500">✕</span>
+</div>
+<ul class="space-y-4 text-xs sm:text-sm text-slate-700 mt-6">
+<li class="flex items-start gap-3">
+<span class="text-red-500 font-bold">✕</span>
+<span><strong>Re-wrapped B/C Grade:</strong> Scrapped automotive cells stamped with fresh Grade-A QR codes.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-red-500 font-bold">✕</span>
+<span><strong>Unmatched Internal Impedance:</strong> Cells drift rapidly within 6 months, locking down inverter charging.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-red-500 font-bold">✕</span>
+<span><strong>Passive 30mA Balancing:</strong> Tiny bleeding currents unable to balance heavy 200Ah+ banks under solar load.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-red-500 font-bold">✕</span>
+<span><strong>No Diagnostic Logs:</strong> Blind operation without historical logs, cell cycle tracking, or thermal cut-offs.</span>
+</li>
+</ul>
+</div>
+<!-- Emax Verified Protocol Card -->
+<div class="bg-white rounded-3xl p-7 border-2 border-emerald-500/40 shadow-xl relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-36 h-36 bg-emerald-100 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between pb-5 border-b border-slate-100">
+<div>
+<h3 class="font-bold text-lg text-emax-navy">Emax Verified Engineering Protocol</h3>
+<p class="text-xs text-emerald-600 font-semibold">Every Single Batch Verified in Ikeja Hub</p>
+</div>
+<span class="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-sm">✓</span>
+</div>
+<ul class="space-y-4 text-xs sm:text-sm text-slate-700 mt-6">
+<li class="flex items-start gap-3">
+<span class="text-emerald-500 font-bold">✓</span>
+<span><strong>Laser QR Verification &amp; YR1035+ Testing:</strong> AC internal resistance stamped &amp; signed before release.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-emerald-500 font-bold">✓</span>
+<span><strong>Smart BMS Active Balancing (1A - 2A):</strong> Constant active energy transfer between high and low cells.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-emerald-500 font-bold">✓</span>
+<span><strong>Full Bluetooth Diagnostics:</strong> Real-time mV cell delta, temperature sensors, and state-of-health on your phone.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-emerald-500 font-bold">✓</span>
+<span><strong>Direct Physical Inspection in Lagos:</strong> Bring your multimeter or book an in-person bench verification.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- END: VerificationProtocolComparison -->
+<!-- BEGIN: ProductCategoriesSection -->
+<section class="py-16 bg-slate-100/70 border-y border-slate-200">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<div class="text-center max-w-xl mx-auto mb-12">
+<span class="text-xs uppercase font-extrabold tracking-widest text-slate-500">Catalog Architecture</span>
+<h2 class="text-3xl font-extrabold text-emax-navy mt-1 tracking-tight">Core Product Categories</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+<!-- Category 1 -->
+<a class="bg-white p-5 rounded-2xl border border-slate-200/80 hover:shadow-cardHover hover:border-emax-teal transition text-center group" href="#inventory">
+<div class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition">🔋</div>
+<h4 class="font-bold text-xs sm:text-sm text-emax-navy">Lithium Cells</h4>
+<p class="text-[11px] text-slate-400 mt-1">LiFePO4 &amp; NMC 3.2V</p>
+</a>
+<!-- Category 2 -->
+<a class="bg-white p-5 rounded-2xl border border-slate-200/80 hover:shadow-cardHover hover:border-emax-teal transition text-center group" href="#inventory">
+<div class="w-12 h-12 mx-auto rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition">📟</div>
+<h4 class="font-bold text-xs sm:text-sm text-emax-navy">Smart BMS</h4>
+<p class="text-[11px] text-slate-400 mt-1">JK &amp; Daly Bluetooth</p>
+</a>
+<!-- Category 3 -->
+<a class="bg-white p-5 rounded-2xl border border-slate-200/80 hover:shadow-cardHover hover:border-emax-teal transition text-center group" href="#inventory">
+<div class="w-12 h-12 mx-auto rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition">⚡</div>
+<h4 class="font-bold text-xs sm:text-sm text-emax-navy">Inverters &amp; MPPT</h4>
+<p class="text-[11px] text-slate-400 mt-1">Hybrid 24V / 48V</p>
+</a>
+<!-- Category 4 -->
+<a class="bg-white p-5 rounded-2xl border border-slate-200/80 hover:shadow-cardHover hover:border-emax-teal transition text-center group" href="#inventory">
+<div class="w-12 h-12 mx-auto rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition">🔩</div>
+<h4 class="font-bold text-xs sm:text-sm text-emax-navy">Pack Hardware</h4>
+<p class="text-[11px] text-slate-400 mt-1">Busbars, Epoxy, Wire</p>
+</a>
+<!-- Category 5 -->
+<a class="bg-white p-5 rounded-2xl border border-slate-200/80 hover:shadow-cardHover hover:border-emax-teal transition text-center group" href="#inventory">
+<div class="w-12 h-12 mx-auto rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition">🧰</div>
+<h4 class="font-bold text-xs sm:text-sm text-emax-navy">Solar Generators</h4>
+<p class="text-[11px] text-slate-400 mt-1">Turnkey Plug &amp; Play</p>
+</a>
+<!-- Category 6 -->
+<a class="bg-white p-5 rounded-2xl border border-slate-200/80 hover:shadow-cardHover hover:border-emax-teal transition text-center group" href="#ebike">
+<div class="w-12 h-12 mx-auto rounded-xl bg-lime-50 text-lime-700 flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition">🚲</div>
+<h4 class="font-bold text-xs sm:text-sm text-emax-navy">Urban E-Bikes</h4>
+<p class="text-[11px] text-slate-400 mt-1">Zero Fuel Commute</p>
+</a>
+</div>
+</div>
+</section>
+<!-- END: ProductCategoriesSection -->
+<!-- BEGIN: FeaturedInventorySection -->
+<section class="py-20 px-4 sm:px-6 max-w-6xl mx-auto" id="inventory">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="text-xs uppercase font-extrabold tracking-widest text-blue-600">Immediate Warehouse Availability</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-emax-navy mt-1 tracking-tight">Featured In-Stock Components</h2>
+</div>
+<p class="text-xs sm:text-sm text-slate-500 font-medium max-w-sm mt-3 md:mt-0">
+        Prices updated daily based on Lagos exchange and current warehouse quantity. Pick up same day or request interstate transit.
+      </p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Component 1: Grade-A 280Ah LiFePO4 -->
+<div class="bg-white rounded-3xl p-5 border border-slate-200/80 hover:shadow-cardHover transition flex flex-col justify-between group">
+<div>
+<div class="w-full h-44 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center justify-center relative p-3">
+<span class="absolute top-3 left-3 bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded-full">QR Verified</span>
+<div class="text-4xl">🔋</div>
+<span class="text-[11px] font-semibold text-slate-500 mt-2">Eve 280Ah Prism</span>
+</div>
+<h3 class="font-bold text-base text-emax-navy mt-4 group-hover:text-blue-600 transition">Grade-A 280Ah LiFePO4 Cell</h3>
+<p class="text-xs text-slate-500 mt-1">3.2V nominal, tested &lt;0.22mΩ resistance, 6,000 cycle lifespan.</p>
+</div>
+<div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+<div>
+<span class="text-[10px] uppercase font-semibold text-slate-400">Unit Price</span>
+<div class="text-lg font-extrabold text-emax-navy">₦98,500</div>
+</div>
+<a class="w-10 h-10 rounded-full bg-slate-100 group-hover:bg-emax-lime text-emax-navy flex items-center justify-center font-bold text-sm transition" href="https://wa.me/2348000000000?text=Hi%20Emax,%20I%20want%20to%20order%20the%20Grade-A%20280Ah%20LiFePO4%20Cell" rel="noopener noreferrer" target="_blank">
+            ↗
+          </a>
+</div>
+</div>
+<!-- Component 2: JK Smart BMS 16S 200A -->
+<div class="bg-white rounded-3xl p-5 border border-slate-200/80 hover:shadow-cardHover transition flex flex-col justify-between group">
+<div>
+<div class="w-full h-44 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center justify-center relative p-3">
+<span class="absolute top-3 left-3 bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-0.5 rounded-full">Bluetooth + 2A Active</span>
+<div class="text-4xl">📟</div>
+<span class="text-[11px] font-semibold text-slate-500 mt-2">JK-B2A24S20P</span>
+</div>
+<h3 class="font-bold text-base text-emax-navy mt-4 group-hover:text-blue-600 transition">JK Smart BMS 16S 200A</h3>
+<p class="text-xs text-slate-500 mt-1">Active 2A balancer, dual temp probes, iOS/Android mobile dashboard.</p>
+</div>
+<div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+<div>
+<span class="text-[10px] uppercase font-semibold text-slate-400">Unit Price</span>
+<div class="text-lg font-extrabold text-emax-navy">₦84,000</div>
+</div>
+<a class="w-10 h-10 rounded-full bg-slate-100 group-hover:bg-emax-lime text-emax-navy flex items-center justify-center font-bold text-sm transition" href="https://wa.me/2348000000000?text=Hi%20Emax,%20I%20want%20to%20order%20the%20JK%20Smart%20BMS%2016S%20200A" rel="noopener noreferrer" target="_blank">
+            ↗
+          </a>
+</div>
+</div>
+<!-- Component 3: Pure Copper Busbars -->
+<div class="bg-white rounded-3xl p-5 border border-slate-200/80 hover:shadow-cardHover transition flex flex-col justify-between group">
+<div>
+<div class="w-full h-44 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center justify-center relative p-3">
+<span class="absolute top-3 left-3 bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded-full">Nickel Plated</span>
+<div class="text-4xl">🔩</div>
+<span class="text-[11px] font-semibold text-slate-500 mt-2">16-Piece Kit</span>
+</div>
+<h3 class="font-bold text-base text-emax-navy mt-4 group-hover:text-blue-600 transition">Pure Copper Busbar Pack</h3>
+<p class="text-xs text-slate-500 mt-1">Flexible layered copper, anti-corrosion tin plating, 300A high conductivity.</p>
+</div>
+<div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+<div>
+<span class="text-[10px] uppercase font-semibold text-slate-400">Pack Price</span>
+<div class="text-lg font-extrabold text-emax-navy">₦12,500</div>
+</div>
+<a class="w-10 h-10 rounded-full bg-slate-100 group-hover:bg-emax-lime text-emax-navy flex items-center justify-center font-bold text-sm transition" href="https://wa.me/2348000000000?text=Hi%20Emax,%20I%20want%20to%20order%20the%20Pure%20Copper%20Busbar%20Pack" rel="noopener noreferrer" target="_blank">
+            ↗
+          </a>
+</div>
+</div>
+<!-- Component 4: Emax VeloFlow Urban E-Bike -->
+<div class="bg-white rounded-3xl p-5 border-2 border-emax-lime shadow-md hover:shadow-cardHover transition flex flex-col justify-between group relative overflow-hidden">
+<span class="absolute top-3 right-3 bg-emax-lime text-emax-navy text-[10px] font-extrabold px-2.5 py-0.5 rounded-full">Complete Unit</span>
+<div>
+<div class="w-full h-44 rounded-2xl bg-slate-900 overflow-hidden relative">
+<img alt="VeloFlow Ebike" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-GYlqtvGy3-V3oLSiHxpq8HHg-TfADOVXC_2hxTVD4V8hU13qeR7mUpYE6Hs5YNjMRKxU0gIjx1ZdT-34wlqtd4WlH-n6eC5ZaDGJtUEcveZbNWKbr6VkaPnENgUrlUa2uSW0ia6WlqeW2AiXNCmnBsRpYbhJ9d7dUebfT7FDPBw5igr-TXNaYa9ezew_FmgQRi9g2Y6MpgKBvJDQnneJI13vnw9Z4lyrbOhMNX9bkihPWNlRg3AHqg"/>
+</div>
+<h3 class="font-bold text-base text-emax-navy mt-4 group-hover:text-blue-600 transition">Emax VeloFlow 750W</h3>
+<p class="text-xs text-slate-500 mt-1">Integrated LG lithium battery, 80km range, 5-level pedal assist.</p>
+</div>
+<div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+<div>
+<span class="text-[10px] uppercase font-semibold text-slate-400">Turnkey Price</span>
+<div class="text-lg font-extrabold text-emax-navy">₦680,000</div>
+</div>
+<a class="w-10 h-10 rounded-full bg-emax-lime text-emax-navy flex items-center justify-center font-extrabold text-sm shadow-glow transition" href="https://wa.me/2348000000000?text=Hi%20Emax,%20I%20want%20to%20order%20the%20Emax%20VeloFlow%20E-Bike" rel="noopener noreferrer" target="_blank">
+            ↗
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FeaturedInventorySection -->
+<!-- BEGIN: InteractivePowerSizingBuilders -->
+<section class="py-20 bg-slate-50 border-t border-slate-200" id="builders">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-xs uppercase font-extrabold tracking-widest text-emax-teal bg-teal-50 px-3 py-1 rounded-full">Engineering Calculators</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-emax-navy mt-2 tracking-tight">Interactive Power Sizing Builders</h2>
+<p class="text-sm text-slate-500 mt-2 font-medium">Select your voltage requirements to configure the exact cell count, BMS capacity, and storage.</p>
+</div>
+<div class="grid lg:grid-cols-2 gap-8">
+<!-- Calculator 1: Lithium Pack Sizer -->
+<div class="bg-white rounded-3xl p-7 border border-slate-200 shadow-sm">
+<div class="flex items-center gap-3 mb-6">
+<span class="w-10 h-10 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg">1</span>
+<div>
+<h3 class="font-extrabold text-lg text-emax-navy">Lithium Pack Configuration Builder</h3>
+<p class="text-xs text-slate-500">Pick target system voltage &amp; energy requirement</p>
+</div>
+</div>
+<div class="space-y-4">
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Target Voltage</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="volt-btn py-2 text-xs font-bold rounded-xl border border-slate-200 hover:border-emax-teal bg-slate-50 text-slate-700 focus:bg-emax-navy focus:text-white active" id="volt-12" type="button">12V (4S)</button>
+<button class="volt-btn py-2 text-xs font-bold rounded-xl border border-slate-200 hover:border-emax-teal bg-slate-50 text-slate-700 focus:bg-emax-navy focus:text-white" id="volt-24" type="button">24V (8S)</button>
+<button class="volt-btn py-2 text-xs font-bold rounded-xl border border-slate-200 hover:border-emax-teal bg-emax-navy text-white shadow-sm" id="volt-48" type="button">48V (16S)</button>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Cell Model Selection</label>
+<select class="w-full rounded-xl border-slate-200 text-xs font-semibold py-2.5 bg-slate-50 focus:border-emax-navy focus:ring-0" id="cell-select">
+<option value="280">280Ah LiFePO4 Prism (14.3 kWh total @ 48V)</option>
+<option value="100">100Ah LiFePO4 Prism (5.12 kWh total @ 48V)</option>
+<option value="314">314Ah High-Density Cell (16.0 kWh total @ 48V)</option>
+</select>
+</div>
+<!-- Pack Summary Box -->
+<div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5">
+<div class="flex justify-between">
+<span class="text-slate-500">Required Cells:</span>
+<span class="font-extrabold text-emax-navy" id="pack-cells-count">16 Units (Matched IR)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-slate-500">Recommended Smart BMS:</span>
+<span class="font-extrabold text-emax-teal">JK 16S 200A Active 2A</span>
+</div>
+<div class="flex justify-between">
+<span class="text-slate-500">Useful Energy Capacity:</span>
+<span class="font-extrabold text-emerald-600" id="pack-kwh">~14.33 Kilowatt-Hours</span>
+</div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 bg-emax-navy hover:bg-slate-800 text-white font-bold text-xs py-3 rounded-xl transition" href="https://wa.me/2348000000000?text=Hello%20Emax,%20please%20quote%20a%2048V%2016S%20280Ah%20Lithium%20Pack%20kit" rel="noopener noreferrer" target="_blank">
+<span>Send Specs to Lagos Engineer for Full Quote</span>
+<span>↗</span>
+</a>
+</div>
+</div>
+<!-- Calculator 2: Urban E-Bike Commute Sizer -->
+<div class="bg-white rounded-3xl p-7 border border-slate-200 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="w-10 h-10 rounded-2xl bg-lime-100 text-lime-900 flex items-center justify-center font-bold text-lg">2</span>
+<div>
+<h3 class="font-extrabold text-lg text-emax-navy">Lagos Commute Fuel-Savings Estimator</h3>
+<p class="text-xs text-slate-500">Calculate direct petrol money saved with Emax VeloFlow</p>
+</div>
+</div>
+<div class="space-y-4">
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Daily Return Commute (km)</label>
+<input class="w-full accent-emax-lime h-2 bg-slate-200 rounded-lg cursor-pointer" id="commute-range" max="90" min="10" type="range" value="35"/>
+<div class="flex justify-between text-xs font-semibold text-slate-500 mt-1">
+<span>10 km</span>
+<span class="text-emax-navy font-extrabold text-sm" id="commute-val">35 km / day</span>
+<span>90 km</span>
+</div>
+</div>
+<!-- Fuel Savings Box -->
+<div class="bg-gradient-to-br from-slate-900 to-emax-deepBlue rounded-2xl p-5 text-white shadow-md">
+<span class="text-[10px] uppercase font-bold text-emax-lime tracking-wider">Estimated Monthly Petrol Saved</span>
+<div class="text-3xl font-extrabold text-[#f2a541] mt-1" id="savings-amount">₦63,000 / mo</div>
+<p class="text-xs text-slate-300 mt-2">
+                  At ₦800/liter Lagos rate, payback time for the Emax VeloFlow is under 11 months while bypassing all rush-hour gridlock.
+                </p>
+</div>
+</div>
+</div>
+<a class="mt-6 w-full inline-flex items-center justify-center gap-2 bg-[#087e8b] hover:bg-[#066570] text-white font-extrabold text-xs py-3 rounded-xl transition shadow-md shadow-[#087e8b]/20" href="#ebike"><span>Test Ride VeloFlow in Ikeja</span><span>↗</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: InteractivePowerSizingBuilders -->
+<!-- BEGIN: ThreeStepsOrderSection -->
+<section class="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-xs uppercase font-extrabold tracking-widest text-slate-400">Straightforward Logistics</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-emax-navy mt-1 tracking-tight">3 Confident Steps to Order &amp; Lagos Dispatch</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Step 1 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm relative">
+<div class="w-10 h-10 rounded-full bg-slate-100 font-extrabold text-emax-navy flex items-center justify-center text-sm mb-4">01</div>
+<h3 class="font-bold text-base text-emax-navy">Choose Stock or Custom Pack</h3>
+<p class="text-xs sm:text-sm text-slate-500 mt-2 leading-relaxed">
+          Select standard in-stock cells, ready-assembled 48V battery modules, or book a test-ride slot for the VeloFlow e-bike.
+        </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm relative">
+<div class="w-10 h-10 rounded-full bg-slate-100 font-extrabold text-emax-navy flex items-center justify-center text-sm mb-4">02</div>
+<h3 class="font-bold text-base text-emax-navy">Bench Test Verification</h3>
+<p class="text-xs sm:text-sm text-slate-500 mt-2 leading-relaxed">
+          Receive actual video proof of cell impedance and capacity verification from our Ikeja test bench before final dispatch approval.
+        </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm relative">
+<div class="w-10 h-10 rounded-full bg-slate-100 font-extrabold text-emax-navy flex items-center justify-center text-sm mb-4">03</div>
+<h3 class="font-bold text-base text-emax-navy">Pickup or Waybill Transit</h3>
+<p class="text-xs sm:text-sm text-slate-500 mt-2 leading-relaxed">
+          Collect directly at our Ikeja dispatch store or receive protected insured interstate delivery across Abuja, PH, Ibadan, and Kano.
+        </p>
+</div>
+</div>
+</section>
+<!-- END: ThreeStepsOrderSection -->
+<!-- BEGIN: FAQSection -->
+<section class="py-16 bg-slate-50 border-t border-slate-200">
+<div class="max-w-4xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-12">
+<span class="text-xs uppercase font-extrabold tracking-widest text-slate-500">Transparent Answers</span>
+<h2 class="text-3xl font-extrabold text-emax-navy mt-1 tracking-tight">Frequently Asked Questions</h2>
+</div>
+<div class="space-y-4">
+<details class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm group">
+<summary class="font-bold text-sm text-emax-navy cursor-pointer list-none flex justify-between items-center">
+<span>How do you guarantee your LiFePO4 cells are genuine Grade-A?</span>
+<span class="text-slate-400 group-open:rotate-180 transition font-mono">+</span>
+</summary>
+<p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+            Every cell features original factory laser-etched QR codes intact. We measure AC internal resistance (&lt;0.25mΩ) using calibrated YR1035+ meters and test open circuit voltage consistency. We welcome customers with their own meters to inspect before payment.
+          </p>
+</details>
+<details class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm group">
+<summary class="font-bold text-sm text-emax-navy cursor-pointer list-none flex justify-between items-center">
+<span>Can I recharge the Emax VeloFlow e-bike with my home solar setup?</span>
+<span class="text-slate-400 group-open:rotate-180 transition font-mono">+</span>
+</summary>
+<p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+            Yes! The included smart charger draws only 120W–150W of power, which works easily with even a small 500VA inverter or small portable solar generator. Full charge takes approximately 4 to 5 hours.
+          </p>
+</details>
+<details class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm group">
+<summary class="font-bold text-sm text-emax-navy cursor-pointer list-none flex justify-between items-center">
+<span>Do you ship to other states outside Lagos?</span>
+<span class="text-slate-400 group-open:rotate-180 transition font-mono">+</span>
+</summary>
+<p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+            Yes, we package all cells and bikes inside heavy foam shock-resistant crating and ship via verified interstate logistics lines (GIGL, Peace Mass Logistics, etc.) with real-time tracking to all 36 states.
+          </p>
+</details>
+</div>
+</div>
+</section>
+<!-- END: FAQSection -->
+<!-- BEGIN: BottomCTABanner -->
+<section class="py-16 px-4 sm:px-6">
+<div class="max-w-6xl mx-auto rounded-3xl bg-gradient-to-r from-[#123047] via-[#0e273b] to-[#123047] p-8 sm:p-14 text-white relative overflow-hidden shadow-2xl border border-white/10"><div class="absolute -top-24 -right-24 w-80 h-80 bg-[#087e8b]/20 rounded-full blur-3xl pointer-events-none"></div><div class="relative z-10 max-w-2xl"><span class="text-xs uppercase font-extrabold tracking-widest text-[#f2a541]">Direct Lagos Supply</span><h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 tracking-tight">Ready to transition to reliable zero-fuel power?</h2><p class="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed">Chat directly with our Lagos battery technicians and mobility specialists on WhatsApp for verified cell matching, custom pack construction, or warehouse appointments.</p><div class="mt-8 flex flex-wrap gap-4 items-center"><a class="inline-flex items-center gap-2 bg-[#087e8b] hover:bg-[#066570] text-white font-extrabold text-sm px-7 py-3 rounded-full shadow-lg shadow-[#087e8b]/40 transition transform hover:-translate-y-0.5" href="https://wa.me/2348000000000?text=Hello%20Emax%20Enterprises,%20I'm%20ready%20to%20order" rel="noopener noreferrer" target="_blank"><span>Connect on WhatsApp Desk</span><span class="text-[#f2a541]">↗</span></a><span class="text-xs text-slate-400 font-medium">Average reply time &lt; 5 minutes</span></div></div></div>
+</section>
+<!-- END: BottomCTABanner -->
+<!-- BEGIN: MainFooter -->
+<footer class="bg-white border-t border-slate-200 py-12 px-4 sm:px-6">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+<!-- Brand & Address -->
+<div>
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-emax-navy flex items-center justify-center text-emax-lime font-bold text-xs">
+            ⚡
+          </div>
+<span class="font-extrabold text-base text-emax-navy">EMAX ELECTRONICS ENTERPRISES</span>
+</div>
+<p class="text-xs text-slate-500 mt-1 max-w-sm">
+          Technical warehouse: Ikeja Industrial Corridor, Lagos State, Nigeria. Verified energy storage and e-mobility distribution.
+        </p>
+</div>
+<!-- Quick Links -->
+<div class="flex flex-wrap gap-6 text-xs font-semibold text-slate-600">
+<a class="hover:text-emax-navy transition" href="#hero">Home</a>
+<a class="hover:text-emax-navy transition" href="#inventory">LiFePO4 Cells</a>
+<a class="hover:text-emax-navy transition" href="#ebike">VeloFlow E-Bikes</a>
+<a class="hover:text-emax-navy transition" href="#builders">Sizing Builders</a>
+<a class="hover:text-emax-navy transition" href="#verification">Lab Standards</a>
+</div>
+<!-- Copyright -->
+<div class="text-xs text-slate-400">
+        © <span id="year"></span> Emax Electronics Enterprises. All rights reserved.
+      </div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: InteractiveScripts -->
+<script data-purpose="pricing-and-savings-calculator">
+    // Auto Year Update
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Commute Petrol Savings Slider
+    const commuteSlider = document.getElementById('commute-range');
+    const commuteVal = document.getElementById('commute-val');
+    const savingsAmount = document.getElementById('savings-amount');
+
+    if (commuteSlider) {
+      commuteSlider.addEventListener('input', function() {
+        const km = parseInt(this.value, 10);
+        commuteVal.textContent = km + " km / day";
+        
+        // Approx 0.08L petrol / km equivalent vehicle cost in Lagos traffic @ ₦800/L
+        const monthlyLitres = (km * 0.08) * 26; // 26 working days
+        const nairaSaved = Math.round(monthlyLitres * 800);
+        savingsAmount.textContent = "₦" + nairaSaved.toLocaleString() + " / mo";
+      });
+    }
+
+    // Pack Sizing Selection Logic
+    const cellSelect = document.getElementById('cell-select');
+    const packKwh = document.getElementById('pack-kwh');
+
+    if (cellSelect) {
+      cellSelect.addEventListener('change', function() {
+        const capacityAh = parseFloat(this.value);
+        // Nominal 48V (51.2V for 16S LiFePO4)
+        const totalKwh = ((51.2 * capacityAh) / 1000).toFixed(2);
+        packKwh.textContent = "~" + totalKwh + " Kilowatt-Hours";
+      });
+    }
+  </script>
+<!-- END: InteractiveScripts -->
+</body></html>

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface":"#f8f9ff","on-primary-fixed":"#001d32","on-secondary":"#ffffff","brand-lime":"#d4f34a","primary-container":"#123047","outline":"#73777d","on-secondary-fixed-variant":"#004f57","on-tertiary-container":"#cd8622","surface-variant":"#d3e4fc","on-secondary-fixed":"#001f24","tertiary-fixed":"#ffddb9","on-primary-container":"#7c98b4","outline-variant":"#c3c7cd","brand-amber":"#f2a541","glass-border":"rgba(255, 255, 255, 0.65)","background":"#f8f9ff","surface-container-lowest":"#ffffff","on-surface-variant":"#43474d","error":"#ba1a1a","primary":"#001b2e","brand-teal-hover":"#066570","tertiary-fixed-dim":"#ffb963","inverse-on-surface":"#e9f1ff","tertiary-container":"#442700","on-error-container":"#93000a","primary-fixed":"#cde5ff","secondary-fixed":"#96f0ff","on-surface":"#0b1d2e","surface-container-high":"#daeaff","inverse-surface":"#213244","surface-bright":"#f8f9ff","primary-fixed-dim":"#adcae7","brand-navy":"#0b1d2e","on-primary":"#ffffff","secondary":"#006874","surface-dim":"#cadcf3","surface-container":"#e4efff","inverse-primary":"#adcae7","surface-container-low":"#eef4ff","surface-tint":"#46617a","secondary-container":"#93eefc","on-tertiary-fixed-variant":"#663e00","on-error":"#ffffff","error-container":"#ffdad6","on-primary-fixed-variant":"#2e4961","brand-canvas":"#f7faff","brand-deep-blue":"#0d2844","on-background":"#0b1d2e","on-tertiary":"#ffffff","surface-container-highest":"#d3e4fc","tertiary":"#271500","secondary-fixed-dim":"#79d4e2","on-tertiary-fixed":"#2b1700","brand-sky":"#3a88e9","brand-teal":"#087e8b","on-secondary-container":"#006d79"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter":"1.5rem","space-xl":"2rem","space-sm":"0.5rem","margin":"1.5rem","gutter-sm":"1rem","space-md":"1rem","margin-lg":"4rem","space-2xl":"3rem","space-xs":"0.25rem"},"fontFamily":{"body-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"]},"fontSize":{"body-sm":["0.75rem",{"lineHeight":"1.4","fontWeight":"400"}],"body-lg":["1.125rem",{"lineHeight":"1.6","fontWeight":"500"}],"headline-sm":["1.125rem",{"lineHeight":"1.35","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["1.5rem",{"lineHeight":"1.3","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.5","fontWeight":"400"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"800"}],"headline-xl":["3.75rem",{"lineHeight":"1.12","letterSpacing":"-0.03em","fontWeight":"800"}],"label-md":["0.75rem",{"lineHeight":"1.0","letterSpacing":"0.06em","fontWeight":"700"}],"label-sm":["0.625rem",{"lineHeight":"1.0","letterSpacing":"0.08em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300"><div class="max-w-[72rem] mx-auto px-gutter py-space-sm"><div class="h-20 px-space-md lg:px-space-lg rounded-full bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_20px_40px_-15px_rgba(0,32,70,0.08)] flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-brand-lime text-[22px]">bolt</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">EMAX TECH</span><span class="font-label-sm text-label-sm text-on-surface-variant -mt-1">ELECTRONICS ENT.</span></div></div><nav class="hidden xl:flex items-center gap-space-xs p-1.5 rounded-full bg-surface-container-low" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><a class="px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="#">Products</a><a class="px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="lithium-builder" href="#">Lithium Builder</a><a class="px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="solar-builder" href="#">Solar Builder</a><a class="px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="e-bikes" href="#">E-Bikes</a><a class="px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-and-contact" href="#">About &amp; Contact</a></nav><div class="flex items-center gap-space-sm"><a class="flex items-center gap-2 px-space-md py-2.5 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-on-secondary font-headline-sm text-body-md transition-all shadow-[0_10px_25px_-5px_rgba(8,126,139,0.3)] hover:scale-[1.02]" href="https://wa.me/2340000000000" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span><span class="hidden sm:inline font-bold">WhatsApp Tech Desk</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Telemetry Bar & Context Path -->
+<section class="w-full bg-surface-container-low/70 py-space-sm backdrop-blur-md">
+<div class="max-w-[72rem] mx-auto px-gutter flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant flex-wrap">
+<a class="hover:text-primary transition-colors" data-path="home" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" data-path="products" href="#">Products &amp; Shop</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Lithium Cells (LiFePO4)</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-bold text-on-surface">EVE LF280K v3 280Ah Prismatic</span>
+</nav>
+<div class="flex items-center gap-space-xs flex-wrap">
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+<span>BATCH #2026-NG-04</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-brand-teal">speed</span>
+<span>AC-IR: &lt;0.20 mΩ</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-800 font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+<span>IKEJA HUB: 284 UNITS IN STOCK</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Configuration Section -->
+<section class="max-w-[72rem] w-full mx-auto px-gutter py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Media Gallery Column -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="relative rounded-3xl bg-surface-container-lowest shadow-xl overflow-hidden group">
+<div class="absolute top-4 left-4 z-10 flex flex-col gap-1.5">
+<span class="px-3 py-1 rounded-full bg-brand-navy text-brand-lime font-label-sm text-label-sm tracking-wider shadow-md">
+              GRADE-A MATCHED CELL
+            </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-brand-deep-blue font-label-sm text-label-sm shadow-sm">
+              UN38.3 &amp; CE CERTIFIED
+            </span>
+</div>
+<div class="absolute bottom-4 right-4 z-10">
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm shadow-lg flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-brand-amber">verified</span>
+              6,000+ CYCLES @ 0.5C (80% DoD)
+            </span>
+</div>
+<!-- Main Image Canvas -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-low flex items-center justify-center p-6">
+<img class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" data-alt="High-resolution laboratory product shot of an authentic EVE LF280K v3 280Ah LiFePO4 prismatic cell with pristine blue PET protective wrap, intact laser-etched matrix QR code, aluminum shell casing, explosion-proof pressure relief valve, and dual laser-welded M6 terminal studs under bright diffused technical workbench lighting." id="main-product-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjohkzDsXRV6ohB_oLzGF5zF2F9dw9Bsec5FIGN_lBijg56xp459oqcJs8eP07SHAz4CiJwYza2H87DPDxvXBudqfQH2l0hzYfQ3hhebMz0wJ9s0b8MmYWwsZ3ieXJ6WlDoR1OYhNc1sqgHuf6ufiiLQxQTJvoJ2mJ7rh9Am1xsPES-2lYohoac8815IecYaqtfVddLCHS2ZN1eqG6GK7XGz8dJbxhgV0GfE8TbAuX"/>
+</div>
+</div>
+<!-- Thumbnail Selector -->
+<div class="grid grid-cols-4 gap-space-sm" id="thumb-container">
+<button class="thumb-btn active rounded-2xl bg-surface-container-lowest p-2 shadow-sm hover:shadow-md transition-all ring-2 ring-brand-teal aspect-square flex flex-col items-center justify-center group" onclick="setMainImage(0)">
+<img class="w-full h-full object-contain pointer-events-none" data-alt="Front isometric perspective view of EVE LF280K v3 280Ah prismatic cell showcasing smooth blue insulation wrap and front brand laser etching on clean industrial white surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_xrwCZQSTyIut7APcd3Zzj7m41ecSNXjytzEQf3keaN2qXtkU33oxsGH8qrKoFaBgGiXSS4oGFaGEbAl1GZmjBz3YBTHpp8NdMZF_9h71BvmtfYBErVDwI4iz8qyOWdxXffm2uf0MnHmSFSi0hA1GymgE8ecCmrESQHlc4GWVfwuf2ooT-0KpHG8qIr9maVxmdhfiL-3L5FSW1KzZzwuY9v30WXFzLOlcIJXm6JTO"/>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-1">Full Cell</span>
+</button>
+<button class="thumb-btn rounded-2xl bg-surface-container-lowest p-2 shadow-sm hover:shadow-md transition-all aspect-square flex flex-col items-center justify-center group" onclick="setMainImage(1)">
+<img class="w-full h-full object-contain pointer-events-none" data-alt="Macro close-up inspection shot of EVE LF280K top terminal deck showing laser-welded M6 terminal poles, center safety explosion-proof vent membrane, and untouched factory sealant." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhSx-xYjMMR5JMMTT7qsdqO_slH2u-imrtDlkEdR6DO9VIdT5y18-vFuE8kb76kGjUg23nRkcxv42cq7GXQLY3rDAHC9qmt5E0IHmlgStA8jYLGktvjFA8DYRSK6_6EOOtX8todyDHMO1wNWUCJUhj4EX_RwtB5tG3gPHK8-6_5OPyO5YH_IHVSjssVkZ65SI_dwk9yP-AsFsMGJBV43zqnNmMb0ZeNfGTmeJ-QB6J"/>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-1">Terminals &amp; Vent</span>
+</button>
+<button class="thumb-btn rounded-2xl bg-surface-container-lowest p-2 shadow-sm hover:shadow-md transition-all aspect-square flex flex-col items-center justify-center group" onclick="setMainImage(2)">
+<img class="w-full h-full object-contain pointer-events-none" data-alt="Extreme macro high-contrast technical photo of untampered factory laser-etched 24-digit data matrix QR code on bare aluminum corner verifying genuine EVE manufacturing date and original serial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA28Hrs1sunpRvZwR7lytQB24AleQVVKXJPlsUzS2TaVKq1Ofy5Oxidtlb6bftArRMP4nCmctkt4VU70ZFSiPx6boV2aBveMfsr7jBo-3Vt6EyNg1PJmC9ECMMzwpVS08sUBz7fiVb3liumLPYzdwga9tYaYacd30BaLz9xPG51gWY536e-6yUWtXpnBnjiQreB0Wnc9I_JS8-DabcfN7G3MR5xqzRJomfdkv0o3F5z"/>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-1">QR Laser Code</span>
+</button>
+<button class="thumb-btn rounded-2xl bg-surface-container-lowest p-2 shadow-sm hover:shadow-md transition-all aspect-square flex flex-col items-center justify-center group" onclick="setMainImage(3)">
+<img class="w-full h-full object-contain pointer-events-none" data-alt="Quality control testing station at Ikeja technical bench with YR1035+ precision 4-wire milliohm battery tester probe touching EVE cell terminal displaying 0.17 milliohms AC resistance and 3.295 volts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALClg2n5Jd5xOwGtGUD3HDOf_JfS1yv9i3cHd2PJ7EX-FZsUzMbylZ4eVUP1KnXl_LfMyFKxuJ-ksVy7mqMBMM_17waziy26YsA02usDT0fqUyLTr_SHpYHD2WZcFRcZagj5Mb_Ngn_ahxgEvxzcj0W5wn1TwsjYLf07d5IQvPiLfJz3vdCIoDKnsYfjl2hzpvy39ooKQ7qH_Et3MkQcOJri2UuQ7lIyg_S1pGCj4S"/>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-1">YR1035+ Test</span>
+</button>
+</div>
+<!-- Testing Guarantee Card -->
+<div class="rounded-2xl bg-surface-container-low p-space-md flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container text-brand-lime flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">science</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Ikeja Lab 4-Wire Impedance Guarantee</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Every unit undergoes open-circuit voltage (OCV) stabilization and 1kHz AC milliohm testing on our YR1035+ bench before dispatch. Recorded batches guarantee maximum ΔIR ≤ 0.03 mΩ matching across sets.
+            </p>
+</div>
+</div>
+</div>
+<!-- Purchase & Engineering Detail Column -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<span>SKU: EVE-280-K</span>
+<span>•</span>
+<span class="text-brand-teal font-bold">EVE ENERGY CO. ORIGINAL</span>
+<span>•</span>
+<span>PRISMATIC FORMAT</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            EVE LF280K v3 280Ah 3.2V LiFePO4 Prismatic Storage Cell
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            896Wh Nominal Capacity | Grade-A Match-Sorted (&lt;0.18 mΩ IR delta) | Heavy-Duty Stationary &amp; Inverter Grade
+          </p>
+</div>
+<!-- Unit Pricing Engine Card -->
+<div class="rounded-3xl bg-surface-container-lowest p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs pb-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-extrabold tracking-tight" id="display-total-price">₦98,500</span>
+<span class="font-body-md text-body-md text-on-surface-variant" id="unit-subtext">/ unit (Single Cell)</span>
+</div>
+<div class="flex items-center gap-1 text-emerald-700 font-label-sm text-label-sm bg-emerald-50 px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+<span>Same-Day Cutoff: 15:30 WAT</span>
+</div>
+</div>
+<!-- Pack Multipliers -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Quick Pack Pre-sets (Sorted Pairs)</span>
+<div class="grid grid-cols-4 gap-space-xs" id="pack-selector">
+<button class="pack-btn active py-2.5 px-2 rounded-xl font-headline-sm text-body-md text-center transition-all bg-primary text-on-primary shadow-sm flex flex-col items-center" data-qty="1" onclick="selectPack(1)">
+<span>1 Cell</span>
+<span class="font-label-sm text-[10px] opacity-80">3.2V Single</span>
+</button>
+<button class="pack-btn py-2.5 px-2 rounded-xl font-headline-sm text-body-md text-center transition-all bg-surface-container-low text-on-surface hover:bg-surface-container flex flex-col items-center" data-qty="4" onclick="selectPack(4)">
+<span>4 Cells</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">12.8V 3.5kWh</span>
+</button>
+<button class="pack-btn py-2.5 px-2 rounded-xl font-headline-sm text-body-md text-center transition-all bg-surface-container-low text-on-surface hover:bg-surface-container flex flex-col items-center" data-qty="8" onclick="selectPack(8)">
+<span>8 Cells</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">25.6V 7.1kWh</span>
+</button>
+<button class="pack-btn py-2.5 px-2 rounded-xl font-headline-sm text-body-md text-center transition-all bg-surface-container-low text-on-surface hover:bg-surface-container flex flex-col items-center" data-qty="16" onclick="selectPack(16)">
+<span>16 Cells</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">51.2V 14.3kWh</span>
+</button>
+</div>
+</div>
+<!-- Stepper & Hardware Add-ins -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center rounded-2xl bg-surface-container-low p-1.5 self-start">
+<button aria-label="Decrease quantity" class="w-9 h-9 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center font-bold text-lg hover:bg-surface-container shadow-sm transition-colors" onclick="adjustQty(-1)">
+                -
+              </button>
+<span class="w-12 text-center font-headline-sm text-headline-sm text-primary" id="qty-val">1</span>
+<button aria-label="Increase quantity" class="w-9 h-9 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center font-bold text-lg hover:bg-surface-container shadow-sm transition-colors" onclick="adjustQty(1)">
+                +
+              </button>
+</div>
+<!-- Free Busbar Hardware Bundle Tag -->
+<div class="flex items-center gap-2 p-2.5 rounded-2xl bg-brand-canvas text-primary">
+<span class="material-symbols-outlined text-brand-teal text-[20px]">handshake</span>
+<span class="font-body-sm text-body-sm font-semibold">Includes Free 2mm Pure Copper Busbars &amp; M6 Flange Nuts</span>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<a class="w-full flex items-center justify-between px-space-lg py-4 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-on-secondary font-headline-sm text-headline-sm transition-all shadow-[0_12px_28px_-6px_rgba(8,126,139,0.35)] hover:scale-[1.01]" href="https://wa.me/2340000000000?text=Hello%20Emax%20Ikeja%20Desk%2C%20I%20would%20like%20to%20order%201%20units%20of%20EVE%20LF280K%20v3%20(SKU%3A%20EVE-280-K)%20with%20batch%20AC-IR%20test%20sheets..." id="whatsapp-order-btn" target="_blank">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+<span>Order via WhatsApp Technical Desk</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-brand-amber text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</a>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+<a class="flex items-center justify-center gap-2 py-3 px-space-md rounded-full bg-surface-container-low hover:bg-surface-container text-primary font-headline-sm text-body-md transition-colors text-center" data-path="lithium-builder" href="#">
+<span class="material-symbols-outlined text-[20px] text-brand-teal">calculate</span>
+<span>Open in Lithium Builder</span>
+</a>
+<button class="flex items-center justify-center gap-2 py-3 px-space-md rounded-full bg-surface-container-low hover:bg-surface-container text-primary font-headline-sm text-body-md transition-colors text-center" onclick="downloadBatchReport()">
+<span class="material-symbols-outlined text-[20px]">description</span>
+<span>Get Batch Test Sheet</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Depot Inspection Banner -->
+<div class="rounded-2xl bg-surface-container-high/60 p-space-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-brand-deep-blue text-[22px] shrink-0">pin_drop</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-primary">In-Person Depot Verification Welcome</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Walk-in inspection available at Plot 14 Engineering Way, Ikeja Industrial Zone. Clients are encouraged to bring their own YR1035+ or RC3563 milliohm meters for live verification before invoice clearance.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specifications Matrix -->
+<section class="w-full bg-surface-container-lowest py-margin-lg">
+<div class="max-w-[72rem] mx-auto px-gutter flex flex-col gap-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-brand-teal uppercase tracking-widest">Laboratory Bench Standards</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Granular Engineering Specification Matrix</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">TEST TEMPERATURE: 25°C ± 2°C</span>
+<span class="w-1.5 h-1.5 rounded-full bg-brand-amber"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">HUMIDITY: 45–75% RH</span>
+</div>
+</div>
+<!-- Specification Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Electrical Panel -->
+<div class="rounded-3xl bg-surface-container-low p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-space-xs">
+<div class="w-9 h-9 rounded-full bg-brand-deep-blue text-brand-lime flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Electrical Profile</h3>
+</div>
+<div class="flex flex-col divide-y divide-surface-container-high/60 font-body-sm text-body-sm">
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Nominal Voltage</span>
+<span class="font-bold text-on-surface">3.20 V</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Operating Window</span>
+<span class="font-bold text-on-surface">2.50V – 3.65V</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Factory Rated Capacity</span>
+<span class="font-bold text-on-surface">280.0 Ah (0.5C)</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Emax Batch Measured</span>
+<span class="font-bold text-brand-teal">284.6Ah – 288.2Ah</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">AC Internal Resistance (1kHz)</span>
+<span class="font-bold text-brand-teal">0.16 – 0.18 mΩ</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Nominal Unit Energy</span>
+<span class="font-bold text-on-surface">896.0 Wh</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Continuous Discharge Rate</span>
+<span class="font-bold text-on-surface">1.0C (280 Amperes)</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Peak Pulse Discharge (30s)</span>
+<span class="font-bold text-on-surface">2.0C (560 Amperes)</span>
+</div>
+</div>
+</div>
+<!-- Mechanical & Physical Panel -->
+<div class="rounded-3xl bg-surface-container-low p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-space-xs">
+<div class="w-9 h-9 rounded-full bg-brand-deep-blue text-brand-lime flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">square_foot</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Mechanical Specs</h3>
+</div>
+<div class="flex flex-col divide-y divide-surface-container-high/60 font-body-sm text-body-sm">
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Width (Thickness)</span>
+<span class="font-bold text-on-surface">72.0 mm ± 0.5</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Length</span>
+<span class="font-bold text-on-surface">174.0 mm ± 0.5</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Total Height with Studs</span>
+<span class="font-bold text-on-surface">207.2 mm ± 0.8</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Bare Unit Weight</span>
+<span class="font-bold text-on-surface">5.42 kg ± 0.10 kg</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Terminal Interface</span>
+<span class="font-bold text-on-surface">Laser-Welded M6 Stud</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Recommended Torque</span>
+<span class="font-bold text-on-surface">6.0 – 8.0 N·m</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Casing Shell</span>
+<span class="font-bold text-on-surface">Brushed Aluminum</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Insulation Jacket</span>
+<span class="font-bold text-on-surface">PET Film (3000V DC)</span>
+</div>
+</div>
+</div>
+<!-- Thermal & Life Cycle Panel -->
+<div class="rounded-3xl bg-surface-container-low p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-space-xs">
+<div class="w-9 h-9 rounded-full bg-brand-deep-blue text-brand-lime flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">thermostat</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Thermal &amp; Cycle Life</h3>
+</div>
+<div class="flex flex-col divide-y divide-surface-container-high/60 font-body-sm text-body-sm">
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Cycle Life (0.5C/0.5C)</span>
+<span class="font-bold text-brand-teal">≥ 6,000 Cycles @ 80% DoD</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Standard Charge Temp</span>
+<span class="font-bold text-on-surface">0°C to 55°C</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Operating Discharge Temp</span>
+<span class="font-bold text-on-surface">-20°C to 55°C</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Recommended Storage Temp</span>
+<span class="font-bold text-on-surface">15°C to 35°C</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Storage State of Charge</span>
+<span class="font-bold text-on-surface">30% – 50% SoC</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Monthly Self-Discharge</span>
+<span class="font-bold text-on-surface">≤ 3.0% / month</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Target Mechanical Clamping</span>
+<span class="font-bold text-brand-amber">300 kgf (approx. 4.5 psi)</span>
+</div>
+<div class="py-2.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Safety Vent Pressure</span>
+<span class="font-bold text-on-surface">0.15 – 0.45 MPa</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Engineering Assembly & Builder Guidance -->
+<section class="max-w-[72rem] w-full mx-auto px-gutter py-margin-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<span class="font-label-md text-label-md text-brand-teal uppercase tracking-widest">Technician Field Guide</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">LiFePO4 Safe Assembly Directives</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Adhering to these industrial assembly guidelines is required for full validation of Emax batch warranties and ensures safety across high-heat Nigerian ambient conditions.
+        </p>
+<div class="rounded-2xl bg-amber-500/10 p-space-md flex flex-col gap-1 text-on-surface">
+<div class="flex items-center gap-2 text-brand-amber font-headline-sm text-body-md">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+<span>Clamping is Non-Negotiable</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Prismatic cells without uniform compression will experience localized delamination and premature capacity loss after 1,000–1,500 cycles.
+          </p>
+</div>
+</div>
+<div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Rule 1: BMS -->
+<div class="rounded-3xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-brand-deep-blue text-brand-lime flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">memory</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Active Balancing BMS Required</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Use a dedicated Smart BMS with active balancer (JK 16S 200A 2A Active Balance or Daly 250A). Passive balancing resistors are insufficient to maintain balance across large 280Ah banks.
+          </p>
+</div>
+<!-- Rule 2: FR4 Insulation -->
+<div class="rounded-3xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-brand-deep-blue text-brand-lime flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">layers</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Inter-Cell FR4 Epoxy Separators</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Insert 0.5mm FR4 fiberglass sheets between every cell in your series string. Never assemble bare aluminum cell bodies directly side-by-side to prevent vibration shorting.
+          </p>
+</div>
+<!-- Rule 3: Fast-Acting Fuse -->
+<div class="rounded-3xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-brand-deep-blue text-brand-lime flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">electric_meter</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Class-T or Mega In-Line Fuse</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            A catastrophic short on a 48V 14.3kWh bank can release over 10,000 amps. Install a Class-T (20kA interrupt) or certified 250A Mega Fuse immediately at the main positive output stud.
+          </p>
+</div>
+<!-- Rule 4: Top Balancing -->
+<div class="rounded-3xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-brand-deep-blue text-brand-lime flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">sync_alt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Bench Top-Balancing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Wire cells in parallel and charge to 3.65V at 0.05C cutoff before final series assembly, or run active balancing for 72 hours under shallow float conditions before commissioning.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Documents & Verification Logs -->
+<section class="w-full bg-surface-container-low py-margin-lg">
+<div class="max-w-[72rem] mx-auto px-gutter flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-md text-label-md text-brand-teal uppercase tracking-widest">Compliance &amp; Verifications</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Datasheets &amp; Batch QA Files</h2>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">verified_user</span>
+<span>Emax QA Cryptographic Hash Signed</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Download 1 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex items-center justify-between gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-red-500/10 text-red-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-primary truncate">EVE LF280K v3 Specsheet</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Official Factory PDF • 2.4 MB</span>
+</div>
+</div>
+<button aria-label="Download Datasheet" class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-brand-teal hover:text-on-secondary flex items-center justify-center transition-colors" onclick="downloadDoc('EVE_LF280K_Datasheet.pdf')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<!-- Download 2 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex items-center justify-between gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">table_chart</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-primary truncate">Batch #2026-NG-04 Log</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">284 Units AC-IR CSV • 410 KB</span>
+</div>
+</div>
+<button aria-label="Download Batch Log" class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-brand-teal hover:text-on-secondary flex items-center justify-center transition-colors" onclick="downloadDoc('Batch_2026_NG_04_Log.csv')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<!-- Download 3 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex items-center justify-between gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-primary truncate">UN38.3 Safety &amp; MSDS</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Air/Sea Compliance • 1.1 MB</span>
+</div>
+</div>
+<button aria-label="Download UN38.3" class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-brand-teal hover:text-on-secondary flex items-center justify-center transition-colors" onclick="downloadDoc('UN38_3_Safety_Certification.pdf')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Pack Building Essentials Cross-Sell Grid -->
+<section class="max-w-[72rem] w-full mx-auto px-gutter py-margin-lg">
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-md text-label-md text-brand-teal uppercase tracking-widest">Modular Hardware Ecosystem</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Pack Builders Also Purchased</h2>
+</div>
+<a class="font-headline-sm text-body-md text-secondary hover:text-brand-teal transition-colors flex items-center gap-1" data-path="products" href="#">
+<span>View All Battery Accessories</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Item 1: BMS -->
+<div class="rounded-3xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full aspect-square rounded-2xl bg-surface-container-low flex items-center justify-center overflow-hidden p-4">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="High-resolution studio photograph of a JK Smart BMS 16S 200A unit with built-in Bluetooth and active 2A balancer, showing clean aluminum heat sink and wiring harness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5sd9jh8gGPtXsF4BVUk_7vfiIc2OV2CqVjkiYstHfJsWUJC3onfaRAd--OHJsTZY194giQg9yz-ZWtHXTIbydjo9x41wgCPWftxX4zaaTK9H6MWCtMgTni9RM2e6xyk9aGoSsjrKDxWyT2bucjhN8koIR7Q8h1SMoA8TWJ7ua824RqueAMqpp-cZmJitwiPedK9Z-eJPHoSmg388Xcz7pWHm_W7XnTkoYntKGQfBb"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-brand-teal">ACTIVE BALANCER</span>
+<h4 class="font-headline-sm text-body-md text-primary line-clamp-1">JK Smart BMS 16S 200A 2A</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bluetooth telemetry + CAN/RS485</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm border-t-0">
+<span class="font-headline-sm text-headline-sm text-primary">₦84,000</span>
+<button class="w-9 h-9 rounded-full bg-surface-container-low hover:bg-brand-teal hover:text-on-secondary flex items-center justify-center transition-colors" onclick="addAccessory('JK Smart BMS 16S 200A', 84000)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Busbars -->
+<div class="rounded-3xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full aspect-square rounded-2xl bg-surface-container-low flex items-center justify-center overflow-hidden p-4">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Close up product photo of stacked pure copper flexible braided battery busbars, tin-plated with 2mm thickness and 72mm hole spacing for 280Ah cells." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIGfirfcDNfoDTnnI7JZbYJ2inBzqqWy_NlKj7x4Z8DpU5CuJuvRZz2j4t58O-ut3rUtzmLt9rn94FcC4Jao9IZgc_KDxySHZCCqQUgPJu9G5LLt2LUKAHMnr8qvBCDhKEg-zwwd59byFNRDA_pKcym0LpUmpIw6kERlVZ3Hpcyzgy-z00J5JJpaKOl23Isv9e1dIufxTz3ITSFnxMm-tDmAYpIeNg82dLEZE1iRys"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-brand-teal">PURE COPPER</span>
+<h4 class="font-headline-sm text-body-md text-primary line-clamp-1">Pure Copper Flexible Busbars (16x)</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2mm tin-plated flexible links</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary">₦12,500</span>
+<button class="w-9 h-9 rounded-full bg-surface-container-low hover:bg-brand-teal hover:text-on-secondary flex items-center justify-center transition-colors" onclick="addAccessory('Pure Copper Busbars (16x)', 12500)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 3: FR4 Epoxy -->
+<div class="rounded-3xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full aspect-square rounded-2xl bg-surface-container-low flex items-center justify-center overflow-hidden p-4">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Pre-cut yellow-green semi-translucent FR4 fiberglass epoxy sheets cut precisely to 174mm by 200mm dimensions for lithium battery isolation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzwVTKG4iuc-pArxlLUC20E_9KY_f1bqaaKo6BDLfG08zpsZOiPP7a7uRTeeurNH-4ix_YOba5S_fXvm_XbEkmf0JuhEHmElrWGq-mgIYS_FTs5njESVIod1kJ3lU1A1TsRXtuQHF0cj2U19nhoiJSQBvN6pjKT-OUOR2SVKxleiU3-MGVUDN9NWrZ4Q1RmggH_9_Ktrm18a-7mVyRyMySnfJkK6DgWU8fOuY2qYP6"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-brand-teal">SAFETY INSULATION</span>
+<h4 class="font-headline-sm text-body-md text-primary line-clamp-1">FR4 Epoxy Sheets 0.5mm (16x)</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dielectric grade-A flame retardant</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary">₦6,500</span>
+<button class="w-9 h-9 rounded-full bg-surface-container-low hover:bg-brand-teal hover:text-on-secondary flex items-center justify-center transition-colors" onclick="addAccessory('FR4 Epoxy Sheets (16x)', 6500)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 4: Mega Fuse -->
+<div class="rounded-3xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full aspect-square rounded-2xl bg-surface-container-low flex items-center justify-center overflow-hidden p-4">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Heavy-duty 250A Mega Fuse with transparent protective polycarbonate cover and gold-plated high amp contact base for DC inverter battery banks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSfRk8FdvfCSnsABBTSqmW-vaU_VOzAdUvktz2xpxeVd8wMwjjactlrdl26dMlCgGDUSkIWRHz_FIaRT-a8cQ6_ZKz_q8Eya37dx9aBFAPUEQf3S69Dlpb0sE2K-R4Ik5kTgPym31CNvdztCD5kH5BPb21GXKcFgNCW56r908PugXf5qmRhULbbOqga8D84xZzNHiHa4zVKuXVUX2aq4xFrss7Quqws64Sx78UxRAg"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-brand-teal">OVERCURRENT PROTECTION</span>
+<h4 class="font-headline-sm text-body-md text-primary line-clamp-1">Mega Fuse 250A + HD Holder</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Heavy-duty 70V DC rated base</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary">₦14,000</span>
+<button class="w-9 h-9 rounded-full bg-surface-container-low hover:bg-brand-teal hover:text-on-secondary flex items-center justify-center transition-colors" onclick="addAccessory('Mega Fuse 250A + Holder', 14000)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust, Shipping & Delivery Banner -->
+<section class="max-w-[72rem] w-full mx-auto px-gutter pb-margin-lg">
+<div class="rounded-3xl bg-primary text-on-primary p-space-lg lg:p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-xl relative overflow-hidden">
+<!-- Ambient Glow Decorator -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-brand-teal/20 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm max-w-xl z-10">
+<div class="flex items-center gap-space-xs text-brand-lime font-label-md text-label-md uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>100% Genuine Factory Laser QR Un-Scratched</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg tracking-tight">Nationwide Armored Waybill Service</h3>
+<p class="font-body-md text-body-md text-on-primary-container">
+          Dispatch via insured heavy cargo logistics to Abuja, Port Harcourt, Kano, Ibadan, Enugu, and all Nigerian commercial hubs. Foam-lined crate packaging standard for cell protection.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm z-10 shrink-0">
+<a class="px-space-lg py-3.5 rounded-full bg-brand-lime text-primary font-headline-sm text-body-md hover:bg-white transition-all shadow-lg text-center" href="https://wa.me/2340000000000?text=Hello%20Emax%2C%20I%20would%20like%20to%20request%20a%20waybill%20freight%20quote%20for%20EVE%20280Ah%20cells." target="_blank">
+          Request Freight Quote
+        </a>
+<a class="px-space-md py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-on-primary font-headline-sm text-body-md transition-colors text-center" data-path="about-and-contact" href="#">
+          Depot Location &amp; Directions
+        </a>
+</div>
+</div>
+</section>
+<!-- Temporary Toast Notification for Client Actions -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none bg-primary text-on-primary px-space-md py-3 rounded-2xl shadow-2xl flex items-center gap-space-sm" id="toast-notify">
+<span class="material-symbols-outlined text-brand-lime text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold" id="toast-msg">Item updated</span>
+</div>
+</div>
+<script>
+  // Product state management
+  const unitPrice = 98500;
+  let currentQty = 1;
+  const thumbnails = [
+    { title: "Full Cell", alt: "EVE LF280K v3 280Ah LiFePO4 prismatic cell full view" },
+    { title: "Terminals & Vent", alt: "Top terminals and explosion-proof safety valve" },
+    { title: "QR Laser Code", alt: "Laser-etched un-scratched factory QR code" },
+    { title: "YR1035+ Test", alt: "YR1035+ 4-wire resistance test readout showing 0.17mΩ" }
+  ];
+
+  function formatNaira(num) {
+    return '₦' + num.toLocaleString('en-NG');
+  }
+
+  function updateOrderDisplay() {
+    const total = unitPrice * currentQty;
+    const priceDisplay = document.getElementById('display-total-price');
+    const subtextDisplay = document.getElementById('unit-subtext');
+    const qtyVal = document.getElementById('qty-val');
+    const waBtn = document.getElementById('whatsapp-order-btn');
+
+    if (priceDisplay) priceDisplay.innerText = formatNaira(total);
+    if (qtyVal) qtyVal.innerText = currentQty;
+
+    if (subtextDisplay) {
+      if (currentQty === 1) {
+        subtextDisplay.innerText = '/ unit (Single Cell)';
+      } else if (currentQty === 4) {
+        subtextDisplay.innerText = `Total for 12.8V 3.5kWh Pack (${formatNaira(unitPrice)}/cell)`;
+      } else if (currentQty === 8) {
+        subtextDisplay.innerText = `Total for 25.6V 7.1kWh Pack (${formatNaira(unitPrice)}/cell)`;
+      } else if (currentQty === 16) {
+        subtextDisplay.innerText = `Total for 51.2V 14.3kWh Bank (${formatNaira(unitPrice)}/cell)`;
+      } else {
+        subtextDisplay.innerText = `Total for ${currentQty} matched cells (${formatNaira(unitPrice)}/cell)`;
+      }
+    }
+
+    if (waBtn) {
+      const msg = encodeURIComponent(`Hello Emax Ikeja Desk, I would like to order ${currentQty} units of EVE LF280K v3 (SKU: EVE-280-K) for total ${formatNaira(total)} with batch AC-IR test sheets...`);
+      waBtn.href = `https://wa.me/2340000000000?text=${msg}`;
+    }
+
+    // Update active state in preset buttons
+    const packBtns = document.querySelectorAll('.pack-btn');
+    packBtns.forEach(btn => {
+      const bQty = parseInt(btn.getAttribute('data-qty'), 10);
+      if (bQty === currentQty) {
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      } else {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface');
+      }
+    });
+  }
+
+  function adjustQty(delta) {
+    const newQty = currentQty + delta;
+    if (newQty >= 1 && newQty <= 284) {
+      currentQty = newQty;
+      updateOrderDisplay();
+    }
+  }
+
+  function selectPack(qty) {
+    currentQty = qty;
+    updateOrderDisplay();
+  }
+
+  function setMainImage(index) {
+    const mainImg = document.getElementById('main-product-img');
+    const thumbBtns = document.querySelectorAll('.thumb-btn');
+
+    thumbBtns.forEach((btn, idx) => {
+      if (idx === index) {
+        btn.classList.add('ring-2', 'ring-brand-teal');
+      } else {
+        btn.classList.remove('ring-2', 'ring-brand-teal');
+      }
+    });
+
+    if (mainImg) {
+      mainImg.style.opacity = '0.5';
+      setTimeout(() => {
+        mainImg.style.opacity = '1';
+      }, 150);
+    }
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('toast-notify');
+    const msgEl = document.getElementById('toast-msg');
+    if (!toast || !msgEl) return;
+    msgEl.innerText = message;
+    toast.classList.remove('translate-y-20', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2800);
+  }
+
+  function addAccessory(name, price) {
+    showToast(`Added ${name} (${formatNaira(price)}) to your quotation bundle.`);
+  }
+
+  function downloadDoc(filename) {
+    showToast(`Generating secure batch signed download for ${filename}...`);
+  }
+
+  function downloadBatchReport() {
+    showToast('Downloading Ikeja Batch #2026-NG-04 Impedance Log (CSV)...');
+  }
+
+  // Initialize
+  document.addEventListener('DOMContentLoaded', () => {
+    updateOrderDisplay();
+  });
+</script></main><footer class="w-full bg-surface-container-low mt-space-2xl"><div class="max-w-[72rem] mx-auto px-gutter py-margin-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-2xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-brand-lime text-[22px]">bolt</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary">EMAX TECH</span><span class="font-label-sm text-label-sm text-on-surface-variant -mt-1">ELECTRONICS ENTERPRISES</span></div></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Precision clean energy engineering and certified industrial micro-mobility. Assembled with laboratory-grade battery architecture, solar generation cells, and urban e-transport platforms in West Africa.</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="flex h-2.5 w-2.5 rounded-full bg-brand-lime"></span><span class="font-label-md text-label-md text-on-surface">IKEJA INDUSTRIAL CORRIDOR HUB OPEN</span></div></div><div><h4 class="font-headline-sm text-headline-sm text-primary mb-space-md">CleanTech Portals</h4><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="home" href="#">Home Portal</a></li><li><a class="hover:text-primary transition-colors" data-path="products" href="#">Verified Catalog</a></li><li><a class="hover:text-primary transition-colors" data-path="lithium-builder" href="#">Lithium Pack Builder</a></li><li><a class="hover:text-primary transition-colors" data-path="solar-builder" href="#">Solar Array Calculator</a></li><li><a class="hover:text-primary transition-colors" data-path="e-bikes" href="#">Electric Mobility Units</a></li></ul></div><div><h4 class="font-headline-sm text-headline-sm text-primary mb-space-md">Technical Hub</h4><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-sm">Plot 14 Engineering Way, Ikeja Industrial Zone, Lagos, Nigeria.</p><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Lab Dispatch &amp; Diagnostic: Mon - Sat (08:00 - 18:00 WAT)</p><a class="font-headline-sm text-body-sm text-secondary hover:underline" data-path="about-and-contact" href="#">Engineering Contact &amp; Testing Desk →</a></div><div><h4 class="font-headline-sm text-headline-sm text-primary mb-space-md">Assurance &amp; Safety</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li>UN38.3 Cell Verified</li><li>BMS Active Balancing Spec</li><li>ISO 9001 Facility Audited</li><li>Direct Warranty Replacement</li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><p class="font-body-sm text-body-sm">© 2025 Emax Electronics Enterprises. All rights reserved. Clean industrial power engineering.</p><div class="flex items-center gap-space-md font-body-sm text-body-sm"><a class="hover:text-primary transition-colors" href="#">Battery Disposal Safety</a><a class="hover:text-primary transition-colors" href="#">Warranty Protocols</a><a class="hover:text-primary transition-colors" href="#">Technical Terms</a></div></div></div></footer></body></html>

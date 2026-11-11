@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#213244","on-primary-fixed-variant":"#2e4961","on-error-container":"#93000a","tertiary-fixed":"#ffddb9","secondary-container":"#93eefc","surface-bright":"#f8f9ff","glass-border":"rgba(255, 255, 255, 0.65)","surface-tint":"#46617a","surface-container-highest":"#d3e4fc","on-error":"#ffffff","on-primary":"#ffffff","surface-container-high":"#daeaff","on-surface":"#0b1d2e","primary-fixed":"#cde5ff","brand-deep-blue":"#0d2844","on-primary-container":"#7c98b4","inverse-on-surface":"#e9f1ff","brand-lime":"#d4f34a","on-secondary":"#ffffff","tertiary-fixed-dim":"#ffb963","brand-teal":"#087e8b","brand-navy":"#0b1d2e","on-background":"#0b1d2e","on-tertiary-container":"#cd8622","surface-container-low":"#eef4ff","primary-fixed-dim":"#adcae7","primary":"#001b2e","primary-container":"#123047","error-container":"#ffdad6","on-secondary-fixed-variant":"#004f57","secondary-fixed-dim":"#79d4e2","on-primary-fixed":"#001d32","brand-amber":"#f2a541","secondary":"#006874","surface-variant":"#d3e4fc","error":"#ba1a1a","on-tertiary-fixed-variant":"#663e00","surface-container":"#e4efff","brand-teal-hover":"#066570","secondary-fixed":"#96f0ff","brand-sky":"#3a88e9","on-tertiary-fixed":"#2b1700","tertiary-container":"#442700","tertiary":"#271500","outline-variant":"#c3c7cd","surface-dim":"#cadcf3","on-secondary-container":"#006d79","on-surface-variant":"#43474d","outline":"#73777d","inverse-primary":"#adcae7","on-secondary-fixed":"#001f24","background":"#f8f9ff","surface-container-lowest":"#ffffff","surface":"#f8f9ff","on-tertiary":"#ffffff","brand-canvas":"#f7faff"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"margin":"1.5rem","space-xl":"2rem","gutter-sm":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-2xl":"3rem","gutter":"1.5rem","margin-lg":"4rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"label-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},fontSize:{"label-sm":["0.625rem",{"lineHeight":"1.0","letterSpacing":"0.08em","fontWeight":"700"}],"headline-xl":["3.75rem",{"lineHeight":"1.12","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["1.125rem",{"lineHeight":"1.6","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"1.3","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1.4","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1.0","letterSpacing":"0.06em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.5","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"800"}],"headline-sm":["1.125rem",{"lineHeight":"1.35","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"800"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg"><div class="flex items-center gap-space-sm pb-space-lg"><div class="w-10 h-10 rounded-full bg-brand-deep-blue flex items-center justify-center text-brand-lime font-headline-sm font-bold shadow-md">E</div><div><div class="font-headline-sm text-headline-sm text-primary uppercase tracking-tight">EMAX CMS</div><div class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Electronics Enterprises</div></div></div><nav class="flex flex-col gap-space-sm" data-active-classes="bg-surface-container text-primary font-bold shadow-sm"><div class="pt-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">MAIN</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="products-inventory" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md">Products & Inventory</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="categories" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-body-md text-body-md">Categories</span></a></div></div><div class="pt-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">OPERATIONS</span><div class="mt-space-xs flex flex-col gap-1"><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT transition-all bg-surface-container text-primary font-bold shadow-sm" data-path="media-library" href="#"><span class="material-symbols-outlined text-[20px]">perm_media</span><span class="font-body-md text-body-md">Media Library</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="content-pages" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span class="font-body-md text-body-md">Content & Pages</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="enquiries-leads" href="#"><span class="material-symbols-outlined text-[20px]">contact_mail</span><span class="font-body-md text-body-md">Enquiries & Leads</span></a></div></div><div class="pt-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">SYSTEM & GOVERNANCE</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="staff-roles" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-body-md text-body-md">Staff & Roles</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">security</span><span class="font-body-md text-body-md">Audit Log</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></a></div></div></nav></div><div class="p-space-md m-space-md rounded-DEFAULT bg-surface-container-low flex flex-col gap-2"><div class="flex items-center justify-between"><span class="flex items-center gap-1.5 font-label-md text-label-md text-brand-navy"><span class="inline-block w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>Supabase Connected</span><span class="font-label-sm text-label-sm uppercase bg-surface-container-highest px-1.5 py-0.5 rounded-full text-brand-teal font-bold">RLS ACTIVE</span></div><div class="font-body-sm text-body-sm text-on-surface-variant truncate">PostgreSQL Pool: Healthy (Latency 14ms)</div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px]">home</span><span>/</span><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">CMS Console</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-9 pr-4 py-1.5 rounded-full outline-none focus:bg-surface-container focus:ring-0 placeholder:text-outline" placeholder="Search SKU, order ID, product name, or staff logs..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-2 bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md px-4 py-2 rounded-full transition-colors"><span class="material-symbols-outlined text-[18px]">add</span>Add Product</button><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-brand-amber"></span></button><div class="flex items-center gap-space-sm pl-space-sm bg-surface-container-low py-1 pr-3 rounded-full"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="text-left"><div class="font-label-md text-label-md text-primary leading-tight">Engr. T. Balogun</div><div class="font-label-sm text-label-sm text-on-surface-variant">Lead Admin · Ikeja Hub</div></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background p-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Telemetry Bar: Supabase Storage Metrics -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>
+          Bucket Target
+        </span>
+<span class="font-headline-sm text-headline-sm text-primary mt-1 truncate">emax-public-media</span>
+<span class="font-body-sm text-body-sm text-outline">AWS eu-west-1 • Frankfurt Mirror</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-brand-teal">
+<span class="material-symbols-outlined text-[24px]">database</span>
+</div>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Storage Quota</span>
+<span class="font-label-md text-label-md text-primary font-bold">36% Used</span>
+</div>
+<div class="my-2">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary">1.8 GB</span>
+<span class="font-body-sm text-body-sm text-outline">/ 5.0 GB</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container mt-2 overflow-hidden">
+<div class="h-full bg-brand-teal rounded-full" style="width: 36%"></div>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3.2 GB available in tier</span>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total Assets</span>
+<span class="font-headline-sm text-headline-sm text-primary mt-1">148 Files</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-brand-deep-blue font-bold">136 Live</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary-container font-bold">12 Orphaned</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">perm_media</span>
+</div>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">MTD Bandwidth</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-brand-lime text-brand-navy font-bold">Optimal</span>
+</div>
+<div class="flex items-baseline gap-2 my-1">
+<span class="font-headline-sm text-headline-sm text-primary">14.2 GB</span>
+<span class="font-body-sm text-body-sm text-outline">Cloudflare CDN Edge</span>
+</div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span class="font-label-md text-label-md">Avg Edge Latency: 19ms</span>
+</div>
+</div>
+</section>
+<!-- Upload Modal / Dropzone Banner (Collapsible/Interactive State) -->
+<div class="p-space-md rounded-2xl bg-surface-container-low transition-all duration-300" id="dropzone-area">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-lowest flex items-center justify-center text-brand-teal shadow-sm">
+<span class="material-symbols-outlined text-[26px]">cloud_upload</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary">Instant Drag & Drop Multi-file Dispatch</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Supports WebP, PNG, SVG, JPG, and Calibration PDFs up to 25MB each. Automated WebP compression applied.</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<input class="hidden" id="file-input" multiple="" type="file"/>
+<button class="flex-1 md:flex-none flex items-center justify-center gap-2 bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-full shadow-sm transition-all" onclick="document.getElementById('file-input').click()">
+<span class="material-symbols-outlined text-[18px]">add_photo_alternate</span>
+          + Upload New Media
+        </button>
+<button class="p-2.5 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant shadow-sm transition-colors" id="toggle-upload-drawer" title="Toggle Queue Preview">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Live Upload Simulation Progress Bar -->
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/80 rounded-xl p-space-sm flex flex-col gap-2" id="upload-progress-wrapper">
+<div class="flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-brand-teal animate-spin">sync</span>
+<span class="font-label-md text-label-md text-primary">Uploading 2 files to Supabase S3 bucket:</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">emax-prismatic-catl-test-bench.jpg (4.2 MB)</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">84%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-brand-teal rounded-full transition-all duration-300" style="width: 84%"></div>
+</div>
+</div>
+</div>
+<!-- Action Bar: Filters, Search, View Controls -->
+<section class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-lowest shadow-sm">
+<!-- Search & Folder Tabs -->
+<div class="flex flex-wrap items-center gap-space-sm flex-1">
+<div class="relative flex-1 min-w-[240px]">
+<span class="material-symbols-outlined absolute left-3.5 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-10 pr-4 py-2 rounded-xl outline-none focus:bg-surface-container placeholder:text-outline" id="media-search" placeholder="Search by filename, SKU, alt-text, or verification tag..." type="text"/>
+</div>
+<!-- Category Filter Dropdown -->
+<div class="relative">
+<select class="bg-surface-container-low text-on-surface font-label-md text-label-md py-2.5 pl-4 pr-10 rounded-xl outline-none appearance-none cursor-pointer hover:bg-surface-container">
+<option>All Files (148)</option>
+<option>Products & Cells (76)</option>
+<option>E-Bikes & Mobility (24)</option>
+<option>Datasheets & PDFs (18)</option>
+<option>Test Bench IR Reports (19)</option>
+<option>Brand Assets & Badges (11)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[18px] pointer-events-none">expand_more</span>
+</div>
+<!-- Sort By -->
+<div class="relative">
+<select class="bg-surface-container-low text-on-surface font-label-md text-label-md py-2.5 pl-4 pr-10 rounded-xl outline-none appearance-none cursor-pointer hover:bg-surface-container">
+<option>Sort: Newest Uploaded</option>
+<option>Sort: Largest File Size</option>
+<option>Sort: Alphabetical (A-Z)</option>
+<option>Sort: Most Linked Products</option>
+<option>Sort: Orphaned / Unused First</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[18px] pointer-events-none">sort</span>
+</div>
+</div>
+<!-- View & Bulk Toggle -->
+<div class="flex items-center justify-end gap-space-sm">
+<div class="flex items-center bg-surface-container-low p-1 rounded-xl">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-label-md text-label-md flex items-center gap-1.5" id="view-grid-btn">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+          Grid
+        </button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1.5" id="view-list-btn">
+<span class="material-symbols-outlined text-[18px]">view_list</span>
+          List
+        </button>
+</div>
+<button class="p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Refresh CDN Cache">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</section>
+<!-- Main Content Workspace: Media Grid & Inspector Drawer Split -->
+<div class="flex flex-col lg:flex-row gap-space-lg items-start">
+<!-- Media Asset Grid -->
+<div class="flex-1 w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-space-md">
+<!-- Asset 1: Selected Asset (Active border state) -->
+<div class="media-card group cursor-pointer rounded-2xl bg-surface-container-lowest p-3 shadow-md hover:shadow-xl transition-all duration-200 ring-2 ring-brand-teal flex flex-col justify-between" onclick="inspectAsset('emax-veloflow-commuter-waterfront.png', '1920x1080', '1.4 MB', 'PNG', 'Used in 3 products', 'Emax VeloFlow 750W commuter e-bike parked beside Lagos waterfront skyline', 'VELO-750W', 'Nov 10, 2026', 'https://supabase.emax.ng/storage/v1/object/public/emax-public-media/veloflow-lagos.png', true)">
+<div>
+<!-- Thumbnail Container -->
+<div class="relative w-full aspect-video rounded-xl bg-surface-container-low overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High tech electric commuter bicycle parked neatly against the sleek glass balustrade of an urban waterfront promenade in Lagos at golden hour daylight, featuring clean metallic frame and teal accents, high depth of field, photorealistic commercial product shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVeEx4h_uDgTa35UZu-XQwoDfdLSgPKQnv3Ju2vB_z109_O-P3b-6qvBjxAitl0R7huvqb6juSK2Ha17O_s8sc-Dehe9FN1IlwxaQysFrQshNC53pWoDwVl8x6t4LIuPkryix_6AcGnnIE_60soLOznluyzwy7oT5TRupFpXdu7aIrvUcr8LWH5y2M06tUlNoN7r62HaaqTAtDruMfnbF_hI7GNhxAfQbzCW9GdAn7"/>
+<span class="absolute top-2 left-2 font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-brand-deep-blue text-brand-lime font-bold uppercase tracking-wider">PNG</span>
+<span class="absolute top-2 right-2 p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-brand-teal shadow-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</span>
+</div>
+<!-- Metadata -->
+<div class="mt-3">
+<div class="font-headline-sm text-body-md text-primary font-bold truncate" title="emax-veloflow-commuter-waterfront.png">emax-veloflow-commuter-waterfront.png</div>
+<div class="font-body-sm text-body-sm text-outline mt-0.5 flex items-center gap-1.5">
+<span>1920×1080</span>
+<span>•</span>
+<span>1.4 MB</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-brand-teal font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">link</span>
+            Used in 3 products
+          </span>
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-primary">arrow_forward</span>
+</div>
+</div>
+<!-- Asset 2: Battery Cell -->
+<div class="media-card group cursor-pointer rounded-2xl bg-surface-container-lowest p-3 shadow-sm hover:shadow-xl transition-all duration-200 flex flex-col justify-between" onclick="inspectAsset('eve-lf280k-grade-a-cell.png', '1200x1200', '840 KB', 'PNG', 'Used in 6 products', 'EVE LF280K Grade A 3.2V Lifepo4 prismatic cell terminal detail', 'CELL-LF280K', 'Nov 08, 2026', 'https://supabase.emax.ng/storage/v1/object/public/emax-public-media/eve-lf280k.png', true)">
+<div>
+<div class="relative w-full aspect-video rounded-xl bg-surface-container-low overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Industrial prismatic lithium iron phosphate battery cell LF280K with polished laser-welded aluminum terminal posts and factory QR code sticker against pristine clean studio white background with subtle laboratory blue reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5KAj5b5rv_03rVAZX7zVvkQDJi0VFhyJ83JPn-RMx_Oprzy-lQbbpf2cN9mvyJDOY1JOJJL3Nrzwnm3ePzR8-VVIMlxsF_82YkuhkXCgHIrn6zZ0_Oy9MkJ8AwNiTwouvJP8bD3SLSXbI11_X6HUzwdmEQ2Rwx60oOjCzlKR6P8ZbUkIdd9Qvcrcfpm49e1GcMekR2gzoyGjfYEg2C2JahkFHGdP9wU-VZLFBNSh0"/>
+<span class="absolute top-2 left-2 font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-brand-deep-blue text-surface-container-lowest font-bold uppercase tracking-wider">PNG</span>
+</div>
+<div class="mt-3">
+<div class="font-headline-sm text-body-md text-primary font-bold truncate" title="eve-lf280k-grade-a-cell.png">eve-lf280k-grade-a-cell.png</div>
+<div class="font-body-sm text-body-sm text-outline mt-0.5 flex items-center gap-1.5">
+<span>1200×1200</span>
+<span>•</span>
+<span>840 KB</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-brand-teal font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">link</span>
+            Used in 6 products
+          </span>
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-primary">arrow_forward</span>
+</div>
+</div>
+<!-- Asset 3: PDF Calibration Sheet -->
+<div class="media-card group cursor-pointer rounded-2xl bg-surface-container-lowest p-3 shadow-sm hover:shadow-xl transition-all duration-200 flex flex-col justify-between" onclick="inspectAsset('yr1035-ir-calibration-certificate.pdf', 'Document', '3.1 MB', 'PDF', 'Used in 1 product', 'Official YR1035+ internal resistance batch test calibration and compliance document', 'TEST-YR1035', 'Nov 04, 2026', 'https://supabase.emax.ng/storage/v1/object/public/emax-public-media/yr1035-calib.pdf', true)">
+<div>
+<div class="relative w-full aspect-video rounded-xl bg-surface-container flex flex-col items-center justify-center p-4">
+<span class="material-symbols-outlined text-[42px] text-error">picture_as_pdf</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2 uppercase tracking-wide">Standard Datasheet</span>
+<span class="absolute top-2 left-2 font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-error text-on-error font-bold uppercase tracking-wider">PDF</span>
+</div>
+<div class="mt-3">
+<div class="font-headline-sm text-body-md text-primary font-bold truncate" title="yr1035-ir-calibration-certificate.pdf">yr1035-ir-calibration-certificate.pdf</div>
+<div class="font-body-sm text-body-sm text-outline mt-0.5 flex items-center gap-1.5">
+<span>Vector Doc</span>
+<span>•</span>
+<span>3.1 MB</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-brand-teal font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">link</span>
+            Used in 1 product
+          </span>
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-primary">arrow_forward</span>
+</div>
+</div>
+<!-- Asset 4: Inverter In Depot -->
+<div class="media-card group cursor-pointer rounded-2xl bg-surface-container-lowest p-3 shadow-sm hover:shadow-xl transition-all duration-200 flex flex-col justify-between" onclick="inspectAsset('deye-5kw-hybrid-inverter-in-depot.jpg', '2400x1600', '2.6 MB', 'JPG', 'Used on Home Hero', 'Deye 5kW Solar Hybrid Inverter wall-mounted inside clean technology installation lab in Ikeja', 'INV-DEYE-5K', 'Nov 02, 2026', 'https://supabase.emax.ng/storage/v1/object/public/emax-public-media/deye-5kw.jpg', true)">
+<div>
+<div class="relative w-full aspect-video rounded-xl bg-surface-container-low overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Modern hybrid solar power inverter mounted securely on white tiled laboratory wall with neatly arranged conduits and LCD monitoring screen illuminated in soft blue glow, clean industrial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBogSaOx5iCa8qBiIz0mHIUuICAbu4Ns68NtwtJk9cwbclxhotWej4DFp3WF-E2X0y88OiH7-jgThknm7kBNTD8TUJ-c999vSJfEIWlI4bAxqqIMOWtLkN3orwh7P-y4APQSfCp0cEP49H4q3tn7QNMHeP8LtrKbL0L3yTji9kLGdWrNQFZFKPAh6vsIWKMcQz86OtyfrK4-H4mdmXgQGU3FILuFmxDlL2arq_KFQOl"/>
+<span class="absolute top-2 left-2 font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-brand-deep-blue text-surface-container-lowest font-bold uppercase tracking-wider">JPG</span>
+</div>
+<div class="mt-3">
+<div class="font-headline-sm text-body-md text-primary font-bold truncate" title="deye-5kw-hybrid-inverter-in-depot.jpg">deye-5kw-hybrid-inverter-in-depot.jpg</div>
+<div class="font-body-sm text-body-sm text-outline mt-0.5 flex items-center gap-1.5">
+<span>2400×1600</span>
+<span>•</span>
+<span>2.6 MB</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">web</span>
+            Used on Home Hero
+          </span>
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-primary">arrow_forward</span>
+</div>
+</div>
+<!-- Asset 5: Smart BMS -->
+<div class="media-card group cursor-pointer rounded-2xl bg-surface-container-lowest p-3 shadow-sm hover:shadow-xl transition-all duration-200 flex flex-col justify-between" onclick="inspectAsset('jk-bms-16s-200a-front.jpg', '1500x1500', '980 KB', 'JPG', 'Used in 4 products', 'JK Smart BMS 16S 200A active balancing module with heat sink casing', 'BMS-JK-16S', 'Oct 29, 2026', 'https://supabase.emax.ng/storage/v1/object/public/emax-public-media/jk-bms.jpg', true)">
+<div>
+<div class="relative w-full aspect-video rounded-xl bg-surface-container-low overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High precision Battery Management System board in black brushed aluminum enclosure with external active balancer wires and power terminals photographed on an engineering anti-static testing mat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlRp_qaUio0pMswFVqzn0fju5BxW-7wXDN_sb2QgSINrJATimDZAwentt5_7VXUAx9we7fQGEvjVCEWwN7abkfEMiA-1DcugWNqNfCZiQ3wwsW4stG7yV6mm6v2DykIHROIXRz0Tm8FVjckCqNgiEVVTxr2PRW7oke8LwMY96PToAsBWZ3nP4WZJIzbKVMP8N-Iopjeq5Sr-9SQ39FmDwSpy9aD7Wvn9YLtObgcETx"/>
+<span class="absolute top-2 left-2 font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-brand-deep-blue text-surface-container-lowest font-bold uppercase tracking-wider">JPG</span>
+</div>
+<div class="mt-3">
+<div class="font-headline-sm text-body-md text-primary font-bold truncate" title="jk-bms-16s-200a-front.jpg">jk-bms-16s-200a-front.jpg</div>
+<div class="font-body-sm text-body-sm text-outline mt-0.5 flex items-center gap-1.5">
+<span>1500×1500</span>
+<span>•</span>
+<span>980 KB</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-brand-teal font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">link</span>
+            Used in 4 products
+          </span>
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-primary">arrow_forward</span>
+</div>
+</div>
+<!-- Asset 6: Copper Busbars (Unused / Orphaned Warning state) -->
+<div class="media-card group cursor-pointer rounded-2xl bg-surface-container-lowest p-3 shadow-sm hover:shadow-xl transition-all duration-200 flex flex-col justify-between" onclick="inspectAsset('copper-busbars-nickel-plated.png', '1600x1200', '1.1 MB', 'PNG', 'Unused / Orphaned', 'Electro-nickel plated high amp copper interconnect busbars for battery banks', 'None', 'Oct 22, 2026', 'https://supabase.emax.ng/storage/v1/object/public/emax-public-media/busbars.png', false)">
+<div>
+<div class="relative w-full aspect-video rounded-xl bg-surface-container-low overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Arrangement of shiny nickel plated solid copper electrical busbars with oblong bolt holes sitting neatly in rows on a soft gray industrial surface, sharp metallic reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClKFEXiT1w1nLj4nbR6WhodaqwTYYk7i_VQHQaHfd5D1tnzg51ozoeQGPpIqepAtHXefr-d5MnsjNQEgnjyfKx-1WkKbPdOd5VlCoExzU8P9Ev4oZ0BNprxlaCiRZVYgZQXUjb7PGAyJ6etC-64cw7gxJtZaK_iGOfhyd690FkRnBak2EUkupdmJ2YzlKtxi05i9E4FrKCekD49YNnHyPYh8Cd07Eq6FQzi4Q_WbDs"/>
+<span class="absolute top-2 left-2 font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-brand-deep-blue text-surface-container-lowest font-bold uppercase tracking-wider">PNG</span>
+</div>
+<div class="mt-3">
+<div class="font-headline-sm text-body-md text-primary font-bold truncate" title="copper-busbars-nickel-plated.png">copper-busbars-nickel-plated.png</div>
+<div class="font-body-sm text-body-sm text-outline mt-0.5 flex items-center gap-1.5">
+<span>1600×1200</span>
+<span>•</span>
+<span>1.1 MB</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-tertiary-fixed text-tertiary-container font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+            Unused / Orphaned
+          </span>
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-primary">arrow_forward</span>
+</div>
+</div>
+<!-- Asset 7: CATL Cell -->
+<div class="media-card group cursor-pointer rounded-2xl bg-surface-container-lowest p-3 shadow-sm hover:shadow-xl transition-all duration-200 flex flex-col justify-between" onclick="inspectAsset('catl-100ah-prismatic-cell.jpg', '2048x1536', '1.9 MB', 'JPG', 'Used in 2 products', 'CATL 100Ah prismatic storage cell for electric light vehicle conversions', 'CELL-CATL-100', 'Oct 18, 2026', 'https://supabase.emax.ng/storage/v1/object/public/emax-public-media/catl-100ah.jpg', true)">
+<div>
+<div class="relative w-full aspect-video rounded-xl bg-surface-container-low overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High quality lithium battery cell from CATL brand featuring laser etched barcodes and terminal connectors on an electro-mechanical workbench with multimeter probes nearby" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0lD3-M-xlWQS3hgzenN_PWCultjYqnoKaHZ7qL8k5CrPd3hI0GZTbaeRxMQPG-Vfxqj0Qvo8WP4yajIJktgf30huC71krQQb6jGHcYR-YqR2vfbArs5RYx1jxnWSBQqcKbly6WCqimyrPd7uRXSKlheb4oIHuH4Xfq2lqEcKfTNDAxRVBdtMRge5WrMovQY0z2cPBP0r6nl8bjLhYiTLbl3AK73Lqx8QTCnyttN9D"/>
+<span class="absolute top-2 left-2 font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-brand-deep-blue text-surface-container-lowest font-bold uppercase tracking-wider">JPG</span>
+</div>
+<div class="mt-3">
+<div class="font-headline-sm text-body-md text-primary font-bold truncate" title="catl-100ah-prismatic-cell.jpg">catl-100ah-prismatic-cell.jpg</div>
+<div class="font-body-sm text-body-sm text-outline mt-0.5 flex items-center gap-1.5">
+<span>2048×1536</span>
+<span>•</span>
+<span>1.9 MB</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-brand-teal font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">link</span>
+            Used in 2 products
+          </span>
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-primary">arrow_forward</span>
+</div>
+</div>
+<!-- Asset 8: Vector Logo -->
+<div class="media-card group cursor-pointer rounded-2xl bg-surface-container-lowest p-3 shadow-sm hover:shadow-xl transition-all duration-200 flex flex-col justify-between" onclick="inspectAsset('emax-official-logo-vector.svg', 'Scalable Vector', '64 KB', 'SVG', 'Used in Brand Header', 'Official brand mark vector emblem for Emax Electronics Enterprises', 'BRAND-GLOBAL', 'Sep 30, 2026', 'https://supabase.emax.ng/storage/v1/object/public/emax-public-media/emax-logo.svg', true)">
+<div>
+<div class="relative w-full aspect-video rounded-xl bg-primary flex items-center justify-center p-6">
+<div class="w-14 h-14 rounded-full bg-brand-deep-blue flex items-center justify-center text-brand-lime font-headline-md font-bold shadow-inner">
+              E
+            </div>
+<span class="absolute top-2 left-2 font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-lowest text-primary font-bold uppercase tracking-wider">SVG</span>
+</div>
+<div class="mt-3">
+<div class="font-headline-sm text-body-md text-primary font-bold truncate" title="emax-official-logo-vector.svg">emax-official-logo-vector.svg</div>
+<div class="font-body-sm text-body-sm text-outline mt-0.5 flex items-center gap-1.5">
+<span>Infinite Resolution</span>
+<span>•</span>
+<span>64 KB</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+            Used in Brand Header
+          </span>
+<span class="material-symbols-outlined text-outline text-[18px] group-hover:text-primary">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Selected Media Inspector Drawer / Right Panel (Sticky Desktop) -->
+<aside class="w-full lg:w-96 rounded-2xl bg-surface-container-lowest p-space-md shadow-md lg:sticky lg:top-20 flex flex-col gap-space-md" id="media-inspector">
+<!-- Drawer Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-teal text-[20px]">info</span>
+<span class="font-headline-sm text-headline-sm text-primary">Asset Inspector</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-brand-deep-blue text-brand-lime font-bold uppercase tracking-wider" id="inspect-format-badge">
+          PNG
+        </span>
+</div>
+<!-- Preview Image / Canvas Container -->
+<div class="relative w-full aspect-video rounded-xl bg-surface-container overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="High tech electric commuter bicycle parked neatly beside waterfront promenade Lagos at golden hour daylight, crisp clean engineering details" id="inspect-preview-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6nV87APXx11MoYlfnoYLOd-LIrPqL6m2jwYAxNq-qdACYm2bKw0-l4FqNMeKC5kaYwI7dikHaW52wLwGnAkeWtJx5BdR5E_MUs0NDnEzKkPBdFsgbRWvLpnq6XaSIKhi_m12HnAXhOn1y-pwl1B2FroLYMHsIrGNclGyTTNL0TBYydN9Z5CRG08OK4IIsd7Sa0rR4tbX42kKQECfyFeNq3nJi1o7GOxQP_GoKvF5o"/>
+<div class="absolute bottom-2 right-2 bg-inverse-surface/80 backdrop-blur-md px-2 py-0.5 rounded text-inverse-on-surface font-label-sm text-label-sm" id="inspect-dims">
+          1920×1080 • 1.4 MB
+        </div>
+</div>
+<!-- Filename & Usage Badge -->
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary break-all" id="inspect-title">emax-veloflow-commuter-waterfront.png</h3>
+<div class="mt-2 flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-high text-brand-teal font-bold flex items-center gap-1" id="inspect-usage-badge">
+<span class="material-symbols-outlined text-[14px]">link</span>
+            Used in 3 products
+          </span>
+<span class="font-label-sm text-label-sm text-outline">Public CDN</span>
+</div>
+</div>
+<!-- Public CDN URL with Copy Button -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Public Supabase Storage CDN URL</label>
+<div class="flex items-center gap-2">
+<input class="flex-1 bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3 py-2 rounded-xl outline-none truncate" id="inspect-cdn-url" readonly="" type="text" value="https://supabase.emax.ng/storage/v1/object/public/emax-public-media/veloflow-lagos.png"/>
+<button class="p-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-primary shadow-sm transition-colors" onclick="copyCdnUrl()" title="Copy to clipboard">
+<span class="material-symbols-outlined text-[18px]" id="copy-icon">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Alt Text Field (Editable) -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Accessible Alt Text</label>
+<span class="font-label-sm text-label-sm text-brand-teal cursor-pointer hover:underline" onclick="saveAltText()">Save</span>
+</div>
+<textarea class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm p-3 rounded-xl outline-none focus:bg-surface-container transition-colors resize-none leading-relaxed" id="inspect-alt-text" rows="3">Emax VeloFlow 750W commuter e-bike parked beside Lagos waterfront skyline</textarea>
+</div>
+<!-- Linked Products Accordion / List -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Linked Live Records</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-bold">RLS Guarded</span>
+</div>
+<div class="flex flex-col gap-2 mt-1" id="inspect-linked-container">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-brand-teal text-[18px]">electric_bike</span>
+<div class="truncate">
+<div class="font-label-md text-label-md text-primary truncate">Emax VeloFlow 750W Urban Commuter</div>
+<div class="font-body-sm text-body-sm text-outline">SKU: VELO-750W • Published</div>
+</div>
+</div>
+<a class="p-1 rounded text-on-surface-variant hover:text-brand-teal" href="#">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-brand-teal text-[18px]">battery_charging_full</span>
+<div class="truncate">
+<div class="font-label-md text-label-md text-primary truncate">Veloflow 48V 17.5Ah Replacement Battery Pack</div>
+<div class="font-body-sm text-body-sm text-outline">SKU: BATT-VF48V • Published</div>
+</div>
+</div>
+<a class="p-1 rounded text-on-surface-variant hover:text-brand-teal" href="#">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Upload Audit Metadata -->
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">person</span>
+<span id="inspect-uploader">Engr. T. Balogun</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span id="inspect-date">Nov 10, 2026</span>
+</div>
+</div>
+<!-- Drawer Action Buttons -->
+<div class="flex flex-col gap-2 pt-2">
+<div class="grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+            Replace Asset
+          </button>
+<a class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" href="#" id="inspect-download-link">
+<span class="material-symbols-outlined text-[18px]">download</span>
+            Download
+          </a>
+</div>
+<button class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-error-container hover:bg-error/20 text-on-error-container font-label-md text-label-md transition-colors" onclick="triggerDeleteWarning()">
+<span class="material-symbols-outlined text-[18px]">delete_forever</span>
+          Delete Asset
+        </button>
+</div>
+</aside>
+</div>
+<!-- Safety Confirmation Modal (Controlled by Javascript) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/50 backdrop-blur-sm hidden p-4" id="safety-modal">
+<div class="w-full max-w-lg rounded-2xl bg-surface-container-lowest p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center gap-3 text-error">
+<div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px] text-error">warning</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Active Published Product Conflict</h4>
+<span class="font-body-sm text-body-sm text-outline">Supabase RLS Referential Integrity Guard</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low text-on-surface flex flex-col gap-2">
+<p class="font-body-md text-body-md leading-relaxed">
+<strong class="text-primary font-bold" id="modal-asset-name">emax-veloflow-commuter-waterfront.png</strong> is actively linked as the hero banner for <strong class="text-primary font-bold">Emax VeloFlow 750W Urban Commuter (SKU: VELO-750W)</strong> and 2 other active inventory items.
+        </p>
+<p class="font-body-sm text-body-sm text-error font-medium">
+          Deleting this asset will result in broken image URLs (404) across public client web applications and mobile portals.
+        </p>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="px-5 py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors" onclick="closeSafetyModal()">
+          Cancel & Retain
+        </button>
+<button class="px-5 py-2.5 rounded-full bg-error hover:bg-error/90 text-on-error font-label-md text-label-md transition-colors flex items-center gap-1.5" onclick="executeSafeDelete()">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+          Force Delete & Sever Links
+        </button>
+</div>
+</div>
+</div>
+<!-- Inline Script for Interactivity & Reactive Inspector -->
+<script>
+    let currentAsset = {
+      name: 'emax-veloflow-commuter-waterfront.png',
+      hasActiveProducts: true
+    };
+
+    function inspectAsset(name, dims, size, format, usage, alt, sku, date, cdnUrl, isUsed) {
+      currentAsset.name = name;
+      currentAsset.hasActiveProducts = isUsed;
+
+      document.getElementById('inspect-title').innerText = name;
+      document.getElementById('inspect-dims').innerText = `${dims} • ${size}`;
+      document.getElementById('inspect-format-badge').innerText = format;
+      document.getElementById('inspect-usage-badge').innerHTML = `<span class="material-symbols-outlined text-[14px]">link</span> ${usage}`;
+      document.getElementById('inspect-alt-text').value = alt;
+      document.getElementById('inspect-date').innerText = date;
+      document.getElementById('inspect-cdn-url').value = cdnUrl;
+
+      // Update badge style based on usage
+      const badge = document.getElementById('inspect-usage-badge');
+      if (!isUsed) {
+        badge.className = 'font-label-sm text-label-sm px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary-container font-bold flex items-center gap-1';
+        badge.innerHTML = '<span class="material-symbols-outlined text-[14px]">warning</span> Unused / Orphaned';
+        document.getElementById('inspect-linked-container').innerHTML = `
+          <div class="p-3 text-center text-outline font-body-sm text-body-sm">
+            No published products or hero banners are currently referencing this file. Safe to delete.
+          </div>
+        `;
+      } else {
+        badge.className = 'font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-high text-brand-teal font-bold flex items-center gap-1';
+        document.getElementById('inspect-linked-container').innerHTML = `
+          <div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest">
+            <div class="flex items-center gap-2 min-w-0">
+              <span class="material-symbols-outlined text-brand-teal text-[18px]">inventory_2</span>
+              <div class="truncate">
+                <div class="font-label-md text-label-md text-primary truncate">${name.replace(/\.[^/.]+$/, '')}</div>
+                <div class="font-body-sm text-body-sm text-outline">SKU: ${sku} • Published</div>
+              </div>
+            </div>
+            <a href="#" class="p-1 rounded text-on-surface-variant hover:text-brand-teal">
+              <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+            </a>
+          </div>
+        `;
+      }
+
+      // Visual card selection feedback
+      document.querySelectorAll('.media-card').forEach(card => {
+        card.classList.remove('ring-2', 'ring-brand-teal');
+      });
+      event.currentTarget.classList.add('ring-2', 'ring-brand-teal');
+    }
+
+    function copyCdnUrl() {
+      const input = document.getElementById('inspect-cdn-url');
+      navigator.clipboard.writeText(input.value);
+      const icon = document.getElementById('copy-icon');
+      icon.innerText = 'check';
+      setTimeout(() => {
+        icon.innerText = 'content_copy';
+      }, 1800);
+    }
+
+    function saveAltText() {
+      const btn = event.target;
+      const originalText = btn.innerText;
+      btn.innerText = 'Saved!';
+      setTimeout(() => {
+        btn.innerText = originalText;
+      }, 1500);
+    }
+
+    function triggerDeleteWarning() {
+      document.getElementById('modal-asset-name').innerText = currentAsset.name;
+      document.getElementById('safety-modal').classList.remove('hidden');
+    }
+
+    function closeSafetyModal() {
+      document.getElementById('safety-modal').classList.add('hidden');
+    }
+
+    function executeSafeDelete() {
+      closeSafetyModal();
+      alert(`Asset '${currentAsset.name}' removed from Supabase storage and links sanitized.`);
+    }
+
+    // View toggle listeners
+    document.getElementById('view-list-btn').addEventListener('click', function() {
+      this.className = 'px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-label-md text-label-md flex items-center gap-1.5';
+      document.getElementById('view-grid-btn').className = 'px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1.5';
+    });
+
+    document.getElementById('view-grid-btn').addEventListener('click', function() {
+      this.className = 'px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-label-md text-label-md flex items-center gap-1.5';
+      document.getElementById('view-list-btn').className = 'px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1.5';
+    });
+  </script>
+</div></main></div></body></html>

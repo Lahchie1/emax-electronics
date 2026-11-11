@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f7faff;
+  --foreground: #1e293b;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-plus-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Classes */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.hero-sky-gradient {
+  background: radial-gradient(130% 90% at 50% 10%, #2f84ec 0%, #3e98f7 35%, #76bbf8 65%, #cde5fc 90%, #dff2a8 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* =========================================================
+   Bi-Directional Scroll Animation Framework
+   Activates when JS sets .has-scroll-animations on <html>.
+   Supports rich motion when scrolling down AND scrolling up!
+   ========================================================= */
+html.has-scroll-animations .reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+html.has-scroll-animations[data-scroll-dir="up"] .reveal-on-scroll:not(.is-revealed) {
+  transform: translateY(-22px);
+}
+
+html.has-scroll-animations .reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0) !important;
+}
+
+html.has-scroll-animations .reveal-scale {
+  opacity: 0;
+  transform: scale(0.94) translateY(18px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+html.has-scroll-animations[data-scroll-dir="up"] .reveal-scale:not(.is-revealed) {
+  transform: scale(0.94) translateY(-18px);
+}
+
+html.has-scroll-animations .reveal-scale.is-revealed {
+  opacity: 1;
+  transform: scale(1) translateY(0) !important;
+}
+
+html.has-scroll-animations .reveal-fade-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+html.has-scroll-animations[data-scroll-dir="up"] .reveal-fade-left:not(.is-revealed) {
+  transform: translateX(-30px) translateY(-14px);
+}
+
+html.has-scroll-animations .reveal-fade-left.is-revealed {
+  opacity: 1;
+  transform: translateX(0) translateY(0) !important;
+}
+
+html.has-scroll-animations .reveal-fade-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+html.has-scroll-animations[data-scroll-dir="up"] .reveal-fade-right:not(.is-revealed) {
+  transform: translateX(30px) translateY(-14px);
+}
+
+html.has-scroll-animations .reveal-fade-right.is-revealed {
+  opacity: 1;
+  transform: translateX(0) translateY(0) !important;
+}
+
+/* Stagger Delays */
+html.has-scroll-animations [data-delay="50"] { transition-delay: 50ms; }
+html.has-scroll-animations [data-delay="100"] { transition-delay: 100ms; }
+html.has-scroll-animations [data-delay="150"] { transition-delay: 150ms; }
+html.has-scroll-animations [data-delay="200"] { transition-delay: 200ms; }
+html.has-scroll-animations [data-delay="250"] { transition-delay: 250ms; }
+html.has-scroll-animations [data-delay="300"] { transition-delay: 300ms; }
+html.has-scroll-animations [data-delay="350"] { transition-delay: 350ms; }
+html.has-scroll-animations [data-delay="400"] { transition-delay: 400ms; }
+html.has-scroll-animations [data-delay="500"] { transition-delay: 500ms; }
+
+/* Reduced Motion Override for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html.has-scroll-animations .reveal-on-scroll,
+  html.has-scroll-animations .reveal-scale,
+  html.has-scroll-animations .reveal-fade-left,
+  html.has-scroll-animations .reveal-fade-right {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+

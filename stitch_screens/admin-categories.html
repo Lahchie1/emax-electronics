@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#213244","on-primary-fixed-variant":"#2e4961","on-error-container":"#93000a","tertiary-fixed":"#ffddb9","secondary-container":"#93eefc","surface-bright":"#f8f9ff","glass-border":"rgba(255, 255, 255, 0.65)","surface-tint":"#46617a","surface-container-highest":"#d3e4fc","on-error":"#ffffff","on-primary":"#ffffff","surface-container-high":"#daeaff","on-surface":"#0b1d2e","primary-fixed":"#cde5ff","brand-deep-blue":"#0d2844","on-primary-container":"#7c98b4","inverse-on-surface":"#e9f1ff","brand-lime":"#d4f34a","on-secondary":"#ffffff","tertiary-fixed-dim":"#ffb963","brand-teal":"#087e8b","brand-navy":"#0b1d2e","on-background":"#0b1d2e","on-tertiary-container":"#cd8622","surface-container-low":"#eef4ff","primary-fixed-dim":"#adcae7","primary":"#001b2e","primary-container":"#123047","error-container":"#ffdad6","on-secondary-fixed-variant":"#004f57","secondary-fixed-dim":"#79d4e2","on-primary-fixed":"#001d32","brand-amber":"#f2a541","secondary":"#006874","surface-variant":"#d3e4fc","error":"#ba1a1a","on-tertiary-fixed-variant":"#663e00","surface-container":"#e4efff","brand-teal-hover":"#066570","secondary-fixed":"#96f0ff","brand-sky":"#3a88e9","on-tertiary-fixed":"#2b1700","tertiary-container":"#442700","tertiary":"#271500","outline-variant":"#c3c7cd","surface-dim":"#cadcf3","on-secondary-container":"#006d79","on-surface-variant":"#43474d","outline":"#73777d","inverse-primary":"#adcae7","on-secondary-fixed":"#001f24","background":"#f8f9ff","surface-container-lowest":"#ffffff","surface":"#f8f9ff","on-tertiary":"#ffffff","brand-canvas":"#f7faff"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"margin":"1.5rem","space-xl":"2rem","gutter-sm":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-2xl":"3rem","gutter":"1.5rem","margin-lg":"4rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"label-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},fontSize:{"label-sm":["0.625rem",{"lineHeight":"1.0","letterSpacing":"0.08em","fontWeight":"700"}],"headline-xl":["3.75rem",{"lineHeight":"1.12","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["1.125rem",{"lineHeight":"1.6","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"1.3","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1.4","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1.0","letterSpacing":"0.06em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.5","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"800"}],"headline-sm":["1.125rem",{"lineHeight":"1.35","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"800"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg"><div class="flex items-center gap-space-sm pb-space-lg"><div class="w-10 h-10 rounded-full bg-brand-deep-blue flex items-center justify-center text-brand-lime font-headline-sm font-bold shadow-md">E</div><div><div class="font-headline-sm text-headline-sm text-primary uppercase tracking-tight">EMAX CMS</div><div class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Electronics Enterprises</div></div></div><nav class="flex flex-col gap-space-sm" data-active-classes="bg-surface-container text-primary font-bold shadow-sm"><div class="pt-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">MAIN</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="products-inventory" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md">Products & Inventory</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT transition-all bg-surface-container text-primary font-bold shadow-sm" data-path="categories" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-body-md text-body-md">Categories</span></a></div></div><div class="pt-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">OPERATIONS</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="media-library" href="#"><span class="material-symbols-outlined text-[20px]">perm_media</span><span class="font-body-md text-body-md">Media Library</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="content-pages" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span class="font-body-md text-body-md">Content & Pages</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="enquiries-leads" href="#"><span class="material-symbols-outlined text-[20px]">contact_mail</span><span class="font-body-md text-body-md">Enquiries & Leads</span></a></div></div><div class="pt-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">SYSTEM & GOVERNANCE</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="staff-roles" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-body-md text-body-md">Staff & Roles</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">security</span><span class="font-body-md text-body-md">Audit Log</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></a></div></div></nav></div><div class="p-space-md m-space-md rounded-DEFAULT bg-surface-container-low flex flex-col gap-2"><div class="flex items-center justify-between"><span class="flex items-center gap-1.5 font-label-md text-label-md text-brand-navy"><span class="inline-block w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>Supabase Connected</span><span class="font-label-sm text-label-sm uppercase bg-surface-container-highest px-1.5 py-0.5 rounded-full text-brand-teal font-bold">RLS ACTIVE</span></div><div class="font-body-sm text-body-sm text-on-surface-variant truncate">PostgreSQL Pool: Healthy (Latency 14ms)</div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px]">home</span><span>/</span><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">CMS Console</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-9 pr-4 py-1.5 rounded-full outline-none focus:bg-surface-container focus:ring-0 placeholder:text-outline" placeholder="Search SKU, order ID, product name, or staff logs..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-2 bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md px-4 py-2 rounded-full transition-colors"><span class="material-symbols-outlined text-[18px]">add</span>Add Product</button><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-brand-amber"></span></button><div class="flex items-center gap-space-sm pl-space-sm bg-surface-container-low py-1 pr-3 rounded-full"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="text-left"><div class="font-label-md text-label-md text-primary leading-tight">Engr. T. Balogun</div><div class="font-label-sm text-label-sm text-on-surface-variant">Lead Admin · Ikeja Hub</div></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background p-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Command / Overview Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-brand-teal tracking-wider bg-surface-container-high px-2 py-0.5 rounded-full">Database v2.4</span>
+<span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Postgres Schema: catalog.taxonomies</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary mt-1">Category Hierarchy & Taxonomy</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Manage public storefront product taxonomies, navigation order, parent-child nesting, and SEO slugs. Backed by Supabase PostgreSQL.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md px-4 py-2.5 rounded-full transition-all" id="btn-reorder-toggle" onclick="toggleReorderMode()">
+<span class="material-symbols-outlined text-[18px]">drag_indicator</span>
+<span>Reorder Categories</span>
+</button>
+<button class="flex items-center gap-2 bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-full shadow-sm transition-all" onclick="focusNewCategoryForm()">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Add Category</span>
+</button>
+</div>
+</div>
+<!-- Realtime Metric Snapshot Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Total Categories Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Taxonomy Nodes</span>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-primary leading-none">20</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-brand-teal font-bold">6 Active Parents</span>
+<span class="text-outline">•</span>
+<span>14 Sub-categories</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full mt-3 overflow-hidden">
+<div class="bg-brand-teal h-full w-[70%]"></div>
+</div>
+</div>
+<!-- Assigned SKUs -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Assigned SKUs</span>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">sell</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-primary leading-none">42</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-brand-teal text-[15px]">verified</span>
+<span>100% of live catalog mapped</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full mt-3 overflow-hidden">
+<div class="bg-secondary h-full w-[100%]"></div>
+</div>
+</div>
+<!-- Unassigned SKUs Alert Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Unassigned SKUs</span>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-brand-navy">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-brand-teal leading-none">0</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 flex items-center gap-1">
+<span class="inline-block w-2 h-2 rounded-full bg-brand-lime"></span>
+<span>Zero orphaned warehouse stock</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full mt-3 overflow-hidden">
+<div class="bg-brand-lime h-full w-full"></div>
+</div>
+</div>
+<!-- Storefront Featured -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Featured in Nav</span>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-brand-amber">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-primary leading-none">5 <span class="font-body-md text-body-md text-outline">/ 6</span></div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+<span>1 Category currently hidden/draft</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full mt-3 overflow-hidden">
+<div class="bg-brand-amber h-full w-[83%]"></div>
+</div>
+</div>
+</div>
+<!-- Main Split Architecture: Tree View (Left) & Form Panel (Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Tree Table (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-md shadow-sm">
+<!-- Tree Controls & Filter -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary">Catalog Taxonomy Tree</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">Supabase Live</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container transition-all" onclick="expandAllNodes()">Expand All</button>
+<button class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container transition-all" onclick="collapseAllNodes()">Collapse All</button>
+</div>
+</div>
+<!-- Table / Node Rows Container -->
+<div class="flex flex-col gap-2">
+<!-- NODE 1: Lithium Cells & Chemistries -->
+<div class="category-card rounded-DEFAULT bg-surface-container-low transition-all duration-200" data-cat-id="cat-lithium">
+<div class="p-3 flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="drag-handle material-symbols-outlined text-outline cursor-grab active:cursor-grabbing text-[18px] opacity-40 hover:opacity-100">drag_indicator</span>
+<button class="w-6 h-6 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleCategoryFolder('lithium-subnodes', this)">
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 rotate-90">chevron_right</span>
+</button>
+<div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center text-brand-teal flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">battery_charging_full</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary truncate">Lithium Cells & Chemistries</span>
+<span class="bg-surface-container text-brand-navy font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">18 SKUs</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<code class="font-mono text-outline text-[11px]">/lithium-cells</code>
+<span>•</span>
+<span class="text-brand-teal font-label-sm text-label-sm font-semibold">Active</span>
+</div>
+</div>
+</div>
+<!-- Quick Controls -->
+<div class="flex items-center gap-2 flex-shrink-0">
+<!-- Visibility Pill Toggle -->
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest text-brand-navy font-label-sm text-label-sm shadow-sm hover:bg-surface-container transition-colors" onclick="toggleVisibilityState(this)" title="Storefront Nav Visibility">
+<span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+<span>Nav Shown</span>
+</button>
+<!-- Actions -->
+<div class="flex items-center">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary" onclick="editCategoryPayload('Lithium Cells & Chemistries', 'lithium-cells', 'None (Top Level)', 'Storefront battery cell catalog covering prismatic LiFePO4, high-rate cylindrical formats, and extreme safety LTO cells.', 10, true)" title="Edit Category Details">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-brand-teal" onclick="prefillSubcategory('Lithium Cells & Chemistries')" title="Add Subcategory">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" title="Archive Category">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Nested Subcategories -->
+<div class="pl-12 pr-3 pb-3 flex flex-col gap-1.5" id="lithium-subnodes">
+<!-- Sub 1 -->
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">LiFePO4 Prismatic (Grade A)</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/lithium-cells/lifepo4-prismatic</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">11 SKUs</span>
+<button class="text-outline hover:text-primary" onclick="editCategoryPayload('LiFePO4 Prismatic (Grade A)', 'lifepo4-prismatic', 'Lithium Cells & Chemistries', 'Tier-1 matched internal resistance prismatic cells with welded studs.', 11, true)">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Sub 2 -->
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">Cylindrical 21700 & 18650</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/lithium-cells/cylindrical-cells</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">5 SKUs</span>
+<button class="text-outline hover:text-primary" onclick="editCategoryPayload('Cylindrical 21700 & 18650', 'cylindrical-cells', 'Lithium Cells & Chemistries', 'High-drain NMC and LiFePO4 round cell banks.', 12, true)">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Sub 3 -->
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">LTO Titanate Extreme Duty</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/lithium-cells/lto-titanate</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">2 SKUs</span>
+<button class="text-outline hover:text-primary" onclick="editCategoryPayload('LTO Titanate Extreme Duty', 'lto-titanate', 'Lithium Cells & Chemistries', 'Sub-zero capable 20,000 cycle ultra-high charge rate chemistries.', 13, true)">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- NODE 2: Smart BMS & Protection -->
+<div class="category-card rounded-DEFAULT bg-surface-container-low transition-all duration-200" data-cat-id="cat-bms">
+<div class="p-3 flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="drag-handle material-symbols-outlined text-outline cursor-grab active:cursor-grabbing text-[18px] opacity-40 hover:opacity-100">drag_indicator</span>
+<button class="w-6 h-6 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleCategoryFolder('bms-subnodes', this)">
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 rotate-90">chevron_right</span>
+</button>
+<div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center text-brand-sky flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">memory</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary truncate">Smart BMS & Protection</span>
+<span class="bg-surface-container text-brand-navy font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">9 SKUs</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<code class="font-mono text-outline text-[11px]">/smart-bms</code>
+<span>•</span>
+<span class="text-brand-teal font-label-sm text-label-sm font-semibold">Active</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest text-brand-navy font-label-sm text-label-sm shadow-sm hover:bg-surface-container transition-colors" onclick="toggleVisibilityState(this)" title="Storefront Nav Visibility">
+<span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+<span>Nav Shown</span>
+</button>
+<div class="flex items-center">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary" onclick="editCategoryPayload('Smart BMS & Protection', 'smart-bms', 'None (Top Level)', 'Battery protection units, active balancers, and Bluetooth CAN interface boards.', 20, true)">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-brand-teal" onclick="prefillSubcategory('Smart BMS & Protection')">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</div>
+</div>
+<!-- BMS Subnodes -->
+<div class="pl-12 pr-3 pb-3 flex flex-col gap-1.5" id="bms-subnodes">
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">Active Balancing BMS (1A–4A)</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/smart-bms/active-balancing</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">4 SKUs</span>
+<button class="text-outline hover:text-primary" onclick="editCategoryPayload('Active Balancing BMS', 'active-balancing', 'Smart BMS & Protection', 'Dynamic supercapacitor active current equalization circuits.', 21, true)">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">Hardware Passive BMS</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/smart-bms/hardware-passive</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">3 SKUs</span>
+<button class="text-outline hover:text-primary" onclick="editCategoryPayload('Hardware Passive BMS', 'hardware-passive', 'Smart BMS & Protection', 'Solid-state static protection boards for light-duty applications.', 22, true)">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">Bluetooth & CAN Display Modules</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/smart-bms/telemetry-displays</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">2 SKUs</span>
+<button class="text-outline hover:text-primary" onclick="editCategoryPayload('Bluetooth & CAN Display Modules', 'telemetry-displays', 'Smart BMS & Protection', 'Telemetry display panels and wireless UART modules.', 23, true)">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- NODE 3: Solar Inverters & MPPT -->
+<div class="category-card rounded-DEFAULT bg-surface-container-low transition-all duration-200" data-cat-id="cat-inverters">
+<div class="p-3 flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="drag-handle material-symbols-outlined text-outline cursor-grab active:cursor-grabbing text-[18px] opacity-40 hover:opacity-100">drag_indicator</span>
+<button class="w-6 h-6 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleCategoryFolder('inverter-subnodes', this)">
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 rotate-90">chevron_right</span>
+</button>
+<div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center text-brand-amber flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">solar_power</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary truncate">Solar Inverters & MPPT</span>
+<span class="bg-surface-container text-brand-navy font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">5 SKUs</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<code class="font-mono text-outline text-[11px]">/inverters</code>
+<span>•</span>
+<span class="text-brand-teal font-label-sm text-label-sm font-semibold">Active</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest text-brand-navy font-label-sm text-label-sm shadow-sm hover:bg-surface-container transition-colors" onclick="toggleVisibilityState(this)" title="Storefront Nav Visibility">
+<span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+<span>Nav Shown</span>
+</button>
+<div class="flex items-center">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary" onclick="editCategoryPayload('Solar Inverters & MPPT', 'inverters', 'None (Top Level)', 'Hybrid grid-tie and off-grid high frequency power converters.', 30, true)">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-brand-teal" onclick="prefillSubcategory('Solar Inverters & MPPT')">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Inverter Subnodes -->
+<div class="pl-12 pr-3 pb-3 flex flex-col gap-1.5" id="inverter-subnodes">
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">Low Voltage 48V Hybrid</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/inverters/48v-hybrid</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">2 SKUs</span>
+<button class="text-outline hover:text-primary"><span class="material-symbols-outlined text-[16px]">edit</span></button>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">High Voltage Commercial (100V–500V)</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/inverters/hv-commercial</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">1 SKU</span>
+<button class="text-outline hover:text-primary"><span class="material-symbols-outlined text-[16px]">edit</span></button>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">MPPT Charge Controllers</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/inverters/mppt-controllers</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">2 SKUs</span>
+<button class="text-outline hover:text-primary"><span class="material-symbols-outlined text-[16px]">edit</span></button>
+</div>
+</div>
+</div>
+</div>
+<!-- NODE 4: Pack Assembly Hardware -->
+<div class="category-card rounded-DEFAULT bg-surface-container-low transition-all duration-200" data-cat-id="cat-pack-hardware">
+<div class="p-3 flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="drag-handle material-symbols-outlined text-outline cursor-grab active:cursor-grabbing text-[18px] opacity-40 hover:opacity-100">drag_indicator</span>
+<button class="w-6 h-6 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleCategoryFolder('hardware-subnodes', this)">
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 rotate-90">chevron_right</span>
+</button>
+<div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">build</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary truncate">Pack Assembly Hardware</span>
+<span class="bg-surface-container text-brand-navy font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">7 SKUs</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<code class="font-mono text-outline text-[11px]">/pack-hardware</code>
+<span>•</span>
+<span class="text-brand-teal font-label-sm text-label-sm font-semibold">Active</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest text-brand-navy font-label-sm text-label-sm shadow-sm hover:bg-surface-container transition-colors" onclick="toggleVisibilityState(this)" title="Storefront Nav Visibility">
+<span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+<span>Nav Shown</span>
+</button>
+<div class="flex items-center">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary" onclick="editCategoryPayload('Pack Assembly Hardware', 'pack-hardware', 'None (Top Level)', 'Precision machined busbars, epoxy insulation, fixtures, and DC circuit protection.', 40, true)">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-brand-teal" onclick="prefillSubcategory('Pack Assembly Hardware')">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Hardware Subnodes -->
+<div class="pl-12 pr-3 pb-3 flex flex-col gap-1.5" id="hardware-subnodes">
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">Pure Copper Busbars</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/pack-hardware/busbars</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">3 SKUs</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">FR4 Epoxy Sheet Insulation</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/pack-hardware/fr4-insulation</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">2 SKUs</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">Compression Fixtures & Rods</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/pack-hardware/compression-fixtures</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">1 SKU</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">DC Breakers & Class-T Fuses</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/pack-hardware/breakers-fuses</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">1 SKU</span>
+</div>
+</div>
+</div>
+<!-- NODE 5: Urban E-Bikes & Mobility -->
+<div class="category-card rounded-DEFAULT bg-surface-container-low transition-all duration-200" data-cat-id="cat-ebikes">
+<div class="p-3 flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="drag-handle material-symbols-outlined text-outline cursor-grab active:cursor-grabbing text-[18px] opacity-40 hover:opacity-100">drag_indicator</span>
+<button class="w-6 h-6 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleCategoryFolder('ebikes-subnodes', this)">
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 rotate-90">chevron_right</span>
+</button>
+<div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">electric_bike</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary truncate">Urban E-Bikes & Mobility</span>
+<span class="bg-surface-container text-brand-navy font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">3 SKUs</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<code class="font-mono text-outline text-[11px]">/ebikes</code>
+<span>•</span>
+<span class="text-brand-teal font-label-sm text-label-sm font-semibold">Active</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest text-brand-navy font-label-sm text-label-sm shadow-sm hover:bg-surface-container transition-colors" onclick="toggleVisibilityState(this)" title="Storefront Nav Visibility">
+<span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+<span>Nav Shown</span>
+</button>
+<div class="flex items-center">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary" onclick="editCategoryPayload('Urban E-Bikes & Mobility', 'ebikes', 'None (Top Level)', 'Engineered electric commuter bikes, heavy freight delivery bikes, and modular plug battery blocks.', 50, true)">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-brand-teal" onclick="prefillSubcategory('Urban E-Bikes & Mobility')">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</div>
+</div>
+<!-- E-Bikes Subnodes -->
+<div class="pl-12 pr-3 pb-3 flex flex-col gap-1.5" id="ebikes-subnodes">
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">Commuter E-Bikes (500W-750W)</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/ebikes/commuter</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">1 SKU</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">Commercial Cargo E-Bikes</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/ebikes/cargo</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">1 SKU</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">Replacement Battery Packs</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/ebikes/battery-packs</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">1 SKU</span>
+</div>
+</div>
+</div>
+<!-- NODE 6: Turnkey Solar Generators (Draft/Hidden) -->
+<div class="category-card rounded-DEFAULT bg-surface-container-low/60 transition-all duration-200" data-cat-id="cat-solar-generators">
+<div class="p-3 flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="drag-handle material-symbols-outlined text-outline cursor-grab active:cursor-grabbing text-[18px] opacity-40 hover:opacity-100">drag_indicator</span>
+<button class="w-6 h-6 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleCategoryFolder('generator-subnodes', this)">
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200">chevron_right</span>
+</button>
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-outline flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">offline_bolt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary truncate">Turnkey Solar Generators</span>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">2 SKUs</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<code class="font-mono text-outline text-[11px]">/solar-generators</code>
+<span>•</span>
+<span class="text-brand-amber font-label-sm text-label-sm font-semibold">Draft / Hidden</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<!-- Hidden Status Indicator -->
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm hover:bg-surface-container transition-colors" onclick="toggleVisibilityState(this)" title="Storefront Nav Visibility">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Nav Hidden</span>
+</button>
+<div class="flex items-center">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary" onclick="editCategoryPayload('Turnkey Solar Generators', 'solar-generators', 'None (Top Level)', 'Portable rolling power carts and plug-and-play field power station prototypes.', 60, false)">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-brand-teal" onclick="prefillSubcategory('Turnkey Solar Generators')">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Generator Subnodes (Collapsed by default) -->
+<div class="hidden pl-12 pr-3 pb-3 flex flex-col gap-1.5" id="generator-subnodes">
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">Plug-and-Play Powerboxes</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/solar-generators/powerboxes</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">1 SKU</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[16px] text-outline opacity-40">subdirectory_arrow_right</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">Mobile Solar Carts</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">/solar-generators/mobile-carts</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">1 SKU</span>
+</div>
+</div>
+</div>
+</div>
+<!-- PostgreSQL Sync Notice -->
+<div class="mt-space-md p-space-sm rounded-DEFAULT bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-teal text-[18px]">sync</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Parent reordering syncs automatically with <code class="font-mono text-[11px] text-primary">sort_order</code> index on change.</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase text-outline">RLS: catalogs_policy</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Fast Add / Edit Category Panel (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-lg shadow-sm" id="category-form-container">
+<!-- Form Header -->
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase text-brand-teal bg-surface-container-high px-2 py-0.5 rounded-full font-bold" id="form-mode-badge">New Category</span>
+<span class="font-label-sm text-label-sm uppercase text-outline">schema.category</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-1" id="form-title">Add / Edit Category</h2>
+</div>
+<button class="p-1 rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" onclick="resetCategoryForm()" title="Clear inputs">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+<!-- Form Elements -->
+<form class="flex flex-col gap-4 mt-2" id="category-crud-form" onsubmit="handleCategorySubmit(event)">
+<!-- Category Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-primary flex items-center justify-between" for="cat-name-input">
+<span>Category Title *</span>
+<span class="font-label-sm text-label-sm text-outline lowercase">public display</span>
+</label>
+<input class="w-full bg-surface-container-low text-primary font-body-md text-body-md px-3.5 py-2.5 rounded-xl outline-none focus:bg-surface-container transition-all placeholder:text-outline" id="cat-name-input" oninput="autoGenerateSlug(this.value)" placeholder="e.g. Sodium-Ion Cells" required="" type="text"/>
+</div>
+<!-- SEO Slug & Autogeneration -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-primary" for="cat-slug-input">SEO Canonical Slug *</label>
+<button class="text-outline font-label-sm text-label-sm flex items-center gap-1 hover:text-primary" onclick="lockSlugAuto = !lockSlugAuto; this.classList.toggle('text-brand-teal')" type="button">
+<span class="material-symbols-outlined text-[14px]">lock_open</span>
+<span>Auto-sync</span>
+</button>
+</div>
+<div class="flex items-center bg-surface-container-low rounded-xl px-3 py-2">
+<span class="font-mono text-[12px] text-outline mr-1">/catalog/</span>
+<input class="bg-transparent text-primary font-mono text-[13px] flex-1 outline-none placeholder:text-outline" id="cat-slug-input" placeholder="sodium-ion-cells" required="" type="text"/>
+</div>
+</div>
+<!-- Parent Hierarchy Dropdown -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-primary" for="cat-parent-select">Parent Hierarchy Nesting</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-primary font-body-md text-body-md px-3.5 py-2.5 rounded-xl outline-none focus:bg-surface-container transition-all cursor-pointer" id="cat-parent-select">
+<option value="None (Top Level)">None (Top Level Root)</option>
+<option value="Lithium Cells & Chemistries">Lithium Cells & Chemistries</option>
+<option value="Smart BMS & Protection">Smart BMS & Protection</option>
+<option value="Solar Inverters & MPPT">Solar Inverters & MPPT</option>
+<option value="Pack Assembly Hardware">Pack Assembly Hardware</option>
+<option value="Urban E-Bikes & Mobility">Urban E-Bikes & Mobility</option>
+<option value="Turnkey Solar Generators">Turnkey Solar Generators</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Description for Storefront Header -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-primary flex items-center justify-between" for="cat-desc-input">
+<span>Storefront Header Intro</span>
+<span class="font-label-sm text-label-sm text-outline">Markdown supported</span>
+</label>
+<textarea class="w-full bg-surface-container-low text-primary font-body-md text-body-md px-3.5 py-2.5 rounded-xl outline-none focus:bg-surface-container transition-all placeholder:text-outline resize-none" id="cat-desc-input" placeholder="Technical introductory copy displayed atop the public e-commerce collection page..." rows="3"></textarea>
+</div>
+<!-- Sort Order & Storefront Visibility Toggle -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-primary" for="cat-sort-input">Sort Weight</label>
+<input class="w-full bg-surface-container-low text-primary font-body-md text-body-md px-3.5 py-2.5 rounded-xl outline-none focus:bg-surface-container" id="cat-sort-input" max="999" min="0" type="number" value="10"/>
+</div>
+<div class="flex flex-col gap-1.5 justify-end">
+<label class="font-label-md text-label-md text-primary">Public Visibility</label>
+<div class="flex items-center justify-between bg-surface-container-low px-3 py-2 rounded-xl">
+<span class="font-body-sm text-body-sm text-primary">Show in Nav</span>
+<input checked="" class="w-4 h-4 accent-brand-teal rounded cursor-pointer" id="cat-nav-toggle" type="checkbox"/>
+</div>
+</div>
+</div>
+<!-- Supabase Storage Thumbnail Dropzone -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-primary flex items-center justify-between">
+<span>Category Thumbnail</span>
+<span class="font-label-sm text-label-sm text-outline">Supabase Bucket: /category-assets</span>
+</label>
+<div class="rounded-xl bg-surface-container-low p-4 flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 text-outline">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-md text-label-md text-primary truncate">Drag SVG icon or WebP badge</span>
+<span class="font-body-sm text-body-sm text-outline">Recommended 400×400, max 1.5MB</span>
+</div>
+<button class="bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm px-3 py-1.5 rounded-lg transition-colors flex-shrink-0" type="button">
+                Upload
+              </button>
+</div>
+</div>
+<!-- Collapsible SEO Meta Section -->
+<div class="rounded-xl bg-surface-container-low p-3 flex flex-col gap-2">
+<button class="flex items-center justify-between text-left w-full" onclick="document.getElementById('seo-fields-wrap').classList.toggle('hidden'); document.getElementById('seo-arrow').classList.toggle('rotate-180')" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-teal text-[18px]">search_check</span>
+<span class="font-label-md text-label-md text-primary">SEO Meta Configuration</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline transition-transform duration-200" id="seo-arrow">expand_more</span>
+</button>
+<div class="hidden flex flex-col gap-2 pt-2" id="seo-fields-wrap">
+<input class="w-full bg-surface-container-lowest text-primary font-body-sm text-body-sm px-3 py-2 rounded-lg outline-none" id="cat-meta-title" placeholder="Meta Title (Max 60 chars)" type="text"/>
+<textarea class="w-full bg-surface-container-lowest text-primary font-body-sm text-body-sm px-3 py-2 rounded-lg outline-none resize-none" id="cat-meta-desc" placeholder="Meta Description for Google SERP..." rows="2"></textarea>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm pt-2">
+<button class="flex-1 bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md py-3 rounded-full shadow-sm transition-all text-center" type="submit">
+              Save Category
+            </button>
+<button class="bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md px-5 py-3 rounded-full transition-all" onclick="resetCategoryForm()" type="button">
+              Cancel / Reset
+            </button>
+</div>
+</form>
+</div>
+<!-- Quick Tips Card -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-md shadow-sm flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-brand-amber flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">tips_and_updates</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Hierarchy Guidelines</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Nesting beyond two sublevels is automatically grouped into dynamic storefront facet tags. Slugs change public search indexing; keep URL aliases permanent whenever feasible.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let lockSlugAuto = true;
+
+  function autoGenerateSlug(val) {
+    if (!lockSlugAuto) return;
+    const slugInput = document.getElementById('cat-slug-input');
+    const slug = val.toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/(^-|-$)+/g, '');
+    slugInput.value = slug;
+  }
+
+  function toggleCategoryFolder(elementId, btn) {
+    const el = document.getElementById(elementId);
+    if (!el) return;
+    const isHidden = el.classList.contains('hidden');
+    const chevron = btn.querySelector('.material-symbols-outlined');
+    if (isHidden) {
+      el.classList.remove('hidden');
+      if (chevron) chevron.classList.add('rotate-90');
+    } else {
+      el.classList.add('hidden');
+      if (chevron) chevron.classList.remove('rotate-90');
+    }
+  }
+
+  function expandAllNodes() {
+    ['lithium-subnodes', 'bms-subnodes', 'inverter-subnodes', 'hardware-subnodes', 'ebikes-subnodes', 'generator-subnodes'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.classList.remove('hidden');
+    });
+    document.querySelectorAll('.category-card button span.material-symbols-outlined').forEach(span => {
+      if (span.innerText === 'chevron_right') {
+        span.classList.add('rotate-90');
+      }
+    });
+  }
+
+  function collapseAllNodes() {
+    ['lithium-subnodes', 'bms-subnodes', 'inverter-subnodes', 'hardware-subnodes', 'ebikes-subnodes', 'generator-subnodes'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.classList.add('hidden');
+    });
+    document.querySelectorAll('.category-card button span.material-symbols-outlined').forEach(span => {
+      if (span.innerText === 'chevron_right') {
+        span.classList.remove('rotate-90');
+      }
+    });
+  }
+
+  function toggleVisibilityState(btn) {
+    const isShown = btn.innerText.includes('Nav Shown');
+    const dot = btn.querySelector('span:first-child');
+    const label = btn.querySelector('span:last-child');
+    if (isShown) {
+      dot.className = 'w-2 h-2 rounded-full bg-outline';
+      label.innerText = 'Nav Hidden';
+      btn.className = 'flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm hover:bg-surface-container transition-colors';
+    } else {
+      dot.className = 'w-2 h-2 rounded-full bg-brand-teal';
+      label.innerText = 'Nav Shown';
+      btn.className = 'flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest text-brand-navy font-label-sm text-label-sm shadow-sm hover:bg-surface-container transition-colors';
+    }
+  }
+
+  function toggleReorderMode() {
+    const btn = document.getElementById('btn-reorder-toggle');
+    const handles = document.querySelectorAll('.drag-handle');
+    const isReordering = btn.classList.contains('bg-brand-navy');
+
+    if (isReordering) {
+      btn.className = 'flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md px-4 py-2.5 rounded-full transition-all';
+      btn.querySelector('span:last-child').innerText = 'Reorder Categories';
+      handles.forEach(h => {
+        h.classList.remove('text-brand-teal', 'opacity-100');
+        h.classList.add('opacity-40');
+      });
+    } else {
+      btn.className = 'flex items-center gap-2 bg-brand-navy text-on-primary font-label-md text-label-md px-4 py-2.5 rounded-full transition-all shadow-md';
+      btn.querySelector('span:last-child').innerText = 'Done Reordering';
+      handles.forEach(h => {
+        h.classList.add('text-brand-teal', 'opacity-100');
+        h.classList.remove('opacity-40');
+      });
+    }
+  }
+
+  function editCategoryPayload(title, slug, parent, desc, sort, nav) {
+    document.getElementById('form-title').innerText = 'Edit Category: ' + title;
+    document.getElementById('form-mode-badge').innerText = 'Update Mode';
+    document.getElementById('form-mode-badge').className = 'font-label-sm text-label-sm uppercase text-brand-amber bg-surface-container-high px-2 py-0.5 rounded-full font-bold';
+    
+    document.getElementById('cat-name-input').value = title;
+    document.getElementById('cat-slug-input').value = slug;
+    document.getElementById('cat-parent-select').value = parent;
+    document.getElementById('cat-desc-input').value = desc;
+    document.getElementById('cat-sort-input').value = sort;
+    document.getElementById('cat-nav-toggle').checked = nav;
+
+    // Scroll slightly to the form on small viewports
+    document.getElementById('category-form-container').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function prefillSubcategory(parentTitle) {
+    resetCategoryForm();
+    document.getElementById('form-title').innerText = 'Add Subcategory under ' + parentTitle;
+    document.getElementById('form-mode-badge').innerText = 'New Child';
+    document.getElementById('cat-parent-select').value = parentTitle;
+    document.getElementById('cat-name-input').focus();
+  }
+
+  function resetCategoryForm() {
+    document.getElementById('category-crud-form').reset();
+    document.getElementById('form-title').innerText = 'Add / Edit Category';
+    document.getElementById('form-mode-badge').innerText = 'New Category';
+    document.getElementById('form-mode-badge').className = 'font-label-sm text-label-sm uppercase text-brand-teal bg-surface-container-high px-2 py-0.5 rounded-full font-bold';
+    document.getElementById('cat-parent-select').value = 'None (Top Level)';
+  }
+
+  function focusNewCategoryForm() {
+    resetCategoryForm();
+    document.getElementById('cat-name-input').focus();
+    document.getElementById('category-form-container').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function handleCategorySubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('cat-name-input').value;
+    const saveBtn = e.target.querySelector('button[type="submit"]');
+    const originalText = saveBtn.innerText;
+    
+    saveBtn.innerText = 'Syncing to Supabase...';
+    saveBtn.classList.add('opacity-75');
+
+    setTimeout(() => {
+      saveBtn.innerText = 'Saved!';
+      setTimeout(() => {
+        saveBtn.innerText = originalText;
+        saveBtn.classList.remove('opacity-75');
+        resetCategoryForm();
+      }, 1000);
+    }, 600);
+  }
+</script></main></div></body></html>

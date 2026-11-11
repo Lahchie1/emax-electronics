@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#213244","on-primary-fixed-variant":"#2e4961","on-error-container":"#93000a","tertiary-fixed":"#ffddb9","secondary-container":"#93eefc","surface-bright":"#f8f9ff","glass-border":"rgba(255, 255, 255, 0.65)","surface-tint":"#46617a","surface-container-highest":"#d3e4fc","on-error":"#ffffff","on-primary":"#ffffff","surface-container-high":"#daeaff","on-surface":"#0b1d2e","primary-fixed":"#cde5ff","brand-deep-blue":"#0d2844","on-primary-container":"#7c98b4","inverse-on-surface":"#e9f1ff","brand-lime":"#d4f34a","on-secondary":"#ffffff","tertiary-fixed-dim":"#ffb963","brand-teal":"#087e8b","brand-navy":"#0b1d2e","on-background":"#0b1d2e","on-tertiary-container":"#cd8622","surface-container-low":"#eef4ff","primary-fixed-dim":"#adcae7","primary":"#001b2e","primary-container":"#123047","error-container":"#ffdad6","on-secondary-fixed-variant":"#004f57","secondary-fixed-dim":"#79d4e2","on-primary-fixed":"#001d32","brand-amber":"#f2a541","secondary":"#006874","surface-variant":"#d3e4fc","error":"#ba1a1a","on-tertiary-fixed-variant":"#663e00","surface-container":"#e4efff","brand-teal-hover":"#066570","secondary-fixed":"#96f0ff","brand-sky":"#3a88e9","on-tertiary-fixed":"#2b1700","tertiary-container":"#442700","tertiary":"#271500","outline-variant":"#c3c7cd","surface-dim":"#cadcf3","on-secondary-container":"#006d79","on-surface-variant":"#43474d","outline":"#73777d","inverse-primary":"#adcae7","on-secondary-fixed":"#001f24","background":"#f8f9ff","surface-container-lowest":"#ffffff","surface":"#f8f9ff","on-tertiary":"#ffffff","brand-canvas":"#f7faff"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"margin":"1.5rem","space-xl":"2rem","gutter-sm":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-2xl":"3rem","gutter":"1.5rem","margin-lg":"4rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"label-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},fontSize:{"label-sm":["0.625rem",{"lineHeight":"1.0","letterSpacing":"0.08em","fontWeight":"700"}],"headline-xl":["3.75rem",{"lineHeight":"1.12","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["1.125rem",{"lineHeight":"1.6","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"1.3","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1.4","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1.0","letterSpacing":"0.06em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.5","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"800"}],"headline-sm":["1.125rem",{"lineHeight":"1.35","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"800"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg"><div class="flex items-center gap-space-sm pb-space-lg"><div class="w-10 h-10 rounded-full bg-brand-deep-blue flex items-center justify-center text-brand-lime font-headline-sm font-bold shadow-md">E</div><div><div class="font-headline-sm text-headline-sm text-primary uppercase tracking-tight">EMAX CMS</div><div class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Electronics Enterprises</div></div></div><nav class="flex flex-col gap-space-sm" data-active-classes="bg-surface-container text-primary font-bold shadow-sm"><div class="pt-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">MAIN</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="products-inventory" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md">Products & Inventory</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="categories" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-body-md text-body-md">Categories</span></a></div></div><div class="pt-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">OPERATIONS</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="media-library" href="#"><span class="material-symbols-outlined text-[20px]">perm_media</span><span class="font-body-md text-body-md">Media Library</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="content-pages" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span class="font-body-md text-body-md">Content & Pages</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="enquiries-leads" href="#"><span class="material-symbols-outlined text-[20px]">contact_mail</span><span class="font-body-md text-body-md">Enquiries & Leads</span></a></div></div><div class="pt-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">SYSTEM & GOVERNANCE</span><div class="mt-space-xs flex flex-col gap-1"><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="staff-roles" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-body-md text-body-md">Staff & Roles</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">security</span><span class="font-body-md text-body-md">Audit Log</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT transition-all bg-surface-container text-primary font-bold shadow-sm" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></a></div></div></nav></div><div class="p-space-md m-space-md rounded-DEFAULT bg-surface-container-low flex flex-col gap-2"><div class="flex items-center justify-between"><span class="flex items-center gap-1.5 font-label-md text-label-md text-brand-navy"><span class="inline-block w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>Supabase Connected</span><span class="font-label-sm text-label-sm uppercase bg-surface-container-highest px-1.5 py-0.5 rounded-full text-brand-teal font-bold">RLS ACTIVE</span></div><div class="font-body-sm text-body-sm text-on-surface-variant truncate">PostgreSQL Pool: Healthy (Latency 14ms)</div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px]">home</span><span>/</span><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">CMS Console</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-9 pr-4 py-1.5 rounded-full outline-none focus:bg-surface-container focus:ring-0 placeholder:text-outline" placeholder="Search SKU, order ID, product name, or staff logs..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-2 bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md px-4 py-2 rounded-full transition-colors"><span class="material-symbols-outlined text-[18px]">add</span>Add Product</button><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-brand-amber"></span></button><div class="flex items-center gap-space-sm pl-space-sm bg-surface-container-low py-1 pr-3 rounded-full"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="text-left"><div class="font-label-md text-label-md text-primary leading-tight">Engr. T. Balogun</div><div class="font-label-sm text-label-sm text-on-surface-variant">Lead Admin · Ikeja Hub</div></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background p-space-lg"><div class="flex flex-col w-full">
+<!-- Toast Feedback Notification Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-banner">
+<div class="flex items-center gap-3 bg-brand-deep-blue text-white px-5 py-3.5 rounded-full shadow-2xl backdrop-blur-xl">
+<span class="material-symbols-outlined text-brand-lime text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-body-md text-body-md font-medium text-white" id="toast-message">Settings synchronized to Supabase cluster successfully.</span>
+</div>
+</div>
+<!-- Header Section with Tactical Micro-telemetry & Global Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-xl">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm uppercase px-2 py-0.5 rounded-full bg-brand-teal/10 text-brand-teal font-bold tracking-wider">CMS Governance</span>
+<span class="text-outline text-xs">/</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Live System Registry</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-brand-teal bg-surface-container-high px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-teal animate-ping"></span>
+          Cluster Sync v4.18
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Global Configuration & Site Settings</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl mt-1">
+        Manage business parameters, verified contact channels, Nigerian economic calculation baselines, Supabase database connections, and SEO metadata.
+      </p>
+</div>
+<!-- Action Bar -->
+<div class="flex items-center gap-3 self-start lg:self-center">
+<button class="group flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-container-lowest text-brand-teal font-label-md text-label-md shadow-sm hover:bg-surface-container hover:shadow-md transition-all active:scale-95" id="btn-test-whatsapp" type="button">
+<span class="material-symbols-outlined text-[18px] text-brand-teal group-hover:rotate-12 transition-transform">chat</span>
+        Test WhatsApp Connection
+      </button>
+<button class="flex items-center gap-2 px-6 py-2.5 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md shadow-md transition-all active:scale-95" id="btn-save-settings" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Save All Settings</span>
+<span class="w-5 h-5 rounded-full bg-brand-amber text-brand-deep-blue flex items-center justify-center font-bold text-[11px] ml-1">
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</button>
+</div>
+</div>
+<!-- Operational Status Bar Strip -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm mb-space-xl p-space-sm bg-surface-container-low rounded-2xl shadow-sm">
+<div class="flex items-center gap-3 px-4 py-2.5 bg-surface-container-lowest rounded-xl">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-brand-teal">
+<span class="material-symbols-outlined text-[20px]">currency_exchange</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">PMS Benchmark Baseline</div>
+<div class="font-headline-sm text-headline-sm text-brand-navy truncate">₦800 / Litre</div>
+</div>
+</div>
+<div class="flex items-center gap-3 px-4 py-2.5 bg-surface-container-lowest rounded-xl">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-brand-sky">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">NERC Tariff Anchor</div>
+<div class="font-headline-sm text-headline-sm text-brand-navy truncate">Band A (₦225/kWh)</div>
+</div>
+</div>
+<div class="flex items-center gap-3 px-4 py-2.5 bg-surface-container-lowest rounded-xl">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-brand-amber">
+<span class="material-symbols-outlined text-[20px]">wb_sunny</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Regional Solar PSH</div>
+<div class="font-headline-sm text-headline-sm text-brand-navy truncate">4.50 Peak Sun Hrs</div>
+</div>
+</div>
+<div class="flex items-center gap-3 px-4 py-2.5 bg-surface-container-lowest rounded-xl">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-brand-teal">
+<span class="material-symbols-outlined text-[20px]">security</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Postgres RLS Status</div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-brand-teal truncate font-bold">
+<span class="w-2 h-2 rounded-full bg-brand-teal"></span> Strict Ingestion
+        </div>
+</div>
+</div>
+</div>
+<!-- Primary Layout: Category Navigation Column + Tab Panels -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Categorized Settings Navigation Tabs (Left Rail) -->
+<div class="xl:col-span-3 flex flex-col gap-2">
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm sticky top-24">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-3 pb-2">Configuration Groups</div>
+<nav class="flex flex-col gap-1.5" id="settings-tab-list">
+<button class="tab-button w-full flex items-center justify-between px-3.5 py-3 rounded-xl bg-surface-container text-primary font-bold shadow-sm transition-all text-left" data-tab-target="tab-general" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-[20px] text-brand-teal">chat_bubble</span>
+<span class="font-body-md text-body-md truncate">General & WhatsApp</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+</button>
+<button class="tab-button w-full flex items-center justify-between px-3.5 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all text-left" data-tab-target="tab-calculator" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-[20px]">calculate</span>
+<span class="font-body-md text-body-md truncate">Calculator & Economics</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant">NGN</span>
+</button>
+<button class="tab-button w-full flex items-center justify-between px-3.5 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all text-left" data-tab-target="tab-locations" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-[20px]">warehouse</span>
+<span class="font-body-md text-body-md truncate">Locations & Depot Bays</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">tune</span>
+</button>
+<button class="tab-button w-full flex items-center justify-between px-3.5 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all text-left" data-tab-target="tab-supabase" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-[20px]">database</span>
+<span class="font-body-md text-body-md truncate">Supabase & Cloud API</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+</button>
+<button class="tab-button w-full flex items-center justify-between px-3.5 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all text-left" data-tab-target="tab-seo" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-[20px]">public</span>
+<span class="font-body-md text-body-md truncate">SEO & Meta Identity</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant">OG</span>
+</button>
+</nav>
+<!-- System Audit Log Snapshot Card -->
+<div class="mt-6 pt-4 bg-surface-container-low/60 rounded-xl p-3">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Audit Metadata</span>
+<span class="material-symbols-outlined text-[16px]">history</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Last deployed by <strong class="text-primary">Engr. T. Balogun</strong></p>
+<p class="font-body-sm text-body-sm text-outline">Today at 11:42 AM WAT (Ikeja Hub)</p>
+<div class="mt-3 flex items-center gap-1.5 font-label-sm text-label-sm text-brand-teal font-semibold">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+            Encrypted SHA-256 Vault Signed
+          </div>
+</div>
+</div>
+</div>
+<!-- Main Content Area: Form Modules -->
+<div class="xl:col-span-9 flex flex-col gap-space-lg">
+<!-- TAB PANEL 1: General & WhatsApp Channels (Default Active) -->
+<section class="tab-content flex flex-col gap-space-lg" id="tab-general">
+<!-- Section 1 Card -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 lg:p-8 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-brand-teal"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-teal">PRD Section 5.2 & 11 Compliant</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mt-1">Official WhatsApp & Verified Contact Channels</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Configures client touchpoints for rapid B2B quotation dispatch, battery bank inquiries, and verified walk-in desk routing.</p>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-brand-navy font-label-md text-label-md">
+<span class="material-symbols-outlined text-brand-teal text-[18px]">verified_user</span>
+              Lagos B2B Gateway Active
+            </div>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-space-md" id="form-general-channels">
+<!-- WhatsApp Sales Desk -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider flex items-center justify-between" for="wa-sales-number">
+<span>Primary Sales Desk WhatsApp</span>
+<span class="font-label-sm text-label-sm text-brand-teal lowercase">wa.me/23480036298324</span>
+</label>
+<div class="relative flex items-center">
+<div class="absolute left-3.5 flex items-center gap-1.5 text-on-surface-variant">
+<span class="font-bold text-xs">🇳🇬</span>
+<span class="font-label-md text-label-md font-bold text-primary">+234</span>
+</div>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-20 pr-10 py-3 rounded-xl outline-none focus:bg-surface-container transition-all" id="wa-sales-number" type="text" value="800 3629 8324"/>
+<span class="material-symbols-outlined absolute right-3 text-brand-teal text-[20px]">phone_iphone</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Display canonical: +234 800 EMAX TECH. Linked to floating storefront CTAs.</p>
+</div>
+<!-- Secondary Switchboard Phone -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider flex items-center justify-between" for="tel-switchboard">
+<span>Secondary Switchboard Voice Line</span>
+<span class="font-label-sm text-label-sm text-outline">Fixed Landline</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px]">call</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-11 pr-4 py-3 rounded-xl outline-none focus:bg-surface-container transition-all" id="tel-switchboard" type="text" value="+234 (01) 453-8920"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Routed to Ikeja Industrial Depot PBX operator during working hours.</p>
+</div>
+<!-- WhatsApp Message Template -->
+<div class="md:col-span-2 flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider flex items-center justify-between" for="wa-template">
+<span>WhatsApp Prefilled Message Template</span>
+<span class="font-label-sm text-label-sm text-brand-amber font-semibold">Supports Dynamic SKU Variables</span>
+</label>
+<textarea class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md p-4 rounded-xl outline-none focus:bg-surface-container transition-all" id="wa-template" rows="3">Hello Emax Engineering Desk, I am inquiring about procurement, cell testing, and warranty availability for: {PRODUCT_TITLE} (SKU: {PRODUCT_SKU}). Please share current depot inventory status.</textarea>
+<div class="flex flex-wrap items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm uppercase text-outline">Available Tags:</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-primary font-mono cursor-pointer hover:bg-surface-container-high">{PRODUCT_TITLE}</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-primary font-mono cursor-pointer hover:bg-surface-container-high">{PRODUCT_SKU}</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-primary font-mono cursor-pointer hover:bg-surface-container-high">{CALCULATED_KWH}</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-primary font-mono cursor-pointer hover:bg-surface-container-high">{CUSTOMER_LOCATION}</span>
+</div>
+</div>
+<!-- Official Ingestion Email -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider" for="email-ingestion">Official Ingestion Email</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px]">alternate_email</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-11 pr-4 py-3 rounded-xl outline-none focus:bg-surface-container transition-all" id="email-ingestion" type="email" value="tech-desk@emax-electronics.ng"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Primary destination for enterprise RFQs and automated technical lead dispatches.</p>
+</div>
+<!-- Operational Working Hours -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider" for="working-hours">Depot Bench & Dispatch Hours</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px]">schedule</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-11 pr-4 py-3 rounded-xl outline-none focus:bg-surface-container transition-all" id="working-hours" type="text" value="Monday - Saturday, 08:30 AM - 18:00 WAT"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Displayed in customer portal header badge and order tracking notifications.</p>
+</div>
+</form>
+</div>
+<!-- Section 2: Calculator Baselines & Regional Constants -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 lg:p-8 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-brand-amber"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-amber">Macro Economic Engine</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mt-1">Engineering Calculator Baselines & Regional Constants</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Drives the real-time Solar Generator Replacement Calculator, ROI forecasting, and battery capacity sizing algorithms.</p>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-amber/10 text-brand-navy font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-brand-amber text-[18px]">trending_up</span>
+              Auto-Indexed Baseline
+            </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Petrol Benchmark -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Nigerian PMS Fuel</span>
+<span class="material-symbols-outlined text-[18px] text-brand-amber">local_gas_station</span>
+</div>
+<div class="relative">
+<span class="absolute left-3 top-2.5 font-bold text-sm text-on-surface">₦</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm pl-8 pr-12 py-2 rounded-xl outline-none focus:bg-surface-container transition-all" id="calc-fuel-price" type="number" value="800"/>
+<span class="absolute right-3 top-3 font-label-sm text-label-sm text-outline">/ Litre</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Baseline for generator fuel operational cost comparison.</p>
+</div>
+<!-- Grid Tariff Band A -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">DisCo Grid Band A</span>
+<span class="material-symbols-outlined text-[18px] text-brand-sky">electric_meter</span>
+</div>
+<div class="relative">
+<span class="absolute left-3 top-2.5 font-bold text-sm text-on-surface">₦</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm pl-8 pr-14 py-2 rounded-xl outline-none focus:bg-surface-container transition-all" id="calc-tariff-rate" type="number" value="225"/>
+<span class="absolute right-3 top-3 font-label-sm text-label-sm text-outline">/ kWh</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">NERC revised tariff baseline for grid arbitrage calculations.</p>
+</div>
+<!-- Solar Insolation Lagos / SW -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Lagos Solar Insolation</span>
+<span class="material-symbols-outlined text-[18px] text-brand-teal">wb_sunny</span>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm px-3 py-2 rounded-xl outline-none focus:bg-surface-container transition-all" id="calc-insolation" step="0.05" type="number" value="4.50"/>
+<span class="absolute right-3 top-3 font-label-sm text-label-sm text-outline">PSH</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Standard Peak Sun Hours coefficient for Southwest Nigeria.</p>
+</div>
+<!-- LiFePO4 DoD Standard -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">LiFePO4 Design DoD</span>
+<span class="material-symbols-outlined text-[18px] text-brand-teal">battery_charging_full</span>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm px-3 py-2 rounded-xl outline-none focus:bg-surface-container transition-all" id="calc-dod" step="0.5" type="number" value="85.0"/>
+<span class="absolute right-3 top-3 font-label-sm text-label-sm text-outline">% DoD</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Usable cell capacity safety envelope for warranty longevity.</p>
+</div>
+</div>
+<!-- Mathematical Formula Reference -->
+<div class="mt-space-md p-4 rounded-2xl bg-surface-container-low/70 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-teal mt-0.5">functions</span>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Displacement Formula Algorithm:</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-mono mt-0.5">
+                  Monthly Generator Fuel Cost = ((Avg Load kW × 0.35L/kWh × Run Hrs) × ₦800) × 30 Days
+                </div>
+</div>
+</div>
+<button class="px-4 py-2 rounded-xl bg-surface-container text-brand-navy font-label-sm text-label-sm uppercase font-bold hover:bg-surface-container-high transition-colors whitespace-nowrap" type="button">
+              Recalculate Previews
+            </button>
+</div>
+</div>
+<!-- Section 3: Physical Depot & Walk-In Bench Configuration -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 lg:p-8 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-brand-sky"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-sky">Logistics & Testing Protocols</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mt-1">Physical Depot & Walk-In Bench Configuration</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Controls physical client reception guidelines, milliohm test bench access, and interstate waybill dispatch cutoff times.</p>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm uppercase font-bold">Hub-01 Ikeja</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Primary Hub Address -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider" for="hub-address">Primary Central Depot Address</label>
+<textarea class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md p-4 rounded-xl outline-none focus:bg-surface-container transition-all" id="hub-address" rows="3">Plot 14 Engineering Way, Ikeja Industrial Zone, Off Oba Akran Avenue, Lagos State, Nigeria</textarea>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Included on commercial invoices, dispatch dockets, and Google Maps embed.</p>
+</div>
+<!-- Verification Bench Policy -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider" for="bench-notice">Walk-In Quality Bench Notice</label>
+<textarea class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md p-4 rounded-xl outline-none focus:bg-surface-container transition-all" id="bench-notice" rows="3">Open bench inspection permitted with client AC milliohm meters (YR1035+), calibrated DC capacity load discharge testing, and barcode batch verification prior to physical release.</textarea>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Communicated to customer on pickup confirmation notifications.</p>
+</div>
+<!-- Daily Waybill Cutoff Time -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider flex items-center justify-between" for="waybill-cutoff">
+<span>Interstate Freight Waybill Cutoff</span>
+<span class="font-label-sm text-label-sm text-brand-teal font-semibold">GIGL / DHL / Red Star Express</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px]">local_shipping</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-11 pr-4 py-3 rounded-xl outline-none focus:bg-surface-container transition-all" id="waybill-cutoff" type="text" value="15:30 WAT for same-day dispatch to Abuja, PH, Ibadan, Kano"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Orders verified after this cutoff roll over to the subsequent morning freight manifest.</p>
+</div>
+<!-- Walk-In Verification Bay Protocol -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Technician Staffing Mode</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-3 px-4 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold text-center" type="button">
+                  Mandatory Lab Escort
+                </button>
+<button class="py-3 px-4 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md font-bold hover:bg-surface-container transition-colors text-center" type="button">
+                  Open Bay Walk-in
+                </button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Restricts client terminal entry to certified Emax engineers with safety gear.</p>
+</div>
+</div>
+</div>
+<!-- Section 4: Supabase Infrastructure & Security Telemetry -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 lg:p-8 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-brand-teal"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-teal">Backend Infrastructure</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mt-1">Supabase Infrastructure & Security Telemetry</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">PostgreSQL cluster configuration, public S3-compatible media buckets, and Row Level Security state.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-brand-teal/10 text-brand-teal font-label-sm text-label-sm font-bold uppercase flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>
+                RLS Enforced
+              </span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-mono">
+                PostgreSQL 15.4
+              </span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Supabase URL -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider" for="sb-url">Project Endpoint URL</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px]">dns</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-11 pr-4 py-3 rounded-xl outline-none focus:bg-surface-container transition-all font-mono" id="sb-url" type="text" value="https://xyz-emax-nigeria.supabase.co"/>
+</div>
+</div>
+<!-- Database Region -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider" for="sb-region">Database Regional Mirror</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px]">public</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-11 pr-4 py-3 rounded-xl outline-none focus:bg-surface-container transition-all" id="sb-region" type="text" value="eu-west-1 (Frankfurt Mirror - Low Latency to Lagos IXPN)"/>
+</div>
+</div>
+<!-- Storage Bucket Name -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider" for="sb-bucket">Storage Public CDN Bucket</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px]">cloud_sync</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-11 pr-4 py-3 rounded-xl outline-none focus:bg-surface-container transition-all font-mono" id="sb-bucket" type="text" value="emax-public-media"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Houses high-resolution cell datasheet PDFs and product imagery.</p>
+</div>
+<!-- API Service Role Key (Masked) -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider flex items-center justify-between" for="sb-key">
+<span>Supabase Anon Public API Key</span>
+<button class="font-label-sm text-label-sm text-brand-teal capitalize font-semibold hover:underline" id="btn-toggle-key" type="button">Show Key</button>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px]">key</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-11 pr-10 py-3 rounded-xl outline-none focus:bg-surface-container transition-all font-mono" id="sb-key" type="password" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.emax-service-node-4081928"/>
+<span class="material-symbols-outlined absolute right-3 text-outline text-[18px]">lock</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Subject to client RLS policies for unauthenticated storefront operations.</p>
+</div>
+</div>
+<!-- Connection Diagnostic Bar -->
+<div class="mt-6 pt-5 bg-surface-container-low/40 rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-brand-teal animate-pulse"></span>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Supabase Realtime Engine: Online</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Active WebSocket channels: 4 | Latency: 14ms (Lekki Substation POP)</div>
+</div>
+</div>
+<button class="px-4 py-2 rounded-xl bg-surface-container-highest hover:bg-surface-container text-brand-navy font-label-sm text-label-sm uppercase font-bold transition-all flex items-center gap-1.5 self-start sm:self-auto" id="btn-ping-db" type="button">
+<span class="material-symbols-outlined text-[16px]">network_ping</span>
+              Ping Connection
+            </button>
+</div>
+</div>
+</section>
+<!-- TAB PANEL 2: Calculator & Economic Baselines (Hidden by default, switched via JS) -->
+<section class="tab-content hidden flex-col gap-space-lg" id="tab-calculator">
+<div class="bg-surface-container-lowest rounded-3xl p-6 lg:p-8 shadow-sm">
+<div class="flex items-center gap-2 mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-amber font-bold">Economic Constants</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Advanced Calculator Coefficients</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Configure secondary engineering parameters that calculate inverter efficiency drops and generator amortization.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Inverter Conversion Loss (%)</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-4 py-3 rounded-xl outline-none" type="number" value="7.5"/>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Applied to all DC-to-AC conversion sizing models.</p>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Generator Maintenance Adder (₦ / hr)</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-4 py-3 rounded-xl outline-none" type="number" value="250"/>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lube, spark plugs, filters amortized per runtime hour.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB PANEL 3: Locations & Depot Bays (Placeholder structure for completeness) -->
+<section class="tab-content hidden flex-col gap-space-lg" id="tab-locations">
+<div class="bg-surface-container-lowest rounded-3xl p-6 lg:p-8 shadow-sm">
+<h2 class="font-headline-md text-headline-md text-primary">Depot & Dispatch Hub Registry</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Manage physical walk-in centers, pickup lockers, and engineer testing bays across Nigeria.</p>
+<div class="mt-6 flex flex-col gap-3">
+<div class="p-4 rounded-2xl bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Depot 1: Ikeja Central Industrial Hub</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Lagos · Full Testing Bay + Calibration Rig</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-brand-teal/10 text-brand-teal font-label-sm text-label-sm font-bold uppercase">Primary Hub</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Depot 2: Abuja Garki Verification Desk</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">FCT Abuja · Satellite Handover & Warranty Depot</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold uppercase">Satellite</span>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB PANEL 4: Supabase & Integrations -->
+<section class="tab-content hidden flex-col gap-space-lg" id="tab-supabase">
+<div class="bg-surface-container-lowest rounded-3xl p-6 lg:p-8 shadow-sm">
+<h2 class="font-headline-md text-headline-md text-primary">External Integrations & Webhooks</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Manage third-party enterprise hooks including Paystack, SendGrid, and GIGL tracking webhooks.</p>
+<div class="mt-6 flex flex-col gap-4">
+<div class="p-4 rounded-2xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-brand-teal">payment</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary">Paystack Gateway Checkout</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Direct bank transfer, NGN Card processing, USSD</div>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-brand-teal/10 text-brand-teal font-label-sm text-label-sm font-bold">LIVE MODE</span>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB PANEL 5: SEO & Meta Identity -->
+<section class="tab-content hidden flex-col gap-space-lg" id="tab-seo">
+<div class="bg-surface-container-lowest rounded-3xl p-6 lg:p-8 shadow-sm">
+<h2 class="font-headline-md text-headline-md text-primary">SEO, Social Graph & Meta Tags</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Global OpenGraph imagery, title formats, and search console validation tags.</p>
+<div class="grid grid-cols-1 gap-4 mt-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Global Title Template</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-4 py-3 rounded-xl outline-none" type="text" value="{PAGE_TITLE} | Emax Electronics Enterprises — Clean Tech & Solar Battery Depot Lagos"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Default Meta Description</label>
+<textarea class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md p-4 rounded-xl outline-none" rows="3">Nigeria's premier supplier of tier-1 LiFePO4 cells, smart BMS, hybrid solar inverters, and battery engineering solutions. Physical test bench inspection in Ikeja, Lagos.</textarea>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom Confirm Bar (Desktop Polish) -->
+<div class="sticky bottom-4 z-30 p-4 rounded-2xl bg-surface-container-lowest/90 backdrop-blur-xl shadow-xl flex items-center justify-between border-0">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-brand-teal animate-ping"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All configuration updates propagate instantly to edge caching nodes.</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low font-label-md text-label-md transition-colors" id="btn-discard" type="button">
+            Reset Changes
+          </button>
+<button class="flex items-center gap-2 px-6 py-2.5 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-label-md text-label-md shadow-md transition-all active:scale-95" id="btn-save-bottom" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+            Save Configuration
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Engine -->
+<script>
+    (function initSettingsDashboard() {
+      // Tab Switching Logic
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-tab-target');
+
+          // Reset all tabs
+          tabButtons.forEach(b => {
+            b.classList.remove('bg-surface-container', 'text-primary', 'font-bold', 'shadow-sm');
+            b.classList.add('text-on-surface-variant');
+          });
+
+          // Activate clicked tab
+          btn.classList.add('bg-surface-container', 'text-primary', 'font-bold', 'shadow-sm');
+          btn.classList.remove('text-on-surface-variant');
+
+          // Hide all contents
+          tabContents.forEach(content => {
+            content.classList.add('hidden');
+            content.classList.remove('flex');
+          });
+
+          // Show targeted content
+          const activePanel = document.getElementById(targetId);
+          if (activePanel) {
+            activePanel.classList.remove('hidden');
+            activePanel.classList.add('flex');
+          }
+        });
+      });
+
+      // Toast feedback helper
+      const toast = document.getElementById('toast-banner');
+      const toastMsg = document.getElementById('toast-message');
+      const toastIcon = document.getElementById('toast-icon');
+
+      function showToast(message, isSuccess = true) {
+        toastMsg.textContent = message;
+        toastIcon.textContent = isSuccess ? 'check_circle' : 'error';
+        toastIcon.className = `material-symbols-outlined text-[20px] ${isSuccess ? 'text-brand-lime' : 'text-error'}`;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-24', 'opacity-0');
+        }, 3400);
+      }
+
+      // Save Actions
+      const saveButtons = [document.getElementById('btn-save-settings'), document.getElementById('btn-save-bottom')];
+      saveButtons.forEach(btn => {
+        if (!btn) return;
+        btn.addEventListener('click', () => {
+          const fuelVal = document.getElementById('calc-fuel-price')?.value || '800';
+          const waNum = document.getElementById('wa-sales-number')?.value || '';
+          btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Committing...`;
+          btn.disabled = true;
+
+          setTimeout(() => {
+            btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">verified</span> <span>Save All Settings</span>`;
+            btn.disabled = false;
+            showToast(`Global configuration updated. PMS: ₦${fuelVal}/L, WhatsApp: +234 ${waNum}`);
+          }, 650);
+        });
+      });
+
+      // WhatsApp Connection Test
+      const testWaBtn = document.getElementById('btn-test-whatsapp');
+      if (testWaBtn) {
+        testWaBtn.addEventListener('click', () => {
+          const originalText = testWaBtn.innerHTML;
+          testWaBtn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin text-brand-teal">sync</span> Testing Gateway...`;
+          
+          setTimeout(() => {
+            testWaBtn.innerHTML = originalText;
+            showToast('WhatsApp Business Cloud API handshake verified (200 OK).');
+          }, 800);
+        });
+      }
+
+      // Supabase Ping Test
+      const pingBtn = document.getElementById('btn-ping-db');
+      if (pingBtn) {
+        pingBtn.addEventListener('click', () => {
+          const orig = pingBtn.innerHTML;
+          pingBtn.innerHTML = `<span class="material-symbols-outlined text-[16px] animate-spin">sync</span> Querying...`;
+          
+          setTimeout(() => {
+            pingBtn.innerHTML = orig;
+            showToast('PostgreSQL Connection Pool Verified: 11ms latency.');
+          }, 500);
+        });
+      }
+
+      // Toggle Supabase anon key visibility
+      const toggleKeyBtn = document.getElementById('btn-toggle-key');
+      const sbKeyInput = document.getElementById('sb-key');
+      if (toggleKeyBtn && sbKeyInput) {
+        toggleKeyBtn.addEventListener('click', () => {
+          if (sbKeyInput.type === 'password') {
+            sbKeyInput.type = 'text';
+            toggleKeyBtn.textContent = 'Hide Key';
+          } else {
+            sbKeyInput.type = 'password';
+            toggleKeyBtn.textContent = 'Show Key';
+          }
+        });
+      }
+
+      // Discard reset handler
+      const discardBtn = document.getElementById('btn-discard');
+      if (discardBtn) {
+        discardBtn.addEventListener('click', () => {
+          showToast('Form rolled back to cluster master defaults.', true);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

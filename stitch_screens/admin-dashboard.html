@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#d3e4fc","secondary-fixed":"#96f0ff","on-primary-fixed-variant":"#2e4961","brand-teal-hover":"#066570","surface-variant":"#d3e4fc","on-error-container":"#93000a","on-secondary":"#ffffff","error":"#ba1a1a","on-primary-fixed":"#001d32","surface-container-high":"#daeaff","tertiary":"#271500","background":"#f8f9ff","primary":"#001b2e","inverse-on-surface":"#e9f1ff","on-secondary-fixed-variant":"#004f57","outline-variant":"#c3c7cd","tertiary-fixed-dim":"#ffb963","inverse-primary":"#adcae7","on-tertiary-fixed":"#2b1700","surface-tint":"#46617a","glass-border":"rgba(255, 255, 255, 0.65)","surface-container":"#e4efff","secondary-fixed-dim":"#79d4e2","on-surface":"#0b1d2e","on-tertiary-fixed-variant":"#663e00","on-primary":"#ffffff","tertiary-container":"#442700","brand-canvas":"#f7faff","brand-amber":"#f2a541","surface-bright":"#f8f9ff","inverse-surface":"#213244","primary-container":"#123047","tertiary-fixed":"#ffddb9","primary-fixed-dim":"#adcae7","on-secondary-container":"#006d79","outline":"#73777d","on-primary-container":"#7c98b4","on-secondary-fixed":"#001f24","brand-sky":"#3a88e9","on-error":"#ffffff","error-container":"#ffdad6","on-tertiary":"#ffffff","brand-navy":"#0b1d2e","brand-deep-blue":"#0d2844","brand-teal":"#087e8b","surface-dim":"#cadcf3","primary-fixed":"#cde5ff","secondary-container":"#93eefc","brand-lime":"#d4f34a","secondary":"#006874","surface-container-lowest":"#ffffff","on-background":"#0b1d2e","surface":"#f8f9ff","on-surface-variant":"#43474d","surface-container-low":"#eef4ff","on-tertiary-container":"#cd8622"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"margin":"1.5rem","space-xl":"2rem","space-2xl":"3rem","margin-lg":"4rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem","gutter":"1.5rem","gutter-sm":"1rem"},"fontFamily":{"body-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"]},"fontSize":{"body-sm":["0.75rem",{"lineHeight":"1.4","fontWeight":"400"}],"body-md":["0.875rem",{"lineHeight":"1.5","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"1.3","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["0.75rem",{"lineHeight":"1.0","letterSpacing":"0.06em","fontWeight":"700"}],"headline-sm":["1.125rem",{"lineHeight":"1.35","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"800"}],"headline-xl":["3.75rem",{"lineHeight":"1.12","letterSpacing":"-0.03em","fontWeight":"800"}],"label-sm":["0.625rem",{"lineHeight":"1.0","letterSpacing":"0.08em","fontWeight":"700"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["1.125rem",{"lineHeight":"1.6","fontWeight":"500"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="p-space-lg flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-brand-deep-blue flex items-center justify-center text-brand-lime shadow-sm flex-shrink-0"><span class="material-symbols-outlined text-[22px]">bolt</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">EMAX</span><span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase">CMS</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Electronics Enterprises</span></div></div><div class="px-space-md py-space-xs"><div class="flex items-center justify-between px-3 py-2 rounded-xl bg-surface-container-highest/60"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-brand-teal"></span><span class="font-label-sm text-label-sm text-on-surface uppercase">Ikeja Operations Hub</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v2.4</span></div></div><nav class="px-space-md py-space-sm space-y-4 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><div class="space-y-1"><span class="px-3 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Main</span><a aria-current="page" class="flex items-center gap-3 px-3 py-2.5 rounded-xl transition-colors bg-primary-container text-on-primary font-bold shadow-sm" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="products-and-inventory" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md">Products &amp; Inventory</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="categories" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-body-md text-body-md">Categories</span></a></div><div class="space-y-1"><span class="px-3 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Operations</span><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="media-library" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="font-body-md text-body-md">Media Library</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="content-and-pages" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span class="font-body-md text-body-md">Content &amp; Pages</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="enquiries-and-leads" href="#"><span class="material-symbols-outlined text-[20px]">mark_email_unread</span><span class="font-body-md text-body-md">Enquiries &amp; Leads</span></a></div><div class="space-y-1"><span class="px-3 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">System &amp; Governance</span><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="staff-and-roles" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span class="font-body-md text-body-md">Staff &amp; Roles</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-body-md text-body-md">Audit Log</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></a></div></nav></div><div class="p-space-md"><div class="p-3 rounded-2xl bg-surface-container-highest/50 flex flex-col gap-2"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Supabase Auth</span><span class="flex items-center gap-1 font-label-sm text-label-sm text-brand-teal"><span class="w-1.5 h-1.5 rounded-full bg-brand-teal animate-pulse"></span>Active</span></div><div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px] text-brand-teal">verified_user</span><span>PostgreSQL RLS Active</span></div><div class="pt-1 text-on-surface-variant font-label-sm text-label-sm flex items-center justify-between"><span class="text-on-surface-variant">Core Services:</span><span class="text-on-surface font-bold">Operational</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-6"><div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px]">corporate_fare</span><span>Admin</span><span class="text-outline">/</span><span class="text-on-surface font-semibold">Console</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-64 pl-9 pr-4 py-1.5 rounded-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant text-body-sm font-body-sm focus:outline-none focus:bg-surface-container" placeholder="Search SKUs, products, logs..." type="text"/></div></div><div class="flex items-center gap-3"><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-body-sm text-body-sm transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[16px]">add</span><span>Add Product</span></button><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-surface-container text-on-surface font-body-sm text-body-sm transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">sync_alt</span><span>Update Stock</span></button><div class="relative"><button class="w-9 h-9 rounded-full bg-surface-container-high hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-brand-amber"></span></button></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-2 pl-1"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col text-left"><div class="flex items-center gap-1.5"><span class="font-body-sm text-body-sm font-bold text-on-surface leading-tight">Engr. T. Balogun</span><span class="px-1 py-0.2 rounded bg-surface-container text-on-surface font-label-sm text-label-sm uppercase">Lead Admin</span></div><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Ikeja Hub</span></div><button class="ml-1 text-on-surface-variant hover:text-error transition-colors p-1 rounded-full" title="Sign out" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-space-xl py-space-lg flex flex-col gap-6 max-w-[1560px] mx-auto w-full">
+<!-- Header & Operational Telemetry -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 bg-surface-container-lowest/90 backdrop-blur-xl p-space-lg rounded-2xl shadow-sm">
+<div class="flex flex-col gap-1.5 min-w-0">
+<div class="flex items-center gap-3 flex-wrap">
+<h1 class="font-headline-md text-headline-md text-primary tracking-tight">Dashboard Overview</h1>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>
+<span>Supabase DB: Connected (eu-west-1)</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">RLS Policies: Active</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">PostgreSQL v15.1</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Live catalog telemetry, stock integrity, and Supabase database synchronization for Ikeja Engineering Bay.
+        </p>
+</div>
+<!-- Quick Actions -->
+<div class="flex items-center gap-2.5 flex-wrap">
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-teal hover:bg-brand-teal-hover text-on-primary font-body-sm text-body-sm font-bold shadow-md transition-all active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Add New Product</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Bulk Stock Update</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export CSV</span>
+</button>
+<a class="flex items-center gap-1.5 px-3.5 py-2.5 rounded-full bg-surface-container-highest/60 hover:bg-surface-container-highest text-primary font-body-sm text-body-sm font-bold transition-colors" href="#" target="_blank">
+<span>Live Store</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Metric Cards Grid (5-column layout) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+<!-- Card 1: Published Products -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Published Products</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-brand-teal font-label-sm text-label-sm font-bold">+3 this week</span>
+</div>
+<div class="my-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight font-extrabold">38</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 42 total</span>
+</div>
+<div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-brand-teal h-full rounded-full" style="width: 90.4%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2 block">38 of 42 SKUs live in storefront</span>
+</div>
+</div>
+<!-- Card 2: Draft & Unlisted -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Draft &amp; Unlisted</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold">2 pending review</span>
+</div>
+<div class="my-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-extrabold">04</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SKUs</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant line-clamp-1">
+          Requires technical verification before public deployment.
+        </p>
+</div>
+<!-- Card 3: Stock Health & Alerts -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow border-l-4 border-l-brand-amber">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Stock Health</span>
+<span class="px-2 py-0.5 rounded-full bg-brand-amber/15 text-tertiary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-amber"></span>
+            Action Required
+          </span>
+</div>
+<div class="my-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-tertiary tracking-tight font-extrabold">3</span>
+<span class="font-body-sm text-body-sm text-error font-bold">Low</span>
+<span class="text-on-surface-variant/40">/</span>
+<span class="font-headline-sm text-headline-sm text-error font-bold">1</span>
+<span class="font-body-sm text-body-sm text-error">OOS</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-brand-amber">warning</span>
+<span class="truncate">EVE LF280K: 5 crates remaining</span>
+</div>
+</div>
+<!-- Card 4: WhatsApp Leads -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">WhatsApp Leads</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm font-bold">34 today</span>
+</div>
+<div class="my-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight font-extrabold">142</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">inquiries</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-brand-teal">
+<span class="material-symbols-outlined text-[14px]">query_stats</span>
+<span>24.6% quote-to-order handoff rate</span>
+</div>
+</div>
+<!-- Card 5: E-Bike Monthly Pace -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">E-Bike Target</span>
+<span class="px-2 py-0.5 rounded-full bg-brand-lime/30 text-on-surface font-label-sm text-label-sm font-bold">80% Pace</span>
+</div>
+<div class="my-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight font-extrabold">8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 10 target</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-mono font-bold text-on-surface">₦5,440,000</span>
+<span>gross MTD</span>
+</div>
+</div>
+</div>
+<!-- Critical Attention / Stale Stock Alert Banner -->
+<div class="p-4 rounded-2xl bg-amber-50/80 border border-brand-amber/30 text-tertiary flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm">
+<div class="flex items-start gap-3.5">
+<div class="w-9 h-9 rounded-xl bg-brand-amber/20 text-tertiary-container flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+<span class="material-symbols-outlined text-[20px]">assignment_late</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-bold text-tertiary">Inventory Verification Required: CATL 100Ah 3.2V Prismatics</span>
+<span class="px-1.5 py-0.2 rounded bg-brand-amber/30 text-tertiary-container font-label-sm text-label-sm font-bold uppercase">Bay 2-B</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Status currently displayed as “Contact to confirm”. Update internal impedance (IR) records or conduct physical batch count in Ikeja Engineering Bay to reactivate “In Stock” storefront status.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-body-sm text-body-sm font-bold hover:bg-primary-container transition-colors shadow-sm" type="button">
+          Review SKU IR Logs
+        </button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Primary Layout Grid: Split 2/3 Data Table & 1/3 Operational Widgets -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- Left Column: Data Grid (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-4 bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<!-- Table Header & Filter Tabs -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Inventory &amp; Stock Pulse</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live catalog synchronisation with Supabase PostgreSQL cluster</p>
+</div>
+<div class="flex items-center gap-1 p-1 bg-surface-container-low rounded-xl">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm text-primary font-label-sm text-label-sm font-bold" type="button">
+              All SKUs (38)
+            </button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-bold transition-colors" type="button">
+              Low Stock (3)
+            </button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-bold transition-colors" type="button">
+              Drafts (4)
+            </button>
+<button class="px-3 py-1.5 rounded-lg text-brand-amber hover:text-tertiary-container font-label-sm text-label-sm font-bold transition-colors" type="button">
+              Needs Audit (1)
+            </button>
+</div>
+</div>
+<!-- Table View -->
+<div class="overflow-x-auto -mx-space-lg px-space-lg">
+<table class="w-full text-left border-collapse min-w-[720px]">
+<thead>
+<tr class="bg-surface-container-low/60 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-3 rounded-l-xl">Product &amp; SKU</th>
+<th class="py-3 px-3">Category</th>
+<th class="py-3 px-3">Unit Price</th>
+<th class="py-3 px-3">Inventory State</th>
+<th class="py-3 px-3">Supabase Sync</th>
+<th class="py-3 px-3 text-right rounded-r-xl">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40 text-body-sm">
+<!-- Row 1: EVE 280K -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-xl object-cover bg-surface-container shrink-0 shadow-xs" data-alt="Close up studio product photo of an industrial blue prismatic EVE LF280K lithium iron phosphate LiFePO4 battery cell with laser welded terminals on clean laboratory steel workbench, clean lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGqdVco_cUa4gxvYxagtP35lB6IserqXtDlcxESz_CZJcqIoj4ByR-GJzojM5Nx3a7Iu6SehepEIOLyRK9qu4GEsLvjVr4T0fFJ_Fyb2CWol-c42z5vNaifNV2SBhjsmX4Ft9UejIP9DgEhi3gkSD_TjI6D5JXnFoPtCKMCB6ko6Q0EOrndFW2d_9Ihm2QLKdIvfIiHadW23NQKjLwu7OlTovXIHhPTe3HTCHf_Kbe"/>
+<div class="flex flex-col min-w-0">
+<span class="font-bold text-on-surface truncate group-hover:text-brand-teal transition-colors">EVE LF280K v3 280Ah LiFePO4 Cell</span>
+<span class="font-mono text-label-sm text-on-surface-variant">EVE-280-K</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Lithium Cells</span>
+</td>
+<td class="py-3.5 px-3 font-mono font-bold text-on-surface">
+                  ₦98,500
+                </td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-800 font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                    In Stock (284)
+                  </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-brand-teal">sync_saved_locally</span>
+<span>Live Synced</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Quick Stock Adjustment" type="button">
+<span class="material-symbols-outlined text-[18px]">inventory</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Edit Catalog Entry" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Preview Public Card" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: JK Smart BMS -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-xl object-cover bg-surface-container shrink-0 shadow-xs" data-alt="Macro photo of JK Smart Active Balance Battery Management System circuit board with thick pure copper silicon wires and bluetooth module on a high-tech clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSYOfl33I_3pygFKsIY5bEk-6f2VfDgp3c0tK_uTC6mk_jrmnpvPOWPRAlywU1JpA_bWiY0wEH3qtSKiI--x3Ps99jgASTgy1de_lGY6Skxy-5OE8p6wZVOIfGczyLA2NE0iDy8lEAxhSqDo69fLWci5gW6iNRO04M4c_F2u6xqKa97RQbl8xOuvgCAG3G7t9pNZCdfr984OCrsggiP3Kv7a2sxqaxZ00lrg7-0pnW"/>
+<div class="flex flex-col min-w-0">
+<span class="font-bold text-on-surface truncate group-hover:text-brand-teal transition-colors">JK Smart Active BMS 16S 200A</span>
+<span class="font-mono text-label-sm text-on-surface-variant">JK-B2A20S20P</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Smart BMS</span>
+</td>
+<td class="py-3.5 px-3 font-mono font-bold text-on-surface">
+                  ₦84,000
+                </td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-brand-amber/20 text-tertiary-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-amber"></span>
+                    Low Stock (4 units)
+                  </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-brand-teal">sync_saved_locally</span>
+<span>Live Synced</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Quick Stock Adjustment" type="button">
+<span class="material-symbols-outlined text-[18px]">inventory</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Edit Catalog Entry" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Preview Public Card" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Emax VeloFlow E-Bike -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-xl object-cover bg-surface-container shrink-0 shadow-xs" data-alt="Modern electric urban commuter bicycle matte dark teal and lime accents parked in a bright architectural minimalist showroom with integrated battery tube frame, soft daylight illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3IMw7-CrO2LlSt9R8Z84ii2HnzMMrNR5c07ug3UWA5UXLX0U6E6Bb9m18WV3uEB6LY9WKrRAKeeZ-5f-SBZELYtpv9jjP6hYDowI5P7hF6ewTlffGnEnRaaejDBA8N_2yCvJpJv2QR8-zG7aME1dmIRowOz024wvIPDU6dBkNEjna4UbTplxFldXntZhonvFaZf4c0UvMEkHmuP40v2EbUJJMFFOUzjNRcg2C1wSw"/>
+<div class="flex flex-col min-w-0">
+<span class="font-bold text-on-surface truncate group-hover:text-brand-teal transition-colors">Emax VeloFlow 750W Urban Commuter</span>
+<span class="font-mono text-label-sm text-on-surface-variant">VELO-750W</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">Urban E-Bikes</span>
+</td>
+<td class="py-3.5 px-3 font-mono font-bold text-on-surface">
+                  ₦680,000
+                </td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-800 font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                    In Stock (6 units)
+                  </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-brand-teal">sync_saved_locally</span>
+<span>Live Synced</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Quick Stock Adjustment" type="button">
+<span class="material-symbols-outlined text-[18px]">inventory</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Edit Catalog Entry" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Preview Public Card" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: CATL 100Ah -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group bg-amber-50/20">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant font-mono font-bold text-label-sm shrink-0">
+                      CATL
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-bold text-on-surface truncate group-hover:text-brand-teal transition-colors">CATL 100Ah 3.2V Prismatic Cell</span>
+<span class="font-mono text-label-sm text-on-surface-variant">CATL-100-LFP</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Lithium Cells</span>
+</td>
+<td class="py-3.5 px-3 font-mono font-bold text-on-surface">
+                  ₦42,000
+                </td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                    Contact to Confirm
+                  </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-brand-amber font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">sync_problem</span>
+<span>Audit Needed</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-high hover:bg-surface-container text-primary font-label-sm text-label-sm font-bold transition-colors" title="Verify Batch Measurements" type="button">
+                      Verify
+                    </button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Edit Catalog Entry" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Deye Hybrid Inverter -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant font-mono font-bold text-label-sm shrink-0">
+                      DEYE
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-bold text-on-surface truncate group-hover:text-brand-teal transition-colors">Deye 5kW Hybrid Inverter 48V</span>
+<span class="font-mono text-label-sm text-on-surface-variant">DEYE-5K-HYB</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Solar Inverters</span>
+</td>
+<td class="py-3.5 px-3 font-mono font-bold text-on-surface">
+                  ₦1,250,000
+                </td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                    Out of Stock (0)
+                  </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-brand-teal">sync_saved_locally</span>
+<span>Live Synced</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded-lg bg-error-container/40 text-on-error-container hover:bg-error-container font-label-sm text-label-sm font-bold transition-colors" title="Restock SKU" type="button">
+                      Restock
+                    </button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Edit Catalog Entry" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Pure Copper Flexible Busbar -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant font-mono font-bold text-label-sm shrink-0">
+                      BUS
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-bold text-on-surface truncate group-hover:text-brand-teal transition-colors">Pure Copper Flexible Busbar (16-pack)</span>
+<span class="font-mono text-label-sm text-on-surface-variant">BUS-CU-72</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Hardware</span>
+</td>
+<td class="py-3.5 px-3 font-mono font-bold text-on-surface">
+                  ₦12,500
+                </td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-800 font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                    In Stock (48 kits)
+                  </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-brand-teal">sync_saved_locally</span>
+<span>Live Synced</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Quick Stock Adjustment" type="button">
+<span class="material-symbols-outlined text-[18px]">inventory</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Edit Catalog Entry" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination Navigation -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-3 border-t border-surface-container-high/60">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Showing <strong class="text-on-surface">6</strong> of <strong class="text-on-surface">38</strong> active products in database
+          </span>
+<div class="flex items-center gap-2">
+<a class="inline-flex items-center gap-1 font-body-sm text-body-sm font-bold text-brand-teal hover:text-brand-teal-hover transition-colors" href="#">
+<span>View Complete Product Catalog</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Column: Operations, Audit Trail & Supabase Stats (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- Widget A: Quick Operations -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between pb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight">Quick Operations</h3>
+<span class="material-symbols-outlined text-brand-teal text-[20px]">bolt</span>
+</div>
+<div class="flex flex-col gap-2">
+<button class="w-full flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-colors group" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-brand-teal group-hover:scale-110 transition-transform">qr_code_scanner</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Batch QR Code Verification Scan</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-colors group" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-brand-amber group-hover:scale-110 transition-transform">local_gas_station</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Update Fuel Reference Index</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Current: ₦800 / Litre PMS</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-colors group" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-brand-sky group-hover:scale-110 transition-transform">upload_file</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Upload Datasheet PDF to Storage</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-colors group" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-primary group-hover:scale-110 transition-transform">view_carousel</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Manage Homepage Hero Banner</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Widget B: Recent Admin Audit Log (PRD 6.2 & 7.7) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-1 border-b border-surface-container-high/60">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight">Recent Audit Log</h3>
+<span class="px-1.5 py-0.2 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">Immutable</span>
+</div>
+<a class="font-label-sm text-label-sm text-brand-teal font-bold hover:underline" href="#">Full Log</a>
+</div>
+<div class="flex flex-col gap-3.5">
+<!-- Log Entry 1 -->
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0 mt-0.5">
+                TB
+              </div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+<strong class="font-bold text-primary">Engr. T. Balogun</strong> adjusted stock for <code class="font-mono text-label-sm bg-surface-container px-1 py-0.2 rounded">JK-B2A20S20P</code> to <span class="text-brand-amber font-semibold">Low Stock (4 units)</span>
+</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">12 mins ago • Ikeja Console</span>
+</div>
+</div>
+<!-- Log Entry 2 -->
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0 mt-0.5">
+                AA
+              </div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+<strong class="font-bold text-primary">A. Adeleke</strong> uploaded 4 high-res test bench photos to <span class="font-mono text-label-sm text-on-surface-variant">/media/cells/eve280k-qr.png</span>
+</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">45 mins ago • Engineering Storage</span>
+</div>
+</div>
+<!-- Log Entry 3 -->
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+<strong class="font-bold text-on-surface">System Daemon:</strong> PostgreSQL automated database snapshot verified <span class="font-mono text-label-sm text-brand-teal font-semibold">#db-2026-11-10</span>
+</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">2 hours ago • Supabase eu-west-1</span>
+</div>
+</div>
+<!-- Log Entry 4 -->
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0 mt-0.5">
+                TB
+              </div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+<strong class="font-bold text-primary">Engr. T. Balogun</strong> published guide: <em>‘Safe LiFePO4 Cell Compression Fixtures for Lagos Humidity’</em>
+</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">4 hours ago • Technical KB</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Widget C: Supabase Infrastructure & Security Monitor -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-1 border-b border-surface-container-high/60">
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight">Supabase Telemetry</h3>
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-800 font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+              99.98% Healthy
+            </div>
+</div>
+<div class="space-y-3">
+<!-- Database Storage Bar -->
+<div>
+<div class="flex justify-between items-center mb-1 font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">Database Storage</span>
+<span class="font-mono text-on-surface-variant">142 MB / 500 MB (28%)</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-brand-teal h-full rounded-full" style="width: 28%"></div>
+</div>
+</div>
+<!-- Storage Bucket Bar -->
+<div>
+<div class="flex justify-between items-center mb-1 font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">Media Bucket (S3/CDN)</span>
+<span class="font-mono text-on-surface-variant">1.8 GB / 5.0 GB (36%)</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-brand-sky h-full rounded-full" style="width: 36%"></div>
+</div>
+</div>
+<!-- Security Meta List -->
+<div class="pt-2 flex flex-col gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-low">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-brand-teal">lock</span>
+                  Row Level Security (RLS)
+                </span>
+<span class="font-bold text-on-surface">Enforced (All Tables)</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-low">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">group</span>
+                  Active Staff Sessions
+                </span>
+<span class="font-bold text-on-surface">2 Ikeja Bay IP Whitelisted</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
