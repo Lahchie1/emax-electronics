@@ -19,7 +19,7 @@ export default function NewProductPage() {
   const [stockStatus, setStockStatus] = useState<StockStatus>("in_stock");
   const [summary, setSummary] = useState("");
   const [description, setDescription] = useState("");
-  const [imageUrl, setImageUrl] = useState("https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80");
+  const [imageUrl, setImageUrl] = useState("/images/products/lithium-battery.jpg");
   const [status, setStatus] = useState<ProductStatus>("published");
   const [specs, setSpecs] = useState<{ key: string; label: string; value: string }[]>([
     { key: "capacity", label: "Nominal Capacity", value: "280Ah" },

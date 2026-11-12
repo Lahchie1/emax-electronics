@@ -214,7 +214,7 @@ export const DataService = {
       status: productData.status || 'draft',
       is_featured: !!productData.is_featured,
       is_new: true,
-      image_url: productData.image_url || 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80',
+      image_url: productData.image_url || '/images/products/lithium-battery.jpg',
       stock: {
         id: `stk-${Date.now()}`,
         product_id: `prod-${Date.now()}`,
