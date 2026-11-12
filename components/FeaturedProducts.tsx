@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Product } from "@/lib/types";
 import { formatCurrency, generateWhatsAppUrl, getStockStatusDisplay } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
+import AddToCartButton from "./AddToCartButton";
 
 interface Props {
   products: Product[];
@@ -66,20 +67,27 @@ export default function FeaturedProducts({ products }: Props) {
                 </p>
               </div>
 
-              <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
                 <div>
                   <span className="text-[10px] uppercase font-semibold text-slate-400">
-                    {p.price_mode === 'from' ? 'Starting From' : 'Unit Price'}
+                    {p.stock?.status === 'contact_to_confirm'
+                      ? 'Stock Status'
+                      : p.price_mode === 'from'
+                      ? 'Starting From'
+                      : 'Unit Price'}
                   </span>
-                  <div className="text-lg font-extrabold text-[#123047]">
-                    {formatCurrency(p.price_minor)}
+                  <div className="text-base sm:text-lg font-extrabold text-[#123047]">
+                    {p.stock?.status === 'contact_to_confirm' || p.price_minor === 0
+                      ? 'Price TBD'
+                      : formatCurrency(p.price_minor)}
                   </div>
                 </div>
 
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1.5 sm:gap-2">
+                  <AddToCartButton product={p} />
                   <Link
                     href={`/products/${p.slug}`}
-                    className="text-xs font-bold text-[#087e8b] hover:underline px-2"
+                    className="text-xs font-bold text-[#087e8b] hover:underline px-1.5"
                   >
                     Details
                   </Link>
@@ -87,10 +95,10 @@ export default function FeaturedProducts({ products }: Props) {
                     href={generateWhatsAppUrl(`Hello Emax Enterprises, I want to inquire about purchasing: ${p.name} (SKU: ${p.sku || 'N/A'})`)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-9 h-9 rounded-full bg-slate-100 group-hover:bg-[#087E8B] group-hover:text-white text-[#123047] flex items-center justify-center font-bold text-sm transition shadow-xs"
+                    className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-[#087E8B] group-hover:text-white text-[#123047] flex items-center justify-center font-bold text-sm transition shadow-xs flex-shrink-0"
                     title="Enquire on WhatsApp"
                   >
-                    <ArrowUpRight className="w-4 h-4" />
+                    <ArrowUpRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
               </div>

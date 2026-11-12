@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { formatCurrency, generateWhatsAppUrl, getStockStatusDisplay } from "@/lib/utils";
 import { ArrowLeft, ArrowUpRight, CheckCircle2, ShieldCheck, AlertTriangle, Truck } from "lucide-react";
+import AddToCartButton from "@/components/AddToCartButton";
 
 export default async function ProductDetailPage({
   params,
@@ -143,15 +144,18 @@ export default async function ProductDetailPage({
 
             {/* CTAs */}
             <div className="mt-8 pt-6 border-t border-slate-100 space-y-3">
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 bg-[#087E8B] hover:bg-[#066570] text-white font-extrabold text-sm py-3.5 rounded-2xl shadow-glowTeal transition transform hover:-translate-y-0.5 active:translate-y-0"
-              >
-                <span>Enquire & Order on WhatsApp</span>
-                <ArrowUpRight className="w-4 h-4" />
-              </a>
+              <div className="grid sm:grid-cols-2 gap-3">
+                <AddToCartButton product={product} variant="full" />
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-[#087E8B] hover:bg-[#066570] text-white font-extrabold text-sm py-3.5 rounded-2xl shadow-glowTeal transition transform hover:-translate-y-0.5 active:translate-y-0"
+                >
+                  <span>Direct WhatsApp Enquiry</span>
+                  <ArrowUpRight className="w-4 h-4" />
+                </a>
+              </div>
 
               <div className="flex items-center justify-center gap-6 text-[11px] font-semibold text-slate-500 pt-1">
                 <div className="flex items-center gap-1.5">

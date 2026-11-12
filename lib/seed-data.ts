@@ -12,73 +12,41 @@ export const INITIAL_CATEGORIES: Category[] = [
   {
     id: 'cat-bms',
     name: 'BMS & Balancers',
-    slug: 'bms',
+    slug: 'bms-balancers',
     description: 'Smart active balancers and protection boards from JK and Daly with Bluetooth telemetry.',
     sort_order: 2,
     is_active: true,
   },
   {
-    id: 'cat-ebikes',
-    name: 'Electric Bikes',
-    slug: 'ebikes',
-    description: 'High-torque urban and utility electric bicycles built for Lagos roads, fuel elimination, and reliable commutes.',
+    id: 'cat-electric-mobility',
+    name: 'Electric Mobility',
+    slug: 'electric-mobility',
+    description: 'High-torque electric bikes, foldable electric scooters, and e-bike conversion & battery components.',
     sort_order: 3,
     is_active: true,
   },
   {
-    id: 'cat-escooters',
-    name: 'Electric Scooters',
-    slug: 'escooters',
-    description: 'Foldable urban electric scooters for last-mile commuting. Lightweight, fast-charging, and road-ready.',
-    sort_order: 4,
-    is_active: true,
-  },
-  {
     id: 'cat-inverters-solar',
-    name: 'Inverters & Solar Accessories',
+    name: 'Inverters & Solar Systems',
     slug: 'inverters-solar',
-    description: 'Pure sine wave hybrid inverters, MPPT charge controllers, and heavy-duty DC components.',
-    sort_order: 5,
+    description: 'Pure sine wave hybrid inverters, MPPT solar controllers, and turnkey portable power stations.',
+    sort_order: 4,
     is_active: true,
   },
   {
     id: 'cat-hardware',
     name: 'Hardware & Accessories',
-    slug: 'pack-hardware',
-    description: 'Pure copper busbars, epoxy insulation boards, silicone cables, and Class-T fusing.',
+    slug: 'hardware-accessories',
+    description: 'Pure copper busbars, spot welders, DC-DC step converters, and diagnostic multimeters & clamp meters.',
+    sort_order: 5,
+    is_active: true,
+  },
+  {
+    id: 'cat-display-electronics',
+    name: 'Display & Electronics',
+    slug: 'display-electronics',
+    description: 'Universal LED TV backlight strip arrays and replacement LCD screen panels for repair technicians.',
     sort_order: 6,
-    is_active: true,
-  },
-  {
-    id: 'cat-generators',
-    name: 'Solar Generators',
-    slug: 'solar-generators',
-    description: 'Turnkey portable energy power stations and mobile backup generator boxes.',
-    sort_order: 7,
-    is_active: true,
-  },
-  {
-    id: 'cat-ebike-parts',
-    name: 'E-Bike Parts & Components',
-    slug: 'ebike-parts',
-    description: 'Controllers, hub motors, throttles, brakes, lights, chargers, and batteries for electric bicycle builds.',
-    sort_order: 8,
-    is_active: true,
-  },
-  {
-    id: 'cat-electronics',
-    name: 'Electronics & Tools',
-    slug: 'electronics-tools',
-    description: 'Arduino boards, converters, meters, and diagnostic tools for builders and technicians.',
-    sort_order: 9,
-    is_active: true,
-  },
-  {
-    id: 'cat-tv-parts',
-    name: 'TV & Display Parts',
-    slug: 'tv-parts',
-    description: 'Replacement TV backlight strips, LED panels, and display components for repair technicians.',
-    sort_order: 10,
     is_active: true,
   },
 ];
@@ -196,7 +164,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   // ── ELECTRIC BIKES ────────────────────────────────────
   {
     id: 'prod-emax-veloflow-ebike',
-    category_id: 'cat-ebikes',
+    category_id: 'cat-electric-mobility',
     name: 'Emax VeloFlow 750W Urban Electric Bicycle',
     slug: 'emax-veloflow-750w-ebike',
     sku: 'EMX-BIKE-VF750',
@@ -235,7 +203,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   // ── ELECTRIC SCOOTERS ─────────────────────────────────
   {
     id: 'prod-electric-scooter',
-    category_id: 'cat-escooters',
+    category_id: 'cat-electric-mobility',
     name: 'Emax CityGlide 500W Foldable Electric Scooter',
     slug: 'emax-cityglide-500w-scooter',
     sku: 'EMX-SCT-CG500',
@@ -340,7 +308,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   // ── SOLAR GENERATORS ──────────────────────────────────
   {
     id: 'prod-turnkey-generator-15kwh',
-    category_id: 'cat-generators',
+    category_id: 'cat-inverters-solar',
     name: 'Emax PowerCrate 1.5kWh Turnkey Portable Solar Generator Box',
     slug: 'emax-powercrate-15kwh-solar-generator',
     sku: 'EMX-GEN-1500',
@@ -374,7 +342,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   // ── E-BIKE PARTS & COMPONENTS ─────────────────────────
   {
     id: 'prod-battery-display',
-    category_id: 'cat-ebike-parts',
+    category_id: 'cat-electric-mobility',
     name: 'SW900 LCD Display Panel for E-Bikes',
     slug: 'sw900-lcd-ebike-display',
     sku: 'EMX-DSP-SW900',
@@ -406,7 +374,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-ebike-controller',
-    category_id: 'cat-ebike-parts',
+    category_id: 'cat-electric-mobility',
     name: '48V 25A Sine Wave BLDC E-Bike Controller',
     slug: '48v-25a-sine-wave-ebike-controller',
     sku: 'EMX-CTL-48V25A',
@@ -439,7 +407,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-ebike-hub',
-    category_id: 'cat-ebike-parts',
+    category_id: 'cat-electric-mobility',
     name: '48V 750W Rear Hub Motor (135mm Dropout)',
     slug: '48v-750w-rear-hub-motor',
     sku: 'EMX-HUB-750W',
@@ -472,7 +440,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-ebike-battery',
-    category_id: 'cat-ebike-parts',
+    category_id: 'cat-electric-mobility',
     name: '48V 15Ah E-Bike Lithium Battery Pack (Shark Frame)',
     slug: '48v-15ah-ebike-battery-shark',
     sku: 'EMX-BAT-48V15A',
@@ -505,7 +473,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-throttle',
-    category_id: 'cat-ebike-parts',
+    category_id: 'cat-electric-mobility',
     name: 'Half-Twist E-Bike Throttle with LED Power Indicator',
     slug: 'half-twist-ebike-throttle-led',
     sku: 'EMX-THR-HT01',
@@ -537,7 +505,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-ebike-light',
-    category_id: 'cat-ebike-parts',
+    category_id: 'cat-electric-mobility',
     name: 'E-Bike LED Headlight & Taillight Set (48V Input)',
     slug: 'ebike-led-headlight-taillight-48v',
     sku: 'EMX-LGT-48V',
@@ -569,7 +537,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-ebike-charger',
-    category_id: 'cat-ebike-parts',
+    category_id: 'cat-electric-mobility',
     name: '48V 2A Smart E-Bike Battery Charger',
     slug: '48v-2a-ebike-smart-charger',
     sku: 'EMX-CHR-48V2A',
@@ -601,7 +569,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-lithium-charger',
-    category_id: 'cat-ebike-parts',
+    category_id: 'cat-electric-mobility',
     name: 'LiFePO4 Single-Cell Charger 3.65V 2A',
     slug: 'lifepo4-single-cell-charger-365v',
     sku: 'EMX-CHR-LFP1',
@@ -633,7 +601,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-ebike-brakes',
-    category_id: 'cat-ebike-parts',
+    category_id: 'cat-electric-mobility',
     name: 'Hydraulic Disc Brake Levers Set (Left + Right) for E-Bikes',
     slug: 'hydraulic-disc-brake-levers-ebike',
     sku: 'EMX-BRK-HYD01',
@@ -665,7 +633,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-spot-welder',
-    category_id: 'cat-ebike-parts',
+    category_id: 'cat-electric-mobility',
     name: 'Mini Portable Battery Spot Welder 10-Level Pulse',
     slug: 'mini-portable-battery-spot-welder',
     sku: 'EMX-WLD-MINI',
@@ -700,7 +668,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   // ── ELECTRONICS & TOOLS ───────────────────────────────
   {
     id: 'prod-arduino-uno',
-    category_id: 'cat-electronics',
+    category_id: 'cat-hardware',
     name: 'Arduino Uno R3 Microcontroller Development Board',
     slug: 'arduino-uno-r3-microcontroller',
     sku: 'EMX-ARD-UNO',
@@ -733,7 +701,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-buck-converter',
-    category_id: 'cat-electronics',
+    category_id: 'cat-hardware',
     name: 'XL4016 DC-DC Buck Step-Down Converter (8A, 4-38V)',
     slug: 'xl4016-dc-dc-buck-step-down-converter',
     sku: 'EMX-BUK-XL4016',
@@ -765,7 +733,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-boost-converter',
-    category_id: 'cat-electronics',
+    category_id: 'cat-hardware',
     name: 'XL6009 DC-DC Boost Step-Up Converter (5A, 3-32V)',
     slug: 'xl6009-dc-dc-boost-step-up-converter',
     sku: 'EMX-BST-XL6009',
@@ -798,7 +766,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-digital-multimeter',
-    category_id: 'cat-electronics',
+    category_id: 'cat-hardware',
     name: 'DT9208A Auto-Range Digital Multimeter',
     slug: 'dt9208a-auto-range-digital-multimeter',
     sku: 'EMX-DMM-DT9208',
@@ -831,7 +799,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-clamp-meter',
-    category_id: 'cat-electronics',
+    category_id: 'cat-hardware',
     name: 'UT210E True RMS Digital Clamp Meter (AC/DC 100A)',
     slug: 'ut210e-true-rms-digital-clamp-meter',
     sku: 'EMX-CLM-UT210E',
@@ -866,7 +834,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   // ── TV & DISPLAY PARTS ────────────────────────────────
   {
     id: 'prod-tv-backlight',
-    category_id: 'cat-tv-parts',
+    category_id: 'cat-display-electronics',
     name: 'Universal LED TV Backlight Strip Set (32-55 inch)',
     slug: 'universal-led-tv-backlight-strip-set',
     sku: 'EMX-TVL-BKLT',
@@ -898,7 +866,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-tv-panel',
-    category_id: 'cat-tv-parts',
+    category_id: 'cat-display-electronics',
     name: 'Replacement 32-Inch LED TV LCD Panel',
     slug: 'replacement-32inch-led-tv-lcd-panel',
     sku: 'EMX-TVP-32',

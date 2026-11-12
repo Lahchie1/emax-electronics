@@ -31,40 +31,40 @@ const CATEGORY_META: Record<string, CategoryMeta> = {
     badge: "Grade-A LiFePO4",
     curatedDescription: "105Ah–314Ah prismatic cells with factory laser QR & low IR.",
   },
-  bms: {
+  "bms-balancers": {
     icon: <Cpu className="w-6 h-6 text-[#123047] transition-colors group-hover:text-white" />,
     iconBg: "bg-slate-100 border-slate-200/80",
     iconHoverBg: "group-hover:bg-[#123047]",
     badge: "Smart Active Balance",
-    curatedDescription: "JK & Daly smart balancers with real-time Bluetooth telemetry.",
+    curatedDescription: "JK & Daly smart BMS and high-current active cell balancers.",
   },
-  ebikes: {
+  "electric-mobility": {
     icon: <Bike className="w-6 h-6 text-[#F2A541] transition-colors group-hover:text-white" />,
     iconBg: "bg-amber-50 border-amber-100/80",
     iconHoverBg: "group-hover:bg-[#F2A541]",
-    badge: "750W High Torque",
-    curatedDescription: "All-terrain urban commuter e-bikes engineered for Lagos.",
+    badge: "Urban E-Mobility",
+    curatedDescription: "750W e-bikes, scooters, hub motors, controllers & battery packs.",
   },
   "inverters-solar": {
     icon: <SunMedium className="w-6 h-6 text-orange-600 transition-colors group-hover:text-white" />,
     iconBg: "bg-orange-50 border-orange-100/80",
     iconHoverBg: "group-hover:bg-orange-600",
-    badge: "Pure Sine Wave",
-    curatedDescription: "Hybrid inverters, MPPT chargers & heavy-duty DC components.",
+    badge: "Solar & Inverters",
+    curatedDescription: "Hybrid inverters, MPPT chargers & turnkey solar generator crates.",
   },
-  "pack-hardware": {
+  "hardware-accessories": {
     icon: <Wrench className="w-6 h-6 text-indigo-600 transition-colors group-hover:text-white" />,
     iconBg: "bg-indigo-50 border-indigo-100/80",
     iconHoverBg: "group-hover:bg-indigo-600",
-    badge: "Pure Copper",
-    curatedDescription: "Busbars, epoxy FR4 boards, silicone cables & Class-T fusing.",
+    badge: "Tools & Hardware",
+    curatedDescription: "Busbars, spot welders, DC converters, multimeters & clamp meters.",
   },
-  "solar-generators": {
+  "display-electronics": {
     icon: <Zap className="w-6 h-6 text-emerald-600 transition-colors group-hover:text-white" />,
     iconBg: "bg-emerald-50 border-emerald-100/80",
     iconHoverBg: "group-hover:bg-emerald-600",
-    badge: "Turnkey Power",
-    curatedDescription: "Portable LiFePO4 energy power stations & mobile backup kits.",
+    badge: "Display & TV",
+    curatedDescription: "Universal LED TV backlight strips, LCD screens & display components.",
   },
 };
 

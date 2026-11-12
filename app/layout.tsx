@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollObserver from "@/components/ScrollObserver";
+import CartDrawer from "@/components/CartDrawer";
+import { CartProvider } from "@/lib/cart-context";
 import { headers } from "next/headers";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -36,10 +38,13 @@ export default async function RootLayout({
   return (
     <html lang="en" className={`scroll-smooth ${plusJakartaSans.variable}`}>
       <body className="font-sans antialiased selection:bg-[#087e8b] selection:text-white min-h-screen flex flex-col justify-between">
-        <ScrollObserver />
-        {!isAdmin && <Navbar />}
-        <main className="flex-grow">{children}</main>
-        {!isAdmin && <Footer />}
+        <CartProvider>
+          <ScrollObserver />
+          {!isAdmin && <Navbar />}
+          <main className="flex-grow">{children}</main>
+          {!isAdmin && <Footer />}
+          {!isAdmin && <CartDrawer />}
+        </CartProvider>
       </body>
     </html>
   );
