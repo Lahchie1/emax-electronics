@@ -2,6 +2,7 @@ import { DataService } from "@/lib/supabase/data-service";
 import Link from "next/link";
 import { Plus, Package, ExternalLink } from "lucide-react";
 import { formatCurrency, getStockStatusDisplay } from "@/lib/utils";
+import StockStatusSelect from "@/components/admin/StockStatusSelect";
 
 export default async function AdminProductsPage() {
   const [products, categories] = await Promise.all([
@@ -69,10 +70,10 @@ export default async function AdminProductsPage() {
                       {formatCurrency(p.price_minor)}
                     </td>
                     <td className="py-3.5 px-4">
-                      <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold border ${stockInfo.badgeClass}`}>
-                        <span className={`w-1.5 h-1.5 rounded-full ${stockInfo.dotClass}`} />
-                        {stockInfo.label}
-                      </span>
+                      <StockStatusSelect
+                        productId={p.id}
+                        initialStatus={p.stock?.status || "contact_to_confirm"}
+                      />
                     </td>
                     <td className="py-3.5 px-4">
                       <span className={`px-2 py-0.5 rounded-md text-[10px] font-bold uppercase ${

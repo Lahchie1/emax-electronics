@@ -27,6 +27,43 @@ let localAuditLogs: AuditLog[] = [
   },
 ];
 
+let localPageContents: Record<string, Record<string, string>> = {
+  "p-home": {
+    heroSlide1Headline: "Ride Smarter, Move Smarter.",
+    heroSlide1Subhead: "Experience high-torque urban transit engineered for Lagos roads. Bypass fuel queues and rush-hour gridlock with 750W power.",
+    heroSlide2Headline: "Lithium Packs, Smart Power.",
+    heroSlide2Subhead: "Design and deploy custom LiFePO4 battery banks with genuine Grade-A prismatic cells, AC internal resistance <0.22mΩ.",
+    heroSlide3Headline: "Smart Protection, Active Balancing.",
+    heroSlide3Subhead: "Safeguard your lithium capital with genuine Daly & JBD Smart BMS hardware with Bluetooth telemetry.",
+    announcementBadge: "Direct Lagos Engineering Desk",
+  },
+  "p-products": {
+    heroBadge: "Catalogue",
+    heroHeadline: "Grade-A Components, Bench Verified.",
+    heroSubhead: "Browse genuine LiFePO4 cells, Smart BMS boards, flexible busbars, hybrid inverters, and e-bikes.",
+  },
+  "p-build": {
+    heroBadge: "Engineering Sizing",
+    heroHeadline: "Precision Build Calculator",
+    heroSubhead: "Size your custom LiFePO4 battery banks or configure turnkey off-grid solar generator systems.",
+  },
+  "p-ebikes": {
+    heroBadge: "Urban E-Mobility",
+    heroHeadline: "Zero Petrol. Zero Gridlock.",
+    heroSubhead: "High-performance electric bicycles engineered specifically for Lagos roads and daily transit.",
+  },
+  "p-about": {
+    heroBadge: "Engineering Standard",
+    heroHeadline: "Engineering Clean Energy Without Compromise.",
+    heroSubhead: "Emax Electronics Enterprises was founded with one uncompromising standard: eliminating fake, downgraded lithium cells.",
+  },
+  "p-contact": {
+    heroBadge: "Lagos Hub",
+    heroHeadline: "Speak with Our Engineers.",
+    heroSubhead: "Have questions on inverter sizing, cell chemistry, busbar configurations, or e-bike test rides? Reach our Ikeja technical team.",
+  },
+};
+
 export const DataService = {
   // --- Public Queries ---
   async getCategories(): Promise<Category[]> {
@@ -97,6 +134,21 @@ export const DataService = {
   },
 
   async updateProductStock(productId: string, newStatus: StockStatus, quantity?: number, actorEmail = 'admin@emaxelectronics.ng'): Promise<void> {
+    if (isSupabaseConfigured) {
+      try {
+        await supabase
+          .from('stock_records')
+          .update({
+            status: newStatus,
+            quantity: quantity,
+            last_verified_at: new Date().toISOString(),
+          })
+          .eq('product_id', productId);
+      } catch (err) {
+        console.warn('Failed to update Supabase stock record:', err);
+      }
+    }
+
     const prod = localProducts.find((p) => p.id === productId);
     if (prod) {
       const prev = prod.stock?.status;
@@ -118,6 +170,30 @@ export const DataService = {
         created_at: new Date().toISOString(),
       });
     }
+  },
+
+  async getPageContent(pageId: string): Promise<Record<string, string>> {
+    return localPageContents[pageId] || {};
+  },
+
+  async getAllPageContents(): Promise<Record<string, Record<string, string>>> {
+    return localPageContents;
+  },
+
+  async updatePageContent(pageId: string, content: Record<string, string>, actorEmail = 'admin@emaxelectronics.ng'): Promise<void> {
+    const prev = localPageContents[pageId];
+    localPageContents[pageId] = { ...(localPageContents[pageId] || {}), ...content };
+
+    localAuditLogs.unshift({
+      id: `log-${Date.now()}`,
+      actor_email: actorEmail,
+      entity_type: 'PageContent',
+      entity_id: pageId,
+      action: 'UPDATE',
+      before_json: prev,
+      after_json: localPageContents[pageId],
+      created_at: new Date().toISOString(),
+    });
   },
 
   async createProduct(productData: Partial<Product>, actorEmail = 'admin@emaxelectronics.ng'): Promise<Product> {

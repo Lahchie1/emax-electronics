@@ -204,12 +204,12 @@ export default function HeroSection() {
     setCurrentSlide((prev) => (prev - 1 + HERO_SLIDES.length) % HERO_SLIDES.length);
   }, []);
 
-  // Auto-play timer
+  // Auto-play timer (5 seconds per slide)
   useEffect(() => {
     if (isPaused) return;
     const timer = setInterval(() => {
       nextSlide();
-    }, 7000);
+    }, 5000);
     return () => clearInterval(timer);
   }, [isPaused, nextSlide]);
 
@@ -253,17 +253,20 @@ export default function HeroSection() {
       })}
 
       {/* 2. Top Content: Headline, Subheadline & CTAs (Re-animates on slide change) */}
-      <div key={`content-${slide.id}`} className="relative z-10 max-w-4xl mx-auto px-6 text-center mt-2 animate-fadeInUp">
+      <div
+        key={`content-${slide.id}`}
+        className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 text-center mt-2 flex flex-col items-center justify-center animate-fadeInUp"
+      >
         {/* Pill Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-pill text-white text-xs font-semibold mb-5 shadow-sm transition-transform duration-300 hover:scale-105">
           {slide.badgeIcon}
           <span>{slide.badge}</span>
         </div>
 
-        {/* Headline with UI/UX approved Warm Accent #F2A541 (Guaranteed 1 single line) */}
-        <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight drop-shadow-md whitespace-nowrap">
-          <span>{slide.headlineMain} </span>
-          <span className="text-[#F2A541] animate-pulseGlow inline-block">{slide.headlineAccent}</span>
+        {/* Headline with UI/UX approved Warm Accent #F2A541 (Mathematically and Visually Centered) */}
+        <h1 className="w-full text-center text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight drop-shadow-md flex items-center justify-center flex-wrap sm:flex-nowrap gap-x-3">
+          <span className="drop-shadow-md">{slide.headlineMain}</span>
+          <span className="text-[#F2A541] animate-pulseGlow drop-shadow-md inline-block">{slide.headlineAccent}</span>
         </h1>
 
         {/* Subhead */}

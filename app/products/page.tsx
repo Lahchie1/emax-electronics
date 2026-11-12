@@ -11,9 +11,10 @@ export default async function ProductsPage({
   searchParams: Promise<{ cat?: string; q?: string }>;
 }) {
   const { cat, q } = await searchParams;
-  const [categories, products] = await Promise.all([
+  const [categories, products, allProducts] = await Promise.all([
     DataService.getCategories(),
     DataService.getProducts(cat, q),
+    DataService.getProducts(),
   ]);
 
   const activeCategory = categories.find((c) => c.id === cat);
@@ -89,31 +90,42 @@ export default async function ProductsPage({
             )}
           </form>
 
-          {/* Category Filter Pills */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none text-xs">
+          {/* Category Filter Pills (Wrap to fit without horizontal scroll) */}
+          <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
             <Link
               href="/products"
-              className={`px-3 py-1.5 rounded-full font-semibold whitespace-nowrap transition ${
+              className={`px-3.5 py-1.5 rounded-full font-semibold transition ${
                 !cat
-                  ? "bg-[#123047] text-white"
+                  ? "bg-[#123047] text-white shadow-xs"
                   : "bg-slate-100 text-slate-600 hover:bg-slate-200"
               }`}
             >
-              All Items ({products.length})
+              All Items {!cat && `(${allProducts.length})`}
             </Link>
-            {categories.map((c) => (
-              <Link
-                key={c.id}
-                href={`/products?cat=${c.id}${q ? `&q=${q}` : ""}`}
-                className={`px-3 py-1.5 rounded-full font-semibold whitespace-nowrap transition ${
-                  cat === c.id
-                    ? "bg-[#123047] text-white"
-                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                }`}
-              >
-                {c.name}
-              </Link>
-            ))}
+            {categories.map((c) => {
+              const count = allProducts.filter((p) => p.category_id === c.id).length;
+              const isActive = cat === c.id;
+              return (
+                <Link
+                  key={c.id}
+                  href={`/products?cat=${c.id}${q ? `&q=${q}` : ""}`}
+                  className={`px-3.5 py-1.5 rounded-full font-semibold transition inline-flex items-center gap-1.5 ${
+                    isActive
+                      ? "bg-[#123047] text-white shadow-xs"
+                      : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                  }`}
+                >
+                  <span>{c.name}</span>
+                  <span
+                    className={`text-[11px] font-bold ${
+                      isActive ? "text-[#F2A541]" : "text-slate-400"
+                    }`}
+                  >
+                    ({count})
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </div>
 

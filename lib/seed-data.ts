@@ -11,7 +11,7 @@ export const INITIAL_CATEGORIES: Category[] = [
   },
   {
     id: 'cat-bms',
-    name: 'Battery Management Systems (BMS)',
+    name: 'BMS & Balancers',
     slug: 'bms',
     description: 'Smart active balancers and protection boards from JK and Daly with Bluetooth telemetry.',
     sort_order: 2,
