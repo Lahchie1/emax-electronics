@@ -136,19 +136,40 @@ html.has-scroll-animations [data-delay="400"] { transition-delay: 400ms; }
 html.has-scroll-animations [data-delay="500"] { transition-delay: 500ms; }
 
 /* =========================================================
-   Hero Slide Transition Keyframes
+   Hero Slide Transition — Push-Zoom Effect
+   Incoming (next): slides in from the right, slightly zoomed, zooms back to 1×
+   Outgoing (next): slides out to the left, slightly de-zoomed
+   Direction reversed for "prev" navigation.
    ========================================================= */
-/* Clip-path wipe — incoming from right (next direction) */
-@keyframes wipeInFromRight {
-  from { clip-path: inset(0 100% 0 0); }
-  to   { clip-path: inset(0 0% 0 0); }
+
+/* ---- NEXT direction ---- */
+/* New slide: zoomed-in, comes from right, scales back to normal */
+@keyframes heroEnterNext {
+  from { transform: translateX(100%) scale(1.08); }
+  to   { transform: translateX(0%)   scale(1);    }
+}
+/* Old slide: pushed out to the left */
+@keyframes heroExitNext {
+  from { transform: translateX(0%)    scale(1);    }
+  to   { transform: translateX(-30%) scale(0.96); }
 }
 
-/* Clip-path wipe — incoming from left (prev direction) */
-@keyframes wipeInFromLeft {
-  from { clip-path: inset(0 0 0 100%); }
-  to   { clip-path: inset(0 0 0 0%); }
+/* ---- PREV direction ---- */
+/* New slide: zoomed-in, comes from left */
+@keyframes heroEnterPrev {
+  from { transform: translateX(-100%) scale(1.08); }
+  to   { transform: translateX(0%)    scale(1);    }
 }
+/* Old slide: pushed out to the right */
+@keyframes heroExitPrev {
+  from { transform: translateX(0%)   scale(1);    }
+  to   { transform: translateX(30%) scale(0.96); }
+}
+
+.hero-slide-enter-next { animation: heroEnterNext 0.85s cubic-bezier(0.76, 0, 0.24, 1) both; }
+.hero-slide-exit-next  { animation: heroExitNext  0.85s cubic-bezier(0.76, 0, 0.24, 1) both; }
+.hero-slide-enter-prev { animation: heroEnterPrev 0.85s cubic-bezier(0.76, 0, 0.24, 1) both; }
+.hero-slide-exit-prev  { animation: heroExitPrev  0.85s cubic-bezier(0.76, 0, 0.24, 1) both; }
 
 /* Alvic-style progress bar fill — 5 s to match slide timer */
 @keyframes slideProgress {

@@ -212,7 +212,7 @@ export default function HeroSection() {
       setTimeout(() => {
         setPrevSlideIdx(null);
         setIsTransitioning(false);
-      }, 750);
+      }, 850);
     },
     [currentSlide, isTransitioning]
   );
@@ -249,35 +249,28 @@ export default function HeroSection() {
       onMouseLeave={() => setIsPaused(false)}
       aria-label="Emax Featured Showcases"
     >
-      {/* 1. Full-Bleed Background Images with Clip-Path Directional Wipe Transition */}
+      {/* 1. Full-Bleed Background Images — Push-Zoom Transition
+           Incoming slide: starts scale(1.08) + translateX(100%) → scale(1) translateX(0)
+           Outgoing slide: slides from translateX(0) → translateX(-25%) and fades slightly.
+           Both always rendered; z-index determines layering so there's never a gap. */}
       {HERO_SLIDES.map((s, index) => {
         const isActive = index === currentSlide;
         const isLeaving = index === prevSlideIdx;
-        // Determine clip-path based on role and direction
-        let clipStyle: React.CSSProperties = {};
+        const isVisible = isActive || isLeaving;
+
+        let animClass = "";
         if (isActive) {
-          // Incoming slide — wipe in from right (next) or left (prev)
-          clipStyle = {
-            clipPath: "inset(0 0% 0 0)",
-            transition: "clip-path 0.75s cubic-bezier(0.76, 0, 0.24, 1)",
-            animation: direction === "next"
-              ? "wipeInFromRight 0.75s cubic-bezier(0.76, 0, 0.24, 1) forwards"
-              : "wipeInFromLeft 0.75s cubic-bezier(0.76, 0, 0.24, 1) forwards",
-          };
+          animClass = direction === "next" ? "hero-slide-enter-next" : "hero-slide-enter-prev";
         } else if (isLeaving) {
-          // Outgoing slide — wipe out to left (next) or right (prev)
-          clipStyle = {
-            clipPath: direction === "next" ? "inset(0 100% 0 0)" : "inset(0 0 0 100%)",
-            transition: "clip-path 0.75s cubic-bezier(0.76, 0, 0.24, 1)",
-          };
+          animClass = direction === "next" ? "hero-slide-exit-next" : "hero-slide-exit-prev";
         }
+
         return (
           <div
             key={s.id}
             className={`absolute inset-0 z-0 ${
-              !isActive && !isLeaving ? "opacity-0 pointer-events-none" : "opacity-100"
-            }`}
-            style={clipStyle}
+              isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+            } ${isActive ? "z-[2]" : isLeaving ? "z-[1]" : "z-0"} ${animClass}`}
           >
             <Image
               src={s.image}
