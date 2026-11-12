@@ -96,23 +96,23 @@ export default function InteractiveCalculatorsPreview() {
                   </select>
                 </div>
 
-                {/* Sizing Results Box (Improved: No awkward wrapping, clean alignment & dividers) */}
+                {/* Sizing Results Box — Left-aligned label+value pairs */}
                 <div className="bg-slate-50 rounded-2xl p-4 sm:p-5 border border-slate-200 text-xs space-y-3">
-                  <div className="flex items-center justify-between gap-3">
-                    <span className="text-slate-500 font-medium whitespace-nowrap">
+                  <div className="flex flex-col gap-0.5">
+                    <span className="text-slate-500 font-medium">
                       Required Prismatic Cells:
                     </span>
-                    <span className="font-extrabold text-[#123047] text-right whitespace-nowrap">
+                    <span className="font-extrabold text-[#123047]">
                       {packResult.totalCells} Units{" "}
                       <span className="text-slate-400 font-normal">(Matched IR)</span>
                     </span>
                   </div>
 
-                  <div className="pt-2 border-t border-slate-200/70 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                    <span className="text-slate-500 font-medium whitespace-nowrap">
+                  <div className="pt-2 border-t border-slate-200/70 flex flex-col gap-0.5">
+                    <span className="text-slate-500 font-medium">
                       Recommended Smart BMS:
                     </span>
-                    <div className="text-left sm:text-right">
+                    <div>
                       <span className="font-extrabold text-[#087e8b]">
                         JK Smart {packResult.seriesCount}S {Math.max(100, Math.min(300, Math.round((cellCap * 0.75) / 50) * 50))}A
                       </span>{" "}
@@ -122,11 +122,11 @@ export default function InteractiveCalculatorsPreview() {
                     </div>
                   </div>
 
-                  <div className="pt-2 border-t border-slate-200/70 flex items-center justify-between gap-3">
-                    <span className="text-slate-500 font-medium whitespace-nowrap">
+                  <div className="pt-2 border-t border-slate-200/70 flex flex-col gap-0.5">
+                    <span className="text-slate-500 font-medium">
                       Nominal Energy Capacity:
                     </span>
-                    <span className="font-extrabold text-emerald-600 text-right whitespace-nowrap">
+                    <span className="font-extrabold text-emerald-600">
                       ~{packResult.totalEnergyKwh} kWh{" "}
                       <span className="text-emerald-700/80 font-medium">
                         ({packResult.usableEnergyKwh} kWh Usable)

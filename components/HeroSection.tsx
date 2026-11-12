@@ -194,15 +194,36 @@ const HERO_SLIDES: HeroSlide[] = [
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [prevSlideIdx, setPrevSlideIdx] = useState<number | null>(null);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [direction, setDirection] = useState<"next" | "prev">("next");
   const [isPaused, setIsPaused] = useState(false);
+  // Key to force progress-bar re-mount on slide change
+  const [progressKey, setProgressKey] = useState(0);
+
+  const goToSlide = useCallback(
+    (idx: number, dir: "next" | "prev" = "next") => {
+      if (isTransitioning) return;
+      setDirection(dir);
+      setPrevSlideIdx(currentSlide);
+      setIsTransitioning(true);
+      setCurrentSlide(idx);
+      setProgressKey((k) => k + 1);
+      setTimeout(() => {
+        setPrevSlideIdx(null);
+        setIsTransitioning(false);
+      }, 750);
+    },
+    [currentSlide, isTransitioning]
+  );
 
   const nextSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
-  }, []);
+    goToSlide((currentSlide + 1) % HERO_SLIDES.length, "next");
+  }, [currentSlide, goToSlide]);
 
   const prevSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev - 1 + HERO_SLIDES.length) % HERO_SLIDES.length);
-  }, []);
+    goToSlide((currentSlide - 1 + HERO_SLIDES.length) % HERO_SLIDES.length, "prev");
+  }, [currentSlide, goToSlide]);
 
   // Auto-play timer (5 seconds per slide)
   useEffect(() => {
@@ -228,15 +249,35 @@ export default function HeroSection() {
       onMouseLeave={() => setIsPaused(false)}
       aria-label="Emax Featured Showcases"
     >
-      {/* 1. Full-Bleed Background Images with Smooth Cross-Fade Transition */}
+      {/* 1. Full-Bleed Background Images with Clip-Path Directional Wipe Transition */}
       {HERO_SLIDES.map((s, index) => {
         const isActive = index === currentSlide;
+        const isLeaving = index === prevSlideIdx;
+        // Determine clip-path based on role and direction
+        let clipStyle: React.CSSProperties = {};
+        if (isActive) {
+          // Incoming slide — wipe in from right (next) or left (prev)
+          clipStyle = {
+            clipPath: "inset(0 0% 0 0)",
+            transition: "clip-path 0.75s cubic-bezier(0.76, 0, 0.24, 1)",
+            animation: direction === "next"
+              ? "wipeInFromRight 0.75s cubic-bezier(0.76, 0, 0.24, 1) forwards"
+              : "wipeInFromLeft 0.75s cubic-bezier(0.76, 0, 0.24, 1) forwards",
+          };
+        } else if (isLeaving) {
+          // Outgoing slide — wipe out to left (next) or right (prev)
+          clipStyle = {
+            clipPath: direction === "next" ? "inset(0 100% 0 0)" : "inset(0 0 0 100%)",
+            transition: "clip-path 0.75s cubic-bezier(0.76, 0, 0.24, 1)",
+          };
+        }
         return (
           <div
             key={s.id}
-            className={`absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out ${
-              isActive ? "opacity-100 scale-100" : "opacity-0 scale-105 pointer-events-none"
+            className={`absolute inset-0 z-0 ${
+              !isActive && !isLeaving ? "opacity-0 pointer-events-none" : "opacity-100"
             }`}
+            style={clipStyle}
           >
             <Image
               src={s.image}
@@ -246,7 +287,7 @@ export default function HeroSection() {
               className="object-cover object-center lg:object-[center_55%]"
               sizes="100vw"
             />
-            {/* Atmospheric gradient overlay ensures optimal headline contrast against sky & background */}
+            {/* Atmospheric gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-[#0d2844]/55 via-transparent to-[#070f17]/40 pointer-events-none" />
           </div>
         );
@@ -357,8 +398,8 @@ export default function HeroSection() {
 
       {/* 4. Docked Bottom Carousel Navigation */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 w-full">
-        {/* Carousel Slider Controls (Arrows + Indicator Dots) */}
-        <div className="flex items-center justify-center gap-4 pt-1">
+        {/* Carousel Controls: Arrows + Alvic-style numbered progress indicators */}
+        <div className="flex items-center justify-center gap-6 pt-1">
           {/* Previous Button */}
           <button
             type="button"
@@ -369,20 +410,36 @@ export default function HeroSection() {
             <ChevronLeft className="w-5 h-5" />
           </button>
 
-          {/* Indicator Dots / Tabs */}
-          <div className="flex items-center gap-2.5 px-3 py-1.5 rounded-full glass-pill">
+          {/* Alvic-style: numbered text + animated progress bar beneath the active number */}
+          <div className="flex items-end gap-5 px-4 py-2 rounded-2xl glass-pill">
             {HERO_SLIDES.map((s, idx) => {
               const isCurrent = idx === currentSlide;
               return (
                 <button
                   key={s.id}
                   type="button"
-                  onClick={() => setCurrentSlide(idx)}
+                  onClick={() => goToSlide(idx, idx > currentSlide ? "next" : "prev")}
                   aria-label={`Go to slide ${idx + 1}: ${s.badge}`}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    isCurrent ? "w-8 bg-[#F2A541] shadow-glowAmber" : "w-2.5 bg-white/40 hover:bg-white/70"
-                  }`}
-                />
+                  className="flex flex-col items-center gap-1.5 group"
+                >
+                  <span
+                    className={`text-xs font-bold tracking-wide transition-colors duration-300 ${
+                      isCurrent ? "text-white" : "text-white/40 group-hover:text-white/70"
+                    }`}
+                  >
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  {/* Progress bar track */}
+                  <div className="w-10 h-[3px] bg-white/20 rounded-full overflow-hidden">
+                    {isCurrent && (
+                      <div
+                        key={progressKey}
+                        className="h-full bg-[#F2A541] rounded-full"
+                        style={{ animation: "slideProgress 5s linear forwards" }}
+                      />
+                    )}
+                  </div>
+                </button>
               );
             })}
           </div>

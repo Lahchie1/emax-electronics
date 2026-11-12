@@ -116,13 +116,11 @@ export default async function ProductsPage({
                   }`}
                 >
                   <span>{c.name}</span>
-                  <span
-                    className={`text-[11px] font-bold ${
-                      isActive ? "text-[#F2A541]" : "text-slate-400"
-                    }`}
-                  >
-                    ({count})
-                  </span>
+                  {isActive && (
+                    <span className="text-[11px] font-bold text-[#F2A541]">
+                      ({count})
+                    </span>
+                  )}
                 </Link>
               );
             })}

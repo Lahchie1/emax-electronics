@@ -135,6 +135,27 @@ html.has-scroll-animations [data-delay="350"] { transition-delay: 350ms; }
 html.has-scroll-animations [data-delay="400"] { transition-delay: 400ms; }
 html.has-scroll-animations [data-delay="500"] { transition-delay: 500ms; }
 
+/* =========================================================
+   Hero Slide Transition Keyframes
+   ========================================================= */
+/* Clip-path wipe — incoming from right (next direction) */
+@keyframes wipeInFromRight {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0% 0 0); }
+}
+
+/* Clip-path wipe — incoming from left (prev direction) */
+@keyframes wipeInFromLeft {
+  from { clip-path: inset(0 0 0 100%); }
+  to   { clip-path: inset(0 0 0 0%); }
+}
+
+/* Alvic-style progress bar fill — 5 s to match slide timer */
+@keyframes slideProgress {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
+
 /* Reduced Motion Override for Accessibility */
 @media (prefers-reduced-motion: reduce) {
   html.has-scroll-animations .reveal-on-scroll,
